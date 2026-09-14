@@ -1,0 +1,20 @@
+[
+  "-X",
+  "utf8",
+  "D:\\MemoryData\\migration_20260910\\official_eval_tools\\official_eval_bridge.py",
+  "export",
+  "--predictions",
+  "D:\\MemoryData\\migration_20260910\\pilot_runs\\seed_parent_lme12_qwen35_minilm_r1\\collected\\seed_parent_single_2000.jsonl",
+  "--protocol",
+  "D:\\MemoryData\\migration_20260910\\pilot_runs\\seed_parent_lme12_qwen35_minilm_r1\\collected\\protocol.json",
+  "--reference",
+  "D:\\MemoryData\\MemoryData\\datasets\\LongMemEval\\longmemeval_s_cleaned.json",
+  "--expected-ids",
+  "D:\\MemoryData\\migration_20260910\\pilot_runs\\seed_parent_lme12_qwen35_minilm_r1\\collected\\expected_ids.json",
+  "--vendor",
+  "D:\\MemoryData\\migration_20260910\\official_longmemeval",
+  "--method",
+  "seed_parent_single_2000",
+  "--hypotheses",
+  "D:\\MemoryData\\migration_20260910\\official_seed_parent_lme12_r1\\seed_parent_single_2000.hypotheses.jsonl"
+]

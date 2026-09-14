@@ -1,0 +1,84 @@
+{
+  "status": "cpu_candidate_only_no_reader_or_benchmark_evaluation",
+  "method": "native_capacity_two_disjoint",
+  "recipe": {
+    "source_parents": [
+      "r06_calendar_month",
+      "r12_filter_current_best"
+    ],
+    "operation": "fuse_evidence",
+    "size": 2,
+    "overlap": 0,
+    "anchor": true,
+    "unit_budget_in_minilm_wordpieces_including_special_tokens": 256
+  },
+  "mini_tokenizer": {
+    "path": "/workspace/.hf_home/hub/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "storage_tokenizer": {
+    "path": "/workspace/.hf_home/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  },
+  "plans": {
+    "r06_calendar_month": {
+      "recipe": {
+        "name": "r06_calendar_month",
+        "parent": "seed",
+        "operations": [
+          {
+            "op": "anchor_time",
+            "style": "month"
+          }
+        ]
+      },
+      "parent": "seed",
+      "committed_at": 1788783328.6385658,
+      "recipe_sha256": "1bbaa47679dac3390186d0c939ee529bac5fa2418ef09bd505642c090750a02e",
+      "source_sha256": {
+        "continuous.py": "810bd92b0980b6f0f8327e82eac041b7521d18e790af044d913c44d6127003e5",
+        "refine.py": "71384cac6aaa260d6df4f24f605797a8a886cd51514a83c9c1d041eff99f14fa"
+      }
+    },
+    "r12_filter_current_best": {
+      "recipe": {
+        "name": "r12_filter_current_best",
+        "parent": "best",
+        "operations": [
+          {
+            "op": "filter_social_facts"
+          }
+        ]
+      },
+      "parent": "r06_calendar_month",
+      "committed_at": 1788783816.2640479,
+      "recipe_sha256": "ba092fc6b0a7f63f6372907b1c6bd9f80a15cc4c60609102679f46ef2cf8f588",
+      "source_sha256": {
+        "continuous.py": "810bd92b0980b6f0f8327e82eac041b7521d18e790af044d913c44d6127003e5",
+        "refine.py": "71384cac6aaa260d6df4f24f605797a8a886cd51514a83c9c1d041eff99f14fa"
+      }
+    }
+  },
+  "inputs_sha256": {
+    "runs/qwen35_baseline/source_sessions.json": "be72d8438b540c826693b89215abeb9a7e1a5163b61c484ab6ac6c0d4b78380c",
+    "runs/qwen35_baseline/memories/seed/conv-26.json": "629a3aee3d37708b6cda214649bacfcff50fe85850b9d519017171d39fade870",
+    "runs/qwen35_baseline/memories/seed/conv-30.json": "8773a83d74aec358aa57eb549bb2a0e1a534349420a148013377c7a3b587e4a3",
+    "runs/qwen35_baseline/memories/seed/conv-41.json": "475272b3848b660c3e1615637b49423eb8b896557de46f2cbc13ea597005ea66",
+    "runs/qwen35_baseline/memories/seed/conv-42.json": "4bf10f45f2a08c788acf69bb2b0198b8da2ff66c82c1305e9cc5c15aed0bacf9",
+    "runs/qwen35_baseline/memories/seed/conv-43.json": "fb780dc490d144c6c3551ea0e368a2245f1e2a21a48929cfea50b5a990223ebc",
+    "runs/qwen35_baseline/memories/seed/conv-44.json": "2fa3b968ac0786cd832bca6f36f4e93663393e40f550655253a2ffefb5adfd84",
+    "runs/qwen35_baseline/memories/seed/conv-47.json": "9498a025e1e056e4349cf76caafa3c1d75518c65f54af973c31584da037a4579",
+    "runs/qwen35_baseline/memories/seed/conv-48.json": "3d80be0dec85bad38787d8bb38a727a1bd94ece82aa64780269d6ac2a2a956fb",
+    "runs/qwen35_baseline/memories/seed/conv-49.json": "86c14c0a9a172670ba661335aad9a6718252674826f9d5f65e23c641027630d1",
+    "runs/qwen35_baseline/memories/seed/conv-50.json": "c48c0ff4c5caed5f344c6be0f5fa35dfd320a08df948bf28da3c902c9a8e8b31"
+  },
+  "source_sha256": {
+    "refine.py": "71384cac6aaa260d6df4f24f605797a8a886cd51514a83c9c1d041eff99f14fa",
+    "continuous.py": "810bd92b0980b6f0f8327e82eac041b7521d18e790af044d913c44d6127003e5",
+    "continuous_v2.py": "1f5e77bc5d72d59cd0de040b5eb020e07318075db35e45053b0143be1934ce32",
+    "memory_ops.py": "02504b2976393c9f9743a051b6347adbeea8af36ba572da579edb5ab6bfe8b00"
+  },
+  "benchmark_qa_used": false,
+  "gpu_used": false,
+  "automatically_selected_for_transfer": false
+}

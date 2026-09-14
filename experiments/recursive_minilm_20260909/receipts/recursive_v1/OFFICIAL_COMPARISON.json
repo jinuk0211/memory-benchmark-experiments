@@ -1,0 +1,318 @@
+{
+  "method": "recursive_source_rehearsal_v1",
+  "recipe": {
+    "name": "recursive_source_rehearsal_v1",
+    "rounds": 3,
+    "extra_tokens": 2000,
+    "read_tokens": 2048,
+    "answer_tokens": 96,
+    "query_rewrite_tokens": 64,
+    "selection": "strict source-fit improvement with nondecreasing source-audit mean",
+    "allocation": "cumulative residual times verified likelihood utility times retrieved reciprocal rank",
+    "benchmark_qa_used_for_construction": false
+  },
+  "dataset_sha256": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+  "scorer_sha256": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+  "prediction_hashes": {
+    "seed": "bc632385a7932c10df67d7b6f704a648fa1b67ce85a5f147edcef64f4fdd35e0",
+    "r40_fused_four_turn": "57e68680ad15fdf6f34ab4aec925c1e46037d0f08923e5e1e6c4c42fd8939f49",
+    "s_parent_single_2000": "a957f3d6860568f6e20303905b41344ab3730757b18ec652b6b726933701258b",
+    "recursive_source_rehearsal_v1": "cf61757b9785fd34a893d7be95818aba6d686a82f66508ec9e61ec0d5e721756"
+  },
+  "methods": {
+    "seed": {
+      "n": 1540,
+      "official_f1": 0.5625973274365339,
+      "by_category": {
+        "2": {
+          "n": 321,
+          "f1": 0.4176246045404924
+        },
+        "3": {
+          "n": 96,
+          "f1": 0.13565051800622316
+        },
+        "1": {
+          "n": 282,
+          "f1": 0.4607997979721198
+        },
+        "4": {
+          "n": 841,
+          "f1": 0.7008018946944459
+        }
+      },
+      "empty_answers": 0
+    },
+    "r40_fused_four_turn": {
+      "n": 1540,
+      "official_f1": 0.5552237081573067,
+      "by_category": {
+        "2": {
+          "n": 321,
+          "f1": 0.4970309717973269
+        },
+        "3": {
+          "n": 96,
+          "f1": 0.14091699345124306
+        },
+        "1": {
+          "n": 282,
+          "f1": 0.3968369655947082
+        },
+        "4": {
+          "n": 841,
+          "f1": 0.6778377086162702
+        }
+      },
+      "empty_answers": 0
+    },
+    "s_parent_single_2000": {
+      "n": 1540,
+      "official_f1": 0.5552781350227676,
+      "by_category": {
+        "2": {
+          "n": 321,
+          "f1": 0.50643686531537
+        },
+        "3": {
+          "n": 96,
+          "f1": 0.15576086436905764
+        },
+        "1": {
+          "n": 282,
+          "f1": 0.3812924297640506
+        },
+        "4": {
+          "n": 841,
+          "f1": 0.677865143871506
+        }
+      },
+      "empty_answers": 0
+    },
+    "recursive_source_rehearsal_v1": {
+      "n": 1540,
+      "official_f1": 0.5585601543689559,
+      "by_category": {
+        "2": {
+          "n": 321,
+          "f1": 0.5048327581037861
+        },
+        "3": {
+          "n": 96,
+          "f1": 0.160137463299228
+        },
+        "1": {
+          "n": 282,
+          "f1": 0.38757939746819153
+        },
+        "4": {
+          "n": 841,
+          "f1": 0.6818795907421175
+        }
+      },
+      "empty_answers": 0
+    }
+  },
+  "paired": {
+    "all1540": {
+      "n": 1540,
+      "baseline": 0.5552781350227676,
+      "refined": 0.5585601543689559,
+      "effect_pp": 0.3282019346188325,
+      "dataset": "locomo",
+      "cluster_count": 10,
+      "ci95_pp": [
+        0.027108320084430742,
+        0.7727372669444006
+      ],
+      "ci_method": "paired-cluster-percentile-bootstrap",
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260908,
+      "wins": 60,
+      "losses": 47,
+      "ties": 1433,
+      "generation_failures_counted_zero": {
+        "baseline": 0,
+        "refined": 0
+      },
+      "by_question_type": {
+        "1": {
+          "n": 282,
+          "baseline": 0.38129242976405064,
+          "refined": 0.3875793974681916,
+          "effect_pp": 0.6286967704140944
+        },
+        "2": {
+          "n": 321,
+          "baseline": 0.50643686531537,
+          "refined": 0.5048327581037861,
+          "effect_pp": -0.16041072115838828
+        },
+        "3": {
+          "n": 96,
+          "baseline": 0.15576086436905764,
+          "refined": 0.160137463299228,
+          "effect_pp": 0.43765989301703667
+        },
+        "4": {
+          "n": 841,
+          "baseline": 0.677865143871506,
+          "refined": 0.6818795907421175,
+          "effect_pp": 0.40144468706114766
+        }
+      },
+      "abstention": {
+        "n": 0,
+        "baseline": null,
+        "refined": null,
+        "effect_pp": null
+      },
+      "answerable": {
+        "n": 1540,
+        "baseline": 0.5552781350227676,
+        "refined": 0.5585601543689559,
+        "effect_pp": 0.3282019346188325
+      },
+      "manifest_ids_sha256": "3faaf0084df94ed2f911ec21b05a12ecf2470820791950464883fca7d10a1746",
+      "macro_by_question_type": {
+        "baseline": 0.43033882582999605,
+        "refined": 0.4336073024033308,
+        "effect_pp": 0.32684765733347265
+      }
+    },
+    "development7": {
+      "n": 1033,
+      "baseline": 0.5539532632751838,
+      "refined": 0.5582263887398216,
+      "effect_pp": 0.42731254646377614,
+      "dataset": "locomo",
+      "cluster_count": 7,
+      "ci95_pp": [
+        -0.005566365795539187,
+        1.0518428451457813
+      ],
+      "ci_method": "paired-cluster-percentile-bootstrap",
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260908,
+      "wins": 49,
+      "losses": 35,
+      "ties": 949,
+      "generation_failures_counted_zero": {
+        "baseline": 0,
+        "refined": 0
+      },
+      "by_question_type": {
+        "1": {
+          "n": 193,
+          "baseline": 0.387044750881016,
+          "refined": 0.39733632315445355,
+          "effect_pp": 1.0291572273437577
+        },
+        "2": {
+          "n": 215,
+          "baseline": 0.5101624215577704,
+          "refined": 0.5133327396118094,
+          "effect_pp": 0.3170318054039001
+        },
+        "3": {
+          "n": 65,
+          "baseline": 0.15515308135088354,
+          "refined": 0.161616981309289,
+          "effect_pp": 0.6463899958405461
+        },
+        "4": {
+          "n": 560,
+          "baseline": 0.6745789520008942,
+          "refined": 0.6769469757103274,
+          "effect_pp": 0.23680237094331202
+        }
+      },
+      "abstention": {
+        "n": 0,
+        "baseline": null,
+        "refined": null,
+        "effect_pp": null
+      },
+      "answerable": {
+        "n": 1033,
+        "baseline": 0.5539532632751838,
+        "refined": 0.5582263887398216,
+        "effect_pp": 0.42731254646377614
+      },
+      "manifest_ids_sha256": "98d14dfbd9c9d3dda335f82693eb84b5ced776af1385d2cb43bac11fec9da921",
+      "macro_by_question_type": {
+        "baseline": 0.43173480144764104,
+        "refined": 0.4373082549464698,
+        "effect_pp": 0.557345349882879
+      }
+    },
+    "reporting3_previously_exposed": {
+      "n": 507,
+      "baseline": 0.5579775285439786,
+      "refined": 0.5592401936093815,
+      "effect_pp": 0.1262665065402846,
+      "dataset": "locomo",
+      "cluster_count": 3,
+      "ci95_pp": [
+        0.0,
+        0.3216940644016337
+      ],
+      "ci_method": "paired-cluster-percentile-bootstrap",
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260908,
+      "wins": 11,
+      "losses": 12,
+      "ties": 484,
+      "generation_failures_counted_zero": {
+        "baseline": 0,
+        "refined": 0
+      },
+      "by_question_type": {
+        "1": {
+          "n": 89,
+          "baseline": 0.36881829520703585,
+          "refined": 0.36642112041820774,
+          "effect_pp": -0.23971747888281159
+        },
+        "2": {
+          "n": 106,
+          "baseline": 0.4988803125595579,
+          "refined": 0.4875922295733617,
+          "effect_pp": -1.1288082986196213
+        },
+        "3": {
+          "n": 31,
+          "baseline": 0.15703524811684205,
+          "refined": 0.15703524811684205,
+          "effect_pp": 0.0
+        },
+        "4": {
+          "n": 281,
+          "baseline": 0.6844141383467464,
+          "refined": 0.6917097132254003,
+          "effect_pp": 0.7295574878653954
+        }
+      },
+      "abstention": {
+        "n": 0,
+        "baseline": null,
+        "refined": null,
+        "effect_pp": null
+      },
+      "answerable": {
+        "n": 507,
+        "baseline": 0.5579775285439786,
+        "refined": 0.5592401936093815,
+        "effect_pp": 0.1262665065402846
+      },
+      "manifest_ids_sha256": "7914195fc24028048f4799589967d6a1c25366a74a0a290f18d265cb6e8d599e",
+      "macro_by_question_type": {
+        "baseline": 0.42728699855754554,
+        "refined": 0.42568957783345296,
+        "effect_pp": -0.15974207240925936
+      }
+    }
+  },
+  "transfer_complete": false,
+  "comparison_caveat": "LoCoMo has prior exposure; baseline reader flows/implementation variants differ."
+}

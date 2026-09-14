@@ -1,0 +1,52 @@
+{
+  "observed_at_utc": "2026-09-10T12:54:08Z",
+  "server": "root@ssh1.vast.ai:28469",
+  "remote_root": "/workspace/longmemeval_s_native7_20260910",
+  "disk_total_bytes": 53687091200,
+  "disk_available_bytes": 10216148992,
+  "pip_cache_allocated_bytes": 1441792,
+  "uv_cache_exists": false,
+  "source_dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "canonical_questions": 500,
+  "canonical_turns": 246750,
+  "higmem_actual_build_unit": "question_id;500 separate systems,not471 deduplicated source histories",
+  "smoke_completed_turns": 304,
+  "native_prefix_bytes": 12531611,
+  "physical_prefix_bytes": 752447,
+  "linear_native_bytes": 10171628337.0,
+  "linear_native_and_physical_bytes": 10782372736.0,
+  "estimate_limit": "Single incomplete smoke linear projection, not a guaranteed upper/lower bound. Excludes finalQA,source material,other methods,failed attempts and additional runtime journals.",
+  "backup_observations": [
+    {
+      "method": "e_mem",
+      "logical_member_bytes": 1166556,
+      "archive_bytes": 352745,
+      "scope": "completed smoke backup"
+    },
+    {
+      "method": "lightmem",
+      "logical_member_bytes": 3468669,
+      "archive_bytes": 1317620,
+      "scope": "completed smoke backup"
+    },
+    {
+      "method": "higmem",
+      "logical_member_bytes": 13300380,
+      "archive_bytes": 1764768,
+      "scope": "304turn partial log checkpoint only"
+    }
+  ],
+  "cache_constraints": {
+    "higmem": "Existing prediction reuse does not read native logs. Completed log archival may preserve cache behavior, but original runner has no archive verification/restore feature.",
+    "e_mem_lightmem": "Cache success does not hash complete logs/DB; independent full provenance backup needed.",
+    "recovery_four": "Sealed receipt validates original artifact paths/hashes. Replacing originals with compressed files invalidates cache; Mem0/LangMem also reject added archives inside attempts."
+  },
+  "native_logger": "No off/compress/rotation option; append write errors are printed instead of necessarily stopping the native method.",
+  "next_checks": [
+    "Verify complete HiGMem smoke artifacts and actual total bytes after completion",
+    "Measure each new recovery candidate first successful sealed attempt",
+    "For completed HiGMem logs only, prepare full byte-preserving backup plus source/protocol receipts and hash verification before any storage change",
+    "Keep unfinished logs and all four recovery sealed artifact paths intact; do not change the frozen recovery source archive"
+  ],
+  "changes_performed": "Read-only disk/source audit and local operational documentation only;no compression replacement,deletion,method/config change,source transfer,or additional paid storage purchase"
+}

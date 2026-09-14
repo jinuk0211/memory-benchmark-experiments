@@ -1,0 +1,138 @@
+{
+  "started_at": 1789125857.2452595,
+  "instance_id": "50577514",
+  "fresh_run_sha256": "825afd41103ccc0614f76ae342de7380a82c055822d12a1604a4d7facb58fbbd",
+  "launcher_sha256": "9402974891658d47853ef29284c89e11ef52b52ec2df8f05b6894b1dba3e94ab",
+  "baseline_launcher_sha256": "f7ff3e6a5a74b657a140a65437b0779df9d14b389f9e64f8ad2d7cfe062dd1d7",
+  "lanes": {
+    "sm0": {
+      "method": "simplemem",
+      "gpu_index": 0,
+      "gpu_uuid": "GPU-40ce3c64-6fda-dba9-cf98-90f34f2fed03",
+      "api_base": "http://127.0.0.1:18081/v1"
+    },
+    "sm1": {
+      "method": "simplemem",
+      "gpu_index": 1,
+      "gpu_uuid": "GPU-81002f44-36ec-c82e-15e1-9a04ebc4d363",
+      "api_base": "http://127.0.0.1:18091/v1"
+    },
+    "lm0": {
+      "method": "lightmem",
+      "gpu_index": 2,
+      "gpu_uuid": "GPU-c7964df3-27c3-8fee-c7c4-9a1e02f82ac1",
+      "api_base": "http://127.0.0.1:18101/v1"
+    },
+    "lm1": {
+      "method": "lightmem",
+      "gpu_index": 3,
+      "gpu_uuid": "GPU-11d274d0-d7e8-c582-aa5b-0733d2e32cb9",
+      "api_base": "http://127.0.0.1:18111/v1"
+    }
+  },
+  "results": {
+    "sm0": {
+      "baseline": {
+        "seconds": 54.76726329093799,
+        "tokens_per_second": 18.697300877720416,
+        "usages": [
+          {
+            "prompt_tokens": 28000,
+            "total_tokens": 28512,
+            "completion_tokens": 512,
+            "prompt_tokens_details": null
+          },
+          {
+            "prompt_tokens": 28000,
+            "total_tokens": 28512,
+            "completion_tokens": 512,
+            "prompt_tokens_details": null
+          }
+        ],
+        "peak_running": 1.0,
+        "peak_vram_mib": 21041,
+        "total_vram_mib": 24576,
+        "preemptions": 0.0
+      },
+      "candidate": {
+        "seconds": 39.47448352584615,
+        "tokens_per_second": 25.94080804957283,
+        "usages": [
+          {
+            "prompt_tokens": 28000,
+            "total_tokens": 28512,
+            "completion_tokens": 512,
+            "prompt_tokens_details": null
+          },
+          {
+            "prompt_tokens": 28000,
+            "total_tokens": 28512,
+            "completion_tokens": 512,
+            "prompt_tokens_details": null
+          }
+        ],
+        "peak_running": 2.0,
+        "peak_vram_mib": 21039,
+        "total_vram_mib": 24576,
+        "preemptions": 0.0
+      },
+      "selected": 2
+    },
+    "sm1": {
+      "baseline": {
+        "seconds": 54.70117511181161,
+        "tokens_per_second": 18.71989034800256,
+        "usages": [
+          {
+            "prompt_tokens": 28000,
+            "total_tokens": 28512,
+            "completion_tokens": 512,
+            "prompt_tokens_details": null
+          },
+          {
+            "prompt_tokens": 28000,
+            "total_tokens": 28512,
+            "completion_tokens": 512,
+            "prompt_tokens_details": null
+          }
+        ],
+        "peak_running": 1.0,
+        "peak_vram_mib": 21041,
+        "total_vram_mib": 24576,
+        "preemptions": 0.0
+      },
+      "candidate": {
+        "seconds": 40.48867876129225,
+        "tokens_per_second": 25.291020387134946,
+        "usages": [
+          {
+            "prompt_tokens": 28000,
+            "total_tokens": 28512,
+            "completion_tokens": 512,
+            "prompt_tokens_details": null
+          },
+          {
+            "prompt_tokens": 28000,
+            "total_tokens": 28512,
+            "completion_tokens": 512,
+            "prompt_tokens_details": null
+          }
+        ],
+        "peak_running": 2.0,
+        "peak_vram_mib": 21039,
+        "total_vram_mib": 24576,
+        "preemptions": 0.0
+      },
+      "selected": 2
+    }
+  },
+  "attempts": 2,
+  "phase": "complete",
+  "updated_at": 1789127727.8162925,
+  "coordinator_pid": 9286,
+  "drain_deadline": 1789131557.2889185,
+  "current_lane": "sm1",
+  "current_count": 2,
+  "result": "complete",
+  "resumed": true
+}

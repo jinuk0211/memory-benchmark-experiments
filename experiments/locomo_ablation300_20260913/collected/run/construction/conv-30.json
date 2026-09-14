@@ -1,0 +1,131 @@
+{
+  "ours": {
+    "family": "parent_single",
+    "parent_tokens": 37248,
+    "extra_budget": 2000,
+    "storage_tokens": 39183,
+    "storage_cap": 39248,
+    "selected_options": [
+      "conv-30:source_probe:15:2",
+      "conv-30:source_probe:16:4",
+      "conv-30:source_probe:20:5",
+      "conv-30:source_probe:27:6",
+      "conv-30:source_probe:28:6",
+      "conv-30:source_probe:31:4",
+      "conv-30:source_probe:32:2",
+      "conv-30:source_probe:33:5",
+      "conv-30:source_probe:35:3",
+      "conv-30:source_probe:9:3"
+    ],
+    "optimizer": {
+      "gain": 9.596269666730615,
+      "actual_tokens": 1935,
+      "rounded_tokens": 1976,
+      "budget": 2000,
+      "quantum": 8,
+      "unused_tokens": 65
+    }
+  },
+  "random_cues": {
+    "selected_options": [
+      "conv-30:source_probe:16:4",
+      "conv-30:source_probe:13:1",
+      "conv-30:source_probe:31:4",
+      "conv-30:source_probe:3:2",
+      "conv-30:source_probe:35:3",
+      "conv-30:source_probe:20:5"
+    ],
+    "eligible_options": 36,
+    "rounded_tokens": 1896,
+    "actual_tokens": 1872,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "no_audit": {
+    "family": "parent_single",
+    "parent_tokens": 36088,
+    "extra_budget": 2000,
+    "storage_tokens": 38023,
+    "storage_cap": 38088,
+    "selected_options": [
+      "conv-30:source_probe:15:2",
+      "conv-30:source_probe:16:4",
+      "conv-30:source_probe:20:5",
+      "conv-30:source_probe:27:6",
+      "conv-30:source_probe:28:6",
+      "conv-30:source_probe:31:4",
+      "conv-30:source_probe:32:2",
+      "conv-30:source_probe:33:5",
+      "conv-30:source_probe:35:3",
+      "conv-30:source_probe:9:3"
+    ],
+    "optimizer": {
+      "gain": 9.596269666730615,
+      "actual_tokens": 1935,
+      "rounded_tokens": 1976,
+      "budget": 2000,
+      "quantum": 8,
+      "unused_tokens": 65
+    }
+  },
+  "no_temporal": {
+    "family": "parent_single",
+    "parent_tokens": 38839,
+    "extra_budget": 2000,
+    "storage_tokens": 40785,
+    "storage_cap": 40839,
+    "selected_options": [
+      "conv-30:source_probe:13:6",
+      "conv-30:source_probe:14:6",
+      "conv-30:source_probe:15:2",
+      "conv-30:source_probe:16:4",
+      "conv-30:source_probe:27:6",
+      "conv-30:source_probe:28:6",
+      "conv-30:source_probe:32:2",
+      "conv-30:source_probe:33:5",
+      "conv-30:source_probe:35:3"
+    ],
+    "optimizer": {
+      "gain": 8.978632998195296,
+      "actual_tokens": 1946,
+      "rounded_tokens": 1976,
+      "budget": 2000,
+      "quantum": 8,
+      "unused_tokens": 54
+    }
+  },
+  "no_binding": {
+    "family": "parent_single",
+    "parent_tokens": 36100,
+    "extra_budget": 2000,
+    "storage_tokens": 38034,
+    "storage_cap": 38100,
+    "selected_options": [
+      "conv-30:source_probe:13:6",
+      "conv-30:source_probe:14:6",
+      "conv-30:source_probe:15:2",
+      "conv-30:source_probe:16:1",
+      "conv-30:source_probe:2:2",
+      "conv-30:source_probe:20:1",
+      "conv-30:source_probe:25:6",
+      "conv-30:source_probe:27:6",
+      "conv-30:source_probe:28:6",
+      "conv-30:source_probe:3:2",
+      "conv-30:source_probe:31:4",
+      "conv-30:source_probe:32:2",
+      "conv-30:source_probe:33:5",
+      "conv-30:source_probe:35:3",
+      "conv-30:source_probe:4:3",
+      "conv-30:source_probe:5:2",
+      "conv-30:source_probe:8:3",
+      "conv-30:source_probe:9:3"
+    ],
+    "optimizer": {
+      "gain": 17.893386392467995,
+      "actual_tokens": 1934,
+      "rounded_tokens": 2000,
+      "budget": 2000,
+      "quantum": 8,
+      "unused_tokens": 66
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "status": "gpu_smoke_passed",
+  "purpose": "Compatibility only; no benchmark outcomes",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_meta": {
+    "path": "/workspace/.hf_home/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  },
+  "packages": {
+    "vllm": "0.19.1",
+    "torch": "2.10.0+cu129",
+    "transformers": "5.5.3",
+    "sentence-transformers": "5.2.0"
+  },
+  "language_model_only": true,
+  "enable_thinking": false,
+  "source_scorer_sha256": "534749083cd534deb00944d893ef9ed43fcb624a14fd5d9f560669d99ad03edd",
+  "prompt_serialization": {
+    "matched": true,
+    "prompt_tokens": 137,
+    "token_ids_sha256": "b6ff11e970161265df90aac292a02946f0b5978a9ee2c10d8470d42fec45f9bc"
+  },
+  "likelihoods": [
+    {
+      "mean_logprob": -11.689061641693115,
+      "sum_logprob": -23.37812328338623,
+      "answer_tokens": 2,
+      "token_logprobs": [
+        -14.170273780822754,
+        -9.207849502563477
+      ]
+    },
+    {
+      "mean_logprob": -0.008087623515166342,
+      "sum_logprob": -0.016175247030332685,
+      "answer_tokens": 2,
+      "token_logprobs": [
+        -0.01590658538043499,
+        -0.0002686616498976946
+      ]
+    }
+  ],
+  "generation": {
+    "full": {
+      "text": "silver maple",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D1:1"
+      ],
+      "context_tokens": 29,
+      "source_answer_f1": 1.0
+    }
+  }
+}

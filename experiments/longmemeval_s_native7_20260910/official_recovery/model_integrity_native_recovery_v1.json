@@ -1,0 +1,442 @@
+{
+  "models": {
+    "qwen": {
+      "path": "/workspace/.hf_home/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "files": {
+        "model.safetensors-00001-of-00004.safetensors": "db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e",
+        "model.safetensors-00002-of-00004.safetensors": "31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330",
+        "model.safetensors-00003-of-00004.safetensors": "7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec",
+        "model.safetensors-00004-of-00004.safetensors": "b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6",
+        "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+        "config.json": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+        "merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+        "model.safetensors.index.json": "26d3539b516be613f39563617cb9d33b3f83d401298125be392c80cefb8f7fe5",
+        "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+        "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+        "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+        "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+        "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+      },
+      "provenance": {
+        "repository": "Qwen/Qwen3.5-9B",
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "checked_at_utc": "2026-09-10T16:57:02.405067+09:00",
+        "tree_url": "https://huggingface.co/api/models/Qwen/Qwen3.5-9B/tree/c202236235762e1c871ad0ccb60c8ee5ba337b9a?recursive=true&expand=false",
+        "tree_inventory_complete": true,
+        "weights": {
+          "model.safetensors-00001-of-00004.safetensors": {
+            "sha256": "db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e",
+            "bytes": 5276436216,
+            "source": "Hugging Face pinned-revision tree LFS metadata; weight bytes were not downloaded during this audit"
+          },
+          "model.safetensors-00002-of-00004.safetensors": {
+            "sha256": "31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330",
+            "bytes": 5335161512,
+            "source": "Hugging Face pinned-revision tree LFS metadata; weight bytes were not downloaded during this audit"
+          },
+          "model.safetensors-00003-of-00004.safetensors": {
+            "sha256": "7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec",
+            "bytes": 5368717440,
+            "source": "Hugging Face pinned-revision tree LFS metadata; weight bytes were not downloaded during this audit"
+          },
+          "model.safetensors-00004-of-00004.safetensors": {
+            "sha256": "b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6",
+            "bytes": 3325995712,
+            "source": "Hugging Face pinned-revision tree LFS metadata; weight bytes were not downloaded during this audit"
+          }
+        },
+        "metadata": {
+          "chat_template.jinja": {
+            "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+            "bytes": 7756,
+            "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/chat_template.jinja",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "config.json": {
+            "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+            "bytes": 3126,
+            "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "merges.txt": {
+            "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+            "bytes": 3353259,
+            "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/merges.txt",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "model.safetensors.index.json": {
+            "sha256": "26d3539b516be613f39563617cb9d33b3f83d401298125be392c80cefb8f7fe5",
+            "bytes": 79657,
+            "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/model.safetensors.index.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "preprocessor_config.json": {
+            "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+            "bytes": 390,
+            "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/preprocessor_config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "tokenizer.json": {
+            "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+            "bytes": 12807982,
+            "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/tokenizer.json",
+            "tree_verification": "matched pinned-tree LFS SHA-256"
+          },
+          "tokenizer_config.json": {
+            "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+            "bytes": 16710,
+            "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/tokenizer_config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "video_preprocessor_config.json": {
+            "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+            "bytes": 385,
+            "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/video_preprocessor_config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "vocab.json": {
+            "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+            "bytes": 6722759,
+            "source_url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/vocab.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          }
+        },
+        "metadata_download_errors": [],
+        "metadata_hashes_complete": true,
+        "sentencepiece_files": [],
+        "jinja_files": [
+          "chat_template.jinja"
+        ],
+        "scope": "Expected hashes for an external launch-time file verification. Repository/LFS provenance is not evidence that any server's local weights have been hashed."
+      }
+    },
+    "minilm": {
+      "path": "/workspace/.hf_home/hub/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "files": {
+        "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+        "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+        "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+        "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+        "data_config.json": "32edcb108fc2516b920734a862ae0692bcae1c5d45d5f8d972cb0d53434a4c54",
+        "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+        "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+        "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      },
+      "provenance": {
+        "repository": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "checked_at_utc": "2026-09-10T16:57:02.405067+09:00",
+        "tree_url": "https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/1110a243fdf4706b3f48f1d95db1a4f5529b4d41?recursive=true&expand=false",
+        "tree_inventory_complete": true,
+        "weights": {
+          "model.safetensors": {
+            "sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+            "bytes": 90868376,
+            "source": "Hugging Face pinned-revision tree LFS metadata; weight bytes were not downloaded during this audit"
+          }
+        },
+        "metadata": {
+          "1_Pooling/config.json": {
+            "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+            "bytes": 190,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling/config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "config.json": {
+            "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+            "bytes": 612,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "config_sentence_transformers.json": {
+            "sha256": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+            "bytes": 116,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "data_config.json": {
+            "sha256": "32edcb108fc2516b920734a862ae0692bcae1c5d45d5f8d972cb0d53434a4c54",
+            "bytes": 39265,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/data_config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "modules.json": {
+            "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+            "bytes": 349,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "sentence_bert_config.json": {
+            "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+            "bytes": 53,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "special_tokens_map.json": {
+            "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+            "bytes": 112,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/special_tokens_map.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "tokenizer.json": {
+            "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+            "bytes": 466247,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "tokenizer_config.json": {
+            "sha256": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+            "bytes": 350,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "vocab.txt": {
+            "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+            "bytes": 231508,
+            "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/vocab.txt",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          }
+        },
+        "metadata_download_errors": [],
+        "metadata_hashes_complete": true,
+        "sentencepiece_files": [],
+        "jinja_files": [],
+        "scope": "Expected hashes for an external launch-time file verification. Repository/LFS provenance is not evidence that any server's local weights have been hashed."
+      }
+    },
+    "compressor": {
+      "path": "/workspace/.hf_home/hub/models--microsoft--llmlingua-2-bert-base-multilingual-cased-meetingbank/snapshots/5f0c82792b7ea14c6484e015b6a072009496b7f2",
+      "files": {
+        "model.safetensors": "22b9ecde52fec5c97e8c54a293be768727df95a81c6c8dccb03f262a50c58324",
+        "config.json": "e6c33ec2f099e659e125efaa8b7bb07a6e65b7d9fc36211c6fa3206e1c399085",
+        "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+        "tokenizer.json": "bf1b59b7b11c95f194f51708d918eea378e09d05f84c0e1656dc5180e8117088",
+        "tokenizer_config.json": "214f78f6c5d034a8b405632d301ee3710eb6f075b3f5faf8241a273a13908746",
+        "vocab.txt": "fe0fda7c425b48c516fc8f160d594c8022a0808447475c1a7c6d6479763f310c"
+      },
+      "provenance": {
+        "repository": "microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank",
+        "revision": "5f0c82792b7ea14c6484e015b6a072009496b7f2",
+        "checked_at_utc": "2026-09-10T16:57:02.405067+09:00",
+        "tree_url": "https://huggingface.co/api/models/microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank/tree/5f0c82792b7ea14c6484e015b6a072009496b7f2?recursive=true&expand=false",
+        "tree_inventory_complete": true,
+        "weights": {
+          "model.safetensors": {
+            "sha256": "22b9ecde52fec5c97e8c54a293be768727df95a81c6c8dccb03f262a50c58324",
+            "bytes": 709388104,
+            "source": "Hugging Face pinned-revision tree LFS metadata; weight bytes were not downloaded during this audit"
+          }
+        },
+        "metadata": {
+          "config.json": {
+            "sha256": "e6c33ec2f099e659e125efaa8b7bb07a6e65b7d9fc36211c6fa3206e1c399085",
+            "bytes": 875,
+            "source_url": "https://huggingface.co/microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank/resolve/5f0c82792b7ea14c6484e015b6a072009496b7f2/config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "special_tokens_map.json": {
+            "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+            "bytes": 125,
+            "source_url": "https://huggingface.co/microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank/resolve/5f0c82792b7ea14c6484e015b6a072009496b7f2/special_tokens_map.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "tokenizer.json": {
+            "sha256": "bf1b59b7b11c95f194f51708d918eea378e09d05f84c0e1656dc5180e8117088",
+            "bytes": 2919362,
+            "source_url": "https://huggingface.co/microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank/resolve/5f0c82792b7ea14c6484e015b6a072009496b7f2/tokenizer.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "tokenizer_config.json": {
+            "sha256": "214f78f6c5d034a8b405632d301ee3710eb6f075b3f5faf8241a273a13908746",
+            "bytes": 1191,
+            "source_url": "https://huggingface.co/microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank/resolve/5f0c82792b7ea14c6484e015b6a072009496b7f2/tokenizer_config.json",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          },
+          "vocab.txt": {
+            "sha256": "fe0fda7c425b48c516fc8f160d594c8022a0808447475c1a7c6d6479763f310c",
+            "bytes": 995526,
+            "source_url": "https://huggingface.co/microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank/resolve/5f0c82792b7ea14c6484e015b6a072009496b7f2/vocab.txt",
+            "tree_verification": "matched pinned-tree Git blob SHA-1"
+          }
+        },
+        "metadata_download_errors": [],
+        "metadata_hashes_complete": true,
+        "sentencepiece_files": [],
+        "jinja_files": [],
+        "scope": "Expected hashes for an external launch-time file verification. Repository/LFS provenance is not evidence that any server's local weights have been hashed."
+      }
+    }
+  },
+  "runtime_files": {
+    "native_five.py": "c6f5ce8910ee2ee44961897e961c05f3c3dcbabd42fc43f0375c5aa459b51089",
+    "native_higmem.py": "b1d105d33929ea30346ba3f09942afeb82f09561f4192c6c012731fa4679199e",
+    "native_lightmem.py": "7c1ba534417d4d7ae0bbc3c6c8294eb084359c4a051d789bb44bef9c3daaa4e1",
+    "run_all.py": "96920b4fee13990022364701decff4a250d8c26dcea118c2bd77599c43800086",
+    "serve_minilm.py": "fd3f5be84c442982a724b72d349bc233e47fd8872ba442973c0f92bed3f38f1c",
+    "serve_qwen.sh": "15ae690a1bedd7e20de8606268e0000bc9a127c821a14b74b3f0b7fadf999e60",
+    "metered_lme_proxy.py": "9f08975c8032d2359fc597686d6c03f1fe42a2dd883c2d8a36964deb4dcf1436",
+    "verify_runtime.py": "6bcc247f0b9a6625bdc92914d401319d127a44a06fc7c49454c9acbacacfb662",
+    "launch_native7.sh": "57006e7e6d15bbf136792faa61b70c37f0fbd7ba41502a79a316953330f2aacc",
+    "launch_plan.template.json": "693169e1a55efa150b1a79b10d57b4f1cbfc58c38c81ed0c583ac163c4f94ef1",
+    "native7-services.conf": "c87714d1eeb15e9958e0a5f5c43a2eb5488840e24170fd95963d12a94d130e7e",
+    "native7-launcher.conf": "73990aecf3d2671b5c4b6d000b97562a32864404313803b57bd366aafc499bc3",
+    "pinned_runtime_requirements.txt": "f323b7c0b526addadb8a911d2e85c57e26282e7805c5fd36f6fcf3a79b0381be",
+    "client_requirements.txt": "6109834b4ecfd04ae7798f54523d4d03e011130b9bec515da74d353603e16e13",
+    "source/source_snapshot.json": "c0448a9a90dfa71bcb62f80a190d2270e943cc36f04f610eb20271ec6951cc70",
+    "export_official.py": "56070cd4eda4831c12e41196419838f46908887dfbfb158bb80c0b52efa8f1a5",
+    "official_longmemeval/src/evaluation/evaluate_qa.py": "ecce9c4c79dc89d99534ac17b383a5cbb5b9f0c69ee98adaf0684742e3d95251",
+    "official_longmemeval/src/evaluation/print_qa_metrics.py": "e9283933a0cefb7a0ded7365e436ae3d1be5aac41853325e6155d83bf07607f0",
+    "official_recovery/a_mem_paper_v1/upstream/test_advanced.py": "7559e34cdd6a3993bf50bf4795342ec39bce91b1220d56ed206df021196c408a",
+    "official_recovery/a_mem_paper_v1/upstream/requirements.txt": "cf293493dd357c6bce7a30fee5df0e6ebe55bea4fe00c90972e8ca11ece9a169",
+    "official_recovery/a_mem_paper_v1/upstream/README.md": "411288846bc456a3e7dbb00e6f879b46a559f3752835aed4023f580cdafbd36e",
+    "official_recovery/a_mem_paper_v1/upstream/memory_layer.py": "b9a5b5797881b25c5524b98a543b22a1bbbcc7f285437ca667a5673e7f293eba",
+    "official_recovery/a_mem_paper_v1/upstream/LICENSE": "025a4a7762131be135bc34c8916d82996844f4dce35c53a464149a672dab5001",
+    "official_recovery/a_mem_paper_v1/test_runner.py": "ae227583ad06b595c0e2c420836ca064dab3686fd07479c23efe0434ed2ce891",
+    "official_recovery/a_mem_paper_v1/source_manifest.json": "d65c8258b58e5a5841a3a000bee9aaa473bfd362748506bc56530baaff38109f",
+    "official_recovery/a_mem_paper_v1/runner.py": "082ae79673647b362d4a05f43c82420b5ea11f1f3a5ced81f5222722ea5b8295",
+    "official_recovery/a_mem_paper_v1/README.md": "dbb3e4bffe5f6f11daf89293cfa9dd53c4af397b3e6181db8d150cb0ae16b1e4",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/test_locomo10.py": "d5fef37a21700e3c721b1556e70bef2cf53e35f8c8baca24f175a9755af02978",
+    "official_recovery/simplemem_native_dialogues_v1/source_manifest.json": "7b8baeeffe8208e22ad7ebbccf42ce8ca77781dc296607dd7227418e2a18c795",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/README.md": "420cdf2a5c22d74354d11e7617fdd24a1ce60eeba8e0d21b51ed4442b7149001",
+    "official_recovery/simplemem_native_dialogues_v1/README.md": "6fed7b3a773ac0c3c2477811cf53dbed86926618bed2cace68b0a8ab739b1f44",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/LICENSE": "276dc8cc9eb5a8c59d1edca3283163815d2caa512b17bd0bf053050304b4cd3e",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/main.py": "358cab67aebf68174f260202524ffaff430e882cedf73c89a91b14a6ade54cd9",
+    "official_recovery/simplemem_native_dialogues_v1/test_runner.py": "5cee0affb864a8fc9ce10ba4091d460ea3f4aec5e2edbbf8b8b7c9b971315843",
+    "official_recovery/simplemem_native_dialogues_v1/runner.py": "fa8ec69b0b91a1a03544104b4ac01db4a6cf8f781f0cc61ffa86756e614b1feb",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/requirements.txt": "cc62dbb8cf954b1c58928723153136af3e0759df77746de09fc2c2bb58fb9783",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/config.py.example": "30a43a28127d759e414a999400ea4204654c89229de8fb1de1b6c939fb762ff1",
+    "official_recovery/simplemem_native_dialogues_v1/canonical_smoke_input_audit.json": "e1f1351c1388a1b9a313b64174a3337ad4011a8fd30298549dcdbeeee51316c9",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/__init__.py": "fabc99c84f1ca8fdecd49c496cb09d6af8cc7ebae9b05535da82183b1610be67",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/utils/__init__.py": "d348d4588c4de3874438b576b3e92c6ff6015238506eaea712277973de478eb0",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/utils/llm_client.py": "19533ebf5b3a12096c70ae35df54305d8b307b22240377ce1977e2aaff527bd8",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/utils/embedding.py": "da72ef639c5c0f6a6d9a0ecd5f4f45f65019da52e32191571ac718ff0b7c6d68",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/settings.py": "3ca77f1d035fd309a541fdc7555e8519ddb9d77ce4f82161f1fa027619784de2",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/hybrid_retriever.py": "63d6a3522e8a4c5d3a073b5dbf8ac003844c37993bf16033bb5c9a3807db5381",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/config_default.py": "77b06780502e42a62ed308eee75dadd2a8192f20b127177bb14b5c614cc622cf",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/answer_generator.py": "ba8946134e9db0de63da00a9f223229800d2487c6fd34d22d7c5296093d0470c",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/models/__init__.py": "a64a0ee787d6476b3f488c8e3276ee337aae16763fb9b38158cd8ccc81b8ac06",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/models/memory_entry.py": "487209f5d6981a12568ec3f6f4597d2bd1437a82a0ef9af85c5dc755bc2947c8",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/memory_builder.py": "ade5d9c252158ede2d0bd4ca3da027e913d6e88dbe616e00f5962178053c9dc7",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/database/__init__.py": "e623f8d4fd590473a0cb1ca73e016f9760b07efe08542bae352436ec4b4faada",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/database/vector_store_backend.py": "2406f5c267f9013af0dc34c8668def8b20b3e66326827c57d975f6129f502c26",
+    "official_recovery/simplemem_native_dialogues_v1/upstream/simplemem/core/database/vector_store.py": "a7519fa27cfcfdceb4e146780c948c96e2840cea11965a94c296b786623fff29",
+    "official_recovery/mem0_native_pairs_v1/requirements.txt": "c551c93af303decb1f92049693d60efe367a7cfe85edd5970e1cdf31ef6bdd77",
+    "official_recovery/mem0_native_pairs_v1/requirements-linux-py311.lock": "54ca0f16442a7cdd6616b94d30294959c2f291f88710e8e70727876a2fd31fd5",
+    "official_recovery/mem0_native_pairs_v1/README.md": "424d76c9972caa5db71324972e618794b4058a7767ea4da694f6ddc186edbd3d",
+    "official_recovery/mem0_native_pairs_v1/mem0ai-0.1.94-py3-none-any.whl": "862aaccf4ec41d65a5c935dc49c7b8175c96f6b60b29abeda338d8a335027e2c",
+    "official_recovery/mem0_native_pairs_v1/ENVIRONMENT_PLAN.md": "7b8bf0f49c29c4c653e9af81f2412dba6867c32a71c59de5a7246dfca8181691",
+    "official_recovery/mem0_native_pairs_v1/dependency_download_estimate.json": "0e34202b6662a4b1e586533d5907075c82da16417d68f0bc1a724d58ecf716c0",
+    "official_recovery/mem0_native_pairs_v1/requirements_resolution_windows_py311.json": "7e07584e5f9d308917018450c9758cca8900eae3bda192d0f34af8326de46cdd",
+    "official_recovery/mem0_native_pairs_v1/runner.py": "2a58961526610f5f483d6a65d168ee2d0b53e68a574ddbfa628edec26b60245c",
+    "official_recovery/mem0_native_pairs_v1/test_runner.py": "ca85e8e304b8f306552486fcbc47f059382fd75794497f79074285b51c970cb4",
+    "official_recovery/mem0_native_pairs_v1/source_manifest.json": "343b0ef929aaaf3c0b3a790df6c60d98dcc7ec4e1189fb6d18a4d8b5c941f1a8",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0ai-0.1.94.dist-info/WHEEL": "7c6200f60c7843193628329e34909b384c12ae62ed8d60b0cc1cf7e751b2acf4",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0ai-0.1.94.dist-info/RECORD": "964bf688664973db64d480e9526ba19e9be5f30f73ab167c6f043b88d9f5af55",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0ai-0.1.94.dist-info/METADATA": "1f72b29754818e263ec1b6c94c6749a4022d4628f91ba1eb02cf3ae574eb5008",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0ai-0.1.94.dist-info/LICENSE": "0bbcbe931c353293a2fafce08326181dfeea0e568c566afd4ce8337a70f5e219",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/__init__.py": "ad3d13ae6c938fe7306668415bc935cef6ec1d9cf6147a55c64bbf0a5feed361",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/weaviate.py": "883418db22f3b0d317f479711fe14a2bbe89c4770b08cecf697d046f3bcd3244",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/vertex_ai_vector_search.py": "45a68f2d34db4cf7ed960ee79bd59344e3a1bab4b1aa7032c7e837b58a31bf42",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/upstash_vector.py": "d812c79c368623b2be83914a725b81ac101cab6659167a734523ab047da36803",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/supabase.py": "f882404a1ddfb9aaa6ee251a3745d6142213e2783cec4e6b8d1f4d064bd50d94",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/redis.py": "3001e13be10b1ce11ef2ce28b3fe3a7c5c7450fc79d1d47734b5cde48d75556a",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/qdrant.py": "639cbd9f51d625455991e77ba31b1d262a22321a167614f78e636bbf568b825f",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/pinecone.py": "aed6eb92167f771095d5d9870d0d18993b6531df04b8cb9108c3a00ec26e6431",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/pgvector.py": "1395731118aade7b704562f2d9a548b08ef478e94b87bab0b0cf02c87c57d976",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/opensearch.py": "817ab1a9f08a6b682215942c64e4f48b98c290058b4b1a3a044f78504c957c65",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/milvus.py": "c5724d6168d311bb8b31d58c53e67810dd12f98441475a3f10dc9b42629847d6",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/langchain.py": "1cf1d3ea405c2f8004d5f761e1b265ff9a10b2fde9e778b4f280abb6decbce87",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/faiss.py": "9793dc633cf280ecb3c74e7af75a34b544d7551ba23365faa9f6f7d4a14d2afe",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/elasticsearch.py": "f8200e52acbdb4db2a849751409499c44b67aa1834665dc1c48ee2ae00735cac",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/configs.py": "b41b91d402356b6d7f75d9b7fa0832670fb96e4fec0e1e2fa0d1a712071bc0ed",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/chroma.py": "208a1fd026e78b8ab7d38f5eb3d5cdd451399c21bd49c69ad708822e0da1779b",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/base.py": "5b540b6e38e753bbfe9ddc51ad5481cf92be8bb8f379c9fc0cfbc14c17f65b05",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/vector_stores/azure_ai_search.py": "82d38dbe36565be511f3cf1fb70ade0e7963b967d2272286b5cc58d4f06f3611",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/graphs/utils.py": "2e29001173d6855e9a93ef4cc7ebc6e931e843449acf229a74e43893573a9616",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/graphs/tools.py": "1e6c9c7c7a264b53d24bccb9293fd8037fdde3d85d4af971e680a1b9cddde070",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/graphs/configs.py": "91f982960273a422a4c748bea93aeec4eff88845fc8e1a174fa435189874163d",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/utils/factory.py": "29c4857f4da8345236aa650fcb611751d305e3c13aa9c54df275cd8393ea2639",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/vertexai.py": "4c285fdac1bcc4d938ae2c97aff891a6ce8ab13cbe35bcba98da526dda7f71c6",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/together.py": "3133e8fca66f15f467cfcf6827aeaada6a77e254e0e1ad6be0cf146e742556a8",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/openai.py": "2a246f3303a35cbb5cd678d4f6c01ceb1b3313b03970389e222187e9822c77eb",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/ollama.py": "8cca9146ceffd78a95fd1f9a4c69ee7621c16bbc77a359816921140e4d4296d5",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/mock.py": "70e9fb95fad06d7f287fa299451f6b8f6ecda4ab9ec8798f693b6449b73bd81e",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/lmstudio.py": "d7f2341762ada8ecbbf8f2406a7e60af6224a8ff4413b077ed36a9fc2f346100",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/langchain.py": "c9dafed391323a9ae3b74aefb3b64ea4c44058a99beb5ce5a02994ef204ad9e9",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/huggingface.py": "3dcd54b95589987b949f21001abdd1a8b1beec6fc867821dd8e50ca0c8e7b22c",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/gemini.py": "96888938d90bf7e030bbb2c4215c5b4a859377f553929837ba903faf394e7f78",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/configs.py": "b5e549af71637fa79d918c712e57561e4e85a65d5699bf36a9d61c564761a811",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/base.py": "3bea05ba2ce9c7db722fcaa3851bb4978d860e48e0391cbf50cb4c0a445f7389",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/embeddings/azure_openai.py": "d85a862d5ff05328fe82eb4e73fc2a7da16f3ddbe45d96b76b7708e66595920e",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/client/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/client/main.py": "dd88509aa2df8a42feeda720106f7d20b11ad92dd8aef2bd7f22b834d7ba7434",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/memory/setup.py": "1e764e393c0044e16695bb2197a7f25aec377b42b219aea34834d13d706d30cd",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/memory/memgraph_memory.py": "495fec2a7704856f97b5c836e9a43a911c9c14bae8de0954da6d2cc386a8ab23",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/memory/main.py": "7c43b5defd6767f3a101a9bd5d605662e11f1d637462846b82c2ec5658b63371",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/memory/graph_memory.py": "e8babc3dac1664d1f9dcdab29d3077165682633cff0541c64877e3e49b8f4107",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/memory/base.py": "7f5be933e9bd013772e4723e8c0dd21a416d75a7723deb64ac8e8b578a4a8f24",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/memory/telemetry.py": "ae6d42af30de2bd31e1a91dccea8172c90a54da17379ef797614112ae6c454e0",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/memory/storage.py": "536b019cfdd49664d9f204d5c144db6dfdf751ca415ac16ddd05df87ba0f0012",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/memory/utils.py": "0d837a2550ffec3ba31cd980839b08e103e2f72ff47d0c4519aa0684ecf640ee",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/memory/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/azure_openai.py": "bb92c1181c6422e115a2cecffb6eabb0d69c87b949838e875cf2806de628ac3a",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/aws_bedrock.py": "b73d4b1b6f3ca1a89ec0e0e44043f059ac09f789f75395d0c60ded99c5841d0c",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/anthropic.py": "2ed296553010c509e988cac1d23c22867e2638ef51063513fef1237973c16211",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/base.py": "522b7cd06b3430d28a1f6cfd8741649abfb8bb84004c2a4a1653d78fff0306ea",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/azure_openai_structured.py": "237493e634bccefb2ef3b98414a6d1fb40a8ce552580e9613079dbdad8ae94b7",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/configs.py": "f5af57dfe898a01be58ebeb9498b8a24ca785a0660634c8f31b3e3ed2e640467",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/deepseek.py": "92d90f3bbf385d328a396f57557c77efec9552e08770205d2341af6b987377c3",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/gemini.py": "c1d086c1103e1c493426a5ccbe7b6e912968491ccbac8f5fa9267417039241a2",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/xai.py": "a547710c7d3ea757d572deba20c324325dd181c766d5de24a3668e4fa7de6165",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/proxy/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/proxy/main.py": "c4e2f5f887c1d64d65142410416e7073720a8a17468192c6200d550f78d6fbf2",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/enums.py": "e6a8fe3ed972ffee7f867ad0779562051db081011595e9dd622302ac0fc42bd1",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/ollama.py": "2f1d3c7ce15f0c3c07f0525329ae0e207f01954bc8bb4578aa9039b1fbfcad44",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/lmstudio.py": "3c012892e1219000b0ac1a843d267d227c9b9d1cae2c7933772d3296889d9996",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/litellm.py": "24ad4eb666e98df60956dc19d2ce6ff505b9dfe86544eafe5fdf6b2c62bec9d2",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/langchain.py": "3c74772fd39f85047a55d530a3df687d2a6945bcaec9b18dabd4b5b71297ce18",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/groq.py": "e63f05fa09471748b1537f53c00887bd28479d352e6ddb6980d78a0681f416e4",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/together.py": "1bafeae637eff48c7780c6532666f570fd439c8daaf373aadc1198b1a8d20e74",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/openai_structured.py": "7f1e5ed4013ef264dd9925b206fe683e1b30990994d4864fbfcb1009dbc93e88",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/openai.py": "b0eebc5ca14cfdd2594425e11fb815d8912bacc56033ef26a5371e28bdc669eb",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/utils/functions.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/llms/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/base.py": "c5b81c94f6d930aed154e0700c662fd4d51b9659c07acfc4d9bb1e14d9a2d09d",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/elasticsearch.py": "22e031c3ec2c5787f9a587c441f46532de72562d508dd7fcbe14b432e2f78312",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/chroma.py": "e6610968dafcfaba7051dfd1c75b7b99b68817030a7b3b74632ef63df9f9d057",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/azure_ai_search.py": "d1ce6866bde0c091f5f4c6d4dd484ba9f3d0dbd9204e1614305be475fb6267b9",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/prompts.py": "140a603593dda27735e8d04f063be38568d041c57fa94d1fe146aa49aba1d6c6",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/langchain.py": "823483168b71e887972fc5e7156ea6fea767beb6e98170a272122e83b5522915",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/faiss.py": "3434d3d41ed7904d2b49b535cb699dc7a08076a8dc5d01d06fcd35cc096d0528",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/milvus.py": "8fc2adc12acc8c1ece4ffbfdb9a784d6f6b5ed4914f276e0f34dfd8e85b9c6c8",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/opensearch.py": "71559d0757ea570d5f94f00dd1bc0cea02fba8ae211fa00cc65811c2f2204650",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/pgvector.py": "3197b41f6961f56d658cc2178ba2fe83e3668bcf1d65fc6b7dc82385e5ede698",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/pinecone.py": "61c4e8c143ea72f4d29c83d32966cf8b55703bf5fdca9c4b1f301f1d320053f3",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/weaviate.py": "2c020370c4e544be7c7a56d7fc374e01934e20500bfbb55332b4aa409209580b",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/vertex_ai_vector_search.py": "7fab54ba7f618604504ebaf07715aba5c09a673ef5130f397911b533d001e702",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/upstash_vector.py": "8f5ee946d483badd878d04be952922adf0d3f50b032dedad09df851bb70dde9f",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/supabase.py": "181417daf063e81495ca61f3ec0470b942f414d1e3f6cf35a5f6212141469123",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/redis.py": "38a656bccac69003a08ac57f534e61bd17a1d11cdcfa1af1d36f566053df8b8c",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/vector_stores/qdrant.py": "24139e56438adf3924aa729a60d2ca819d30bd3857aa92aebdf10eef67829735",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/embeddings/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/embeddings/base.py": "fd03835547b4d8fc5c114bebd622e29be6d557dc623c822eeab2d30dc561684f",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/llms/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_recovery/mem0_native_pairs_v1/vendor/mem0/configs/llms/base.py": "9d73bd0b405dfe68d35fa552d32f45a4ae5a0c5064d173d8d464b4349c51a343",
+    "official_recovery/verify_recovery_runtime.py": "8d859dd7972fbe850470336a722049d270f5a7ef6fa52f0f1ad84131d9ad84c3",
+    "official_recovery/test_verify_recovery_runtime.py": "431129f8926fd8a858772f678b1a83680a553f7c6771b283578afeac50695e51"
+  },
+  "recovery_candidates": [
+    "a_mem_paper_v1",
+    "simplemem_native_dialogues_v1",
+    "mem0_native_pairs_v1"
+  ],
+  "original_runtime_receipt_sha256": "ad0ac34ce4a68101d39b466e5c208a338123868fc008979c97a85cf7f180897d"
+}

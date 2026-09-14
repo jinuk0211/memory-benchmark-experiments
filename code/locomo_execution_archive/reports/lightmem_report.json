@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "predictions_complete": true,
+  "usage_complete": true,
+  "expected": 1540,
+  "evaluated": 1540,
+  "prediction_rows": 1540,
+  "missing": [],
+  "prediction_issues": [],
+  "empty_predictions": 0,
+  "official_f1": 0.4659538136054212,
+  "score_scope": "all_expected_questions",
+  "by_category": {
+    "1": {
+      "count": 282,
+      "expected": 282,
+      "f1": 0.42009971622688214
+    },
+    "2": {
+      "count": 321,
+      "expected": 321,
+      "f1": 0.3435600432475523
+    },
+    "3": {
+      "count": 96,
+      "expected": 96,
+      "f1": 0.24313216278169167
+    },
+    "4": {
+      "count": 841,
+      "expected": 841,
+      "f1": 0.5534807270711787
+    }
+  },
+  "by_sample": {
+    "conv-26": 152,
+    "conv-30": 81,
+    "conv-41": 152,
+    "conv-42": 199,
+    "conv-43": 178,
+    "conv-44": 123,
+    "conv-47": 150,
+    "conv-48": 191,
+    "conv-49": 156,
+    "conv-50": 158
+  },
+  "usage": {
+    "complete": true,
+    "supplied": true,
+    "requests": 19469,
+    "metered_requests": 19469,
+    "unmetered_requests": 0,
+    "invalid_usage_requests": 0,
+    "failed_requests": 0,
+    "truncated_requests": 0,
+    "incomplete_streams": 0,
+    "unknown_phase_requests": 0,
+    "missing_id_requests": 0,
+    "duplicate_request_ids": 0,
+    "duplicate_response_ids": 0,
+    "reported_tokens": {
+      "prompt_tokens": 5623750,
+      "completion_tokens": 343224,
+      "total_tokens": 5966974
+    },
+    "by_phase": {
+      "memory_add": {
+        "calls": 15511,
+        "prompt_tokens": 1001651,
+        "completion_tokens": 303462,
+        "total_tokens": 1305113
+      },
+      "memory_finalize": {
+        "calls": 878,
+        "prompt_tokens": 256341,
+        "completion_tokens": 27583,
+        "total_tokens": 283924
+      },
+      "qa": {
+        "calls": 3080,
+        "prompt_tokens": 4365758,
+        "completion_tokens": 12179,
+        "total_tokens": 4377937
+      }
+    },
+    "by_request_kind": {
+      "chat_completion": {
+        "calls": 2098,
+        "prompt_tokens": 5239180,
+        "completion_tokens": 343224,
+        "total_tokens": 5582404
+      },
+      "embedding": {
+        "calls": 17371,
+        "prompt_tokens": 384570,
+        "completion_tokens": 0,
+        "total_tokens": 384570
+      }
+    },
+    "note": "Reported tokens include metered failed attempts. Missing or invalid usage is unknown, not zero. Completeness covers the supplied journal; every model call must be routed through the meter. Embedding tokens are separate from generation by_request_kind."
+  },
+  "runtime": {
+    "wall_seconds": 3262.0737753445283,
+    "construction_seconds": 10539.862629991025,
+    "qa_seconds": 706.9836436808109,
+    "peak_vram_mib": 29562.0,
+    "gpu_energy_wh": 376.3574121931637,
+    "mean_gpu_utilization_percent": 79.5484375,
+    "storage_bytes": 92456399,
+    "question_latency_seconds": {
+      "count": 1540,
+      "mean": 0.4500231309370561,
+      "p50": 0.4194014072418213,
+      "p95": 0.6420257091522217,
+      "p95_method": "nearest_rank",
+      "missing_or_invalid": 0
+    },
+    "hourly_rate_usd": 0.3959259259259259,
+    "estimated_rental_cost_usd": 0.3587609944283231
+  },
+  "sources_sha256": {
+    "dataset": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+    "official_scorer": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd"
+  },
+  "method": "lightmem",
+  "run_id": "locomo-qwen35-fp16-20260907-parallel4-fullfacts",
+  "context_workers": 4,
+  "quality_complete": true,
+  "coverage_complete": true,
+  "auxiliary": {
+    "applicable": true,
+    "complete": true,
+    "samples": 10,
+    "model_revision": "5f0c82792b7ea14c6484e015b6a072009496b7f2",
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "actual_forward_calls": 6264,
+    "attention_mask_tokens": 397056,
+    "padded_token_slots": 3184572,
+    "forward_wall_seconds": 4900.773898058571,
+    "note": "Auxiliary LLMLingua compression/topic tokens, not Qwen generation or MiniLM embedding tokens."
+  },
+  "normalization": {
+    "rule": "Exact pinned benchmark query template; all other original metadata gates unchanged",
+    "template": "Search Archival Memory and answer the question as concisely as you can, using a single phrase if possible.\n\n {question} \n\n Answer:",
+    "rows": 1540,
+    "raw_artifacts_modified": false,
+    "raw_results_path": "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/lightmem/parallel_results.json",
+    "raw_results_sha256": "14271936f956264509e289a5b9851cd14fc43509448f275fe2cde6a84c7a79a3",
+    "usage_sha256": "a30cb6deaaf8a9db83ce62b83ce344993a91d3d0e2a7c4eea097f3432f74f9fa",
+    "telemetry_sha256": "db0d1f8bcf50e6d7b86880758400da4df13fea46904d65966e77ae4f652b298e",
+    "finalizer_sha256": "e40d737f98c29821e820b873a98a123529e2ec97da912ad2f6eff4ce1db2722d"
+  },
+  "telemetry_notes": {
+    "gpu_measurement_note": "5-second device samples; energy is trapezoidal integration, not a hardware energy counter.",
+    "phase_duration_note": "Construction/QA seconds sum operation durations; overlapping contexts can exceed wall_seconds.",
+    "gpu_samples": 640,
+    "missing_gpu_samples": 0
+  }
+}

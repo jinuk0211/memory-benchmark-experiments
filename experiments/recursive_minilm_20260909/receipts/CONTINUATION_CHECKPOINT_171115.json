@@ -1,0 +1,28 @@
+{
+  "observed_utc": "2026-09-08T17:11:15Z",
+  "baseline_supervisor": {
+    "pid": 29008,
+    "status": "RUNNING"
+  },
+  "baseline_actual_process": {
+    "pid": 30259,
+    "stage": "evaluate",
+    "status_phase": "loading_reader",
+    "engine_pid": 30305
+  },
+  "recursive_supervisor": {
+    "pid": 29611,
+    "status": "RUNNING",
+    "phase": "waiting_for_baseline"
+  },
+  "gemma_supervisor": {
+    "pid": 30128,
+    "status": "RUNNING",
+    "phase": "waiting_for_recursive_locomo"
+  },
+  "comparison_scores_available": false,
+  "gemma_gpu_started": false,
+  "previous_goal_turn_classification": "verified_wait",
+  "this_goal_turn_classification": "progress",
+  "progress_evidence": "Gemma18 fixed-input guard, actual53 Linux CPU tests, cached-tokenizer full-session preflight,132-file freeze and conditional Supervisor registered; Qwen source score/construct completed and reader evaluation process verified live."
+}

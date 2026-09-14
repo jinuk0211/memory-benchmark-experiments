@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering\small
+\caption{Ablations on LoCoMo with Qwen3.5-9B. Differences are relative
+to the complete method. Stored tokens are averaged over ten histories;
+read tokens are averaged over 1,540 questions. Four decimal places
+retain the near tie in F1. Empty rows are planned component ablations.}
+\label{tab:exp-ablation}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Variant} & \textbf{F1 (\%)} &
+$\boldsymbol{\Delta}$\textbf{ (pp)} &
+\textbf{Stored tokens} & \textbf{Read tokens} \\
+\midrule
+\textbf{Our method} & 55.5278 & +0.0000 & 61,909.7 & 2011.9 \\
+w/o cues (base memory) & 55.5224 & -0.0054 & 59,959.3 & 2010.1 \\
+\midrule
+w/o omission audit & \expempty & \expempty & \expempty & \expempty \\
+w/o temporal normalization & \expempty & \expempty & \expempty & \expempty \\
+w/o evidence binding & \expempty & \expempty & \expempty & \expempty \\
+Random cue selection & \expempty & \expempty & \expempty & \expempty \\
+Payload retrieval keys & \expempty & \expempty & \expempty & \expempty \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

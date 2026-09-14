@@ -1,0 +1,144 @@
+{
+  "schema": "seed-parent-locomo-local-result-verification-v1",
+  "verified_utc": "2026-09-10T08:26:04.451920+00:00",
+  "status": "verified",
+  "questions": 1540,
+  "conversations": 10,
+  "candidate_f1": 0.561682045535479,
+  "comparisons": {
+    "seed": {
+      "n": 1540,
+      "baseline": 0.5625973274365339,
+      "refined": 0.561682045535479,
+      "effect_pp": -0.09152819010549429,
+      "ci95_pp": [
+        -1.2308009896610363,
+        1.0921119750898267
+      ],
+      "wins": 128,
+      "losses": 133,
+      "ties": 1279,
+      "identical_hypotheses": 1143,
+      "changed_hypotheses": 397,
+      "by_question_type": {
+        "1": {
+          "n": 282,
+          "baseline": 0.46079979797211973,
+          "refined": 0.46696624322336366,
+          "effect_pp": 0.6166445251243935
+        },
+        "2": {
+          "n": 321,
+          "baseline": 0.41762460454049244,
+          "refined": 0.4233860981524533,
+          "effect_pp": 0.5761493611960877
+        },
+        "3": {
+          "n": 96,
+          "baseline": 0.13565051800622316,
+          "refined": 0.13515613382373018,
+          "effect_pp": -0.049438418249297955
+        },
+        "4": {
+          "n": 841,
+          "baseline": 0.7008018946944459,
+          "refined": 0.6949155091339281,
+          "effect_pp": -0.5886385560517793
+        }
+      }
+    },
+    "r40_fused_four_turn": {
+      "n": 1540,
+      "baseline": 0.5552237081573067,
+      "refined": 0.561682045535479,
+      "effect_pp": 0.6458337378172252,
+      "ci95_pp": [
+        -1.0126408321790585,
+        2.499709972662017
+      ],
+      "wins": 296,
+      "losses": 288,
+      "ties": 956,
+      "identical_hypotheses": 725,
+      "changed_hypotheses": 815,
+      "by_question_type": {
+        "1": {
+          "n": 282,
+          "baseline": 0.39683696559470827,
+          "refined": 0.46696624322336366,
+          "effect_pp": 7.012927762865539
+        },
+        "2": {
+          "n": 321,
+          "baseline": 0.49703097179732697,
+          "refined": 0.4233860981524533,
+          "effect_pp": -7.364487364487365
+        },
+        "3": {
+          "n": 96,
+          "baseline": 0.14091699345124306,
+          "refined": 0.13515613382373018,
+          "effect_pp": -0.5760859627512882
+        },
+        "4": {
+          "n": 841,
+          "baseline": 0.6778377086162702,
+          "refined": 0.6949155091339281,
+          "effect_pp": 1.7077800517657837
+        }
+      }
+    },
+    "s_parent_single_2000": {
+      "n": 1540,
+      "baseline": 0.5552781350227676,
+      "refined": 0.561682045535479,
+      "effect_pp": 0.6403910512711386,
+      "ci95_pp": [
+        -1.266389809867583,
+        2.738935134226529
+      ],
+      "wins": 300,
+      "losses": 287,
+      "ties": 953,
+      "identical_hypotheses": 726,
+      "changed_hypotheses": 814,
+      "by_question_type": {
+        "1": {
+          "n": 282,
+          "baseline": 0.38129242976405064,
+          "refined": 0.46696624322336366,
+          "effect_pp": 8.567381345931302
+        },
+        "2": {
+          "n": 321,
+          "baseline": 0.5064368653153699,
+          "refined": 0.4233860981524533,
+          "effect_pp": -8.305076716291659
+        },
+        "3": {
+          "n": 96,
+          "baseline": 0.15576086436905764,
+          "refined": 0.13515613382373018,
+          "effect_pp": -2.0604730545327463
+        },
+        "4": {
+          "n": 841,
+          "baseline": 0.677865143871506,
+          "refined": 0.6949155091339281,
+          "effect_pp": 1.7050365262422096
+        }
+      }
+    }
+  },
+  "new_reader_llm_tokens_M": 3.322521,
+  "new_reader_embedding_tokens_M": 0.697131,
+  "evaluation_seconds_per_question": 0.4832801196668831,
+  "cost_scope": "Incremental new reader only. Construction and source utility are imported, not zero.",
+  "native_report_evidence_scope": "Remote approved reporter checked the full frozen run; local compact collection retains its report and manifest, not every runtime evidence file.",
+  "paired_recomputed_locally": true,
+  "paired_helper_sha256": "f4089630c57a27c739bdaf52cdb3c491fb763dad7f875eba2eaa474109582648",
+  "candidate_jsonl_sha256": "c2740678d1d87472adb6114beb8d38c234e2c94375fe75f2eec13b8959ab1e89",
+  "protocol_sha256": "1ed26cb91a4db9fd46f039c4f8d3a834f352dc89d5ecad98c033b3291c3c47bb",
+  "official_judge_calls": 0,
+  "gpu_runs_started": 0
+}

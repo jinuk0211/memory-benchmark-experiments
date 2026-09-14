@@ -1,0 +1,99 @@
+{
+  "observed_utc": "2026-09-08T19:21:40Z",
+  "previous_goal_turn": "progress",
+  "current_goal_turn": "no_progress",
+  "baseline_supervisor": {
+    "status": "EXITED",
+    "completed_utc": "2026-09-08T18:16:47Z"
+  },
+  "baseline_full1540_f1_100": {
+    "seed": 56.25973274365339,
+    "r40_fused_four_turn": 55.52237081573067,
+    "s_parent_single_2000": 55.52781350227676,
+    "E-Mem": 56.95671313240028
+  },
+  "recursive_supervisor": {
+    "pid": 29611,
+    "status": "EXITED",
+    "completed_utc_minute": "2026-09-08T19:12Z"
+  },
+  "recursive_process": {
+    "pid": 32548,
+    "status": "TERMINAL",
+    "phase": "generation_complete",
+    "saved_prediction_questions": 1540,
+    "memories_locked": 10
+  },
+  "gemma_supervisor": {
+    "pid": 30128,
+    "status": "EXITED",
+    "phase": "skipped_failed_locomo_gate",
+    "completed_utc_minute": "2026-09-08T19:13Z"
+  },
+  "new_v2": {
+    "local_only": true,
+    "deployed": false,
+    "registered": false,
+    "tests_passed": 46,
+    "subtests_passed": 19,
+    "python_review": "No remaining launch-blocking HIGH after partial-resume fixes",
+    "queue_checks": "Failed v1 proceeds; successful v1 preserves its Gemma queue; changed predecessor predictions rejected",
+    "source_boundary": "Construct main tested with benchmark file access forbidden; QB memory diagnostic requires final memory/view/completion lock",
+    "authorization": "Exact8-file 50,160-byte SCP rejected twice by auto-review; async explicit transfer approval pending. No alternative transfer attempted."
+  },
+  "new_deliverable": "COMPARISON.md includes SimpleMem and wide official category scores with native-flow caveats",
+  "goal_achieved": false,
+  "next_action": "Wait for the pending explicit8-file transfer approval. When the user resumes and approves, use the sameSCP destination, runLinuxCPUchecks, freeze sources, registerv2 and continue the unchanged fullresearch objective.",
+  "read_only_monitor_session": null,
+  "round_audit": "receipts/V1_SOURCE_ROUND_AUDIT.json",
+  "latest_verified_process_utc": "2026-09-08T19:00:36Z",
+  "new_evidence": "v1 improves0.3282pp over Refined but remains1.1007pp below E-Mem. Gemma gate rejected candidate and stopped before GPU inference. All1540answers nonempty and stop-finished;read<=2048;125baseline+6recursive source hashes passed.",
+  "monitor_note": "Observer9273 ended normally. Actual final Supervisor status and absent32548PID establish completion; observer expiration was not used as terminal proof.",
+  "recorded_utc": "2026-09-08T19:23:10.835617+00:00",
+  "recursive_full1540_f1_100": 55.85601543689559,
+  "changes_pp": {
+    "versus_refined": 0.3282019346188325,
+    "versus_seed": -0.4037173067578004,
+    "versus_emem": -1.1006976955046932
+  },
+  "full_evaluation_integrity": {
+    "prediction_hashes_match": {
+      "seed": true,
+      "r40_fused_four_turn": true,
+      "s_parent_single_2000": true,
+      "recursive_source_rehearsal_v1": true
+    },
+    "report_sha256": "46b0757d93d86421dfc7e3ada70fcf1a66f38f617fb36344e804e4bb2b1a44bb",
+    "gate_report_hash_matches": true,
+    "gemma_ready": false,
+    "candidate_freeze_exists": false,
+    "gemma_prediction_files": 0,
+    "n": 1540,
+    "unique_ids": 1540,
+    "empty_answers": 0,
+    "finish_reasons": {
+      "stop": 1540
+    },
+    "maximum_read_tokens": 2048
+  },
+  "blocking_audit": {
+    "condition": "Auto-review requires explicit approval for the8-file v2 code transfer to the existing Vast server",
+    "consecutive_goal_turns": 3,
+    "independent_progress_this_turn": "No new experiment possible: existing jobs are terminal,8reviewedfiles are unchanged and remain undeployed, explicit transfer approval has not arrived.",
+    "goal_status": "blocked; update_goal confirmed this status"
+  },
+  "latest_remote_state": {
+    "recursive_minilm_refinement": "EXITED",
+    "recursive_minilm_gemma18": "EXITED",
+    "recursive_minilm_v2": "no such process",
+    "v2_code": "not_deployed"
+  },
+  "amem_completion_update": {
+    "official_f1": 0.3684590035229701,
+    "n": 1540,
+    "benchmark_complete": true,
+    "backup_complete": true,
+    "reference": "receipts/A_MEM_COMPLETED_REFERENCE.json",
+    "best_completed_baseline_unchanged": "E-Mem remains56.9567; frozen historical gate files were not edited"
+  }
+}

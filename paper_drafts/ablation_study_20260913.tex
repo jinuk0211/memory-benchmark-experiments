@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering\small
+\caption{Ablations on a fixed 300-question LoCoMo subset with Qwen3.5-9B.
+Differences are relative to the complete method on the same subset.
+Stored tokens are averaged over ten histories; read tokens over 300 questions.
+All variants use a 2,048-token evidence budget. Random cues use one fixed
+draw per history under the same 2,000-token additional storage budget.}
+\label{tab:exp-ablation}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Variant} & \textbf{F1 (\%)} & $\boldsymbol{\Delta}$\textbf{ (pp)} & \textbf{Stored tokens} & \textbf{Read tokens} \\
+\midrule
+\textbf{Our method} & 55.7975 & +0.0000 & 61,911.5 & 2013.8 \\
+w/o cues (base memory) & 55.4263 & -0.3712 & 59,960.6 & 2013.9 \\
+\midrule
+w/o omission audit & 54.7889 & -1.0087 & 60,369.8 & 2015.4 \\
+w/o temporal normalization & 52.2010 & -3.5966 & 64,294.5 & 2010.4 \\
+w/o evidence binding & 58.0424 & +2.2449 & 60,116.4 & 2038.8 \\
+Random cue selection & 55.1647 & -0.6329 & 61,880.2 & 2014.2 \\
+Payload retrieval keys & 55.6363 & -0.1612 & 61,798.0 & 2014.0 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

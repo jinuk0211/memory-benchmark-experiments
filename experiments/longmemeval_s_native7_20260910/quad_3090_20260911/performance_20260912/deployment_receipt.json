@@ -1,0 +1,42 @@
+{
+  "status": "deployed_waiting_for_existing_auto_resume",
+  "instance_id": "50577514",
+  "deployed_at": 1789205415.7642252,
+  "files": {
+    "quad_scheduler.py": {
+      "expected_remote_before_sha256": "4ae5f45e15d2fb241a3207c213f7955178fe31b70b31dcff725ca01e0bb79949",
+      "candidate_sha256": "ba0b984929c4c83959fd03d4a03fade69e06652b1c4fc2ce81c8ec52b7a0b506"
+    },
+    "quad_admission.py": {
+      "expected_remote_before_sha256": "1a785ac42c264b75acdf6b8c996b5e6df4c45e7710fd3ad28d7e12437a723423",
+      "candidate_sha256": "faea2f8aa00476eeac9d50f6cc198c29d96acd7117b37f006893cd05eee71e15"
+    },
+    "quad_metered_proxy.py": {
+      "expected_remote_before_sha256": "4012c2676c0e97b1d9758b7d738ecd064ba50d8b0406e740c265106bbb09b8bd",
+      "candidate_sha256": "700b043d38268e64a9114c3d6bf1e7b82d88b5510ad24a1b5e4cf1eaa8b0ac90"
+    }
+  },
+  "backup_directory": "/workspace/longmemeval_s_native7_20260910/fast_native2_20260911/performance_20260912",
+  "remote_tests_passed": 47,
+  "services_before": {
+    "quad-simplemem": "EXITED",
+    "quad-lightmem": "EXITED",
+    "quad-meter": "STOPPED"
+  },
+  "services_after": {
+    "quad-simplemem": "EXITED",
+    "quad-lightmem": "EXITED",
+    "quad-meter": "STOPPED"
+  },
+  "protected_files_unchanged": {
+    "/workspace/quad_3090_20260911/FRESH_RUN.json": "825afd41103ccc0614f76ae342de7380a82c055822d12a1604a4d7facb58fbbd",
+    "/workspace/quad_3090_20260911/READY.json": "aa963a9dbf93f2e56d21a751e533821cbd15286514e69a3c7394de2b53784b87",
+    "/workspace/quad_3090_20260911/deployment.json": "46f9747b2ab2ab5d780f46485c02c0a37041af36edad0f1c065b9c47fc42e7ac",
+    "/workspace/quad_3090_20260911/simplemem_quad_status.json": "89ca2263f9b18df2d1bc42e5c5432afd3a485b9e76f75f144d679bc6536c7425",
+    "/workspace/quad_3090_20260911/lightmem_quad_status.json": "7dff473581dcf9958d61475790a68694d94505feea31946ac795cef398fe7fc7",
+    "/workspace/longmemeval_s_native7_20260910/runs/simplemem_native_dialogues_v4/protocol.json": "041977dd93d1daa171de421a254614cd3755451266aa6356b4ad618bf6b52727",
+    "/workspace/longmemeval_s_native7_20260910/native_lightmem.py": "7c1ba534417d4d7ae0bbc3c6c8294eb084359c4a051d789bb44bef9c3daaa4e1",
+    "/workspace/longmemeval_s_native7_20260910/official_recovery/simplemem_native_dialogues_v4/runner.py": "733fb9a3f9ae33d0c62ca0099ee2e4e7f1630e6906bd216018040ab654eff582"
+  },
+  "gpu_benchmark_after_change": false
+}

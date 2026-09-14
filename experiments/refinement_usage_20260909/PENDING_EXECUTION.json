@@ -1,0 +1,60 @@
+{
+  "status": "prepared_v2_not_executed_pending_explicit_transfer_approval",
+  "destination": "ssh2.vast.ai:23065 /workspace/recursive_minilm_20260909/",
+  "all_eight_original_prepared_files_unchanged": true,
+  "total_bytes": 50160,
+  "files": [
+    {
+      "file": "source_views_v2.py",
+      "bytes": 6634,
+      "sha256": "514085a3f1274c15fec856c8514e2f5489373ac1c394c815aa5736795c30bf64"
+    },
+    {
+      "file": "recursive_memory_v2.py",
+      "bytes": 7404,
+      "sha256": "82b1bb458aec68600610fba0294db692f2a33a41043ab831c8d9388f4212ac9e"
+    },
+    {
+      "file": "run_recursive_v2.py",
+      "bytes": 11531,
+      "sha256": "f85a2c370f5e8804c3c3da18cefbe6a8cfa0d7f861fff5ab9031e0dab9e2e960"
+    },
+    {
+      "file": "test_recursive_v2.py",
+      "bytes": 13781,
+      "sha256": "813682aa0848a710eb0a39237f19803f987ba8569355dc64966ff7430c49ed3a"
+    },
+    {
+      "file": "summarize_recursive_v2.py",
+      "bytes": 6691,
+      "sha256": "bd3d865a0a6e853f3e3851f41f93c58b4df07501e16445b864ed8609886221bf"
+    },
+    {
+      "file": "queue_entry_v2.py",
+      "bytes": 2090,
+      "sha256": "6663b96cc74fc564baeeec7dc11f1bd832290ae080c40381bafb9d0071bf7a9d"
+    },
+    {
+      "file": "run_recursive_v2_queue.sh",
+      "bytes": 1606,
+      "sha256": "0e2e0c700ea9f2d1b24e7554a87b71188b5b1dc25bfe2d6be85da2280e7900cb"
+    },
+    {
+      "file": "recursive-v2-supervisor.conf",
+      "bytes": 423,
+      "sha256": "cd5f72def6eeae40d49f78db476d2b6355adf6e062fefcc967af597f382affea"
+    }
+  ],
+  "metrics_task_uploaded_code": false,
+  "old_full500_restarted": false,
+  "approval_reason_from_source_task": "Automatic approval review rejected external transfer of these8files and requested explicit approval; the earlier question remains pending.",
+  "future_end_to_end_timer": "Locally implemented/reviewed, 19 CPU tests; explicit evaluation-function timing launcher and queue preview prepared; not approved or deployed.",
+  "generalization": "Recursive_v1 Gemma18 did not run after failing its predefined LoCoMo baseline-win gate; no new generalization conclusion.",
+  "timed_proposal": {
+    "manifest": "V2_TIMED_TRANSFER_CONTENTS.json",
+    "file_count": 13,
+    "total_bytes": 79212,
+    "status": "LOCAL_PREVIEW_NOT_APPROVED_NOT_DEPLOYED",
+    "scope": "Original eight-file record above is preserved; the timing proposal replaces only its queue source and adds four Python files plus a checksum."
+  }
+}

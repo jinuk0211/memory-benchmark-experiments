@@ -1,0 +1,347 @@
+{
+  "question": "What did Tim say about not being alone?",
+  "answer": "It reminds us that we're not alone",
+  "source_ids": [
+    "D20:43"
+  ],
+  "candidate_context_ids": [
+    "D20:41",
+    "D20:42",
+    "D20:43"
+  ],
+  "answer_spans": [
+    {
+      "source_id": "D20:43",
+      "start": 6,
+      "end": 40,
+      "verbatim": "It reminds us that we're not alone"
+    }
+  ],
+  "session": 20,
+  "recorded_date": "9:52 am on 1 December, 2023",
+  "conv_id": "conv-43",
+  "split": "probe_fit",
+  "id": "conv-43:source_probe:38",
+  "analysis": {
+    "full_advantage": 2.4437272979757836,
+    "source_dependent": true,
+    "best_single_sources": [
+      "D20:43"
+    ],
+    "best_pair_sources": [
+      "D20:41",
+      "D20:43"
+    ],
+    "minimum_sources": [
+      "D20:43"
+    ],
+    "minimum_tokens": 50,
+    "single_policy_sources": [
+      "D20:43"
+    ],
+    "single_policy_tokens": 50,
+    "full_tokens": 130,
+    "best_pair_lift_over_best_single": 0.1797141871684289,
+    "pair_interactions": [
+      {
+        "source_ids": [
+          "D20:41",
+          "D20:42"
+        ],
+        "joint_lift": 0.03964246902614832,
+        "interaction": 1.046553086489439,
+        "advantage": -0.30644366517663
+      },
+      {
+        "source_ids": [
+          "D20:41",
+          "D20:43"
+        ],
+        "joint_lift": 0.1797141871684289,
+        "interaction": 0.5258003213712072,
+        "advantage": 2.4281765763089425
+      },
+      {
+        "source_ids": [
+          "D20:42",
+          "D20:43"
+        ],
+        "joint_lift": 0.15588462485357013,
+        "interaction": 1.1627952423168608,
+        "advantage": 2.4043470139940837
+      }
+    ],
+    "has_preserving_pair_without_preserving_single": false
+  },
+  "generations": {
+    "empty": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [],
+      "context_tokens": 0,
+      "source_answer_f1": 0.0
+    },
+    "full": {
+      "text": "It reminds us that we're not alone - we're part of something bigger.",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D20:41",
+        "D20:42",
+        "D20:43"
+      ],
+      "context_tokens": 130,
+      "source_answer_f1": 0.7272727272727273
+    },
+    "answer_removed": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D20:41",
+        "D20:42"
+      ],
+      "context_tokens": 100,
+      "source_answer_f1": 0.0
+    },
+    "best_single": {
+      "text": "we're part of something bigger",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D20:43"
+      ],
+      "context_tokens": 50,
+      "source_answer_f1": 0.2857142857142857
+    },
+    "best_pair": {
+      "text": "It reminds us that we're not alone - we're part of something bigger.",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D20:41",
+        "D20:43"
+      ],
+      "context_tokens": 95,
+      "source_answer_f1": 0.7272727272727273
+    },
+    "minimum_bundle": {
+      "text": "we're part of something bigger",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D20:43"
+      ],
+      "context_tokens": 50,
+      "source_answer_f1": 0.2857142857142857
+    },
+    "single_policy": {
+      "text": "we're part of something bigger",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D20:43"
+      ],
+      "context_tokens": 50,
+      "source_answer_f1": 0.2857142857142857
+    }
+  },
+  "subsets": [
+    {
+      "kind": "empty",
+      "source_ids": [],
+      "context_tokens": 0,
+      "score": {
+        "mean_logprob": -2.4906443497166038,
+        "sum_logprob": -19.92515479773283,
+        "answer_tokens": 8,
+        "token_logprobs": [
+          -4.448230743408203,
+          -6.983470916748047,
+          -5.534480094909668,
+          -0.6008366346359253,
+          -0.46216005086898804,
+          -1.310352087020874,
+          -0.5370665788650513,
+          -0.048557691276073456
+        ]
+      }
+    },
+    {
+      "kind": "full",
+      "source_ids": [
+        "D20:41",
+        "D20:42",
+        "D20:43"
+      ],
+      "context_tokens": 130,
+      "score": {
+        "mean_logprob": -0.04691705174082017,
+        "sum_logprob": -0.37533641392656136,
+        "answer_tokens": 8,
+        "token_logprobs": [
+          -0.32624661922454834,
+          -0.006380780600011349,
+          -0.0012416280806064606,
+          -0.00042548662167973816,
+          -0.00011598391574807465,
+          -0.0003073934931308031,
+          -0.0404813215136528,
+          -0.00013720047718379647
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D20:41"
+      ],
+      "context_tokens": 65,
+      "score": {
+        "mean_logprob": -2.836730483919382,
+        "sum_logprob": -22.693843871355057,
+        "answer_tokens": 8,
+        "token_logprobs": [
+          -5.689903259277344,
+          -11.457578659057617,
+          -2.4193172454833984,
+          -0.4867084324359894,
+          -0.3442675769329071,
+          -1.3145427703857422,
+          -0.8995715379714966,
+          -0.08195438981056213
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D20:42"
+      ],
+      "context_tokens": 55,
+      "score": {
+        "mean_logprob": -3.4975549671798944,
+        "sum_logprob": -27.980439737439156,
+        "answer_tokens": 8,
+        "token_logprobs": [
+          -10.733070373535156,
+          -11.800180435180664,
+          -2.2836861610412598,
+          -0.42019087076187134,
+          -0.25034308433532715,
+          -1.606677770614624,
+          -0.7967569231987,
+          -0.08953411877155304
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D20:43"
+      ],
+      "context_tokens": 50,
+      "score": {
+        "mean_logprob": -0.2421819605760902,
+        "sum_logprob": -1.9374556846087216,
+        "answer_tokens": 8,
+        "token_logprobs": [
+          -1.6271326541900635,
+          -0.003208491252735257,
+          -0.00016532962035853416,
+          -0.0014353221049532294,
+          -0.00010227633902104571,
+          -0.00019774865359067917,
+          -0.30510276556015015,
+          -0.0001110968878492713
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D20:41",
+        "D20:42"
+      ],
+      "context_tokens": 100,
+      "score": {
+        "mean_logprob": -2.7970880148932338,
+        "sum_logprob": -22.37670411914587,
+        "answer_tokens": 8,
+        "token_logprobs": [
+          -6.127109050750732,
+          -11.22415542602539,
+          -1.8769211769104004,
+          -0.5175695419311523,
+          -0.27097585797309875,
+          -1.3406224250793457,
+          -0.944543719291687,
+          -0.07480692118406296
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D20:41",
+        "D20:43"
+      ],
+      "context_tokens": 95,
+      "score": {
+        "mean_logprob": -0.0624677734076613,
+        "sum_logprob": -0.4997421872612904,
+        "answer_tokens": 8,
+        "token_logprobs": [
+          -0.4855180084705353,
+          -0.0027340196538716555,
+          -0.00029237763374112546,
+          -0.0002733095607254654,
+          -6.532455881824717e-05,
+          -0.00020716428116429597,
+          -0.01056317612528801,
+          -8.880697714630514e-05
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D20:42",
+        "D20:43"
+      ],
+      "context_tokens": 85,
+      "score": {
+        "mean_logprob": -0.08629733572252007,
+        "sum_logprob": -0.6903786857801606,
+        "answer_tokens": 8,
+        "token_logprobs": [
+          -0.6101808547973633,
+          -0.0087722884491086,
+          -0.0006478118011727929,
+          -0.00037889453233219683,
+          -0.0001070442158379592,
+          -0.00018749863374978304,
+          -0.06998080015182495,
+          -0.0001234931987710297
+        ]
+      }
+    },
+    {
+      "kind": "answer_removed",
+      "source_ids": [
+        "D20:41",
+        "D20:42"
+      ],
+      "context_tokens": 100,
+      "score": {
+        "mean_logprob": -2.7946047903969884,
+        "sum_logprob": -22.356838323175907,
+        "answer_tokens": 8,
+        "token_logprobs": [
+          -6.127040386199951,
+          -11.223295211791992,
+          -1.8651468753814697,
+          -0.517356812953949,
+          -0.27106577157974243,
+          -1.3406583070755005,
+          -0.9365527629852295,
+          -0.07572219520807266
+        ]
+      }
+    }
+  ]
+}

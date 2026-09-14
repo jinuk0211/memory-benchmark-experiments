@@ -1,0 +1,77 @@
+{
+  "scope": "Two source histories only: LoCoMo conv-49 and exposed LME DEV12 history d6062bb9. These are not benchmark/official scores.",
+  "final_decision": "Neither candidate is promoted; retain the original frozen paper methods. No gate retrofit, tuning or rerun.",
+  "qb_sample_sizes": {
+    "locomo": 3,
+    "longmemeval": 2
+  },
+  "interpretation": {
+    "locomo": "Whole-set source QA likelihood and F1 improved, but all four source-audit contexts changed and audit likelihood/F1 declined; the declared gate returned exactly Seed.",
+    "longmemeval": "The pilot adopted two options: two of ten QA packed contexts changed, with macro likelihood delta +0.0042460375 and unchanged QA F1. All four audit inputs were identical; their raw +0.0004155367 difference is not an evidence improvement.",
+    "qb": "LoCoMo has three identical Seed/final inputs and unchanged F1. Its raw negative likelihood difference cannot indicate memory harm. LME has one changed-evidence QB with negative likelihood delta and one identical-input QB; aggregate F1 stayed 1.0. Neither supports promotion.",
+    "identical_input_variation": "Raw deltas are preserved. Identical context/user/answer pairs can differ in these recorded NLL outputs. The frozen scorer schedules duplicate uncached keys before filling its cache, consistent with repeated-input/batch numerical variation; exact kernel causation is not established. No score or gate is corrected retrospectively."
+  },
+  "incremental_native_cost": {
+    "llm_prompt_tokens_known": 564479,
+    "llm_completion_tokens_known": 3510,
+    "embedding_tokens_known": 2538858,
+    "embedding_padded_tokens_known": 2647690,
+    "llm_inference_seconds_known": 62.099877984961495,
+    "embedding_inference_seconds_known": 95.53920326381922,
+    "native_generation_calls": 74,
+    "native_generation_requests": 429,
+    "native_embedding_calls": 6464,
+    "failed_native_calls": 0,
+    "incomplete_usage_calls": 0,
+    "incomplete_time_calls": 0,
+    "native_metrics_present": 0,
+    "native_metrics_absent": 429,
+    "measurement_complete": true,
+    "llm_tokens_known_lower_bound": 567989,
+    "llm_tokens_M": 0.567989,
+    "embedding_tokens_M": 2.538858,
+    "llm_tokens_M_known_lower_bound": 0.567989,
+    "embedding_tokens_M_known_lower_bound": 2.538858,
+    "native_inference_seconds_known_lower_bound": 157.6390812487807
+  },
+  "cost_scope": "New source-view generation/calibration, source likelihood/answer generation, and CPU MiniLM indexing, including post-lock source QB. Imported Seed/source-probe/source-utility costs are additional and excluded here.",
+  "source_stage_elapsed_seconds": {
+    "calibrate": 45.734541174955666,
+    "plan": 7.624319478869438,
+    "score": 210.55135988793336
+  },
+  "quiescence_observed": {
+    "utc": "2026-09-10T09:05:54Z",
+    "supervisor": "EXITED",
+    "gpu_compute_processes": [],
+    "checked_pids_absent": [
+      6467,
+      6530,
+      6686
+    ],
+    "launcher_exit": 0,
+    "calibrate_exit": 0,
+    "score_exit": 0
+  },
+  "native_receipts": {
+    "complete_source_run_and_evidence": true,
+    "evidence_gaps": [],
+    "evidence_file_count": 14178,
+    "evidence_bytes": 222893901
+  },
+  "observed_teardown_logs": "Both engines logged Shutdown complete, followed by an Engine core died unexpectedly client teardown line/NCCL destruction warning. Stage exit codes were zero, all completion/usage bindings passed, no failed native calls were recorded, and no GPU worker remained at quiescence check. Original logs are preserved.",
+  "artifact_sha256": {
+    "small_source_results_r1.tgz": "d3eae36feaae3ea5b519c334edf156e65d8a5ce27dbd0cfff9b4158f70a2683f",
+    "SOURCE_PILOT_DIAGNOSIS.json": "396b50494d9c101884601b6bc998bde53ad44142cd25cf830e58e1098213b091",
+    "collected/SMALL_COLLECTION_MANIFEST.json": "aa5a94b99744c815914c71037622de8dda3b35f098bc4813484e6f4ffa2f0552",
+    "collected/usage/SOURCE_NATIVE_USAGE.json": "31c3c7fe10e1bd7d36afbc9b2f1842ecec19fb930fb089597f60abf007a51897",
+    "collected/usage/EVIDENCE_MANIFEST.json": "52e09ee4fe0191636c301d92063ddfb5cfe824f6234d9c92585f35d038f183b0",
+    "collected/run/protocol.json": "19fd9bdc01586b6c5e752d712bbdc75fd7b7144c5a30437c4028a0b99d742299",
+    "collected/run/PLAN_LOCK.json": "302cdafbaef496ac9b526a97bd81e9e725dd573e49e107407b7ecb4ca8cac7c4",
+    "collected/run/COMPLETE.json": "7dafc77f60f9a9892ae5095e6535d32d9aa17bdd85ad5d83e081c37793da5973",
+    "collected/run/memory_lock.json": "ac8346f024d4602c36b48f094944b674f2eb7d950a28010a708dbd4ed31583a2"
+  },
+  "target_qa_loaded": false,
+  "benchmark_evaluation_performed": false,
+  "gpu_retry_or_tuning_performed": false
+}

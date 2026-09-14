@@ -1,0 +1,28 @@
+% Add this file in the document preamble (before \begin{document}).
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{arrows.meta,plotmarks}
+\definecolor{locomoText}{HTML}{182438}
+\definecolor{locomoMuted}{HTML}{5C6B7D}
+\definecolor{locomoGrid}{HTML}{DCE3EC}
+\definecolor{locomoBase}{HTML}{25779E}
+\definecolor{locomoOur}{HTML}{6941C6}
+\definecolor{locomoInternal}{HTML}{9370B2}
+\definecolor{locomoVariant}{HTML}{718096}
+\definecolor{locomoRef}{HTML}{B77824}
+\definecolor{locomoFront}{HTML}{157D71}
+\pgfplotsset{locomo axis/.style={
+    axis lines=left, axis line style={locomoMuted,-},
+    grid=major, major grid style={locomoGrid,line width=0.3pt},
+    tick align=outside, tick style={locomoMuted},
+    tick label style={font=\scriptsize,text=locomoMuted},
+    label style={font=\small,text=locomoText},
+    title style={font=\small\bfseries,text=locomoText},
+    clip=false, minor x tick num=0,
+    scaled ticks=false, enlargelimits=false,
+}}
+\tikzset{
+    locomo label/.style={font=\scriptsize,text=locomoText,align=left,inner sep=1pt},
+    locomo leader/.style={draw=locomoMuted,line width=0.3pt},
+}

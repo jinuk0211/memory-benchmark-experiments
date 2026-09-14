@@ -1,0 +1,288 @@
+{
+  "schema": "packed-marginal-source-native-cost-v1",
+  "run_root": "/workspace/packed_marginal_pilot_r1/run_r1",
+  "protocol_sha256": "19fd9bdc01586b6c5e752d712bbdc75fd7b7144c5a30437c4028a0b99d742299",
+  "quiescence": "caller_verified_before_invocation",
+  "complete_source_run_and_evidence": true,
+  "benchmark_f1": null,
+  "official_longmemeval_accuracy": null,
+  "benchmark_seconds_per_question": null,
+  "scope": "New source-view calibration, source likelihood/generation, and indexing only. Imported construction/scoring costs are additional; no benchmark evaluation.",
+  "total": {
+    "llm_prompt_tokens_known": 564479,
+    "llm_completion_tokens_known": 3510,
+    "embedding_tokens_known": 2538858,
+    "embedding_padded_tokens_known": 2647690,
+    "llm_inference_seconds_known": 62.099877984961495,
+    "embedding_inference_seconds_known": 95.53920326381922,
+    "native_generation_calls": 74,
+    "native_generation_requests": 429,
+    "native_embedding_calls": 6464,
+    "failed_native_calls": 0,
+    "incomplete_usage_calls": 0,
+    "incomplete_time_calls": 0,
+    "native_metrics_present": 0,
+    "native_metrics_absent": 429,
+    "measurement_complete": true,
+    "llm_tokens_known_lower_bound": 567989,
+    "llm_tokens_M": 0.567989,
+    "embedding_tokens_M": 2.538858,
+    "llm_tokens_M_known_lower_bound": 0.567989,
+    "embedding_tokens_M_known_lower_bound": 2.538858,
+    "native_inference_seconds_known_lower_bound": 157.6390812487807
+  },
+  "groups": [
+    {
+      "scope": [
+        "calibrate",
+        "source_view_calibration",
+        "source_only"
+      ],
+      "usage": {
+        "llm_prompt_tokens_known": 234907,
+        "llm_completion_tokens_known": 3085,
+        "embedding_tokens_known": 0,
+        "embedding_padded_tokens_known": 0,
+        "llm_inference_seconds_known": 22.941570496186614,
+        "embedding_inference_seconds_known": 0.0,
+        "native_generation_calls": 14,
+        "native_generation_requests": 224,
+        "native_embedding_calls": 0,
+        "failed_native_calls": 0,
+        "incomplete_usage_calls": 0,
+        "incomplete_time_calls": 0,
+        "native_metrics_present": 0,
+        "native_metrics_absent": 224,
+        "measurement_complete": true,
+        "llm_tokens_known_lower_bound": 237992,
+        "llm_tokens_M": 0.237992,
+        "embedding_tokens_M": 0.0,
+        "llm_tokens_M_known_lower_bound": 0.237992,
+        "embedding_tokens_M_known_lower_bound": 0.0,
+        "native_inference_seconds_known_lower_bound": 22.941570496186614
+      }
+    },
+    {
+      "scope": [
+        "calibrate",
+        "unattributed",
+        "source_only"
+      ],
+      "usage": {
+        "llm_prompt_tokens_known": 0,
+        "llm_completion_tokens_known": 0,
+        "embedding_tokens_known": 0,
+        "embedding_padded_tokens_known": 0,
+        "llm_inference_seconds_known": 0.0,
+        "embedding_inference_seconds_known": 0.0,
+        "native_generation_calls": 0,
+        "native_generation_requests": 0,
+        "native_embedding_calls": 0,
+        "failed_native_calls": 0,
+        "incomplete_usage_calls": 0,
+        "incomplete_time_calls": 0,
+        "native_metrics_present": 0,
+        "native_metrics_absent": 0,
+        "measurement_complete": true,
+        "llm_tokens_known_lower_bound": 0,
+        "llm_tokens_M": 0.0,
+        "embedding_tokens_M": 0.0,
+        "llm_tokens_M_known_lower_bound": 0.0,
+        "embedding_tokens_M_known_lower_bound": 0.0,
+        "native_inference_seconds_known_lower_bound": 0.0
+      }
+    },
+    {
+      "scope": [
+        "index",
+        "packed_marginal_fit",
+        "source_only"
+      ],
+      "usage": {
+        "llm_prompt_tokens_known": 0,
+        "llm_completion_tokens_known": 0,
+        "embedding_tokens_known": 2538733,
+        "embedding_padded_tokens_known": 2647538,
+        "llm_inference_seconds_known": 0.0,
+        "embedding_inference_seconds_known": 95.52810997492634,
+        "native_generation_calls": 0,
+        "native_generation_requests": 0,
+        "native_embedding_calls": 6462,
+        "failed_native_calls": 0,
+        "incomplete_usage_calls": 0,
+        "incomplete_time_calls": 0,
+        "native_metrics_present": 0,
+        "native_metrics_absent": 0,
+        "measurement_complete": true,
+        "llm_tokens_known_lower_bound": 0,
+        "llm_tokens_M": 0.0,
+        "embedding_tokens_M": 2.538733,
+        "llm_tokens_M_known_lower_bound": 0.0,
+        "embedding_tokens_M_known_lower_bound": 2.538733,
+        "native_inference_seconds_known_lower_bound": 95.52810997492634
+      }
+    },
+    {
+      "scope": [
+        "index",
+        "post_lock_qb",
+        "source_only"
+      ],
+      "usage": {
+        "llm_prompt_tokens_known": 0,
+        "llm_completion_tokens_known": 0,
+        "embedding_tokens_known": 125,
+        "embedding_padded_tokens_known": 152,
+        "llm_inference_seconds_known": 0.0,
+        "embedding_inference_seconds_known": 0.011093288892880082,
+        "native_generation_calls": 0,
+        "native_generation_requests": 0,
+        "native_embedding_calls": 2,
+        "failed_native_calls": 0,
+        "incomplete_usage_calls": 0,
+        "incomplete_time_calls": 0,
+        "native_metrics_present": 0,
+        "native_metrics_absent": 0,
+        "measurement_complete": true,
+        "llm_tokens_known_lower_bound": 0,
+        "llm_tokens_M": 0.0,
+        "embedding_tokens_M": 0.000125,
+        "llm_tokens_M_known_lower_bound": 0.0,
+        "embedding_tokens_M_known_lower_bound": 0.000125,
+        "native_inference_seconds_known_lower_bound": 0.011093288892880082
+      }
+    },
+    {
+      "scope": [
+        "index",
+        "unattributed",
+        "source_only"
+      ],
+      "usage": {
+        "llm_prompt_tokens_known": 0,
+        "llm_completion_tokens_known": 0,
+        "embedding_tokens_known": 0,
+        "embedding_padded_tokens_known": 0,
+        "llm_inference_seconds_known": 0.0,
+        "embedding_inference_seconds_known": 0.0,
+        "native_generation_calls": 0,
+        "native_generation_requests": 0,
+        "native_embedding_calls": 0,
+        "failed_native_calls": 0,
+        "incomplete_usage_calls": 0,
+        "incomplete_time_calls": 0,
+        "native_metrics_present": 0,
+        "native_metrics_absent": 0,
+        "measurement_complete": true,
+        "llm_tokens_known_lower_bound": 0,
+        "llm_tokens_M": 0.0,
+        "embedding_tokens_M": 0.0,
+        "llm_tokens_M_known_lower_bound": 0.0,
+        "embedding_tokens_M_known_lower_bound": 0.0,
+        "native_inference_seconds_known_lower_bound": 0.0
+      }
+    },
+    {
+      "scope": [
+        "score",
+        "packed_marginal_fit",
+        "source_only"
+      ],
+      "usage": {
+        "llm_prompt_tokens_known": 295050,
+        "llm_completion_tokens_known": 390,
+        "embedding_tokens_known": 0,
+        "embedding_padded_tokens_known": 0,
+        "llm_inference_seconds_known": 34.95548180909827,
+        "embedding_inference_seconds_known": 0.0,
+        "native_generation_calls": 55,
+        "native_generation_requests": 189,
+        "native_embedding_calls": 0,
+        "failed_native_calls": 0,
+        "incomplete_usage_calls": 0,
+        "incomplete_time_calls": 0,
+        "native_metrics_present": 0,
+        "native_metrics_absent": 189,
+        "measurement_complete": true,
+        "llm_tokens_known_lower_bound": 295440,
+        "llm_tokens_M": 0.29544,
+        "embedding_tokens_M": 0.0,
+        "llm_tokens_M_known_lower_bound": 0.29544,
+        "embedding_tokens_M_known_lower_bound": 0.0,
+        "native_inference_seconds_known_lower_bound": 34.95548180909827
+      }
+    },
+    {
+      "scope": [
+        "score",
+        "post_lock_qb",
+        "source_only"
+      ],
+      "usage": {
+        "llm_prompt_tokens_known": 34522,
+        "llm_completion_tokens_known": 35,
+        "embedding_tokens_known": 0,
+        "embedding_padded_tokens_known": 0,
+        "llm_inference_seconds_known": 4.202825679676607,
+        "embedding_inference_seconds_known": 0.0,
+        "native_generation_calls": 5,
+        "native_generation_requests": 16,
+        "native_embedding_calls": 0,
+        "failed_native_calls": 0,
+        "incomplete_usage_calls": 0,
+        "incomplete_time_calls": 0,
+        "native_metrics_present": 0,
+        "native_metrics_absent": 16,
+        "measurement_complete": true,
+        "llm_tokens_known_lower_bound": 34557,
+        "llm_tokens_M": 0.034557,
+        "embedding_tokens_M": 0.0,
+        "llm_tokens_M_known_lower_bound": 0.034557,
+        "embedding_tokens_M_known_lower_bound": 0.0,
+        "native_inference_seconds_known_lower_bound": 4.202825679676607
+      }
+    },
+    {
+      "scope": [
+        "score",
+        "unattributed",
+        "source_only"
+      ],
+      "usage": {
+        "llm_prompt_tokens_known": 0,
+        "llm_completion_tokens_known": 0,
+        "embedding_tokens_known": 0,
+        "embedding_padded_tokens_known": 0,
+        "llm_inference_seconds_known": 0.0,
+        "embedding_inference_seconds_known": 0.0,
+        "native_generation_calls": 0,
+        "native_generation_requests": 0,
+        "native_embedding_calls": 0,
+        "failed_native_calls": 0,
+        "incomplete_usage_calls": 0,
+        "incomplete_time_calls": 0,
+        "native_metrics_present": 0,
+        "native_metrics_absent": 0,
+        "measurement_complete": true,
+        "llm_tokens_known_lower_bound": 0,
+        "llm_tokens_M": 0.0,
+        "embedding_tokens_M": 0.0,
+        "llm_tokens_M_known_lower_bound": 0.0,
+        "embedding_tokens_M_known_lower_bound": 0.0,
+        "native_inference_seconds_known_lower_bound": 0.0
+      }
+    }
+  ],
+  "operations": {
+    "operation_receipts_excluded_from_native_sums": 185,
+    "explicit_cache_hit_proven": 0,
+    "zero_invocation_operations_not_proven_cache_hits": 69,
+    "encode_attempt_receipts_excluded_from_native_sums": 52,
+    "evaluation_generation_input_coverage": {}
+  },
+  "evidence_gaps": [],
+  "evidence_file_count": 14178,
+  "evidence_bytes": 222893901,
+  "reporter_sha256": "275da27812555cf00e7ee1aab1f77c363929ca646aec1af76d301b5b525f9143",
+  "native_adapter_sha256": "9341625424f6b1ebadf6117b41ceece43d0aff0aa05cd977f9157b5fcf8db29d"
+}

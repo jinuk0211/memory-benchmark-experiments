@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "predictions_complete": true,
+  "usage_complete": true,
+  "expected": 1540,
+  "evaluated": 1540,
+  "prediction_rows": 1540,
+  "missing": [],
+  "prediction_issues": [],
+  "empty_predictions": 0,
+  "official_f1": 0.3820058494727273,
+  "score_scope": "all_expected_questions",
+  "by_category": {
+    "1": {
+      "count": 282,
+      "expected": 282,
+      "f1": 0.3648820155123694
+    },
+    "2": {
+      "count": 321,
+      "expected": 321,
+      "f1": 0.22709543644403318
+    },
+    "3": {
+      "count": 96,
+      "expected": 96,
+      "f1": 0.24668670751260038
+    },
+    "4": {
+      "count": 841,
+      "expected": 841,
+      "f1": 0.46232190344086516
+    }
+  },
+  "by_sample": {
+    "conv-26": 152,
+    "conv-30": 81,
+    "conv-41": 152,
+    "conv-42": 199,
+    "conv-43": 178,
+    "conv-44": 123,
+    "conv-47": 150,
+    "conv-48": 191,
+    "conv-49": 156,
+    "conv-50": 158
+  },
+  "usage": {
+    "complete": true,
+    "supplied": true,
+    "requests": 3301,
+    "metered_requests": 3301,
+    "unmetered_requests": 0,
+    "invalid_usage_requests": 0,
+    "failed_requests": 0,
+    "truncated_requests": 0,
+    "incomplete_streams": 0,
+    "unknown_phase_requests": 0,
+    "missing_id_requests": 0,
+    "duplicate_request_ids": 0,
+    "duplicate_response_ids": 0,
+    "reported_tokens": {
+      "prompt_tokens": 15368083,
+      "completion_tokens": 14439,
+      "total_tokens": 15382522
+    },
+    "by_phase": {
+      "qa": {
+        "calls": 3080,
+        "prompt_tokens": 15311533,
+        "completion_tokens": 14439,
+        "total_tokens": 15325972
+      },
+      "memory_add": {
+        "calls": 221,
+        "prompt_tokens": 56550,
+        "completion_tokens": 0,
+        "total_tokens": 56550
+      }
+    },
+    "by_request_kind": {
+      "chat_completion": {
+        "calls": 1540,
+        "prompt_tokens": 15253170,
+        "completion_tokens": 14439,
+        "total_tokens": 15267609
+      },
+      "embedding": {
+        "calls": 1761,
+        "prompt_tokens": 114913,
+        "completion_tokens": 0,
+        "total_tokens": 114913
+      }
+    },
+    "note": "Reported tokens include metered failed attempts. Missing or invalid usage is unknown, not zero. Completeness covers the supplied journal; every model call must be routed through the meter. Embedding tokens are separate from generation by_request_kind."
+  },
+  "runtime": {
+    "wall_seconds": 1291.8087965419982,
+    "construction_seconds": 132.98519441403914,
+    "qa_seconds": 4608.850139737537,
+    "peak_vram_mib": 30440.0,
+    "gpu_energy_wh": 173.96563315266474,
+    "mean_gpu_utilization_percent": 95.66796875,
+    "storage_bytes": 38815843,
+    "question_latency_seconds": {
+      "count": 1540,
+      "mean": 2.9622884549103774,
+      "p50": 3.073038935661316,
+      "p95": 4.751153945922852,
+      "p95_method": "nearest_rank",
+      "missing_or_invalid": 0
+    },
+    "hourly_rate_usd": 0.4068518518518518,
+    "estimated_rental_cost_usd": 0.14599300030878443
+  },
+  "sources_sha256": {
+    "dataset": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+    "official_scorer": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd"
+  },
+  "method": "lightmem",
+  "run_id": "locomo-lightmem-direct-20260908-r1",
+  "context_workers": 4,
+  "response_delivery": {
+    "complete": true,
+    "logical_requests": 1540,
+    "repaired_requests": 0,
+    "discarded_attempt_total_tokens": 0,
+    "issues": [],
+    "note": "All attempts remain in usage totals. Only complete terminal responses may reach a memory implementation."
+  },
+  "quality_complete": true,
+  "coverage_complete": true,
+  "auxiliary": {
+    "applicable": false,
+    "complete": true,
+    "ingest_mode": "direct",
+    "agent_config_sha256": "58849493f86e6af4242b63c3cd3beab653b18d349ed0b91c89c752131aa9815a",
+    "note": "Pinned direct LightMem config disables compression, topic segmentation, metadata and summary; no auxiliary model activity is expected or recorded."
+  },
+  "normalization": {
+    "rule": "Exact pinned benchmark query template; all other original metadata gates unchanged",
+    "template": "Search Archival Memory and answer the question as concisely as you can, using a single phrase if possible.\n\n {question} \n\n Answer:",
+    "rows": 1540,
+    "raw_artifacts_modified": false,
+    "raw_results_path": "/workspace/locomo-lightmem-direct-20260908-r1/lightmem/parallel_results.json",
+    "raw_results_sha256": "09978d5e6d3d14507df47f8c20dc6813b0c55b183981684ea083e3b22562241e",
+    "usage_sha256": "bd239dc538db923cdfecc3148bb7cce8c4b10827d11a5d1f374b1f30e0276354",
+    "telemetry_sha256": "450e07a3766a6c3849e3752257067fc42ef72f578128f33136934bce71e2a969",
+    "finalizer_sha256": "0fbe9d099f8512324c8830694b89dcaaf9b8e08a13db9ddb60843ee9518d7362"
+  },
+  "telemetry_notes": {
+    "gpu_measurement_note": "5-second device samples; energy is trapezoidal integration, not a hardware energy counter.",
+    "phase_duration_note": "Construction/QA seconds sum operation durations; overlapping contexts can exceed wall_seconds.",
+    "gpu_samples": 256,
+    "missing_gpu_samples": 0
+  },
+  "micro_official_f1": 0.3820058494727273,
+  "macro_official_f1": 0.32524651572746704,
+  "variant": "MemoryData direct preset in the common Qwen3.5-9B/MiniLM environment; not exact paper reproduction",
+  "diagnostic_probe_report": "/workspace/locomo-lightmem-direct-probe-20260908-r1/lightmem/report.json",
+  "raw_run_error": "Result metadata differs from the original QA"
+}

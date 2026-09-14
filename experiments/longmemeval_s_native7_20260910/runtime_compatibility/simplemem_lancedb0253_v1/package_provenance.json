@@ -1,0 +1,125 @@
+{
+  "lancedb": {
+    "url": "https://pypi.org/pypi/lancedb/0.25.3/json",
+    "response_sha256": "9dadcf7ae71545ad484e1b66a7c8da6adce80779875b8d44c596ffd22564dd3c",
+    "version": "0.25.3",
+    "requires_python": ">=3.9",
+    "requires_dist": [
+      "deprecation",
+      "numpy",
+      "overrides>=0.7; python_full_version < \"3.12\"",
+      "packaging",
+      "pyarrow>=16",
+      "pydantic>=1.10",
+      "tqdm>=4.27.0",
+      "lance-namespace>=0.0.16"
+    ],
+    "wheels": [
+      {
+        "filename": "lancedb-0.25.3-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/c1/95/32ddb779a01cd0d349f391e7d5f4218d045f9848c1d757f5a8ace4c63b09/lancedb-0.25.3-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "500beac161f73e3e6826a711efb1d24397d892d07dfdce2c9fb1da73f8de506c",
+        "size_bytes": 39145675,
+        "yanked": false,
+        "yanked_reason": null,
+        "upload_time": "2025-11-07T05:24:40.813302Z"
+      },
+      {
+        "filename": "lancedb-0.25.3-cp39-abi3-manylinux_2_28_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/ab/15/f0d69acc5e06892d19e09c127cd928cf20f5d2966a069e93693fc389b132/lancedb-0.25.3-cp39-abi3-manylinux_2_28_x86_64.whl",
+        "sha256": "3035665fb8e4aaff8dff2602747cc77aeba6bc39f1a95345abc3275c97a044cb",
+        "size_bytes": 39191458,
+        "yanked": false,
+        "yanked_reason": null,
+        "upload_time": "2025-11-07T05:24:38.047588Z"
+      }
+    ]
+  },
+  "pylance": {
+    "url": "https://pypi.org/pypi/pylance/0.39.0/json",
+    "response_sha256": "f564ec95d15f6c63968ed4146f6b4b6628d0712437a6f06a0356136960286eb3",
+    "version": "0.39.0",
+    "requires_python": ">=3.9",
+    "requires_dist": [
+      "pyarrow>=14",
+      "numpy>=1.22",
+      "lance-namespace>=0.0.20"
+    ],
+    "wheels": [
+      {
+        "filename": "pylance-0.39.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/da/e7/c9bb07dbbd690d28bf651e3b6f06e34cf41a40a8549a0fb312939f435f80/pylance-0.39.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "fc28f23ea894ded1e343c1b16bac0c78d87a7484cc1837c56035532b34d9fd2b",
+        "size_bytes": 48656564,
+        "yanked": false,
+        "yanked_reason": null,
+        "upload_time": "2025-11-04T05:23:19.931805Z"
+      },
+      {
+        "filename": "pylance-0.39.0-cp39-abi3-manylinux_2_28_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/18/21/5a3d8ca55e56c24d5a82818d561f1b6aceb0747d0e6cd00021cfb3261668/pylance-0.39.0-cp39-abi3-manylinux_2_28_x86_64.whl",
+        "sha256": "56a3e7252d958ad6191e104f0c4d804b6dd9956addf066b77a6b876b78c2aa39",
+        "size_bytes": 48632562,
+        "yanked": false,
+        "yanked_reason": null,
+        "upload_time": "2025-11-04T05:23:04.298381Z"
+      }
+    ]
+  },
+  "tantivy": {
+    "url": "https://pypi.org/pypi/tantivy/0.25.0/json",
+    "response_sha256": "17f040cc104dd03c74048a14374cd75ff17668b3f2aa5e11c3c271b5617d2b58",
+    "version": "0.25.0",
+    "requires_python": ">=3.9",
+    "requires_dist": [],
+    "wheels": [
+      {
+        "filename": "tantivy-0.25.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/05/c0/ccb14e08ee8baf8bb58619a7bb6f018483f636cc81c9342e558e7a729ea4/tantivy-0.25.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "sha256": "c01fa1e090bd2ddb2c4a23722da7fd65e00f0576e4bf7769d8d033ba681a374d",
+        "size_bytes": 4142016,
+        "yanked": false,
+        "yanked_reason": null,
+        "upload_time": "2025-09-09T13:41:36.836474Z"
+      }
+    ]
+  },
+  "transformers": {
+    "url": "https://pypi.org/pypi/transformers/4.57.0/json",
+    "response_sha256": "2de08829133160b53d9c9c963dedd717cb72efb57c8c2a4c44b76b34e91e485f",
+    "version": "4.57.0",
+    "requires_python": ">=3.9.0",
+    "requires_dist": [
+      "filelock",
+      "huggingface-hub<1.0,>=0.34.0",
+      "numpy>=1.17",
+      "packaging>=20.0",
+      "pyyaml>=5.1",
+      "regex!=2019.12.17",
+      "requests",
+      "tokenizers<=0.23.0,>=0.22.0",
+      "safetensors>=0.4.3",
+      "tqdm>=4.27"
+    ],
+    "wheels": [
+      {
+        "filename": "transformers-4.57.0-py3-none-any.whl",
+        "url": "https://files.pythonhosted.org/packages/e5/2b/4d2708ac1ff5cd708b6548f4c5812d0ae40d1c28591c4c1c762b6dbdef2d/transformers-4.57.0-py3-none-any.whl",
+        "sha256": "9d7c6d098c026e40d897e017ed1f481ab803cbac041021dbc6ae6100e4949b55",
+        "size_bytes": 11990588,
+        "yanked": true,
+        "yanked_reason": "Error in the setup causing installation issues",
+        "upload_time": "2025-10-03T17:03:43.629315Z"
+      }
+    ]
+  },
+  "torch": {
+    "index_url": "https://download.pytorch.org/whl/cpu/torch/",
+    "url": "https://download.pytorch.org/whl/cpu/torch-2.8.0%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl",
+    "sha256": "cb06175284673a581dd91fb1965662ae4ecaba6e5c357aa0ea7bb8b84b6b7eeb",
+    "metadata_sha256": "ac59d7d8f73f4f515c949c9583ead0cce1f230a649f6c63fea0e949f93f02ae6",
+    "version": "2.8.0+cpu",
+    "original_requirement": "absent",
+    "rationale": "Explicit official CPU build satisfying ST >=1.11 and Transformers >=2.2; no claim that original SimpleMem used this unrecorded torch version."
+  }
+}

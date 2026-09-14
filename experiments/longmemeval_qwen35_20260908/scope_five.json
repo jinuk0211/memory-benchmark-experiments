@@ -1,0 +1,30 @@
+{
+  "status": "user_approved_five_method_scope_before_baseline_execution",
+  "required_methods": [
+    "e_mem",
+    "simplemem",
+    "mem0",
+    "langmem",
+    "a_mem"
+  ],
+  "excluded_methods": {
+    "lightmem_direct": "User excluded the direct-storage variant on 2026-09-08.",
+    "higmem": "User excluded the no-profile/no-link variant on 2026-09-08."
+  },
+  "questions_per_method": 500,
+  "first_smoke_question": "First ID in the frozen protocol population, each method; retain successful outputs in the full500 population.",
+  "reader_condition": "Common Qwen3.5-9B BF16 reader,2048 memory tokens,96 output tokens,temperature0,thinking disabled.",
+  "native_internal_condition": "Existing memory construction and retrieval retained; temperature0 and thinking disabled for all generative calls; preserve native internal output caps.",
+  "existing_implementation_variants": {
+    "mem0": "Existing strict validation with at most two correction requests for invalid update/delete IDs.",
+    "a_mem": "Existing strict evolution validation with at most two semantic correction requests."
+  },
+  "claim_boundary": "Controlled-reader comparison of the existing implementations, not an exact reproduction of every original end-to-end paper setting.",
+  "embedding": {
+    "user_confirmed": "2026-09-09 Asia/Seoul",
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "allow_model_fallback": false,
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "dimensions": 1024
+  }
+}

@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering\small
+\caption{Evidence-binding ablation on all 1,540 LoCoMo questions with Qwen3.5-9B.
+Differences are relative to the complete method on the same 1,540 questions.
+Stored tokens are averaged over ten histories; read tokens over 1540 questions.
+Both variants use the same frozen memories as the 300-question experiment
+and a 2,048-token evidence budget.}
+\label{tab:exp-ablation-binding1540}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Variant} & \textbf{F1 (\%)} & $\boldsymbol{\Delta}$\textbf{ (pp)} & \textbf{Stored tokens} & \textbf{Read tokens} \\
+\midrule
+\textbf{Our method} & 55.3733 & +0.0000 & 61,911.5 & 2011.5 \\
+\midrule
+w/o evidence binding & 58.7143 & +3.3410 & 60,116.4 & 2039.1 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

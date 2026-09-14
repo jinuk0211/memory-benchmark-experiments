@@ -1,0 +1,24 @@
+{
+  "status": "metadata_coverage_verified_no_gpu_evaluation",
+  "adapter_version": "strict-date-metadata-v1",
+  "adapter_sha256": "c1af383f5ce4911aad63be1a7a688e379b0d70fc229a29c7f6de68b4741ebf2f",
+  "dataset_path": "D:/MemoryData/MemoryData/datasets/LongMemEval/longmemeval_s_cleaned.json",
+  "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "source_timestamps": 23867,
+  "source_timestamp_parse_failures": 0,
+  "question_timestamps": 500,
+  "question_timestamp_parse_failures": 0,
+  "weekday_consistency_checked": true,
+  "target_question_answer_text_or_outcomes_inspected": false,
+  "metadata_strings_mutated": false,
+  "interpretation": "All canonical metadata timestamps fit the generic fallback; question timestamps are retained as reader prompt strings, not newly parsed by the frozen reader algorithm.",
+  "locomo_control": {
+    "dataset_path": "D:/MemoryData/experiments/recursive_minilm_20260909/data/locomo10.json",
+    "dataset_sha256": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+    "source_timestamps": 288,
+    "parsers_checked": 2,
+    "changed_parsed_results": 0,
+    "original_parse_none_count": 0,
+    "target_QA_text_or_outcomes_inspected": false
+  }
+}

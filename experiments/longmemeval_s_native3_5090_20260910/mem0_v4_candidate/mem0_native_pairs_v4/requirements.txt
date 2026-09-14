@@ -1,0 +1,17 @@
+# Dedicated Mem0 OSS candidate client environment, not the inference environment.
+# Exact direct runtime pins; transitive versions must be captured after pip check.
+mem0ai==0.1.94
+openai==1.109.1
+posthog==3.25.0
+pytz==2024.2
+psycopg2-binary==2.9.11
+SQLAlchemy==2.0.44
+qdrant-client==1.19.0
+pydantic==2.11.9
+httpx==0.28.1
+langchain-core==0.3.86
+transformers==4.57.6
+tokenizers==0.22.2
+tiktoken==0.14.0
+PyYAML==6.0.3
+packaging==25.0

@@ -1,0 +1,308 @@
+{
+  "question": "What does Jon say Gina has done for him?",
+  "answer": "having my back",
+  "source_ids": [
+    "D6:19"
+  ],
+  "candidate_context_ids": [
+    "D6:17",
+    "D6:18",
+    "D6:19"
+  ],
+  "answer_spans": [
+    {
+      "source_id": "D6:19",
+      "start": 23,
+      "end": 37,
+      "verbatim": "having my back"
+    }
+  ],
+  "session": 6,
+  "recorded_date": "2:35 pm on 16 March, 2023",
+  "conv_id": "conv-30",
+  "split": "probe_fit",
+  "id": "conv-30:source_probe:11",
+  "analysis": {
+    "full_advantage": 7.427720515661349,
+    "source_dependent": true,
+    "best_single_sources": [
+      "D6:19"
+    ],
+    "best_pair_sources": [
+      "D6:18",
+      "D6:19"
+    ],
+    "minimum_sources": [
+      "D6:18",
+      "D6:19"
+    ],
+    "minimum_tokens": 109,
+    "single_policy_sources": [
+      "D6:17",
+      "D6:18",
+      "D6:19"
+    ],
+    "single_policy_tokens": 137,
+    "full_tokens": 137,
+    "best_pair_lift_over_best_single": 0.32870915142120793,
+    "pair_interactions": [
+      {
+        "source_ids": [
+          "D6:17",
+          "D6:18"
+        ],
+        "joint_lift": -0.1508379876613617,
+        "interaction": 1.1686345835526781,
+        "advantage": -0.5659278829892473
+      },
+      {
+        "source_ids": [
+          "D6:17",
+          "D6:19"
+        ],
+        "joint_lift": -0.011088609860356313,
+        "interaction": 0.40400128546753056,
+        "advantage": 7.106107494202055
+      },
+      {
+        "source_ids": [
+          "D6:18",
+          "D6:19"
+        ],
+        "joint_lift": 0.32870915142120793,
+        "interaction": 1.6481817226352478,
+        "advantage": 7.445905255483619
+      }
+    ],
+    "has_preserving_pair_without_preserving_single": true
+  },
+  "generations": {
+    "empty": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [],
+      "context_tokens": 0,
+      "source_answer_f1": 0.0
+    },
+    "full": {
+      "text": "having his back",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D6:17",
+        "D6:18",
+        "D6:19"
+      ],
+      "context_tokens": 137,
+      "source_answer_f1": 0.6666666666666666
+    },
+    "answer_removed": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D6:17",
+        "D6:18"
+      ],
+      "context_tokens": 80,
+      "source_answer_f1": 0.0
+    },
+    "best_single": {
+      "text": "having his back",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D6:19"
+      ],
+      "context_tokens": 78,
+      "source_answer_f1": 0.6666666666666666
+    },
+    "best_pair": {
+      "text": "having his back",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D6:18",
+        "D6:19"
+      ],
+      "context_tokens": 109,
+      "source_answer_f1": 0.6666666666666666
+    },
+    "minimum_bundle": {
+      "text": "having his back",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D6:18",
+        "D6:19"
+      ],
+      "context_tokens": 109,
+      "source_answer_f1": 0.6666666666666666
+    },
+    "single_policy": {
+      "text": "having his back",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D6:17",
+        "D6:18",
+        "D6:19"
+      ],
+      "context_tokens": 137,
+      "source_answer_f1": 0.6666666666666666
+    }
+  },
+  "subsets": [
+    {
+      "kind": "empty",
+      "source_ids": [],
+      "context_tokens": 0,
+      "score": {
+        "mean_logprob": -7.770625273386638,
+        "sum_logprob": -23.311875820159912,
+        "answer_tokens": 3,
+        "token_logprobs": [
+          -15.49051570892334,
+          -5.76625919342041,
+          -2.055100917816162
+        ]
+      }
+    },
+    {
+      "kind": "full",
+      "source_ids": [
+        "D6:17",
+        "D6:18",
+        "D6:19"
+      ],
+      "context_tokens": 137,
+      "score": {
+        "mean_logprob": -0.34290475772528833,
+        "sum_logprob": -1.028714273175865,
+        "answer_tokens": 3,
+        "token_logprobs": [
+          -0.09432385116815567,
+          -0.9343047142028809,
+          -8.570780482841656e-05
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D6:17"
+      ],
+      "context_tokens": 49,
+      "score": {
+        "mean_logprob": -8.185715168714523,
+        "sum_logprob": -24.55714550614357,
+        "answer_tokens": 3,
+        "token_logprobs": [
+          -9.779436111450195,
+          -14.399497985839844,
+          -0.3782114088535309
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D6:18"
+      ],
+      "context_tokens": 52,
+      "score": {
+        "mean_logprob": -9.090097844600677,
+        "sum_logprob": -27.270293533802032,
+        "answer_tokens": 3,
+        "token_logprobs": [
+          -20.175350189208984,
+          -6.709587574005127,
+          -0.38535577058792114
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D6:19"
+      ],
+      "context_tokens": 78,
+      "score": {
+        "mean_logprob": -0.6534291693242267,
+        "sum_logprob": -1.96028750797268,
+        "answer_tokens": 3,
+        "token_logprobs": [
+          -0.6342118382453918,
+          -1.325993537902832,
+          -8.21318244561553e-05
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D6:17",
+        "D6:18"
+      ],
+      "context_tokens": 80,
+      "score": {
+        "mean_logprob": -8.336553156375885,
+        "sum_logprob": -25.009659469127655,
+        "answer_tokens": 3,
+        "token_logprobs": [
+          -11.14128589630127,
+          -13.543824195861816,
+          -0.3245493769645691
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D6:17",
+        "D6:19"
+      ],
+      "context_tokens": 106,
+      "score": {
+        "mean_logprob": -0.664517779184583,
+        "sum_logprob": -1.9935533375537489,
+        "answer_tokens": 3,
+        "token_logprobs": [
+          -0.5521253943443298,
+          -1.4413520097732544,
+          -7.593343616463244e-05
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D6:18",
+        "D6:19"
+      ],
+      "context_tokens": 109,
+      "score": {
+        "mean_logprob": -0.32472001790301874,
+        "sum_logprob": -0.9741600537090562,
+        "answer_tokens": 3,
+        "token_logprobs": [
+          -0.07910411059856415,
+          -0.8949412703514099,
+          -0.00011467275908216834
+        ]
+      }
+    },
+    {
+      "kind": "answer_removed",
+      "source_ids": [
+        "D6:17",
+        "D6:18"
+      ],
+      "context_tokens": 80,
+      "score": {
+        "mean_logprob": -8.348657866319021,
+        "sum_logprob": -25.04597359895706,
+        "answer_tokens": 3,
+        "token_logprobs": [
+          -11.170028686523438,
+          -13.550068855285645,
+          -0.32587605714797974
+        ]
+      }
+    }
+  ]
+}

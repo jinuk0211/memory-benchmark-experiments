@@ -1,0 +1,1457 @@
+{
+  "judge_model": "gpt-4o-2024-08-06",
+  "scope": "common50 single-session-user completed subset, not full500",
+  "methods": {
+    "full_context": {
+      "available": 50,
+      "judged": 50,
+      "correct": 46,
+      "expected": 50,
+      "missing_predictions": 0,
+      "pending_judgments": 0,
+      "accuracy_on_available": 0.92,
+      "accuracy_on_same50": 0.92
+    },
+    "langmem": {
+      "available": 50,
+      "judged": 50,
+      "correct": 37,
+      "expected": 50,
+      "missing_predictions": 0,
+      "pending_judgments": 0,
+      "accuracy_on_available": 0.74,
+      "accuracy_on_same50": 0.74
+    },
+    "simplemem": {
+      "available": 50,
+      "judged": 50,
+      "correct": 38,
+      "expected": 50,
+      "missing_predictions": 0,
+      "pending_judgments": 0,
+      "accuracy_on_available": 0.76,
+      "accuracy_on_same50": 0.76
+    },
+    "lightmem": {
+      "available": 50,
+      "judged": 50,
+      "correct": 45,
+      "expected": 50,
+      "missing_predictions": 0,
+      "pending_judgments": 0,
+      "accuracy_on_available": 0.9,
+      "accuracy_on_same50": 0.9
+    }
+  },
+  "scored_rows": [
+    {
+      "method": "full_context",
+      "question_id": "e47becba",
+      "hypothesis": "Based on the conversation history, you graduated with a degree in **Business Administration**.\n\nThis is mentioned in the session dated 2023/05/30 (Tue) 12:08, where you stated: \"I graduated with a degree in Business Administration, which has definitely helped me in my new role.\"",
+      "payload_hash": "b56b62c4e0339b209997439381a9f5e295eac8df90029f1c8a42065822f6bbf3",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "118b2229",
+      "hypothesis": "I do not know how long your daily commute is. The conversation history mentions that one user has a 45-minute commute, but it does not specify your commute duration.",
+      "payload_hash": "0860a06040788e5f537347ce5174004c4dbfdbbb9478f35cbac35be34fe75f3c",
+      "correct": false
+    },
+    {
+      "method": "full_context",
+      "question_id": "51a45a95",
+      "hypothesis": "You redeemed the $5 coupon on coffee creamer at **Target**.\n\nThis is mentioned in the conversation history from session `answer_d61669c7` (dated 2023/05/29), where you stated: \"I actually redeemed a $5 coupon on coffee creamer last Sunday... I've been using the Cartwheel app from Target...\"",
+      "payload_hash": "a6b0840a6d0102ed6be0c939c597bd7cd08282b413ad5e80f2c50c7b67da871f",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "58bf7951",
+      "hypothesis": "Based on the conversation history, the play you attended at the local community theater was **The Glass Menagerie**.",
+      "payload_hash": "c92ee37a4e77daba244d0dcddafaef347398d8dc8bc5b41e4965de081d6c0c3d",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "1e043500",
+      "hypothesis": "The name of the playlist you created on Spotify is **Summer Vibes**.",
+      "payload_hash": "002163571ccb96f8d238229ff531a72dceb8c7b97bc52edd03722b749247fdb6",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "c5e8278d",
+      "hypothesis": "Your last name before you changed it was **Johnson**.",
+      "payload_hash": "9a09fabdab0a15f7dcd30cb44e75af0a823edbc4f8db417a8f0e7f5d158af3be",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "6ade9755",
+      "hypothesis": "Based on the conversation history, you have two main options for taking yoga classes:\n\n1.  **Serenity Yoga:** You mentioned this as a local studio you attend, though you noted that you sometimes can't make it there.\n2.  **At Home using Down Dog:** You currently use the **Down Dog** app for your home practice, specifically favoring vinyasa flow classes.\n\nYou also mentioned starting a routine with your best friend, **Sarah**, which involves a Sunday morning yoga session followed by brunch.",
+      "payload_hash": "ff9c5f60f1cd77f73441da5c45116d3186651ebeef2a8f86d2d48d5abe2743b5",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "6f9b354f",
+      "hypothesis": "You repainted your bedroom walls a lighter shade of gray.",
+      "payload_hash": "985409f8eb71435fef143b75dc9e9ecda0e4509cddcce6b15b43abb2349d06de",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "58ef2f1c",
+      "hypothesis": "Based on the conversation history, you volunteered at the \"Love is in the Air\" fundraising dinner in **February** (specifically mentioned as being back in February and also referred to as the Valentine's Day event).\n\n*Note: The conversation history mentions volunteering at a \"fundraising dinner\" in February/Valentine's Day, but it does not explicitly state that this specific event was at a \"local animal shelter.\" The animal shelter event mentioned is the \"Strut Your Mutt\" walk/festival scheduled for September.*",
+      "payload_hash": "dbf3fce9e87a98300f32c172f7bd6eacfcf8cc407d2c090d466c6e5c29729c3a",
+      "correct": false
+    },
+    {
+      "method": "full_context",
+      "question_id": "f8c5f88b",
+      "hypothesis": "Based on the conversation history, you mentioned that you bought your new tennis racket from a **sports store downtown**. The specific name of the store was not provided in the text.",
+      "payload_hash": "bdf2151e960195d2bd8a12185115f3b5cbc08aa9d623af3d74d802ce8993b0ca",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "5d3d2817",
+      "hypothesis": "Based on the conversation history provided, your previous occupation was a **marketing specialist** at a **small startup**.\n\nThis is mentioned in the session dated `2023/05/29 (Mon) 19:29` (session_id: `59f7fff7_1`), where you state: \"I've used Trello in my previous role as a marketing specialist at a small startup...\"",
+      "payload_hash": "577b7d617ac32150c7ad4731190dd90d9fbad4408954286ec68be8702166842e",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "7527f7e2",
+      "hypothesis": "You spent **$800** on a designer handbag.\n\nThis information comes from a conversation on **2023/05/23 (Tue) 08:15**, where you mentioned realizing you had spent a lot on luxury items last month and specifically noted buying a designer handbag for \"a pretty penny - $800, to be exact.\"",
+      "payload_hash": "396e72ec54cabadf3dbf926388519304767ab2e378e2f509534a949fb6efe90d",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "c960da58",
+      "hypothesis": "Based on the conversation history provided, you mentioned that you have **20 playlists** on Spotify.\n\nThis information was shared in the session dated **2023/05/20 (Sat) 09:02** (session_id: `answer_e05e4612`), where you stated: \"By the way, I have 20 playlists on Spotify already, and I'm looking to organize them better...\"",
+      "payload_hash": "a26e2250e95994955e4b1ca6638da102626d2e59acb47b7859a7f36c5a0762ea",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "3b6f954b",
+      "hypothesis": "Based on the conversation history, you attended your study abroad program at the **University of Melbourne**. This is mentioned in a session dated 2023/05/23 (Tue) 14:26, where you state, \"I actually went there with some friends during my study abroad program at the University of Melbourne.\"",
+      "payload_hash": "500231f59b0db77fe4bdae0bd0642fa016a11cd86cf7f8432d27a1d118f52ed8",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "726462e0",
+      "hypothesis": "You received a **10% discount** on your first purchase from the new clothing brand.",
+      "payload_hash": "823696f931cc76f7d3a18417ce63bdfc168b15826a9206e04dce238a9adf7a47",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "94f70d80",
+      "hypothesis": "It took you 4 hours to assemble the IKEA bookshelf.",
+      "payload_hash": "2f69994feb4b9706b9fc3f82ae222aab250c79d85c312a6355e229a5ba8fb063",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "66f24dbb",
+      "hypothesis": "Based on the conversation history from **2023/05/24**, you bought your sister a **yellow dress** and a **pair of matching earrings** for her birthday.",
+      "payload_hash": "e018c295a7752dc24e67d3994a31c928827f3e89482e7f68032d37865be0b2a5",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "ad7109d1",
+      "hypothesis": "Based on the conversation history, you upgraded to a **500 Mbps** internet plan about three weeks ago.",
+      "payload_hash": "8a15caeb57b5cd8c89677eeb3013a3d4a4e06d6f26b48ba74116abc60aceb5ea",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "af8d2e46",
+      "hypothesis": "Based on the conversation history, you packed **7 shirts** for your trip to Costa Rica.\n\nThis is mentioned in the session dated **2023/05/29 (Mon) 11:53**, where you stated: \"Like, on my last trip to Costa Rica, I brought 7 shirts and 5 pairs of shorts...\"\n\n*Note: The conversation history indicates this trip occurred in the past (\"last trip\"), and the specific duration of that trip (whether it was 5 days or another length) is not explicitly stated in the text, though you are currently planning a 3-day business trip in a different session.*",
+      "payload_hash": "6a0637d1827fa4ec008d6df2d34ef6a63449e857b34927adc6a71a46898f706d",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "dccbc061",
+      "hypothesis": "Based on the conversation history from May 24, 2023, you mentioned that you used to be a **staunch atheist** before recently exploring Buddhism and other spiritual possibilities.",
+      "payload_hash": "c508c13cef543a435406af1e1d35a02f6982ca5876532e16d225e5dc11a9cdfb",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "c8c3f81d",
+      "hypothesis": "Based on the conversation history, your favorite running shoes are **Nike**.\n\nYou mentioned in the session dated 2023/05/29 (Mon) 19:47: \"Nike has been my favourite brand so far for running shoes.\" You also noted that you bought your current pair at an outlet mall in April and were looking for a similar model or a new pair of Nike running shoes for your daily 5K runs.",
+      "payload_hash": "600f09c7891a4ec77c60df2be61cb50395f8a3263f2c07647fc16d59a5825df3",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "8ebdbe50",
+      "hypothesis": "Based on the conversation history, you completed a **Data Science** certification last month.\n\nThis is mentioned in multiple sessions (e.g., `03b4d5d8_2` and `answer_8ad8a34f`) where you discuss updating your LinkedIn profile to reflect this new certification.",
+      "payload_hash": "995fda3d1668f4c3e3af9a7bbece1e94ce22b69f4b8440d948da7a150beeb69f",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "6b168ec8",
+      "hypothesis": "Based on the conversation history, you own **three** bikes: a road bike (specifically a Trek Emonda), a mountain bike, and a commuter bike.",
+      "payload_hash": "20e665921489d83e7be74a343ae9043cebd7e8ea7ea30d967624fad4b234d1ec",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "75499fd8",
+      "hypothesis": "I do not know your dog's breed. The conversation history provided does not contain information about your dog's name, appearance, or breed. While the history mentions a dog named \"Max\" who is a Golden Retriever in a specific session, there is no confirmation that this is your dog or that you are referring to him in your current question.",
+      "payload_hash": "9c8fd74b591f066ed3e9a404abb694fd6f8a94adb90030230bc60366188148db",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "21436231",
+      "hypothesis": "You caught 12 largemouth bass on your fishing trip to Lake Michigan.",
+      "payload_hash": "da4ee356409df61def7601018f6ba4b6c075f65b6f57a4287b8b10ebe716c347",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "95bcc1c8",
+      "hypothesis": "You watched 10 amateur comedians perform at the open mic night.",
+      "payload_hash": "c1c1ab5daf429da7d003f2f50a6b02ff68df11b6c4fc8fbcd6b1db950b9c7eda",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "0862e8bf",
+      "hypothesis": "Based on the conversation history provided, your cat's name is **Luna**.\n\nThis is mentioned in the session dated **2023/05/24 (Wed) 17:25**, where you stated: \"By the way, my cat's name is Luna, and she's been such a sweetie throughout all the changes we've been making to her environment.\"",
+      "payload_hash": "d0113359c539ca759327d78464cc655fa1b7df48f33ee5b3bdaa513137fbdf24",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "853b0a1d",
+      "hypothesis": "You were 18 years old when your grandma gave you the silver necklace.",
+      "payload_hash": "c8dcfcc73d2177595fa3831b971c7e15856cd1e0cf21e382e225e43a43ea217a",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "a06e4cfe",
+      "hypothesis": "Based on the conversation history from **2023/05/22 (Mon)**, you settled on a **3:1 ratio** (gin to vermouth) for your classic gin martini, along with a dash of citrus bitters.",
+      "payload_hash": "c00c9f3901b544d8d847d1c41ba1e896e94265070db330ff76c2a32e7bd7f63f",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "37d43f65",
+      "hypothesis": "You upgraded your laptop's RAM to 16GB.",
+      "payload_hash": "6dc40fc2620bd7ebaf5cfab53f488674837bf4930e4fcd031a24197d9a3d0f76",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "b86304ba",
+      "hypothesis": "I do not know. The conversation history does not contain any information about a painting of a sunset or the amount you paid for it.",
+      "payload_hash": "99ae93b5bf1da7cdbeda4c16986d75297747efc62899ce14e8c19758965e7254",
+      "correct": false
+    },
+    {
+      "method": "full_context",
+      "question_id": "d52b4f67",
+      "hypothesis": "Based on the conversation history, you attended your cousin's wedding at the **Grand Ballroom**. This is mentioned in the session dated 2023/05/28 (Sun) 19:17, where you state, \"I was just at my cousin's wedding at the Grand Ballroom last weekend.\"",
+      "payload_hash": "d1b10b1c648a1737dbf9cae9e16df1d2bd8ff5f707045413362b5177aede8c42",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "caf9ead2",
+      "hypothesis": "Based on the conversation history, it took **5 hours** to move everything into the new apartment. This is mentioned in a turn dated 2023/05/20 (Sat) 20:23, where the user states, \"it took me and my friends around 5 hours to move everything into the new apartment.\"",
+      "payload_hash": "35d430be1245c0c939749986cd43c90d702a02d23d3ef6cd9cf6f3f9d5e18861",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "8550ddae",
+      "hypothesis": "Based on the conversation history from **2023/05/20**, you tried a **lavender gin fizz** recipe last weekend.\n\nYou mentioned that you didn't have simple syrup, so you improvised by using honey and water, but the drink \"didn't quite turn out as expected.\" Later in the conversation (on **2023/05/22**), you clarified that you actually made a **lavender gin fizz** instead of the intended **Lavender Dream** cocktail because you lacked lavender syrup.",
+      "payload_hash": "22e03879feb659dc132c6a758ba4a96bc83aee81c43a0a28f4474805506eeabe",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "60d45044",
+      "hypothesis": "Based on the conversation history provided, there is no information about your favorite type of rice.\n\nWhile the history mentions that you are interested in making **Japanese-style dishes** using **Japanese short-grain rice** (specifically for making onigiri), it does not explicitly state that this is your *favorite* type of rice.",
+      "payload_hash": "d7eddeb6bef65cf4b87929fec5e76df4829c7353a6ac3b76a661cb257ecf0553",
+      "correct": false
+    },
+    {
+      "method": "full_context",
+      "question_id": "3f1e9474",
+      "hypothesis": "Based on the conversation history provided, you had a conversation about destiny with an **AI assistant** (referred to as \"assistant\" in the logs).\n\nThis conversation took place in the session dated **2023/05/22 (Mon) 05:54** (session_id: `answer_57fc1954`). During this chat, you discussed your beliefs on destiny, the concept of \"everything happens for a reason,\" and whether positive thinking and visualization could manifest desires, referencing a conversation you had with a friend named **Sarah**.",
+      "payload_hash": "5e18b9db6f351332dc252e24ff11c612f72a4cb74fde1fd8088e2e3f7f885373",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "86b68151",
+      "hypothesis": "You bought your new bookshelf from **IKEA**.\n\nThis is mentioned in the conversation history from **2023/05/27 (Sat) 13:14**, where you stated: \"The new bookshelf is from IKEA, and I'm really happy with it.\"",
+      "payload_hash": "aba28371dac735875c726253d3c9e7a26a8070992eaf9b74589ffaa5073cda5e",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "577d4d32",
+      "hypothesis": "Based on the conversation history, you decided to stop checking work emails and messages by **7 pm**.\n\nThis was mentioned in the session dated **2023/05/29 (Mon) 04:01**, where you stated: \"I've been trying to establish a better evening routine, stopping work emails and messages by 7 pm to separate my work and personal life.\"",
+      "payload_hash": "32b3b2cba4967f046dea7835ad045010e559626b8e3983135fe6161af0d1ca72",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "ec81a493",
+      "hypothesis": "Based on the conversation history, your favorite artist's debut album was released as a **limited edition of only 500 copies** worldwide. This detail was mentioned in the context of displaying a signed poster from that specific album.",
+      "payload_hash": "a60517282f88fcff2b725d4735b6467276584710195d30101224ae641e1119fa",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "15745da0",
+      "hypothesis": "Based on the conversation history, you started collecting vintage cameras **three months ago**.\n\nThis is mentioned in the session dated **2023/05/22 (Mon) 01:38**, where you stated: \"I've been collecting vintage cameras for **three months** now...\"",
+      "payload_hash": "ac277ac3d9002f0fb94cce0efd85c2d0a2314e5d5446994c6b259819e82fa815",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "e01b8e2f",
+      "hypothesis": "Based on the conversation history provided, you went on a week-long trip with your family to **Hawaii** (specifically mentioning the Big Island) in **late May** (the assistant notes you went \"last month\" relative to a conversation on May 24th, and you later mention planning to stay in Kailua-Kona).\n\nThe specific details found in the text are:\n*   **Destination:** Hawaii (Big Island/Kailua-Kona).\n*   **Duration:** A week.\n*   **Companions:** Your family.\n*   **Timing:** You mentioned this trip happened \"last month\" during a conversation dated May 24th, 2023, placing the trip in **April 2023**. Later, in a conversation on May 25th, you confirm you are thinking of going back to Hawaii and mention staying in Kailua-Kona.",
+      "payload_hash": "e92441265413a7b44c2e41d154e4ad16f7c589030ef0d29e6c7f941d6ea28e61",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "bc8a6e93",
+      "hypothesis": "Based on the conversation history from **2023/05/26**, you baked a **lemon blueberry cake** for your niece's birthday party.",
+      "payload_hash": "7e7d9c41ff8e6253744bf3035c100fc4ec07b806e2d3478464b5d70f00e649fd",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "ccb36322",
+      "hypothesis": "Based on the conversation history provided, there is no mention of a specific music streaming service you have been using.\n\nWhile the history mentions:\n*   Listening to **Arctic Monkeys** and **The Neighbourhood** on **Spotify** (Session `answer_f1fbb330`, Turn 2).\n*   Using **Netflix** for documentaries and shows (Session `ultrachat_228033`, Turn 4).\n*   Using the **TripIt** app for travel (Session `bdcee74e_3`, Turn 10).\n*   Using **eBird** for birding (Session `522dd987_4`, Turn 6).\n\nIt does not state that you have been using a music streaming service \"lately\" in the context of your current habits or recent changes. The only specific music platform mentioned is **Spotify**, but that was in the context of listening to specific indie bands a while ago, not necessarily as your current primary service \"lately.\"\n\nTherefore, I cannot definitively answer which music streaming service you have been using lately based on the provided text.",
+      "payload_hash": "f627aae14f8f5be84e82700969f3de84b792fbec639510d2e7e4b3353ce0174b",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "001be529",
+      "hypothesis": "Based on the conversation history, you waited **over a year** for your asylum application to get approved. You mentioned this in a session on May 28, 2023, stating, \"Over a year of uncertainty was really tough.\"",
+      "payload_hash": "feb6991275df5fee2fd556a79a1c1b4a60b0fe0b31f57d950fd37a963535452a",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "b320f3f8",
+      "hypothesis": "You bought a rare blue **Snaggletooth** action figure from a thrift store.",
+      "payload_hash": "aabb040aa8e86640e21478761ef2ba762cf52857a1e89d464c231447da1ad956",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "19b5f2b3",
+      "hypothesis": "Based on the conversation history, you were in Japan for **two weeks**.\n\nThis is mentioned in the session dated 2023/05/28 (Sun) 03:58, where you state: \"I spent **two weeks** traveling solo around the country...\" while discussing your visit to Fushimi Inari Shrine.",
+      "payload_hash": "39c6c606b4781e53544c490647d28f92298295b07f861cd4b8865895eee1af4f",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "4fd1909e",
+      "hypothesis": "Based on the conversation history from **2023/05/20 (Sat) 09:37**, you attended the Imagine Dragons concert at the **Xfinity Center** on **June 15th**.",
+      "payload_hash": "b1ec54bb736acc957e07d5c7a486893a51923773cb37dccc7233cd47bcec84f3",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "545bd2b5",
+      "hypothesis": "Based on the conversation history provided, you mentioned that you have been averaging **around 2 hours** of screen time on Instagram per day for the past two weeks.",
+      "payload_hash": "849e0929a40f60e2c009819e56e16cd1491a0a0259235e19dc9027db4f93961c",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "8a137a7f",
+      "hypothesis": "Based on the conversation history, you replaced a **Philips LED bulb** in your bedside lamp.\n\nThis is mentioned in the session dated **2023/05/22 (Mon) 10:10**, where you stated: \"I've been using a **Philips LED bulb** in my bedside lamp, and I really like the warm tone it provides.\" Later, you expressed interest in getting a floor lamp compatible with this specific bulb.",
+      "payload_hash": "2bd95eec150fb8ae35a619d9d9b065e77b2afce3b26f27a3b0b3204c7df020f2",
+      "correct": true
+    },
+    {
+      "method": "full_context",
+      "question_id": "76d63226",
+      "hypothesis": "Based on the conversation history, you mentioned that you set up a **55-inch** Samsung 4K smart TV on Saturday (which corresponds to May 21, 2023, based on the session dates provided in the history).",
+      "payload_hash": "f13da27ccf369f793e41941eb6018a3cb2e92e7137c7a44087ec73a07670b187",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "e47becba",
+      "hypothesis": "Business Administration",
+      "payload_hash": "78912f921d9a35092b1cb1cf7cb1b49e00e1b59d6d8244dacbe7dc3d7bf62243",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "118b2229",
+      "hypothesis": "Unknown",
+      "payload_hash": "219e3881748352fb54a1120bda2ac4245d03196821b37f3750ac889e5c4e4b82",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "51a45a95",
+      "hypothesis": "The Cartwheel app",
+      "payload_hash": "2d8e888f4f9a11496978c0fdd203b09aa28bc493802b50ac9e977cf1bcb59eee",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "58bf7951",
+      "hypothesis": "The Glass Menagerie",
+      "payload_hash": "b493bef18f681b8de083d7e7c48bb31d8a7e55bbca553d460b3a03907621ae8d",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "1e043500",
+      "hypothesis": "Summer Vibes",
+      "payload_hash": "d337151be358260301235e2b0692cdb10c105f7aa1043657141026de4ffa34c7",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "c5e8278d",
+      "hypothesis": "Johnson",
+      "payload_hash": "31075958fbd291a3be49eadee8df43c0b6835d7f0813a08c5b4187603198f489",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "6ade9755",
+      "hypothesis": "With your best friend Sarah on Sunday mornings.",
+      "payload_hash": "01a026708c46d7fb6e4a3216f9dbbfdbf986dee9aa8847a9837a59d50ca7f30f",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "6f9b354f",
+      "hypothesis": "Lighter shade of gray",
+      "payload_hash": "506ef3ebc029f82658b91bbafc5c3d1533138ad87d45452b4b69fe9313ac9fea",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "58ef2f1c",
+      "hypothesis": "February",
+      "payload_hash": "bbb985101e0d879e478bb3819289ca780daa596c6cf1eeacfdbb6880f66447fb",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "f8c5f88b",
+      "hypothesis": "A downtown sports store.",
+      "payload_hash": "40cc5901cadd7401ac25c5876d25a2bcab6a3dd1715f2d6bccba91d5db887e57",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "5d3d2817",
+      "hypothesis": "Televero Health recruiter",
+      "payload_hash": "48afcacff83be27a88864cab1bf5311c46a68f47723b1d2c96529ab79bda83c5",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "7527f7e2",
+      "hypothesis": "$800",
+      "payload_hash": "510c18e634a88c6beb042bec3503acbe551a6b25af69db184efdf85c7e23d436",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "c960da58",
+      "hypothesis": "Approximately 20",
+      "payload_hash": "1c99e9d7bb63733ae607b77cc37672103c9133afe76a18c5e62fc6cf7b5fbc15",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "3b6f954b",
+      "hypothesis": "I do not have any memories of you attending a study abroad program in the provided chat history.",
+      "payload_hash": "902afe4db524d32af3ce04f9bab5b349044a0350bbbcca310f0a4799b1e5eeec",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "726462e0",
+      "hypothesis": "The retrieved memories do not contain information about a specific clothing brand purchase or the discount received on it.",
+      "payload_hash": "4267c91b6282df39ab219707f9b7c2acc7b6425049c9d8e6d1d726ec599569fb",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "94f70d80",
+      "hypothesis": "4 hours",
+      "payload_hash": "728b97e57ff78718418f6c367519d2f64460a271d95542c6accf3dc19e3ee3cf",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "66f24dbb",
+      "hypothesis": "Matching earrings to her yellow dress",
+      "payload_hash": "8daaf811060fbaf9ca4e317f6e73819642fb02301cf8315f31067d4908b0216b",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "ad7109d1",
+      "hypothesis": "Information not available in retrieved memories.",
+      "payload_hash": "4b09e9103146bfd6893aa9a0ba0f97ac45f168b71b5595206c34623cb2c59772",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "af8d2e46",
+      "hypothesis": "7",
+      "payload_hash": "4d80b72ac8d7b197e04360719327844f8e0da56a4dd5fa8dd46f2e48048e8428",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "dccbc061",
+      "hypothesis": "Staunch atheist",
+      "payload_hash": "d94ae2f8d428d6a7d144655d39c56d8e18263b4d9ccf00e2c6e08e819de5fef0",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "c8c3f81d",
+      "hypothesis": "Nike",
+      "payload_hash": "0136cb8c4f53394d0089e07902634ac07cf6d08b5c89f4dea06113320daa5766",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "8ebdbe50",
+      "hypothesis": "Data Science",
+      "payload_hash": "0fb28a85584de10748edb92037bf586e516c2a36d9473eb8283aacfd7089bcb2",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "6b168ec8",
+      "hypothesis": "Three",
+      "payload_hash": "18181e3c7145fe65a2e81d35c42f5ac41b063a4a80eb58fa8f2d135b7f9589ff",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "75499fd8",
+      "hypothesis": "Golden Retriever",
+      "payload_hash": "93da9c374bb384e25892af48c92a961d25c87e08c20092f5f5443dd4dd08115c",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "21436231",
+      "hypothesis": "12",
+      "payload_hash": "572b37307d1f5e08c98943976aef83bb9cef2a5ee1383299c60cfa9e8e593c35",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "95bcc1c8",
+      "hypothesis": "10",
+      "payload_hash": "9d4d9ca07eff4a811d9953ad552cd91871e2388697ea9885a63821eb605d7cb3",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "0862e8bf",
+      "hypothesis": "Luna",
+      "payload_hash": "c2af0f30b406457f90a92e40b5e134c635bf9162ede2b0dd9f0aae941bc90433",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "853b0a1d",
+      "hypothesis": "18",
+      "payload_hash": "804945e5b9d4b274289a10e7182d262e3e3302bec1538c909afdea8aed9c5a09",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "a06e4cfe",
+      "hypothesis": "3:1",
+      "payload_hash": "5a166e6ab5f697d3fed0e3c8034f9ccbc8cd6115affd4601e5185ee3c8fd5318",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "37d43f65",
+      "hypothesis": "16GB",
+      "payload_hash": "831b7524a07fa907868ee31a936cc47546c6d3c24f5124ac69df059f3c063116",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "b86304ba",
+      "hypothesis": "The user has no history of purchasing or owning a painting of a sunset.",
+      "payload_hash": "7d3adcf7e07269d7f1633687942c0df007b50a9afd90a6c64008ee58b07811ad",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "d52b4f67",
+      "hypothesis": "Grand Ballroom",
+      "payload_hash": "bf835ede6bd81ae53505980a331413f3f688772fbc693403b0268706f6383bf4",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "caf9ead2",
+      "hypothesis": "About 5 hours",
+      "payload_hash": "6ff5ebf5cc353589852490e892c9191f362dc4723fcbbc8da8b41cd49b6d5fa1",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "8550ddae",
+      "hypothesis": "Lavender gin fizz",
+      "payload_hash": "18daae1a1c72a1eb782c9a4d0ac8795be4cda9b91596c796974dcb9690b3a16a",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "60d45044",
+      "hypothesis": "The provided chat history does not contain any information about the user's favorite type of rice.",
+      "payload_hash": "103cc47d4ae0342d3f8329562989c23686c9dba97fbfa623da39afc6a16ace2d",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "3f1e9474",
+      "hypothesis": "Yourself",
+      "payload_hash": "b87e36ae94b3d90cc964ed1a870f5251e343d06641917f16686694d96b4f17ba",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "86b68151",
+      "hypothesis": "IKEA",
+      "payload_hash": "e9a3aa004d459715893c730da7d1d150dfe965003e6802ceea097e210203501e",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "577d4d32",
+      "hypothesis": "7pm",
+      "payload_hash": "6a6651ab2c86be0dccab7a8705c899015ac56aa526b8504f6c4a61b3f4868f19",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "ec81a493",
+      "hypothesis": "500",
+      "payload_hash": "a819290f8be58bfc5f2c2105eea8bd11c649f0f0a0b3678e867cafbeb715bf7d",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "15745da0",
+      "hypothesis": "3 months",
+      "payload_hash": "b3bcbafb98da99c4f8683e368784e2ad7a977301563e1df8706ed0918fcf4a9b",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "e01b8e2f",
+      "hypothesis": "Hawaii",
+      "payload_hash": "9218146ceb804396ab9cba6a2bcf84064ac1cdac6aa5f1f3f4d0db04ae631de7",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "bc8a6e93",
+      "hypothesis": "Lemon blueberry cake",
+      "payload_hash": "f445bc30463da44eebd6909329d65c3a5eb9084902dff4eb0897b7e2af07bea7",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "ccb36322",
+      "hypothesis": "The provided chat history does not contain information about the specific music streaming service the user has been using.",
+      "payload_hash": "78e06fdc1edb99364bd040f598703f1a31d98698173c50de77a4d7cc3a1d908a",
+      "correct": false
+    },
+    {
+      "method": "langmem",
+      "question_id": "001be529",
+      "hypothesis": "Over a year.",
+      "payload_hash": "9e52db5a770bbd7b11d441d927599a9325a30a33b5ae4ca34d664952e0aabe75",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "b320f3f8",
+      "hypothesis": "A rare blue Snaggletooth.",
+      "payload_hash": "1fff96e0eb238cad276efa5a4c2213e08bac082a4c072854e61a6fa0cd9d5319",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "19b5f2b3",
+      "hypothesis": "2 weeks",
+      "payload_hash": "55d7fd35540f895b9a30302d0ec49870c9b2cca1c4dcd92d541f978457f3caad",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "4fd1909e",
+      "hypothesis": "Xfinity Center",
+      "payload_hash": "0b4ae52c0e566d254ead71f04f0274848aeed0a625a2be27c8ee5724f184d472",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "545bd2b5",
+      "hypothesis": "2 hours",
+      "payload_hash": "4fd04f878204fbc0936be655acb6ff0f9d211bd0cc3ed1d902c0d593c2f4daab",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "8a137a7f",
+      "hypothesis": "Philips LED",
+      "payload_hash": "40b577155417dbaf155fbd83f94314941823be452419f0f33ef914d46fa0a4d8",
+      "correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "76d63226",
+      "hypothesis": "55-inch",
+      "payload_hash": "6862742ea537fcfe090bffa0589652f4305e12a91625376b4a38632642034f66",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "e47becba",
+      "hypothesis": "Business Administration",
+      "payload_hash": "78912f921d9a35092b1cb1cf7cb1b49e00e1b59d6d8244dacbe7dc3d7bf62243",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "118b2229",
+      "hypothesis": "45 minutes each way",
+      "payload_hash": "df09e85fa67f4f1f4d10226d8dc7ec56653f9434bbd8b7bdbb3e818cd1c62075",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "51a45a95",
+      "hypothesis": "Email inbox",
+      "payload_hash": "a79207e8b6c595d910242ce48542f80e709748adabfbbbc5d8ee4bc05ed00c52",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "58bf7951",
+      "hypothesis": "The Glass Menagerie",
+      "payload_hash": "b493bef18f681b8de083d7e7c48bb31d8a7e55bbca553d460b3a03907621ae8d",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "1e043500",
+      "hypothesis": "Summer Vibes",
+      "payload_hash": "d337151be358260301235e2b0692cdb10c105f7aa1043657141026de4ffa34c7",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "c5e8278d",
+      "hypothesis": "Johnson",
+      "payload_hash": "31075958fbd291a3be49eadee8df43c0b6835d7f0813a08c5b4187603198f489",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "6ade9755",
+      "hypothesis": "Serenity Yoga",
+      "payload_hash": "96c6cb5cf29b963012f75da5e76aff3953a24e1a4243cda51c60f06c25efd38e",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "6f9b354f",
+      "hypothesis": "Lighter shade of gray",
+      "payload_hash": "506ef3ebc029f82658b91bbafc5c3d1533138ad87d45452b4b69fe9313ac9fea",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "58ef2f1c",
+      "hypothesis": "February 2023",
+      "payload_hash": "2a24ba1688eef1c9917046480f9e155c59cb85ab4b2902d3c895684ec86f6420",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "f8c5f88b",
+      "hypothesis": "sports store downtown",
+      "payload_hash": "46cc73cb63bed94f5dc709ebb2fa1bd691bb2f6cb776be8537bc81cf5aba92c3",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "5d3d2817",
+      "hypothesis": "Marketing specialist at a small startup",
+      "payload_hash": "2032243c7fb3f52e2ce80480e5286d7caa0b6642b9e5feff5690cafe6f1424c0",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "7527f7e2",
+      "hypothesis": "$800",
+      "payload_hash": "510c18e634a88c6beb042bec3503acbe551a6b25af69db184efdf85c7e23d436",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "c960da58",
+      "hypothesis": "20 playlists",
+      "payload_hash": "7d0f7446be8c962cde02d8abaa246b31ec332a89db4242105a416295932ce1b9",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "3b6f954b",
+      "hypothesis": "University of Melbourne",
+      "payload_hash": "42d2a61122d3e8a6c9afdfb2f4b25acbe4c9a36db3344a5ac3d2fafabd3abe7f",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "726462e0",
+      "hypothesis": "10% discount",
+      "payload_hash": "7b4c0eb65f877c2b31c15443cb4ad972b8154b50add0a84e4540b544742b3b99",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "94f70d80",
+      "hypothesis": "4 hours",
+      "payload_hash": "728b97e57ff78718418f6c367519d2f64460a271d95542c6accf3dc19e3ee3cf",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "66f24dbb",
+      "hypothesis": "A yellow dress and matching earrings",
+      "payload_hash": "651e680d5802aa1eb5099165c10d232d238ba1661b769d5383c5119fb62fc65c",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "ad7109d1",
+      "hypothesis": "Information not available in the provided context",
+      "payload_hash": "e804706454a9b5b6674c13c37b3b655ed58b5e494c8263f56595044d8e81cc7c",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "af8d2e46",
+      "hypothesis": "7 shirts",
+      "payload_hash": "a9417c8ff758bcfdfb2eb10812b99ffcc5c90a764be7b325be40cc103d045d63",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "dccbc061",
+      "hypothesis": "Information not available in the provided context",
+      "payload_hash": "2f782c569be425ff4ec7df8d47e6c4169301bfd91310081a29a7901d9991f6eb",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "c8c3f81d",
+      "hypothesis": "Nike",
+      "payload_hash": "0136cb8c4f53394d0089e07902634ac07cf6d08b5c89f4dea06113320daa5766",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "8ebdbe50",
+      "hypothesis": "No certification completion is recorded in the context.",
+      "payload_hash": "b50793eed0262caea8e6a3ff7e3745af4b183ae17f12de4288bad6ed16024e9b",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "6b168ec8",
+      "hypothesis": "3",
+      "payload_hash": "3dce06f8167e3cab4c3ffe3bd04e2fe4619d2fb2c164155939fc9815cda72ffa",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "75499fd8",
+      "hypothesis": "Information not available in the provided context",
+      "payload_hash": "2dbb1abf7e444291e1cd237977244f13bcfad8bb669409f4bf9a6f4f152d105f",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "21436231",
+      "hypothesis": "12",
+      "payload_hash": "572b37307d1f5e08c98943976aef83bb9cef2a5ee1383299c60cfa9e8e593c35",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "95bcc1c8",
+      "hypothesis": "10",
+      "payload_hash": "9d4d9ca07eff4a811d9953ad552cd91871e2388697ea9885a63821eb605d7cb3",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "0862e8bf",
+      "hypothesis": "Luna",
+      "payload_hash": "c2af0f30b406457f90a92e40b5e134c635bf9162ede2b0dd9f0aae941bc90433",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "853b0a1d",
+      "hypothesis": "18 years old",
+      "payload_hash": "c91188a958dd112993f272afc72cfce447a03ed5c10fcca4b318721afbb04396",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "a06e4cfe",
+      "hypothesis": "Information not available in the provided context",
+      "payload_hash": "2a6311cb6696ad4f2c9d142bffb85003b5d791c05fd2cd14238e7bcf87d739c4",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "37d43f65",
+      "hypothesis": "16GB",
+      "payload_hash": "831b7524a07fa907868ee31a936cc47546c6d3c24f5124ac69df059f3c063116",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "b86304ba",
+      "hypothesis": "Triple the amount paid",
+      "payload_hash": "c3dc77406dcdaaf6abd8dc99b05384f0c514c6c3b3f6a34a04c79353929e1af9",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "d52b4f67",
+      "hypothesis": "Grand Ballroom",
+      "payload_hash": "bf835ede6bd81ae53505980a331413f3f688772fbc693403b0268706f6383bf4",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "caf9ead2",
+      "hypothesis": "Approximately 5 hours",
+      "payload_hash": "568bec2c7dead0d0068bff74b5549cd3d03db9d5f005d26ebd9138cc9f9ef9d9",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "8550ddae",
+      "hypothesis": "Lavender gin fizz",
+      "payload_hash": "18daae1a1c72a1eb782c9a4d0ac8795be4cda9b91596c796974dcb9690b3a16a",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "60d45044",
+      "hypothesis": "Information not available in the context",
+      "payload_hash": "9d8c35bb0a0b81f4d774ff3a4ae50791f8706e223b56b15219ce2672336e089e",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "3f1e9474",
+      "hypothesis": "Sarah",
+      "payload_hash": "d651f34aa0f745ecd04c2d9fa593a060b0c8d918994d2ea2aa210e14986c936f",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "86b68151",
+      "hypothesis": "IKEA",
+      "payload_hash": "e9a3aa004d459715893c730da7d1d150dfe965003e6802ceea097e210203501e",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "577d4d32",
+      "hypothesis": "7 pm",
+      "payload_hash": "b22e6794044dabb29e76e0e74b552f3aa0d77c7b0160e5017ff9eca36e6d1a7c",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "ec81a493",
+      "hypothesis": "500 copies",
+      "payload_hash": "760197427f07b26dc7769f8d6d07ae17f91cb5eff4e1ba8a9863e68508ded007",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "15745da0",
+      "hypothesis": "Information not available in the provided context",
+      "payload_hash": "4649fc7125d25c948c48cca655204b0502338dc5f415040131e17df8f7f31a3c",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "e01b8e2f",
+      "hypothesis": "Information not available in the provided context",
+      "payload_hash": "2c4b37dc310c44fdb443aad5a8d248fcd5a86a8038ae3d81a144ef2f5eb56719",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "bc8a6e93",
+      "hypothesis": "Lemon blueberry cake",
+      "payload_hash": "f445bc30463da44eebd6909329d65c3a5eb9084902dff4eb0897b7e2af07bea7",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "ccb36322",
+      "hypothesis": "Spotify",
+      "payload_hash": "6c70ef34dbc92bedacdce8587378d2a20fe7a1344fb84f1f4f25b7accfeafce9",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "001be529",
+      "hypothesis": "Over a year",
+      "payload_hash": "c26082d80407c91b9d86e667bf2d50d4ae92160bff6196c00aa098bb7d60431c",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "b320f3f8",
+      "hypothesis": "A rare blue Snaggletooth action figure",
+      "payload_hash": "f869bbe1224f14027995295245a925ee2c81e64f82bd033a6d66267d30a733c8",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "19b5f2b3",
+      "hypothesis": "Two weeks",
+      "payload_hash": "71dadbe1c93c975953063619a7016bab20e93331cea11600609d31ed4659b5b0",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "4fd1909e",
+      "hypothesis": "Xfinity Center",
+      "payload_hash": "0b4ae52c0e566d254ead71f04f0274848aeed0a625a2be27c8ee5724f184d472",
+      "correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "545bd2b5",
+      "hypothesis": "Information not available in the provided context",
+      "payload_hash": "c60fcb0f58f5af2b0dfe6f4ec2a09f34451bf90e588c91bb00fa15eb2eb003dd",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "8a137a7f",
+      "hypothesis": "Information not found in the provided context",
+      "payload_hash": "1610da07e2c7b69fd27a60c35414287f19fa591dd663785b4c9ce0307ecda36a",
+      "correct": false
+    },
+    {
+      "method": "simplemem",
+      "question_id": "76d63226",
+      "hypothesis": "55-inch",
+      "payload_hash": "6862742ea537fcfe090bffa0589652f4305e12a91625376b4a38632642034f66",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "e47becba",
+      "hypothesis": "You graduated with a degree in **Business Administration**.",
+      "payload_hash": "500ec08917e48acb10e92d592c8119ec1392b58c822d6da5b0ced7fef1f78013",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "118b2229",
+      "hypothesis": "Based on the memories provided, your daily commute to work takes **45 minutes each way**.\n\nThis is explicitly stated in the memory from May 22, 2023: \"User listens to audiobooks during their daily commute, which takes 45 minutes each way.\"",
+      "payload_hash": "882795d73e2ac0f35bc0e43b0aea8c52c1ae9ab32521f14d4f54798cb6a52f15",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "51a45a95",
+      "hypothesis": "Based on the memories provided, you redeemed the $5 coupon on coffee creamer **last Sunday**.\n\nSince the current date in the log is Monday, May 29, 2023, \"last Sunday\" refers to **Sunday, May 28, 2023**. The memory also notes that you were surprised to find the coupon in your email inbox.",
+      "payload_hash": "6c56d60191677187ba2eb212410778db45abefd9baada19c9dac49209ba7c8e2",
+      "correct": false
+    },
+    {
+      "method": "lightmem",
+      "question_id": "58bf7951",
+      "hypothesis": "Based on the memories provided, there is **no record** of you attending a play at a local community theater.\n\nThe memories mention your interest in the themes of the show *Sharp Objects* (specifically family dysfunction, trauma, and small-town secrets) on **2023-05-30**, but this refers to a TV show or book themes, not an attendance at a live theater performance. All other entries relate to board games, TV shows (*All American*, *Nancy Drew*), food, or shopping.",
+      "payload_hash": "c5ec2edcc5aec9c82c5924451f3ace3aa64e8bfc33f2de1e9a14a7af0789cb85",
+      "correct": false
+    },
+    {
+      "method": "lightmem",
+      "question_id": "1e043500",
+      "hypothesis": "The name of the Spotify playlist you created is **\"Summer Vibes\"**.",
+      "payload_hash": "3a8e5ff76ef47be512413c6cd3cc4c363767c38913ef1217b4a76d6a69dcbfce",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "c5e8278d",
+      "hypothesis": "Based on the memories provided, your last name before you changed it was **Johnson**.\n\nThe relevant memory states: \"User's old last name was Johnson.\"",
+      "payload_hash": "2725cafef72988cf9a5a63615c84a0cff71504a5c2401798de473b13df46c369",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "6ade9755",
+      "hypothesis": "Based on the memories provided, you primarily take yoga classes at **Serenity Yoga**.\n\nThe records indicate that you have a routine of meeting a friend (Sarah) for Sunday morning yoga and brunch at this location. You also use the **Down Dog app** for home practice specifically on days when you cannot make it to Serenity Yoga.",
+      "payload_hash": "74f8ebf724f4d82a989ebad673fc32a32759431fbd3c1bbea4ca83998a48f4fe",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "6f9b354f",
+      "hypothesis": "Based on the memories provided, you repainted your bedroom walls a **lighter shade of gray**.\n\nThis is confirmed by the memory entry from Saturday, May 27, 2023: \"User recently repainted their bedroom walls a lighter shade of gray.\"",
+      "payload_hash": "7f896edd8ba91fca092cb0b1736b2e018c6616e8ab96d35689e4914d146be187",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "58ef2f1c",
+      "hypothesis": "Based on the memories provided, you volunteered at the local animal shelter's fundraising dinner (specifically the **'Love is in the Air' fundraising dinner**) on **Valentine's Day** (which is **February 14th**).\n\nThe relevant memory states: *\"User volunteered at the 'Love is in the Air' fundraising dinner on Valentine's Day.\"*",
+      "payload_hash": "6b95345012e248ba33de4d4c958652b2498856a86be24515982fa203a1b65c9f",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "f8c5f88b",
+      "hypothesis": "Based on the memories provided, you bought your new tennis racket from a **sports store downtown**.\n\nThis is confirmed by the memory entry dated **2023-05-25T21:29:02.000**, which states: \"User is happy with their new tennis racket which they got from a sports store downtown.\"",
+      "payload_hash": "2f527dd2f0a242fb447572245f15aa283a50a5999dec8921a06e4d9cad53a82e",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "5d3d2817",
+      "hypothesis": "Based on the memories provided, your previous occupation was a **marketing specialist** at a small startup.\n\nIn that role, you were responsible for managing a team of interns, manually assigning tasks, and tracking their progress using Trello.",
+      "payload_hash": "bd342c7cd5b7796d9dc54636a689e00616298d48d3d5bd54c86f802d25db42d2",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "7527f7e2",
+      "hypothesis": "Based on the memories provided, you spent **$800** on the designer handbag.\n\nThis is confirmed by the entry dated **2023-05-23T08:15:01.000**, which states: \"User bought a designer handbag for $800.\"",
+      "payload_hash": "c37fa75796bb013a0a64e2822f69e8efd55d73f54f375e9c946ee4a48fb6166c",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "c960da58",
+      "hypothesis": "Based on the memories provided, you have **20** playlists on Spotify.\n\nThis information is explicitly stated in the memory from May 20, 2023: \"User has 20 playlists on Spotify already.\"",
+      "payload_hash": "9a9742ed811541039c1d4d16266d52b770f7064287ab74be7823058395391954",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "3b6f954b",
+      "hypothesis": "Based on the memories provided, there is **no information** about where you attended your study abroad program.\n\nThe memories mention the following locations you have visited:\n*   **Kyoto** (visited about 2 months ago with friends from work)\n*   **Portland** (visited a friend in late March)\n*   Locations of specific events (History Museum, Alberta Arts District)\n\nNone of these entries explicitly state that any of these locations were the site of a study abroad program.",
+      "payload_hash": "fb6b58f0efc90804baef555f7a02e83db253981683b27d5c6c244c26e90a3641",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "726462e0",
+      "hypothesis": "Based on the memories provided, you received a **10% discount** on your first purchase from the new clothing brand.\n\nThis is confirmed by the memory entry dated **2023-05-23**, which states: \"User received a 10% discount on their first purchase from a new clothing brand last month.\"",
+      "payload_hash": "998a4e64074b6619667216b81fc446803be1cc4e891b7c881a5e4fdd82128759",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "94f70d80",
+      "hypothesis": "It took you **4 hours** to assemble the IKEA bookshelf.",
+      "payload_hash": "9b58f826d6bed0992293432c313e4f0b7a66bd75e15ac1ec030367421b1f8ff8",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "66f24dbb",
+      "hypothesis": "Based on the memories provided, you bought your sister **a pair of earrings to match the yellow dress** (and you also got her **a yellow dress**).\n\nHere is the breakdown from the text:\n*   \"User got their sister a pair of earrings to match the yellow dress.\"\n*   \"User got their sister a yellow dress.\"",
+      "payload_hash": "8509313caf9f33dec097d689f17609c7ab3e5e6a417306f24afdc70196f6e37d",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "ad7109d1",
+      "hypothesis": "Based on the memories provided, your new internet plan is **500 Mbps**.\n\nYou upgraded to this speed on May 24, 2023 (about three weeks prior to the date of your question), and you have noted that the speed has been good, particularly for streaming movies on Netflix.",
+      "payload_hash": "84de05688c924b5da03c1f695292ccd242fa596c77bf3e3eb61160fcf6b91972",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "af8d2e46",
+      "hypothesis": "Based on the memories provided, you packed **7 shirts** for your trip to Costa Rica.\n\nThe relevant memory states: \"User brought 7 shirts on the trip to Costa Rica.\" While you only ended up wearing 3 of them during the trip, the total number you packed was 7.",
+      "payload_hash": "10416ce67e4de764d41179002815bcc998e65ef92e167f7eef69fc7e6f7d785e",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "dccbc061",
+      "hypothesis": "Based on the memories provided, your previous stance on spirituality was that of a **staunch atheist**.\n\nThe records indicate that you have undergone a significant shift from this position, moving toward exploring concepts like Buddhism, synchronicity, and the interconnectedness of consciousness with the universe.",
+      "payload_hash": "1b28b6976addcc29192ad6dcff9415597982db932251e9998c40260aee19067d",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "c8c3f81d",
+      "hypothesis": "Based on the memories provided, your favorite brand for running shoes is **Nike**.\n\nSpecifically, the records indicate that \"Nike is the user's favorite brand far for running shoes\" and that you have been using your current Nike running shoes for your daily 5K runs.",
+      "payload_hash": "8a5d27ce9d10ecdf3f7cb2c6fd91a85d483188a91980ce6c704d41610ea2d9e4",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "8ebdbe50",
+      "hypothesis": "Based on the memories provided, you completed a **Data Science** certification last month.\n\nThis is confirmed by multiple entries stating that you have a \"latest certification in Data Science that was completed last month\" and that you wish to add it to your LinkedIn profile.",
+      "payload_hash": "a83d886d4aa6c8140c8f433b1ca1211ff8717cfbd9f97dc86862e65cb62e14e9",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "6b168ec8",
+      "hypothesis": "Based on the memories provided, you own **three** bikes.\n\nThe specific memory from **2023-05-27T07:08:02.000** explicitly states: \"User owns three bikes: a road bike, a mountain bike, and a commuter bike.\"",
+      "payload_hash": "c9f4b04594fe7082b81c49dcda32227b44a7568f6aae9fdc916a0b807af517de",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "75499fd8",
+      "hypothesis": "Your dog Max is a **Golden Retriever**.",
+      "payload_hash": "d3ecf6b979a048c4b6d53b4438b7464411df56caf67fd9b7b6497b4216e2273c",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "21436231",
+      "hypothesis": "Based on the memories provided, you caught **12** largemouth bass on your last trip to Lake Michigan.",
+      "payload_hash": "0eaee7e607ed2b0778483621f2d2b5fd6cc79a594c9fb4b0e3101a9fcc152f51",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "95bcc1c8",
+      "hypothesis": "Based on the memories provided, you watched **10** amateur comedians perform at the open mic night.\n\nThis is explicitly stated in the memory entry: \"User saw 10 amateur comedians perform at the open mic night.\"",
+      "payload_hash": "5f11d37c28b7244aa20410ccf5f6e3bf383b1317ec26a4a4deb48f4abd0aafdc",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "0862e8bf",
+      "hypothesis": "Your cat's name is Luna.",
+      "payload_hash": "e75fb4a146fb5511c7f9e9264911e59f86e83de413c7b175034acb1a2a733df7",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "853b0a1d",
+      "hypothesis": "Based on the memories provided, it is **impossible to answer** how old you were when your grandma gave you the silver necklace.\n\nThe provided text contains information about:\n*   Planning a birthday party for your grandma.\n*   Your grandma's love for flowers and nature.\n*   Building a trellis for climbing roses.\n*   Various other unrelated topics (the Lincoln Memorial, a charity run, a book, etc.).\n\nThere is **no mention** of a silver necklace being given to you, nor is there any information regarding your age or the date such an event occurred.",
+      "payload_hash": "efcdef6e466897795c0e1c8d16bff6057be52b249d4f9590281beb1e1691326c",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "a06e4cfe",
+      "hypothesis": "Based on your memories, your preferred gin-to-vermouth ratio for a classic gin martini is **3:1**.\n\nYou settled on this ratio while experimenting with different proportions, and you've also noted that adding a dash of citrus bitters to this specific mix brings out the flavors of the gin well.",
+      "payload_hash": "fa4b3857b182fc2bcecb4f004bc8e82125ce9a8149702c460ed6d4db1b4f5015",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "37d43f65",
+      "hypothesis": "Based on the memories provided, you upgraded your laptop's RAM to **16GB**.",
+      "payload_hash": "dcd4e50e05b2fea33b4d6b695379fc349db7604c931f1f3f05158760b28bf1a0",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "b86304ba",
+      "hypothesis": "Based on the memories provided, there is **no information** regarding a painting of a sunset, how much it is worth, or how much you paid for it.\n\nThe memories mention the following items and their values:\n*   **1920s Art Deco brooch:** The user is considering getting it appraised (no value stated).\n*   **1967 Rolex watch:** Could be worth up to $1,000.\n*   **'Please Please Me' vinyl record:** Might be worth more than $20 (user paid $20 for it).\n*   **'Spring Morning' bundle:** Priced at $5.25.\n*   **KitchenAid stand mixer:** Paid $250.\n*   **Slovenian 2-euro coin:** Value not specified, user is unsure about mintage.\n\nSince the specific item (sunset painting) and the transaction details (purchase price) are not in the provided text, the question cannot be answered using the given memories.",
+      "payload_hash": "8dca00c42917107f3d6bab591af77b7b524c411bf48e026acfee81b56f29f873",
+      "correct": false
+    },
+    {
+      "method": "lightmem",
+      "question_id": "d52b4f67",
+      "hypothesis": "Based on the memories provided, you attended your cousin's wedding at the **Grand Ballroom**.\n\nThis is confirmed by the memory stating: \"User was just at their cousin's wedding at the Grand Ballroom last weekend.\"",
+      "payload_hash": "bb7d5d5c77e3c9c1dbf511d33acc5e16f76a35ff4182aa0e1f36da4aa6848fd1",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "caf9ead2",
+      "hypothesis": "Based on the memories provided, it took the user and their friends **around 5 hours** to move everything into the new apartment.",
+      "payload_hash": "2f62c0c15b2bf294013e073387f6ebcb142b733bbf30a970d901b006a53df00d",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "8550ddae",
+      "hypothesis": "Based on the memories provided, you tried making a **lavender gin fizz** recipe last weekend.\n\nThis is confirmed by the entry dated **2023-05-22T08:41:01.000 (Mon)**, which states: \"User tried making a lavender gin fizz recipe last weekend.\" The same entry also notes that you improvised with honey and water instead of simple syrup and were experimenting with lavender in your cocktails.",
+      "payload_hash": "44c8a235971aece0f312679e25cff5f00b393a101f066d6bc07ef08a92ddbb00",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "60d45044",
+      "hypothesis": "Based on the memories provided, your favorite rice is **Japanese short-grain rice**.",
+      "payload_hash": "ce51c9495262bd6e82f916d8dc20f572e97636093dc9274fb7d067a0a82f8a0a",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "3f1e9474",
+      "hypothesis": "Based on the memories provided, you had a conversation about destiny with **Sarah**.\n\nThe relevant entries from your memories include:\n*   \"User had a conversation with Sarah.\"\n*   \"Sarah believes experiences shape us into who we are meant to be.\"\n*   \"Sarah says everything happens for a reason.\"\n*   \"User has a friend named Sarah.\"\n\nThese points, combined with your own thoughts on destiny and beliefs occurring on the same day (May 22, 2023), indicate that Sarah was the person you discussed this topic with.",
+      "payload_hash": "d3aafb6f90b65b21ad30548629e7467a776ee158a5cfb799a471bc94addb1890",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "86b68151",
+      "hypothesis": "You bought your new bookshelf from **IKEA**.",
+      "payload_hash": "c9a77f22598442c43147c0121fc03bf6c018c327d3da99df8d8b6bbe1c3e4e49",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "577d4d32",
+      "hypothesis": "Based on the memories provided, you stop checking work emails and messages by **7 pm**.\n\nThis boundary helps you separate your work and personal life, allowing you to relax and avoid thinking about work during your personal time.",
+      "payload_hash": "2a01ceda1bb61b7070f4e5f5304197c5f96c214923670d9b879787c59990151e",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "ec81a493",
+      "hypothesis": "Based on the memories provided, your favorite artist's debut album had a limited edition poster released in **500 copies** worldwide.\n\nThe relevant memory states: \"User has a signed poster from their favorite artist's debut album which is a limited edition of only 500 copies worldwide.\"",
+      "payload_hash": "fba3438710661fd4f75eea495749bb334b56c675e20ff22df85a5069ae40b020",
+      "correct": false
+    },
+    {
+      "method": "lightmem",
+      "question_id": "15745da0",
+      "hypothesis": "Based on the memories provided, you have been collecting vintage cameras for **three months**.\n\nThis information comes directly from the memory dated **2023-05-21**, which states: \"User has been collecting vintage cameras for three months.\" Since the current date in your question is **2023-05-30**, this duration remains accurate as of that date.",
+      "payload_hash": "fd385c8e6a437e6a0ed80b3a70212bd568d9f5add8afad6d3586ee9c53fbea15",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "e01b8e2f",
+      "hypothesis": "Based on the memories provided, there is **no record** of you going on a week-long trip with your family.\n\nThe memories mention several travel plans and past trips, but none match the specific criteria of a \"week-long trip with family\":\n*   **New York City:** You have taken five trips there since January and are planning another soon, but the duration and whether it was with family are not specified.\n*   **Los Angeles:** You are planning a trip next month (from the perspective of May 2023).\n*   **Boston:** You are thinking of planning a weekend getaway.\n*   **Caribbean:** You plan to be on vacation during hurricane season.\n*   **Dublin:** You are excited to visit the Irish Family History Centre.\n*   **Germany:** You are thinking of attending a trip soon.\n*   **Lake Michigan/Woods:** You went fishing with buddies and plan to go back to the woods near your cabin, but these do not specify a week-long duration or a family trip.\n\nTherefore, the information required to answer where you went on a week-long family trip is not present in the provided memories.",
+      "payload_hash": "e037fef77ba0bf8b38869e0c88da290ecd25b352c75e904f104c60464a53bfbe",
+      "correct": false
+    },
+    {
+      "method": "lightmem",
+      "question_id": "bc8a6e93",
+      "hypothesis": "Based on the memories provided, you baked a **lemon blueberry cake** for your niece's birthday party.\n\nThis is confirmed by the entry dated **2023-05-26**, which states: \"User recently made a lemon blueberry cake for their niece's birthday party.\" The subsequent memory notes that the cake was a \"huge hit\" and that the combination of tangy lemon and sweet blueberries was perfect.",
+      "payload_hash": "3db259c5a9cf79f1e4556e1d43b4812ee94072d9ba84ff4443ad7be5d87f3d93",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "ccb36322",
+      "hypothesis": "Based on the memories provided, the music streaming service you have been using lately is **Spotify**.\n\nThis is confirmed by the entry dated 2023-05-20, which states: \"User has been listening to Arctic Monkeys and The Neighbourhood songs a lot on **Spotify** lately.\"",
+      "payload_hash": "9f9c401889231806dc3abcc4288adbe0604ad294ed5c65adf84070a36ebc0c54",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "001be529",
+      "hypothesis": "Based on the memories provided, you waited **over a year** for the decision on your asylum application.\n\nThe records explicitly state that your application \"took over a year to get approved\" and that you experienced \"over a year of uncertainty\" regarding it.",
+      "payload_hash": "c3c0ccd568af0cb56bb2a60e01f56bb9e98f9aac608650ba2aa36f0dee5657f4",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "b320f3f8",
+      "hypothesis": "Based on the memories provided, you bought a **rare blue Snaggletooth action figure** from a thrift store a few weeks ago.",
+      "payload_hash": "acc2d2a11327cc769e25fc0271982f21ec2c1cb70f39d5bde8b53774dbee5dfe",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "19b5f2b3",
+      "hypothesis": "Based on the memories provided, you were in Japan for **two weeks**.\n\nThis is explicitly stated in the memory entry: \"User spent two weeks traveling solo around Japan.\"",
+      "payload_hash": "714d0f3cc148cb2273130d79608090bcd42291bd5881b0fd218f6e713203d7c1",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "4fd1909e",
+      "hypothesis": "Based on the memories provided, you attended the Imagine Dragons concert at the **Xfinity Center**.\n\nThe specific memory states: \"The Imagine Dragons concert was at Xfinity Center on June 15th.\"",
+      "payload_hash": "2cf3f0b1fc763c776734fcb8340c12dfeb1869cb619d3ac90749dddb5665e46e",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "545bd2b5",
+      "hypothesis": "Based on the memories provided, you have been averaging around **2 hours** of screen time on Instagram per day for the past two weeks (as of May 27, 2023).",
+      "payload_hash": "c32958c3df373fd6dd678e386be1d107f1009e0ba28109cc72bca2992f633f71",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "8a137a7f",
+      "hypothesis": "Based on the memories provided, you have been using a **Philips LED bulb** in your bedside lamp.\n\nThe specific memory entries state:\n*   \"User has a Philips LED bulb in their bedside lamp.\"\n*   \"User has been using a Philips LED bulb in their bedside lamp.\"\n\nWhile the question asks what type of bulb you *replaced*, the available information only confirms the type of bulb you *currently have* or *have been using*. There is no record in the provided memories of a specific replacement event or the old bulb that was removed. Therefore, based strictly on the text, the bulb in your bedside lamp is a **Philips LED bulb**.",
+      "payload_hash": "14e469cf8ab81a4c647b846fa569b5672e9ed72f097131335ee5b2f72e49a279",
+      "correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "76d63226",
+      "hypothesis": "Your new Samsung TV is **55 inches**.\n\nThis is confirmed by the memory entry from May 21st, which states: \"User set up a new Samsung 55-inch 4K smart TV on Saturday.\"",
+      "payload_hash": "79d3710d022f7399c60adf6572c5d30676c6ba72e963a63a0568d53649270c06",
+      "correct": true
+    }
+  ],
+  "unique_requests": 182,
+  "unique_judged": 182,
+  "api_attempts": 182,
+  "reported_usage": {
+    "prompt_tokens": 28450,
+    "completion_tokens": 273,
+    "total_tokens": 28723
+  },
+  "missing_usage_attempts": 0
+}

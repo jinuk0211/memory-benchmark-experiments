@@ -1,0 +1,88 @@
+{
+  "observed_at": 1789105160.9148648,
+  "guide_sha256": "b7983a0d3e2157340ff8d1534b0b557352b0392ff40fc1976bdbca97b096579f",
+  "guide_matches_previously_read": true,
+  "simplemem": {
+    "method": "simplemem",
+    "planned": 500,
+    "generated": 44,
+    "failed": 1,
+    "population": 500,
+    "officially_judged": 0,
+    "status": "running",
+    "active_question_id": "b320f3f8",
+    "updated_at": 1789105104.754694
+  },
+  "lightmem": {
+    "method": "lightmem",
+    "planned": 500,
+    "population": 500,
+    "generated": 40,
+    "failed": 0,
+    "failed_ids": [],
+    "inflight": [
+      "15745da0"
+    ],
+    "pending": 459,
+    "status": "running",
+    "generation_complete": false,
+    "official_judge_pending": true,
+    "time": 1789105160.30051
+  },
+  "guard": {
+    "instance_id": "50468468",
+    "started_at": 1789088677.8821437,
+    "last_progress": 1789105101.6657677,
+    "put_attempts": 0,
+    "successes": 2139,
+    "journal_offset": 3329679,
+    "generated_total": 83,
+    "observation": {
+      "services": {
+        "native2-simplemem": "RUNNING",
+        "native2-lightmem": "RUNNING",
+        "native2-finish": "RUNNING",
+        "native7-qwen": "RUNNING",
+        "native7-minilm": "RUNNING"
+      },
+      "generated": {
+        "simplemem": 43,
+        "lightmem": 40
+      },
+      "all_terminal": false,
+      "finish": "waiting",
+      "free_bytes": 9169551360
+    },
+    "observed_at": 1789105101.6657677,
+    "status": "armed"
+  },
+  "finish": {
+    "status": "waiting",
+    "active_owned_pids": [
+      3078,
+      6012,
+      15550,
+      15912
+    ],
+    "at_unix": 1789105135.2927878
+  },
+  "supervisor": "native2-simplemem                RUNNING   pid 6012, uptime 3:15:34\nnative2-lightmem                 RUNNING   pid 3078, uptime 4:27:22\nnative2-finish                   RUNNING   pid 5911, uptime 3:20:34\nnative2-cost-guard               RUNNING   pid 2829, uptime 4:34:44\n",
+  "gpu": "100, 30801, 32607",
+  "free_bytes": 9166364672,
+  "v4_runtime_receipt_exists": true,
+  "v4_completion_seal_count": 44,
+  "simplemem_failure_attempts": [
+    {
+      "question_id": "25e5aa4f",
+      "attempt": "attempt_0001",
+      "native_errors": [
+        "vector_store.py:111:keyword_search",
+        "vector_store.py:112:keyword_search"
+      ],
+      "seconds": 206.24475131899817,
+      "traceback_exception_types": [
+        "RuntimeError"
+      ]
+    }
+  ]
+}

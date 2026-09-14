@@ -1,0 +1,11 @@
+Independent review: **APPROVE** for the candidate source and LoCoMo r2 CPU artifacts bound in INDEPENDENT_REVIEW.json. No critical or high correctness issues remain.
+
+The new arm uses unchanged Seed memory as its parent and appends options selected by the unchanged portable_parent.augment policy. The 2,000-token added key-plus-payload budget, 2,048-token reader budget, 96-token answer limit, Qwen3.5-9B and MiniLM runtime remain fixed. All 18 inherited Python files checked against the frozen partition adapter match byte for byte. The copied evaluator matches its approved source exactly, and timing helpers match the previously approved copies.
+
+Independent validation passed 17 focused tests and six additional mocked boundary tests for fresh reader state, canonical input mismatch, history coverage, cross-machine path rejection, memory lock rejection, and immutable resume. Ruff passes with deliberate bootstrap-related E402 excluded. The workspace is not a Git repository, so direct byte comparisons replaced git diff. Mypy, pylint and Black were unavailable; none was installed.
+
+Actual r2 validation covers all 452 source artifacts, all 416 source-fit probes, the original three-arm memory lock, and all 10 histories. Every one of 8,959 Seed units remains unchanged. The constructor appends 262 units, with a maximum of 1,912 added native key-plus-payload tokens in one history. Storage was independently recounted with the pinned tokenizer on r1; all r2 memory files match r1 exactly. The r2 protocol, lineage, memory lock, 1,540 unique expected IDs, and absence of reader cache/runtime/items/timing directories were independently checked. Annotation and docstring edits between r1 and r2 leave executable AST unchanged.
+
+This review establishes code and construction invariants, not accuracy or generalization. No GPU, SSH, API calls, or final holdout outcomes were used. Imported construction and scoring costs must be reported separately from new reader costs. The incremental reporter has separate review ownership.
+
+An initial supplemental test command was rejected by automatic approval review because its inherited fixture name was interpreted as the production directory and it included a symlink test. It was not executed. Six fully mocked, read-only boundary tests subsequently passed; that rejected command changed no experimental artifacts.

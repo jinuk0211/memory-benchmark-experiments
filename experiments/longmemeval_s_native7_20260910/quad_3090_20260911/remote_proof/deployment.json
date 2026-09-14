@@ -1,0 +1,40 @@
+{
+  "schema": "quad-native-deployment-v1",
+  "instance_id": "50577514",
+  "root": "/workspace/longmemeval_s_native7_20260910",
+  "state_root": "/workspace/quad_3090_20260911",
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "max_model_len": 65536,
+  "meter_api_base": "http://127.0.0.1:18083/v1",
+  "protocols": {
+    "simplemem": "099254c45e1077d44c851907f5f37bd1e0a36e7127e9eef87e406181d479977b",
+    "lightmem": "0ce3945e48896edd5b7cf8d5f0c09e79c0047951a0208472e50740e2d1f3b326"
+  },
+  "lanes": {
+    "sm0": {
+      "method": "simplemem",
+      "gpu_index": 0,
+      "gpu_uuid": "GPU-40ce3c64-6fda-dba9-cf98-90f34f2fed03",
+      "api_base": "http://127.0.0.1:18081/v1"
+    },
+    "sm1": {
+      "method": "simplemem",
+      "gpu_index": 1,
+      "gpu_uuid": "GPU-81002f44-36ec-c82e-15e1-9a04ebc4d363",
+      "api_base": "http://127.0.0.1:18091/v1"
+    },
+    "lm0": {
+      "method": "lightmem",
+      "gpu_index": 2,
+      "gpu_uuid": "GPU-c7964df3-27c3-8fee-c7c4-9a1e02f82ac1",
+      "api_base": "http://127.0.0.1:18101/v1"
+    },
+    "lm1": {
+      "method": "lightmem",
+      "gpu_index": 3,
+      "gpu_uuid": "GPU-11d274d0-d7e8-c582-aa5b-0733d2e32cb9",
+      "api_base": "http://127.0.0.1:18111/v1"
+    }
+  }
+}

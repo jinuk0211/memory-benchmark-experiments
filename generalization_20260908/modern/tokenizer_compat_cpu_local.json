@@ -1,0 +1,145 @@
+{
+  "purpose": "Actual pinned tokenizer regression in isolated local CPU environment; synthetic exact smoke messages; no weights or GPU",
+  "python": "3.12.11 (main, Aug 18 2025, 19:17:54) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "D:\\MemoryData\\generalization_20260908\\modern\\tokenizer_cpu_env\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "cuda_visible_devices": "",
+  "torch_installed": false,
+  "package_provenance": {
+    "annotated-doc": "0.0.5",
+    "anyio": "4.15.1",
+    "certifi": "2026.7.22",
+    "colorama": "0.4.6",
+    "filelock": "3.32.5",
+    "fsspec": "2026.7.0",
+    "h11": "0.16.0",
+    "hf-xet": "1.6.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "huggingface_hub": "1.6.0",
+    "idna": "3.19",
+    "Jinja2": "3.1.6",
+    "markdown-it-py": "4.2.0",
+    "MarkupSafe": "3.0.3",
+    "mdurl": "0.1.2",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "Pygments": "2.21.0",
+    "PyYAML": "6.0.3",
+    "regex": "2026.9.3",
+    "rich": "15.0.0",
+    "safetensors": "0.8.0",
+    "shellingham": "1.5.4",
+    "tokenizers": "0.22.2",
+    "tqdm": "4.70.0",
+    "transformers": "5.5.3",
+    "typer": "0.27.2",
+    "typing_extensions": "4.16.0"
+  },
+  "compatibility": {
+    "apply_chat_template_default_return_dict": false
+  },
+  "code_sha256": {
+    "chat_tokenizer_compat.py": "b50ed0f335ca2cd7a14957968d5d279fae8556da69a03c9b18f8f83db0108f4c",
+    "source/refine.py": "71384cac6aaa260d6df4f24f605797a8a886cd51514a83c9c1d041eff99f14fa",
+    "source/evidence_utility.py": "b6a18927a332ff96a997b24a8d36a0ff29757baeb36b8d1efe9c5aab51c9f310"
+  },
+  "models": {
+    "Qwen/Qwen3.5-9B": {
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "tokenizer_path": "D:\\MemoryData\\generalization_20260908\\modern\\tokenizer_cpu_cache\\hf\\hub\\models--Qwen--Qwen3.5-9B\\snapshots\\c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "assets": {
+        "chat_template.jinja": {
+          "size": 7756,
+          "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+        },
+        "config.json": {
+          "size": 3126,
+          "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"
+        },
+        "merges.txt": {
+          "size": 3353259,
+          "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"
+        },
+        "tokenizer.json": {
+          "size": 12807982,
+          "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+        },
+        "tokenizer_config.json": {
+          "size": 16710,
+          "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+        },
+        "vocab.json": {
+          "size": 6722759,
+          "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+        }
+      },
+      "raw_tokenizer_class": "TokenizersBackend",
+      "raw_chat_result_type": "BatchEncoding",
+      "wrapped_chat_result_type": "list",
+      "explicit_dict_result_type": "BatchEncoding",
+      "prefix_tokens": 137,
+      "start": 137,
+      "answer_tokens": 2,
+      "request_tokens": 139,
+      "prefix_token_ids_sha256": "b6ff11e970161265df90aac292a02946f0b5978a9ee2c10d8470d42fec45f9bc",
+      "request_token_ids_sha256": "fa17ca9834616e5da4dd93039c69ba94b00abe4c0239a2856dbca130e37854f7",
+      "checks": {
+        "render_encode_equals_chat_list": true,
+        "raw_normalized_ids_match": true,
+        "nll_prefix_matches": true,
+        "start_equals_prefix_length": true,
+        "nll_answer_suffix_matches": true,
+        "all_prompt_ids_int": true,
+        "request_length_equals_prefix_plus_target": true,
+        "explicit_return_dict_preserved": true
+      },
+      "passed": true
+    },
+    "google/gemma-4-E4B-it": {
+      "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+      "tokenizer_path": "D:\\MemoryData\\generalization_20260908\\modern\\tokenizer_cpu_cache\\hf\\hub\\models--google--gemma-4-E4B-it\\snapshots\\ee0ef6023621cff504d758262d4e04895a5af4a2",
+      "assets": {
+        "chat_template.jinja": {
+          "size": 18569,
+          "sha256": "0a2c8073c878ab1da004bee933a998606537bbb62016310352c7285c3f01c5b5"
+        },
+        "config.json": {
+          "size": 5145,
+          "sha256": "33b10c02df3c2e8536cf323d29d53262aaa2f4d11dbe19bc729373fbe90295d4"
+        },
+        "tokenizer.json": {
+          "size": 32169626,
+          "sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f"
+        },
+        "tokenizer_config.json": {
+          "size": 3082,
+          "sha256": "9f4fec4b1dc6ecddf8f4a92e9caea5971c0e67d81309f3f9066a2bee8c362633"
+        }
+      },
+      "raw_tokenizer_class": "GemmaTokenizer",
+      "raw_chat_result_type": "BatchEncoding",
+      "wrapped_chat_result_type": "list",
+      "explicit_dict_result_type": "BatchEncoding",
+      "prefix_tokens": 135,
+      "start": 135,
+      "answer_tokens": 2,
+      "request_tokens": 137,
+      "prefix_token_ids_sha256": "f454c6a8fd3df9ddac2d9ff917e411e103829f05f9749035d2808d17c43afb2a",
+      "request_token_ids_sha256": "f38bd8805e8ded60a798587bafeab865efd7373d80b81169bf3e6d14988dc1ba",
+      "checks": {
+        "render_encode_equals_chat_list": true,
+        "raw_normalized_ids_match": true,
+        "nll_prefix_matches": true,
+        "start_equals_prefix_length": true,
+        "nll_answer_suffix_matches": true,
+        "all_prompt_ids_int": true,
+        "request_length_equals_prefix_plus_target": true,
+        "explicit_return_dict_preserved": true
+      },
+      "passed": true
+    }
+  },
+  "elapsed_seconds": 8.984,
+  "status": "passed"
+}

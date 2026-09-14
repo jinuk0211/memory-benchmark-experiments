@@ -1,0 +1,75 @@
+{
+  "status": "APPROVE",
+  "reviewed_at_utc": "2026-09-10T08:47:50.155321+00:00",
+  "scope": "Source-only two-history feasibility runner; authorization does not establish model or benchmark performance.",
+  "files_sha256": {
+    "pilot.py": "4cf28ebceb55038885d3332f53b0244369d5f1e5fe905d20fcfbd82cd7b2062a",
+    "import_source.py": "94495dfe299f2c1eb436dd05e265bced9add5191a7899f3a189418d3f6658d81",
+    "source_views_v2_pilot.py": "3484a3555a0d636a7c7009293c0a906b5b8d6c5a56a0fbcee33ac5f7ad55246e",
+    "README.md": "02aa2c050152a48b0ced8d515b1002f7aa933280032d581138a722df331ee5fd",
+    "test_pilot.py": "e220bd60d155b5e84df12357f89d67ae5281d320e083b2f5aa580f28e7a20d29",
+    "independent_native_contract_tests.py": "af8144bb6a6b8a181df2ec086bab7d46288dd31069795ffce4f656218136146e",
+    "independent_pipeline_tests.py": "c877cc804cbd9954135a874e263b1905ba7390f5e1271ed151d9a5cd6b44705f"
+  },
+  "prereg_sha256": "eeb9ad58b563d27735989bbedda8bebb21b37beebc128ca74e27d3ee485f06ff",
+  "tests": {
+    "author_cpu_tests": {
+      "passed": 10
+    },
+    "independent_native_contract_tests": {
+      "passed": 4
+    },
+    "independent_pipeline_tests": {
+      "passed": 6
+    },
+    "ruff": "pass"
+  },
+  "tool_limits": {
+    "git_diff": "D:/MemoryData is not a Git repository; reviewed new files and exact source copies instead.",
+    "mypy_pylint_black": "Not available on checked PATH; no tools installed for this review.",
+    "gpu_or_api_called": false
+  },
+  "resolved_high_findings": [
+    "Original source/memory lock is validated via byte-identical approved imported_files; complete source closure is pinned.",
+    "Public function annotations and runtime dependency grouping are present; no new production function exceeds 50 lines or 5 parameters.",
+    "Finite likelihood/F1, task identity and denominator validation, actual chat context capacity, output completeness, and artifact lock guards are present."
+  ],
+  "invariants_verified": [
+    "Single approved Qwen3.5-9B Scorer plus CPU-only inherited MiniLM Index; separate calibration process uses approved Runtime.",
+    "New-minus-old mean answer logprob gives positive utility; identical packed context is zero without unnecessary native scoring.",
+    "Original Q0 builds candidates; QA scores them; global memory lock precedes QB packed retrieval/answer scoring.",
+    "Individual-QA gain cannot override whole-set QA loss; source audit likelihood/F1 controls rollback.",
+    "Negative QB cannot modify locked memory; absent QB reports null; insufficient QA stops before scorer initialization and COMPLETE.",
+    "Original import_source helper byte-identical; source_views helper differs only by removed zero-record exception.",
+    "Native embedding prefix removal, cache reuse, operation accounting, failed-forward receipts, and answer-token span tested without GPU."
+  ],
+  "limitations": [
+    "The source-only pilot is not official LongMemEval accuracy, unseen benchmark generalization, Gemma transfer, or a novelty result.",
+    "Packing exposure means changed context bytes; no proof of alias inclusion/rank.",
+    "Independent pipeline tests replace generation/retrieval with synthetic values; actual GPU compatibility remains to be exercised.",
+    "Costs inherit earlier source construction in addition to fresh native calls; no zero-cost construction claim."
+  ],
+  "cpu_preview": {
+    "protocol_sha256": "74131e130735b78d88dccbd59441774f4e5e885776b87d4d32627f9189468316",
+    "plan_lock_sha256": "4483b24802297a0f136e7c91a9ea65e9b9b91632d4a64ef773f4c57c874432be",
+    "inspected_counts": {
+      "locomo": {
+        "history_id": "conv-49",
+        "fit": 16,
+        "audit": 4,
+        "qb_preselected": 4,
+        "mapped_options": 33
+      },
+      "longmemeval": {
+        "history_id": "d6062bb9",
+        "fit": 16,
+        "audit": 4,
+        "qb_preselected": 4,
+        "mapped_options": 36
+      }
+    },
+    "author_reported_execution_seconds": 115.24,
+    "preview_is_not_gpu_protocol": true
+  },
+  "open_critical_or_high_findings": []
+}

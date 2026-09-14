@@ -1,0 +1,377 @@
+{
+  "verification": "PASS: all 13,860 IDs, predictions, labels and aggregates checked",
+  "methods": {
+    "Naive": {
+      "n": 1540,
+      "correct": 1099,
+      "f1_percent": 55.16889966272199,
+      "judge_accuracy_percent": 71.36363636363636,
+      "categories": {
+        "1": {
+          "n": 282,
+          "f1_percent": 41.76923255814074,
+          "judge_accuracy_percent": 71.27659574468085
+        },
+        "2": {
+          "n": 321,
+          "f1_percent": 36.24295918688442,
+          "judge_accuracy_percent": 43.925233644859816
+        },
+        "3": {
+          "n": 96,
+          "f1_percent": 15.658525159567796,
+          "judge_accuracy_percent": 25.0
+        },
+        "4": {
+          "n": 841,
+          "f1_percent": 71.39592578464658,
+          "judge_accuracy_percent": 87.15814506539834
+        }
+      },
+      "f1_below_half_judge_correct": 244,
+      "f1_above_half_judge_wrong": 45
+    },
+    "Mem0": {
+      "n": 1540,
+      "correct": 839,
+      "f1_percent": 36.49835852718084,
+      "judge_accuracy_percent": 54.48051948051948,
+      "categories": {
+        "1": {
+          "n": 282,
+          "f1_percent": 37.582997073597305,
+          "judge_accuracy_percent": 61.347517730496456
+        },
+        "2": {
+          "n": 321,
+          "f1_percent": 13.290807496414974,
+          "judge_accuracy_percent": 27.725856697819314
+        },
+        "3": {
+          "n": 96,
+          "f1_percent": 24.532625862412786,
+          "judge_accuracy_percent": 40.625
+        },
+        "4": {
+          "n": 841,
+          "f1_percent": 46.358603647994315,
+          "judge_accuracy_percent": 63.97146254458978
+        }
+      },
+      "f1_below_half_judge_correct": 304,
+      "f1_above_half_judge_wrong": 18
+    },
+    "A-MEM": {
+      "n": 1540,
+      "correct": 799,
+      "f1_percent": 36.845900352297015,
+      "judge_accuracy_percent": 51.883116883116884,
+      "categories": {
+        "1": {
+          "n": 282,
+          "f1_percent": 28.984580786996172,
+          "judge_accuracy_percent": 48.226950354609926
+        },
+        "2": {
+          "n": 321,
+          "f1_percent": 29.08795833702878,
+          "judge_accuracy_percent": 38.940809968847354
+        },
+        "3": {
+          "n": 96,
+          "f1_percent": 17.427261836717523,
+          "judge_accuracy_percent": 34.375
+        },
+        "4": {
+          "n": 841,
+          "f1_percent": 44.65967062793502,
+          "judge_accuracy_percent": 60.04756242568371
+        }
+      },
+      "f1_below_half_judge_correct": 276,
+      "f1_above_half_judge_wrong": 26
+    },
+    "LangMem": {
+      "n": 1540,
+      "correct": 644,
+      "f1_percent": 29.932364233426622,
+      "judge_accuracy_percent": 41.81818181818181,
+      "categories": {
+        "1": {
+          "n": 282,
+          "f1_percent": 28.373147268778983,
+          "judge_accuracy_percent": 47.5177304964539
+        },
+        "2": {
+          "n": 321,
+          "f1_percent": 27.27176568612841,
+          "judge_accuracy_percent": 26.791277258566975
+        },
+        "3": {
+          "n": 96,
+          "f1_percent": 21.654576012888082,
+          "judge_accuracy_percent": 39.58333333333333
+        },
+        "4": {
+          "n": 841,
+          "f1_percent": 32.41562105493086,
+          "judge_accuracy_percent": 45.89774078478002
+        }
+      },
+      "f1_below_half_judge_correct": 241,
+      "f1_above_half_judge_wrong": 25
+    },
+    "SimpleMem": {
+      "n": 1540,
+      "correct": 842,
+      "f1_percent": 38.189101665135425,
+      "judge_accuracy_percent": 54.675324675324674,
+      "categories": {
+        "1": {
+          "n": 282,
+          "f1_percent": 29.572075481751497,
+          "judge_accuracy_percent": 48.93617021276596
+        },
+        "2": {
+          "n": 321,
+          "f1_percent": 24.86572080923373,
+          "judge_accuracy_percent": 43.30218068535825
+        },
+        "3": {
+          "n": 96,
+          "f1_percent": 23.328642017926118,
+          "judge_accuracy_percent": 39.58333333333333
+        },
+        "4": {
+          "n": 841,
+          "f1_percent": 47.86022029128383,
+          "judge_accuracy_percent": 62.66349583828775
+        }
+      },
+      "f1_below_half_judge_correct": 282,
+      "f1_above_half_judge_wrong": 26
+    },
+    "LightMem_official": {
+      "n": 1540,
+      "correct": 1008,
+      "f1_percent": 40.3261881368388,
+      "judge_accuracy_percent": 65.45454545454545,
+      "categories": {
+        "1": {
+          "n": 282,
+          "f1_percent": 31.97325052545688,
+          "judge_accuracy_percent": 63.12056737588653
+        },
+        "2": {
+          "n": 321,
+          "f1_percent": 44.848735549670124,
+          "judge_accuracy_percent": 60.43613707165109
+        },
+        "3": {
+          "n": 96,
+          "f1_percent": 16.74082231337158,
+          "judge_accuracy_percent": 38.54166666666667
+        },
+        "4": {
+          "n": 841,
+          "f1_percent": 44.09311537339492,
+          "judge_accuracy_percent": 71.22473246135553
+        }
+      },
+      "f1_below_half_judge_correct": 444,
+      "f1_above_half_judge_wrong": 39
+    },
+    "HiGMem": {
+      "n": 1540,
+      "correct": 860,
+      "f1_percent": 40.33310246213628,
+      "judge_accuracy_percent": 55.84415584415584,
+      "categories": {
+        "1": {
+          "n": 282,
+          "f1_percent": 27.948019220342875,
+          "judge_accuracy_percent": 47.5177304964539
+        },
+        "2": {
+          "n": 321,
+          "f1_percent": 26.39723896733242,
+          "judge_accuracy_percent": 38.006230529595015
+        },
+        "3": {
+          "n": 96,
+          "f1_percent": 12.702605034458388,
+          "judge_accuracy_percent": 31.25
+        },
+        "4": {
+          "n": 841,
+          "f1_percent": 52.95918261561412,
+          "judge_accuracy_percent": 68.25208085612367
+        }
+      },
+      "f1_below_half_judge_correct": 262,
+      "f1_above_half_judge_wrong": 26
+    },
+    "E-Mem": {
+      "n": 1540,
+      "correct": 1188,
+      "f1_percent": 56.95671313240028,
+      "judge_accuracy_percent": 77.14285714285715,
+      "categories": {
+        "1": {
+          "n": 282,
+          "f1_percent": 44.87178715697641,
+          "judge_accuracy_percent": 72.3404255319149
+        },
+        "2": {
+          "n": 321,
+          "f1_percent": 54.66652704695585,
+          "judge_accuracy_percent": 67.91277258566979
+        },
+        "3": {
+          "n": 96,
+          "f1_percent": 30.637433663785835,
+          "judge_accuracy_percent": 50.0
+        },
+        "4": {
+          "n": 841,
+          "f1_percent": 64.88744997839812,
+          "judge_accuracy_percent": 85.37455410225921
+        }
+      },
+      "f1_below_half_judge_correct": 283,
+      "f1_above_half_judge_wrong": 17
+    },
+    "s_parent_single_2000": {
+      "n": 1540,
+      "correct": 1120,
+      "f1_percent": 55.52781350227676,
+      "judge_accuracy_percent": 72.72727272727273,
+      "categories": {
+        "1": {
+          "n": 282,
+          "f1_percent": 38.12924297640507,
+          "judge_accuracy_percent": 60.28368794326241
+        },
+        "2": {
+          "n": 321,
+          "f1_percent": 50.64368653153699,
+          "judge_accuracy_percent": 65.73208722741433
+        },
+        "3": {
+          "n": 96,
+          "f1_percent": 15.576086436905765,
+          "judge_accuracy_percent": 27.083333333333332
+        },
+        "4": {
+          "n": 841,
+          "f1_percent": 67.7865143871506,
+          "judge_accuracy_percent": 84.78002378121285
+        }
+      },
+      "f1_below_half_judge_correct": 244,
+      "f1_above_half_judge_wrong": 16
+    }
+  },
+  "our_minus_comparators": {
+    "Naive": {
+      "delta_judge_pp": 1.3636363636363635,
+      "conversation_bootstrap_95_interval_pp": [
+        -1.0041569335157774,
+        3.6389136329609078
+      ],
+      "our_only_correct": 187,
+      "other_only_correct": 166
+    },
+    "Mem0": {
+      "delta_judge_pp": 18.246753246753247,
+      "conversation_bootstrap_95_interval_pp": [
+        15.215951872267826,
+        21.36754533557674
+      ],
+      "our_only_correct": 432,
+      "other_only_correct": 151
+    },
+    "A-MEM": {
+      "delta_judge_pp": 20.844155844155843,
+      "conversation_bootstrap_95_interval_pp": [
+        16.724524092872983,
+        25.993704488222622
+      ],
+      "our_only_correct": 436,
+      "other_only_correct": 115
+    },
+    "LangMem": {
+      "delta_judge_pp": 30.909090909090907,
+      "conversation_bootstrap_95_interval_pp": [
+        25.76262771265642,
+        37.531194098798906
+      ],
+      "our_only_correct": 587,
+      "other_only_correct": 111
+    },
+    "SimpleMem": {
+      "delta_judge_pp": 18.051948051948052,
+      "conversation_bootstrap_95_interval_pp": [
+        15.053739777373922,
+        20.72705842814709
+      ],
+      "our_only_correct": 406,
+      "other_only_correct": 128
+    },
+    "LightMem_official": {
+      "delta_judge_pp": 7.2727272727272725,
+      "conversation_bootstrap_95_interval_pp": [
+        4.008219205888894,
+        10.317037715458646
+      ],
+      "our_only_correct": 285,
+      "other_only_correct": 173
+    },
+    "HiGMem": {
+      "delta_judge_pp": 16.883116883116884,
+      "conversation_bootstrap_95_interval_pp": [
+        13.225346054586689,
+        20.38619936818775
+      ],
+      "our_only_correct": 377,
+      "other_only_correct": 117
+    },
+    "E-Mem": {
+      "delta_judge_pp": -4.415584415584416,
+      "conversation_bootstrap_95_interval_pp": [
+        -8.188457556935818,
+        -0.7873794567813873
+      ],
+      "our_only_correct": 153,
+      "other_only_correct": 221
+    }
+  },
+  "bootstrap": {
+    "unit": "conversation",
+    "replicates": 20000,
+    "seed": 20260911,
+    "limitation": "Descriptive resampling; does not estimate repeat-judge or generation-run variability."
+  },
+  "run": {
+    "status": "complete",
+    "stop_reason": "all_requested_payloads_processed",
+    "logical_rows": 13860,
+    "scored_rows": 13860,
+    "unique_payloads": 10624,
+    "cached_unique_payloads": 10624,
+    "billed_responses": 10624,
+    "error_events": 0,
+    "cost_usd": 0.6841381500000004,
+    "unknown_cost_upper_bound_usd": 0.0,
+    "budget_committed_usd": 0.6841381500000004,
+    "token_usage": {
+      "prompt_tokens": 4305869,
+      "completion_tokens": 63763,
+      "total_tokens": 4369632,
+      "cached_prompt_tokens": 0
+    },
+    "returned_models": {
+      "gpt-4o-mini-2024-07-18": 10624
+    }
+  }
+}

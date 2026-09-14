@@ -1,0 +1,53 @@
+{
+  "evidence_archive_sha256": "130e9798036be22bedd47d921786b56390949d5caaea3c1604a3e0a46dd3a059",
+  "verification_source": "Independent python-reviewer agent hold_review streamed archive and reconstructed native raw values in its completed session39350; this receipt preserves its reported results.",
+  "native_receipts_verified": 11964,
+  "all_native_request_response_hashes_and_token_arithmetic_match": true,
+  "groups": {
+    "seed": {
+      "llm_tokens": 3322139,
+      "embedding_tokens": 694012,
+      "llm_inference_seconds": 572.8414223897271,
+      "embedding_inference_seconds": 64.40022312989458
+    },
+    "r40_fused_four_turn": {
+      "llm_tokens": 3280912,
+      "embedding_tokens": 533303,
+      "llm_inference_seconds": 552.5048501892015,
+      "embedding_inference_seconds": 41.906517636962235
+    },
+    "s_parent_single_2000": {
+      "llm_tokens": 2530292,
+      "embedding_tokens": 534668,
+      "llm_inference_seconds": 424.80968587007374,
+      "embedding_inference_seconds": 42.157530593220145
+    },
+    "baseline_prepare_shared": {
+      "llm_tokens": 1627756,
+      "embedding_tokens": 0,
+      "llm_inference_seconds": 1864.9823558405042,
+      "embedding_inference_seconds": 0
+    },
+    "baseline_score_for_refined_descendants": {
+      "llm_tokens": 5445573,
+      "embedding_tokens": 0,
+      "llm_inference_seconds": 1418.9343404732645,
+      "embedding_inference_seconds": 0
+    },
+    "v1_construct_additional": {
+      "llm_tokens": 2779047,
+      "embedding_tokens": 2012145,
+      "llm_inference_seconds": 495.09149878751487,
+      "embedding_inference_seconds": 174.8458521841094
+    },
+    "recursive_source_rehearsal_v1": {
+      "llm_tokens": 3293230,
+      "embedding_tokens": 21403,
+      "llm_inference_seconds": 554.2549483403563,
+      "embedding_inference_seconds": 4.05523954378441
+    }
+  },
+  "comparison_to_main_aggregator": "PASS: all7 raw independently reconstructed groups match; report gaps0.",
+  "caveat": "Physical recorded calls and amortized inference time depend on cache lifecycle/arm order; not cold-cache efficiency or E2E latency.",
+  "verified_report_sha256": "1bc4185bf76aa15f65e5640f5f113cb5dc085b5f6811ea5661f34332bf9cd963"
+}

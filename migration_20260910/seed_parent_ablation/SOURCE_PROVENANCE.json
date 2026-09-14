@@ -1,0 +1,110 @@
+{
+  "scope": "Separate Seed-parent ablation; original paper/date/partition adapters untouched.",
+  "copied_files": {
+    "source/budgeted_evidence.py": {
+      "sha256": "d1e5f99306a7654124b16cf9c3ecb14e98118892dc0ed24b92470386049fddb3",
+      "original": "source/budgeted_evidence.py"
+    },
+    "source/compile_research_data.py": {
+      "sha256": "721f5c5c3fa970a35f06db28bdd4820e119cd9936ae22f307a3436c748e6aaca",
+      "original": "source/compile_research_data.py"
+    },
+    "source/continuous.py": {
+      "sha256": "810bd92b0980b6f0f8327e82eac041b7521d18e790af044d913c44d6127003e5",
+      "original": "source/continuous.py"
+    },
+    "source/continuous_v2.py": {
+      "sha256": "1f5e77bc5d72d59cd0de040b5eb020e07318075db35e45053b0143be1934ce32",
+      "original": "source/continuous_v2.py"
+    },
+    "source/evidence_fidelity.py": {
+      "sha256": "ba55f8508cc16b1cea420f80198a9c6c7d3359235645886d9180c1bf0838c735",
+      "original": "source/evidence_fidelity.py"
+    },
+    "source/evidence_utility.py": {
+      "sha256": "b6a18927a332ff96a997b24a8d36a0ff29757baeb36b8d1efe9c5aab51c9f310",
+      "original": "source/evidence_utility.py"
+    },
+    "source/frozen_partition.py": {
+      "sha256": "f40a191e06dda70c53c029c2d9891e7669200d008c65ff0f13f46e64e76d6994",
+      "original": "source/frozen_partition.py"
+    },
+    "source/memory_ops.py": {
+      "sha256": "02504b2976393c9f9743a051b6347adbeea8af36ba572da579edb5ab6bfe8b00",
+      "original": "source/memory_ops.py"
+    },
+    "source/parent_evidence.py": {
+      "sha256": "3fb9fb6d55f1ef8501aa6040d28211b552674016baaf949825d7abb396be27a7",
+      "original": "source/parent_evidence.py"
+    },
+    "source/portable_parent.py": {
+      "sha256": "2274f14817a133cef8ce724f459f16809cc7b0718c4105601b3e117240f253a5",
+      "original": "source/portable_parent.py"
+    },
+    "source/refine.py": {
+      "sha256": "71384cac6aaa260d6df4f24f605797a8a886cd51514a83c9c1d041eff99f14fa",
+      "original": "source/refine.py"
+    },
+    "source/run_evidence_utility.py": {
+      "sha256": "534749083cd534deb00944d893ef9ed43fcb624a14fd5d9f560669d99ad03edd",
+      "original": "source/run_evidence_utility.py"
+    },
+    "source/runs/continuous_v3/plans/r06_calendar_month.json": {
+      "sha256": "19905e05c64512dc37454424527e095aa339a10dded0eae63997859cd30de7e1",
+      "original": "source/runs/continuous_v3/plans/r06_calendar_month.json"
+    },
+    "source/runs/continuous_v3/plans/r12_filter_current_best.json": {
+      "sha256": "6be9c35d6d0d0455993a330ab296d2f566d0c0221b42f5367eac66418616a53a",
+      "original": "source/runs/continuous_v3/plans/r12_filter_current_best.json"
+    },
+    "source/runs/continuous_v3/plans/r24_source_qa_cards.json": {
+      "sha256": "85f9bb09761235c78dfdacfd39d4f351f2487c1212ab19081daff059ab3d6e12",
+      "original": "source/runs/continuous_v3/plans/r24_source_qa_cards.json"
+    },
+    "source/runs/continuous_v3/plans/r40_fused_four_turn.json": {
+      "sha256": "e4ef0031a9585f41b41cf615fc02759f032ae11acb4b827a41759e4e6b32d898",
+      "original": "source/runs/continuous_v3/plans/r40_fused_four_turn.json"
+    },
+    "transfer_runtime.py": {
+      "sha256": "c3ce1cc184c6a002b94490595b913989e6620fde07d046318cd831004e4c3f22",
+      "original": "transfer_runtime.py"
+    },
+    "transfer_data.py": {
+      "sha256": "f4089630c57a27c739bdaf52cdb3c491fb763dad7f875eba2eaa474109582648",
+      "original": "transfer_data.py"
+    },
+    "chat_tokenizer_compat.py": {
+      "sha256": "b50ed0f335ca2cd7a14957968d5d279fae8556da69a03c9b18f8f83db0108f4c",
+      "original": "chat_tokenizer_compat.py"
+    },
+    "runtime_meter.py": {
+      "sha256": "6bd2765f368007a6d881726a8f9b79382fcfc5d29523142d5035d88024fc4aba",
+      "original": "runtime_meter.py"
+    },
+    "date_metadata_adapter.py": {
+      "sha256": "c1af383f5ce4911aad63be1a7a688e379b0d70fc229a29c7f6de68b4741ebf2f",
+      "original": "date_metadata_adapter.py"
+    },
+    "approved_run_transfer.py": {
+      "sha256": "e4ae2f2ad23360d6a7c47528671c85aeeb235db920cba349d514e310d265f174",
+      "original": "run_transfer.py"
+    },
+    "metrics/timed_evaluate.py": {
+      "sha256": "77459aa6eb9b3ec81b678edddf79f679d694c09c8fa5bf1fa0fbcc7a4e6613c0",
+      "original": "D:\\MemoryData\\experiments\\refinement_usage_20260909\\timed_evaluate.py"
+    },
+    "metrics/evaluation_timing.py": {
+      "sha256": "637e9f705d7f046e4a8bf998135d54362057239ea79b42e54ed949191eb7b3e7",
+      "original": "D:\\MemoryData\\experiments\\refinement_usage_20260909\\evaluation_timing.py"
+    }
+  },
+  "evaluator_source_sha256": "71f7a6e4a9d0cd55e5507186973ee5fff07e5fb236713d5edcd0bf78f5a4535a",
+  "evaluator_identity": "Exact inspect.getsource match against frozen partition-v3 evaluate_sample",
+  "changed_files": [
+    "run_transfer.py",
+    "import_source.py",
+    "test_seed_parent.py"
+  ],
+  "novelty_claim": false,
+  "inherited_source_utility_cost_policy": "separately report imported native construction/utility costs; current runtime counts incremental work only"
+}

@@ -1,0 +1,28 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=16mm]{geometry}
+\input{locomo_style.tex}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}[p]
+\centering
+\input{tokens_all.tikz.tex}
+\caption{Quality--token trade-off across all 15 verified configurations, including internal variants and alternative LightMem pipelines. Under the displayed selected-path accounting, R40, Seed, and E-Mem are nondominated. Internal costs ($\dagger$) reconstruct required preparation plus full logical reader usage, including reused answers; embedding tokens are excluded. E-Mem and HiGMem show recorded token lower bounds ($\geq$). The connecting line joins observed configurations and does not imply achievable interpolated performance.}
+\label{fig:locomo-tokens-all}
+\end{figure}
+\clearpage
+\begin{figure}[p]
+\centering
+\input{tokens_main.tikz.tex}
+\caption{Quality--token trade-off for the nine main-table configurations on the same 1,540 LoCoMo questions with Qwen3.5-9B. The reversed logarithmic axis shows selected build/preparation plus QA LLM input and output tokens, excluding embeddings. $\dagger$ denotes reconstructed preparation plus cache-normalized logical reader usage. $\geq$ denotes a recorded token lower bound; arrows point toward higher cost, and dashed segments involve a lower-bound coordinate. The frontier describes the plotted accounting figures under native pipeline conditions.}
+\label{fig:locomo-tokens-main}
+\end{figure}
+\clearpage
+\begin{figure}[p]
+\centering
+\input{latency.tikz.tex}
+\caption{Quality and recorded latency for ten configurations with available timing. The left panel shows native question timers; LightMem is shown separately as the sum of recorded retrieval and answer-API components. The right panel uses observed LLM-plus-embedding call time divided by 1,540 for four internal variants and a zoomed F1 axis. Batching and cache reuse affect this amortized metric, which is not end-to-end query latency. No frontier is shared across panels or baseline timing scopes.}
+\label{fig:locomo-latency}
+\end{figure}
+\clearpage
+\end{document}

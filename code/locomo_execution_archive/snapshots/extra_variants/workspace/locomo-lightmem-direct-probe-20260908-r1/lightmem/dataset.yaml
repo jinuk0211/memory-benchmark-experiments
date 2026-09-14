@@ -1,0 +1,22 @@
+{
+  "dataset": "LoCoMo",
+  "sub_dataset": "locomo_qa",
+  "test_files": "/workspace/locomo-lightmem-direct-probe-20260908-r1/lightmem/test_dataset.json",
+  "chunk_size": 4096,
+  "context_max_length": 10000000,
+  "generation_max_length": 1024,
+  "max_test_samples": 1,
+  "seed": 42,
+  "debug": false,
+  "demo_files": "",
+  "use_chat_template": true,
+  "shots": 0,
+  "tag": "official_4cat",
+  "locomo_categories": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "locomo_repeat_session_header": false
+}

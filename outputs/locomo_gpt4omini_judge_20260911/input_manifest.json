@@ -1,0 +1,101 @@
+{
+  "protocol": "LightMem official-distribution LoCoMo GPT-4o-mini judge; separate from original LoCoMo F1",
+  "official_source_url": "https://github.com/zjunlp/LightMem/blob/8449d574df6bae1bdf3314a1564da65e2f37e046/experiments/locomo/llm_judge.py",
+  "official_source_path": "D:\\MemoryData\\lightmem_official_20260909\\upstream\\experiments\\locomo\\llm_judge.py",
+  "official_source_sha256": "5b046d20b4f71b6ab0ce3776a5a789870f37f8cf1800c344ba936b2a0c41542c",
+  "prompt_sha256": "62395dd312a631dfd9355026a0b69cc936018274c3198b6365b5c2a5c9bca9e0",
+  "api_settings": {
+    "model": "gpt-4o-mini",
+    "temperature": 0.0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "max_tokens": "omitted as upstream"
+  },
+  "method_labels": {
+    "Naive": "Full-context reference",
+    "Mem0": "Mem0",
+    "A-MEM": "A-MEM",
+    "LangMem": "LangMem",
+    "SimpleMem": "SimpleMem",
+    "LightMem_official": "LightMem",
+    "HiGMem": "HiGMem",
+    "E-Mem": "E-Mem",
+    "s_parent_single_2000": "Our method"
+  },
+  "method_order": [
+    "Naive",
+    "Mem0",
+    "A-MEM",
+    "LangMem",
+    "SimpleMem",
+    "LightMem_official",
+    "HiGMem",
+    "E-Mem",
+    "s_parent_single_2000"
+  ],
+  "total_rows": 13860,
+  "questions_per_method": 1540,
+  "unique_question_gold_prediction_prompts": 10624,
+  "identical_payload_policy": "Reuse a single valid judge result for an identical complete API payload; retain every logical row.",
+  "ordering": "Canonical QA order, methods interleaved within each question",
+  "category_counts_per_method": {
+    "2": 321,
+    "3": 96,
+    "1": 282,
+    "4": 841
+  },
+  "gold_preprocessing": "str(canonical answer); no category-specific F1 preprocessing for the judge",
+  "source_predictions_modified": false,
+  "dataset_sha256": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+  "archive_sha256": "9c21927e56004f97f41f889917b3e229350fcdfc44c3a5d5a71a2bd9d68fb654",
+  "coverage_sha256": "fc25ec413754613bece07913241b699ee67306d45489f808fb7d99237f5ee64d",
+  "input_sha256": "01415560058a88cc96bf60a4296e628571acbd1cb58e15e11da4f83e735d8fd2",
+  "loader_sha256": "eecd352f6267c2cbe6b92e8461752bdc00177e7892d5dde1604fd468583debd5",
+  "source_members_sha256": {
+    "Naive": {
+      "raw_predictions/Naive/full1540.csv": "98b0b8a6476c427c586e14996ae06b08f19decbad687eee6f763e9cb252e85ca"
+    },
+    "Mem0": {
+      "raw_predictions/Mem0/predictions.jsonl": "f293e930ba0c45974f56a6e53547b91c8d06eb49b0d2b2e538ad8dc83e25a9f0"
+    },
+    "A-MEM": {
+      "raw_predictions/A-MEM/predictions.jsonl": "cfd88bf4e2308cb2237cf995daefade6ceaaa7ff7ffa0361636ce169802a5793"
+    },
+    "LangMem": {
+      "raw_predictions/LangMem/predictions.jsonl": "14ce7a11df90b6363c6e1cf606e3a762623499099e030a8728d9f995c1fa122c"
+    },
+    "SimpleMem": {
+      "raw_predictions/SimpleMem/predictions.jsonl": "8efbed7e9769ddb726644393295d0cbaa20595271a9a8346bad87221cfbcf814"
+    },
+    "LightMem_official": {
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-26.json": "52d56d7fa3621a8ab5ca66a9245822b42b4586ae95c5486ec00901500afc8470",
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-30.json": "880820515f6be8579be6fcbf6654b94dce0a931c9bbe1b4af22bc006c5f92288",
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-41.json": "149debc343d47fb4449f01f41cb5bfd7ef6cb507df29610d9dce30f4665d5f52",
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-42.json": "86779b03982b4f3f27665cfeaf6d066134ac9333697c86fe5b056c9e07614c69",
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-43.json": "845f1e53d5fbb3f33fd7646e12a79d791c41adf71b0397e305df44d2a09cc0f1",
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-44.json": "fbccb64a04654151794f9b2021cdefa7ec22a39b52ea9814a1a2719a7ff1346c",
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-47.json": "eb63de7f117a708e7e9a5abcb8bbfadee63cab763f2518ed816ab954dd3adfdf",
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-48.json": "b2e253e7f422c3005d0d7d312fabfd4910540d9a01cb7cde5ce040a9ddeacea1",
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-49.json": "1ac43ab672918e9ba64aee8df4408bc5b83f30709e1e9d960c98cc3a36b2992d",
+      "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-50.json": "50a8502698e061a0272335745f6b92e4b8609dd549904ad03dd2d3eab2bef0a4"
+    },
+    "HiGMem": {
+      "raw_predictions/HiGMem/scored_predictions.json": "2d15c04d98b86b147f16e3979f90093b1adf843722372cc8aaa1554c08233443"
+    },
+    "E-Mem": {
+      "raw_predictions/E-Mem/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "6e266a9378ac97c75c6b851f26d0ae048818fa924c18faf27c3df2bbe349f367"
+    },
+    "s_parent_single_2000": {
+      "experiments/refinement_usage_20260909/evidence/runs/qwen35_baseline/s_parent_single_2000.jsonl": "a957f3d6860568f6e20303905b41344ab3730757b18ec652b6b726933701258b"
+    }
+  },
+  "price_usd_per_million": {
+    "input": 0.15,
+    "cached_input": 0.075,
+    "output": 0.6
+  },
+  "price_source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+  "price_checked_date": "2026-09-11",
+  "run_budget_usd": 5.0
+}

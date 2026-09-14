@@ -1,0 +1,22 @@
+{
+  "runner_commands": {
+    "lightmem": [
+      "/workspace/longmemeval_s_native7_20260910/.venv-lightmem/bin/python",
+      "/workspace/longmemeval_s_native7_20260910/native_lightmem.py",
+      "--dataset",
+      "/workspace/longmemeval_s_native7_20260910/longmemeval_s_cleaned.json",
+      "--run-dir",
+      "/workspace/longmemeval_s_native7_20260910/runs/lightmem",
+      "--source-root",
+      "/workspace/longmemeval_s_native7_20260910/source/LightMem",
+      "--api-base",
+      "http://127.0.0.1:18083/meter/native7_20260910/lightmem/native/all/all/v1",
+      "--model",
+      "Qwen/Qwen3.5-9B",
+      "--embedding-model",
+      "/workspace/.hf_home/hub/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "--compressor-model",
+      "/workspace/.hf_home/hub/models--microsoft--llmlingua-2-bert-base-multilingual-cased-meetingbank/snapshots/5f0c82792b7ea14c6484e015b6a072009496b7f2"
+    ]
+  }
+}

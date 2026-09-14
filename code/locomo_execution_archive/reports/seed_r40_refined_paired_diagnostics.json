@@ -1,0 +1,138 @@
+{
+  "metric": "official_f1",
+  "comparisons": {
+    "seed": {
+      "n": 1540,
+      "baseline": 0.5625973274365339,
+      "refined": 0.5552781350227676,
+      "effect_pp": -0.7319192413766329,
+      "dataset": "locomo",
+      "cluster_count": 10,
+      "ci95_pp": [
+        -2.881878658696365,
+        1.48414998791512
+      ],
+      "ci_method": "paired-cluster-percentile-bootstrap",
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260908,
+      "wins": 288,
+      "losses": 299,
+      "ties": 953,
+      "generation_failures_counted_zero": {
+        "baseline": 0,
+        "refined": 0
+      },
+      "by_question_type": {
+        "1": {
+          "n": 282,
+          "baseline": 0.46079979797211973,
+          "refined": 0.38129242976405064,
+          "effect_pp": -7.950736820806909
+        },
+        "2": {
+          "n": 321,
+          "baseline": 0.41762460454049244,
+          "refined": 0.5064368653153699,
+          "effect_pp": 8.881226077487748
+        },
+        "3": {
+          "n": 96,
+          "baseline": 0.13565051800622316,
+          "refined": 0.15576086436905764,
+          "effect_pp": 2.0110346362834486
+        },
+        "4": {
+          "n": 841,
+          "baseline": 0.7008018946944459,
+          "refined": 0.677865143871506,
+          "effect_pp": -2.293675082293989
+        }
+      },
+      "abstention": {
+        "n": 0,
+        "baseline": null,
+        "refined": null,
+        "effect_pp": null
+      },
+      "answerable": {
+        "n": 1540,
+        "baseline": 0.5625973274365339,
+        "refined": 0.5552781350227676,
+        "effect_pp": -0.7319192413766329
+      },
+      "manifest_ids_sha256": "3faaf0084df94ed2f911ec21b05a12ecf2470820791950464883fca7d10a1746",
+      "macro_by_question_type": {
+        "baseline": 0.4287192038033203,
+        "refined": 0.43033882582999605,
+        "effect_pp": 0.16196220266757466
+      }
+    },
+    "r40_fused_four_turn": {
+      "n": 1540,
+      "baseline": 0.5552237081573067,
+      "refined": 0.5552781350227676,
+      "effect_pp": 0.005442686546086595,
+      "dataset": "locomo",
+      "cluster_count": 10,
+      "ci95_pp": [
+        -0.4228132500061849,
+        0.4226728342465395
+      ],
+      "ci_method": "paired-cluster-percentile-bootstrap",
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260908,
+      "wins": 80,
+      "losses": 71,
+      "ties": 1389,
+      "generation_failures_counted_zero": {
+        "baseline": 0,
+        "refined": 0
+      },
+      "by_question_type": {
+        "1": {
+          "n": 282,
+          "baseline": 0.39683696559470827,
+          "refined": 0.38129242976405064,
+          "effect_pp": -1.5544535830657624
+        },
+        "2": {
+          "n": 321,
+          "baseline": 0.49703097179732697,
+          "refined": 0.5064368653153699,
+          "effect_pp": 0.940589351804294
+        },
+        "3": {
+          "n": 96,
+          "baseline": 0.14091699345124306,
+          "refined": 0.15576086436905764,
+          "effect_pp": 1.4843870917814583
+        },
+        "4": {
+          "n": 841,
+          "baseline": 0.6778377086162702,
+          "refined": 0.677865143871506,
+          "effect_pp": 0.002743525523574153
+        }
+      },
+      "abstention": {
+        "n": 0,
+        "baseline": null,
+        "refined": null,
+        "effect_pp": null
+      },
+      "answerable": {
+        "n": 1540,
+        "baseline": 0.5552237081573067,
+        "refined": 0.5552781350227676,
+        "effect_pp": 0.005442686546086595
+      },
+      "manifest_ids_sha256": "3faaf0084df94ed2f911ec21b05a12ecf2470820791950464883fca7d10a1746",
+      "macro_by_question_type": {
+        "baseline": 0.42815565986488713,
+        "refined": 0.43033882582999605,
+        "effect_pp": 0.21831659651089103
+      }
+    }
+  },
+  "official_longmemeval_accuracy_pending": false
+}

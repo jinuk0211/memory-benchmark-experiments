@@ -1,0 +1,311 @@
+{
+  "question": "What does John say is key in D17:17?",
+  "answer": "Finding the right balance",
+  "source_ids": [
+    "D17:17"
+  ],
+  "candidate_context_ids": [
+    "D17:17",
+    "D17:18",
+    "D17:19"
+  ],
+  "answer_spans": [
+    {
+      "source_id": "D17:17",
+      "start": 160,
+      "end": 185,
+      "verbatim": "Finding the right balance"
+    }
+  ],
+  "session": 17,
+  "recorded_date": "3:36 pm on 11 November, 2023",
+  "conv_id": "conv-43",
+  "split": "probe_fit",
+  "id": "conv-43:source_probe:32",
+  "analysis": {
+    "full_advantage": 4.74915368877339,
+    "source_dependent": true,
+    "best_single_sources": [
+      "D17:17"
+    ],
+    "best_pair_sources": [
+      "D17:17",
+      "D17:19"
+    ],
+    "minimum_sources": [
+      "D17:17"
+    ],
+    "minimum_tokens": 82,
+    "single_policy_sources": [
+      "D17:17"
+    ],
+    "single_policy_tokens": 82,
+    "full_tokens": 150,
+    "best_pair_lift_over_best_single": 0.03991833327631866,
+    "pair_interactions": [
+      {
+        "source_ids": [
+          "D17:17",
+          "D17:18"
+        ],
+        "joint_lift": 0.010513365353062909,
+        "interaction": 0.8600424454459699,
+        "advantage": 4.724530384097989
+      },
+      {
+        "source_ids": [
+          "D17:17",
+          "D17:19"
+        ],
+        "joint_lift": 0.03991833327631866,
+        "interaction": 0.24069765208582794,
+        "advantage": 4.753935352021244
+      },
+      {
+        "source_ids": [
+          "D17:18",
+          "D17:19"
+        ],
+        "joint_lift": -1.1205157898366451,
+        "interaction": -0.2709867097437382,
+        "advantage": -1.3212951086461544
+      }
+    ],
+    "has_preserving_pair_without_preserving_single": false
+  },
+  "generations": {
+    "empty": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [],
+      "context_tokens": 0,
+      "source_answer_f1": 0.0
+    },
+    "full": {
+      "text": "Finding the right balance",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D17:17",
+        "D17:18",
+        "D17:19"
+      ],
+      "context_tokens": 150,
+      "source_answer_f1": 1.0
+    },
+    "answer_removed": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D17:18",
+        "D17:19"
+      ],
+      "context_tokens": 89,
+      "source_answer_f1": 0.0
+    },
+    "best_single": {
+      "text": "finding the right balance",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D17:17"
+      ],
+      "context_tokens": 82,
+      "source_answer_f1": 1.0
+    },
+    "best_pair": {
+      "text": "finding the right balance",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D17:17",
+        "D17:19"
+      ],
+      "context_tokens": 111,
+      "source_answer_f1": 1.0
+    },
+    "minimum_bundle": {
+      "text": "finding the right balance",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D17:17"
+      ],
+      "context_tokens": 82,
+      "source_answer_f1": 1.0
+    },
+    "single_policy": {
+      "text": "finding the right balance",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D17:17"
+      ],
+      "context_tokens": 82,
+      "source_answer_f1": 1.0
+    }
+  },
+  "subsets": [
+    {
+      "kind": "empty",
+      "source_ids": [],
+      "context_tokens": 0,
+      "score": {
+        "mean_logprob": -4.94587379693985,
+        "sum_logprob": -19.7834951877594,
+        "answer_tokens": 4,
+        "token_logprobs": [
+          -12.14641284942627,
+          -1.5350050926208496,
+          -3.535316228866577,
+          -2.566761016845703
+        ]
+      }
+    },
+    {
+      "kind": "full",
+      "source_ids": [
+        "D17:17",
+        "D17:18",
+        "D17:19"
+      ],
+      "context_tokens": 150,
+      "score": {
+        "mean_logprob": -0.1967201081664598,
+        "sum_logprob": -0.7868804326658392,
+        "answer_tokens": 4,
+        "token_logprobs": [
+          -0.7868184447288513,
+          -1.9192511899746023e-05,
+          -5.483612312673358e-06,
+          -3.731181277544238e-05
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D17:17"
+      ],
+      "context_tokens": 82,
+      "score": {
+        "mean_logprob": -0.23185677819492412,
+        "sum_logprob": -0.9274271127796965,
+        "answer_tokens": 4,
+        "token_logprobs": [
+          -0.9273881316184998,
+          -1.4066597032069694e-05,
+          -7.748573807475623e-06,
+          -1.7165990357170813e-05
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D17:18"
+      ],
+      "context_tokens": 60,
+      "score": {
+        "mean_logprob": -5.795402877032757,
+        "sum_logprob": -23.181611508131027,
+        "answer_tokens": 4,
+        "token_logprobs": [
+          -16.31707191467285,
+          -1.6272785663604736,
+          -5.100231170654297,
+          -0.13702985644340515
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D17:19"
+      ],
+      "context_tokens": 50,
+      "score": {
+        "mean_logprob": -5.146653115749359,
+        "sum_logprob": -20.586612462997437,
+        "answer_tokens": 4,
+        "token_logprobs": [
+          -15.063398361206055,
+          -1.098104476928711,
+          -3.1124963760375977,
+          -1.3126132488250732
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D17:17",
+        "D17:18"
+      ],
+      "context_tokens": 121,
+      "score": {
+        "mean_logprob": -0.2213434128418612,
+        "sum_logprob": -0.8853736513674448,
+        "answer_tokens": 4,
+        "token_logprobs": [
+          -0.8853238224983215,
+          -1.2874520507466514e-05,
+          -4.6491513785440475e-06,
+          -3.2305197237292305e-05
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D17:17",
+        "D17:19"
+      ],
+      "context_tokens": 111,
+      "score": {
+        "mean_logprob": -0.19193844491860546,
+        "sum_logprob": -0.7677537796744218,
+        "answer_tokens": 4,
+        "token_logprobs": [
+          -0.7677218317985535,
+          -1.1324817933200393e-05,
+          -3.814689989667386e-06,
+          -1.680836794548668e-05
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D17:18",
+        "D17:19"
+      ],
+      "context_tokens": 89,
+      "score": {
+        "mean_logprob": -6.267168905586004,
+        "sum_logprob": -25.068675622344017,
+        "answer_tokens": 4,
+        "token_logprobs": [
+          -16.176610946655273,
+          -1.4014211893081665,
+          -7.366408824920654,
+          -0.12423466145992279
+        ]
+      }
+    },
+    {
+      "kind": "answer_removed",
+      "source_ids": [
+        "D17:18",
+        "D17:19"
+      ],
+      "context_tokens": 89,
+      "score": {
+        "mean_logprob": -6.278299173340201,
+        "sum_logprob": -25.113196693360806,
+        "answer_tokens": 4,
+        "token_logprobs": [
+          -16.180513381958008,
+          -1.4024375677108765,
+          -7.407748699188232,
+          -0.12249704450368881
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "logical_rows": 13860,
+  "questions_per_method": 1540,
+  "methods": 9,
+  "api_responses": 10624,
+  "unique_payloads": 10624,
+  "api_errors": 0,
+  "duplicate_successful_payloads": 0,
+  "returned_models": {
+    "gpt-4o-mini-2024-07-18": 10624
+  },
+  "finish_reasons": {
+    "stop": 10624
+  },
+  "first_response_utc": "2026-09-11T14:12:31.601927+00:00",
+  "last_response_utc": "2026-09-11T14:27:30.435001+00:00",
+  "first_to_last_response_seconds": 898.833074,
+  "execution_phases": [
+    {
+      "workers": 1,
+      "successful_requests": 1,
+      "purpose": "smoke"
+    },
+    {
+      "workers": 32,
+      "successful_requests": 5327,
+      "purpose": "main"
+    },
+    {
+      "workers": 80,
+      "successful_requests": 5296,
+      "purpose": "resume after graceful drain"
+    }
+  ],
+  "restart_note": "One Ctrl+C drained all in-flight requests before process exit; resumed from durable cache with increased concurrency.",
+  "usage_based_cost_usd": 0.68413815,
+  "unknown_cost_upper_bound_usd": 0.0,
+  "token_usage": {
+    "prompt_tokens": 4305869,
+    "completion_tokens": 63763,
+    "total_tokens": 4369632,
+    "cached_prompt_tokens": 0
+  },
+  "credential_marker_scan": "PASS: no API key pattern in output files",
+  "offline_runner_tests_passed": 16,
+  "files_sha256": {
+    "analysis.json": "ef993997d5fa1b5473b1b034ca0ee1528e621c80af72b1d92cc43137f39c97b1",
+    "api_events.jsonl": "1dfec8996f69b1296b9ce505ea9882de40e12ed5d8d8aff2889795344d1ce86c",
+    "comparison.csv": "90374539930b7bffb8bb9b5c943fe379350c2713be5f13b85f5e47d9848ab775",
+    "f1_judge_disagreements.csv": "bec1552b27dc9219424ecad0b820b3344eac78d7e6254afb402ca8c84f424d30",
+    "input.jsonl": "01415560058a88cc96bf60a4296e628571acbd1cb58e15e11da4f83e735d8fd2",
+    "input_manifest.json": "c3a3b8ff2aa46234326d393c55044b33f83c9d74f9e63a88ebc5d6cc3ff29a53",
+    "judge_cache.jsonl": "1dfec8996f69b1296b9ce505ea9882de40e12ed5d8d8aff2889795344d1ce86c",
+    "official_accuracy_prompt.txt": "62395dd312a631dfd9355026a0b69cc936018274c3198b6365b5c2a5c9bca9e0",
+    "pinned_upstream_llm_judge.py": "753889df01f381980b1d96a4aab480b5ff8b0919e0e0ac7092bbf828bdfe1dc6",
+    "prepare_inputs.py": "7ecb2e5bf236e791d03500c757e313f83f16ff7e9c2cddeeac24baa1102453d2",
+    "protocol_verification.json": "103662584350d1fe59138118d10e5a21f383cb465e91f636bea3f729677a03d9",
+    "report_judge.py": "bec879227ce1178f820392140ba6cd4ec0a22be66719f570cbc695b30bd010fa",
+    "REPORT_KO.md": "7534af960386ae68b8bf0ff12c796079e84aedde73e79f7bb58ed04cedb44314",
+    "run_config.json": "1d9deaf99758e28a675337ba99d5c7b095dad05a2c6c3bfaec009525b57b4581",
+    "run_judge.py": "92e1e70671a5eb4bd96a00a6b96c53dd08b29aa4a026920936eabc2fd313b69f",
+    "scores.jsonl": "6487d360af0c88acdee442146d8571ab3bdfcdb0f99df56d97a8150c4712bf62",
+    "summary.json": "6e818ddab2993a8208f78c837ea40c57f73ce50f28595a53e28ed0949b1700f1",
+    "table_judge.tex": "1722a916690bbf9c815a8eb6ddf38319d28602fe6173d692c10b07c1c92d3bf0",
+    "test_run_judge.py": "35ac224e4e0d63d630418793beb50079835a824616f85bd929a8b3c9aff319d0"
+  }
+}

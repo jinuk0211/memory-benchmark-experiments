@@ -1,0 +1,284 @@
+{
+  "question": "Who is the speaker in dialogue D1:18?",
+  "answer": "Dave",
+  "source_ids": [
+    "D1:19"
+  ],
+  "candidate_context_ids": [
+    "D1:17",
+    "D1:18",
+    "D1:19"
+  ],
+  "answer_spans": [
+    {
+      "source_id": "D1:19",
+      "start": 8,
+      "end": 12,
+      "verbatim": "Dave"
+    }
+  ],
+  "session": 1,
+  "recorded_date": "11:53 am on 23 March, 2023",
+  "conv_id": "conv-50",
+  "split": "probe_fit",
+  "id": "conv-50:source_probe:1",
+  "analysis": {
+    "full_advantage": 6.832520289521199,
+    "source_dependent": true,
+    "best_single_sources": [
+      "D1:18"
+    ],
+    "best_pair_sources": [
+      "D1:17",
+      "D1:18"
+    ],
+    "minimum_sources": [
+      "D1:18"
+    ],
+    "minimum_tokens": 50,
+    "single_policy_sources": [
+      "D1:18"
+    ],
+    "single_policy_tokens": 50,
+    "full_tokens": 122,
+    "best_pair_lift_over_best_single": -0.00013784191105514765,
+    "pair_interactions": [
+      {
+        "source_ids": [
+          "D1:17",
+          "D1:18"
+        ],
+        "joint_lift": -0.00013784191105514765,
+        "interaction": 1.2424149153521284,
+        "advantage": 6.832417118363082
+      },
+      {
+        "source_ids": [
+          "D1:17",
+          "D1:19"
+        ],
+        "joint_lift": -0.636662483215332,
+        "interaction": 0.6058902740478516,
+        "advantage": 5.185007095336914
+      },
+      {
+        "source_ids": [
+          "D1:18",
+          "D1:19"
+        ],
+        "joint_lift": -0.0004133495967835188,
+        "interaction": -5.82208292814903,
+        "advantage": 6.832141610677354
+      }
+    ],
+    "has_preserving_pair_without_preserving_single": false
+  },
+  "generations": {
+    "empty": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [],
+      "context_tokens": 0,
+      "source_answer_f1": 0.0
+    },
+    "full": {
+      "text": "Dave",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D1:17",
+        "D1:18",
+        "D1:19"
+      ],
+      "context_tokens": 122,
+      "source_answer_f1": 1.0
+    },
+    "answer_removed": {
+      "text": "Dave",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D1:17",
+        "D1:18"
+      ],
+      "context_tokens": 91,
+      "source_answer_f1": 1.0
+    },
+    "best_single": {
+      "text": "Dave",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D1:18"
+      ],
+      "context_tokens": 50,
+      "source_answer_f1": 1.0
+    },
+    "best_pair": {
+      "text": "Dave",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D1:17",
+        "D1:18"
+      ],
+      "context_tokens": 91,
+      "source_answer_f1": 1.0
+    },
+    "minimum_bundle": {
+      "text": "Dave",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D1:18"
+      ],
+      "context_tokens": 50,
+      "source_answer_f1": 1.0
+    },
+    "single_policy": {
+      "text": "Dave",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D1:18"
+      ],
+      "context_tokens": 50,
+      "source_answer_f1": 1.0
+    }
+  },
+  "subsets": [
+    {
+      "kind": "empty",
+      "source_ids": [],
+      "context_tokens": 0,
+      "score": {
+        "mean_logprob": -6.833089828491211,
+        "sum_logprob": -6.833089828491211,
+        "answer_tokens": 1,
+        "token_logprobs": [
+          -6.833089828491211
+        ]
+      }
+    },
+    {
+      "kind": "full",
+      "source_ids": [
+        "D1:17",
+        "D1:18",
+        "D1:19"
+      ],
+      "context_tokens": 122,
+      "score": {
+        "mean_logprob": -0.0005695389700122178,
+        "sum_logprob": -0.0005695389700122178,
+        "answer_tokens": 1,
+        "token_logprobs": [
+          -0.0005695389700122178
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D1:17"
+      ],
+      "context_tokens": 63,
+      "score": {
+        "mean_logprob": -8.075642585754395,
+        "sum_logprob": -8.075642585754395,
+        "answer_tokens": 1,
+        "token_logprobs": [
+          -8.075642585754395
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D1:18"
+      ],
+      "context_tokens": 50,
+      "score": {
+        "mean_logprob": -0.000534868217073381,
+        "sum_logprob": -0.000534868217073381,
+        "answer_tokens": 1,
+        "token_logprobs": [
+          -0.000534868217073381
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D1:19"
+      ],
+      "context_tokens": 53,
+      "score": {
+        "mean_logprob": -1.0114202499389648,
+        "sum_logprob": -1.0114202499389648,
+        "answer_tokens": 1,
+        "token_logprobs": [
+          -1.0114202499389648
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D1:17",
+        "D1:18"
+      ],
+      "context_tokens": 91,
+      "score": {
+        "mean_logprob": -0.0006727101281285286,
+        "sum_logprob": -0.0006727101281285286,
+        "answer_tokens": 1,
+        "token_logprobs": [
+          -0.0006727101281285286
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D1:17",
+        "D1:19"
+      ],
+      "context_tokens": 94,
+      "score": {
+        "mean_logprob": -1.6480827331542969,
+        "sum_logprob": -1.6480827331542969,
+        "answer_tokens": 1,
+        "token_logprobs": [
+          -1.6480827331542969
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D1:18",
+        "D1:19"
+      ],
+      "context_tokens": 81,
+      "score": {
+        "mean_logprob": -0.0009482178138568997,
+        "sum_logprob": -0.0009482178138568997,
+        "answer_tokens": 1,
+        "token_logprobs": [
+          -0.0009482178138568997
+        ]
+      }
+    },
+    {
+      "kind": "answer_removed",
+      "source_ids": [
+        "D1:17",
+        "D1:18"
+      ],
+      "context_tokens": 91,
+      "score": {
+        "mean_logprob": -0.0006699701189063489,
+        "sum_logprob": -0.0006699701189063489,
+        "answer_tokens": 1,
+        "token_logprobs": [
+          -0.0006699701189063489
+        ]
+      }
+    }
+  ]
+}

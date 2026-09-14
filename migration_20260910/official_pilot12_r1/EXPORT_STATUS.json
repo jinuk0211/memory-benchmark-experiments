@@ -1,0 +1,132 @@
+{
+  "schema": "official-pilot12-export-status-v1",
+  "verified_utc": "2026-09-10T07:13:21.154885+00:00",
+  "scope": "diagnostic_subset",
+  "canonical_population_count": 500,
+  "questions_per_arm": 12,
+  "arm_count": 3,
+  "total_hypotheses": 36,
+  "export_complete": true,
+  "official_evaluator_executed": false,
+  "official_metrics_executed": false,
+  "official_accuracy": null,
+  "judge_api_calls_by_this_export": 0,
+  "openai_api_key_present_at_audit": false,
+  "official_judge_cli_key": "gpt-4o",
+  "official_requested_judge_model": "gpt-4o-2024-08-06",
+  "bridge_sha256": "9659834d6cb7a51ac26171f79b434c6cb028592a1a0efb03c15c0bb67b2c5e6e",
+  "protocol_sha256": "e95bda1e33a0241fb53f7ca8c1fefeb5661e3f2c13a17990a05aa2894454aac0",
+  "audit": "Unchanged approved bridge.prepare recomputed each receipt and canonical-order hypothesis list; existing files were compared without rewriting.",
+  "arms": {
+    "seed": {
+      "question_count": 12,
+      "question_ids": [
+        "118b2229",
+        "e6041065",
+        "27016adc",
+        "d6062bb9",
+        "157a136e",
+        "gpt4_b5700ca9",
+        "e4e14d04",
+        "cc6d1ec1",
+        "gpt4_7de946e7",
+        "8cf51dda",
+        "41275add",
+        "4baee567"
+      ],
+      "question_type_counts": {
+        "single-session-user": 1,
+        "multi-session": 4,
+        "temporal-reasoning": 4,
+        "single-session-assistant": 3
+      },
+      "exact_generated_hypotheses_preserved": true,
+      "receipt_recomputed_and_matched": true,
+      "predictions_sha256": "1eaee1c42b12b6e85763edf857a33d722dc35187ec50e3e06d8e5454526f89ab",
+      "hypotheses_sha256": "19f82fc0e0c392404e93c0e9cf57961ac0799ed5aae33c62c1ae548722fd7d8e",
+      "receipt_sha256": "ce5d4155fc98481b1feacaa12133a0c81a6cd2b372d5aeb0dddf3cef3a194b32",
+      "stdout_sha256": "292f64b0e2cb8155c1865013cfcbfa6cd16353aef94aa7a749f3fe157f9a29e9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_exit_code": null,
+      "export_exit_code_evidence": "Original seed export process exit code was not retained. Seed is preserved and passes this independent read-only artifact audit.",
+      "completed_empty_question_ids": []
+    },
+    "r40_fused_four_turn": {
+      "question_count": 12,
+      "question_ids": [
+        "118b2229",
+        "e6041065",
+        "27016adc",
+        "d6062bb9",
+        "157a136e",
+        "gpt4_b5700ca9",
+        "e4e14d04",
+        "cc6d1ec1",
+        "gpt4_7de946e7",
+        "8cf51dda",
+        "41275add",
+        "4baee567"
+      ],
+      "question_type_counts": {
+        "single-session-user": 1,
+        "multi-session": 4,
+        "temporal-reasoning": 4,
+        "single-session-assistant": 3
+      },
+      "exact_generated_hypotheses_preserved": true,
+      "receipt_recomputed_and_matched": true,
+      "predictions_sha256": "4ee77207cad3335efd266f7d61c133b4d19ce2381885c520f576d2da828db7e0",
+      "hypotheses_sha256": "80caab782e0d672193bfb8c469bd352b998f382d119b9e764713991d33fa9848",
+      "receipt_sha256": "87a28e505ab1b083a262e9dd32a1d8dcfb7c04015d998b94651c3717d123e364",
+      "stdout_sha256": "4db328a5ef1cf57cc54119baa737cce848f1fc15eb95d86f0e3ed87e2e16f9dd",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_exit_code": 0,
+      "export_exit_code_evidence": "r40_fused_four_turn.export.exitcode.txt",
+      "completed_empty_question_ids": []
+    },
+    "s_parent_single_2000": {
+      "question_count": 12,
+      "question_ids": [
+        "118b2229",
+        "e6041065",
+        "27016adc",
+        "d6062bb9",
+        "157a136e",
+        "gpt4_b5700ca9",
+        "e4e14d04",
+        "cc6d1ec1",
+        "gpt4_7de946e7",
+        "8cf51dda",
+        "41275add",
+        "4baee567"
+      ],
+      "question_type_counts": {
+        "single-session-user": 1,
+        "multi-session": 4,
+        "temporal-reasoning": 4,
+        "single-session-assistant": 3
+      },
+      "exact_generated_hypotheses_preserved": true,
+      "receipt_recomputed_and_matched": true,
+      "predictions_sha256": "c9c9127f9d05573dbfd3394afe34db7d5a875c1a7c8000af0869a710e2d4471b",
+      "hypotheses_sha256": "0edd8ecc7ef79767023747bcc6f5a9cef709b05b6e9670fe6aee401acdadda87",
+      "receipt_sha256": "372b6c58701634125aa98a8cc9267a00178a7ab04a71ca53ca067c90fa805c3d",
+      "stdout_sha256": "70fbf32d1f43a8d8d1f8cd1a5752e8de9c95709497396df8ba9c9b793c2922a5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_exit_code": 0,
+      "export_exit_code_evidence": "s_parent_single_2000.export.exitcode.txt",
+      "completed_empty_question_ids": []
+    }
+  },
+  "expected_ids_manifest_sha256": "c0706e8fe2dd89f58d330840e9d3243b92df6cd4fce44410a4aaea1c630067d2",
+  "reference_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "upstream_commit": "9e0b455f4ef0e2ab8f2e582289761153549043fc",
+  "upstream_sha256": {
+    "src/evaluation/evaluate_qa.py": "ecce9c4c79dc89d99534ac17b383a5cbb5b9f0c69ee98adaf0684742e3d95251",
+    "src/evaluation/print_qa_metrics.py": "e9283933a0cefb7a0ded7365e436ae3d1be5aac41853325e6155d83bf07607f0"
+  },
+  "model_name": "Qwen/Qwen3.5-9B",
+  "embedding_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "read_budget": 2048,
+  "max_answer_tokens": 96
+}

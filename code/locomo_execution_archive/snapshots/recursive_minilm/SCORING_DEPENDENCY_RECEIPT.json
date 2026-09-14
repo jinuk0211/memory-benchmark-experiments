@@ -1,0 +1,21 @@
+{
+  "added_dependency": "bert-score==0.3.13",
+  "dependency_upgrades": false,
+  "inference_packages_before": {
+    "torch": "2.10.0+cu129",
+    "transformers": "5.5.3",
+    "numpy": "2.2.6",
+    "sentence-transformers": "5.2.0",
+    "vllm": "0.19.1",
+    "rank-bm25": "0.2.2"
+  },
+  "inference_packages_after": {
+    "torch": "2.10.0+cu129",
+    "transformers": "5.5.3",
+    "numpy": "2.2.6",
+    "sentence-transformers": "5.2.0",
+    "vllm": "0.19.1",
+    "rank-bm25": "0.2.2"
+  },
+  "reason": "Unchanged official evaluation.py imports bert_score even when only metric=f1 is used"
+}

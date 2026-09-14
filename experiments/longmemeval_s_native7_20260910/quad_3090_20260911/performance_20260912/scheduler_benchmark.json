@@ -1,0 +1,33 @@
+{
+  "scope": "simulated 60 seconds, 500 IDs, two busy workers; no GPU throughput claim",
+  "methods": {
+    "simplemem": {
+      "before": {
+        "attempt_scans": 30000,
+        "publications": 31,
+        "coordinator_wall_seconds": 2.9177089000004344,
+        "unchanged_poll_publications": 30
+      },
+      "after": {
+        "attempt_scans": 0,
+        "publications": 3,
+        "coordinator_wall_seconds": 0.0025329000054625794,
+        "unchanged_poll_publications": 2
+      }
+    },
+    "lightmem": {
+      "before": {
+        "attempt_scans": 30000,
+        "publications": 31,
+        "coordinator_wall_seconds": 2.889940700006264,
+        "unchanged_poll_publications": 30
+      },
+      "after": {
+        "attempt_scans": 0,
+        "publications": 3,
+        "coordinator_wall_seconds": 0.0028352999943308532,
+        "unchanged_poll_publications": 2
+      }
+    }
+  }
+}

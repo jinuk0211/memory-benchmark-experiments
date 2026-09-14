@@ -1,0 +1,233 @@
+{
+  "dataset_sha256": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+  "scorer_sha256": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+  "methods": {
+    "seed": {
+      "n": 1540,
+      "official_f1": 0.5625973274365339,
+      "by_category": {
+        "2": {
+          "n": 321,
+          "f1": 0.4176246045404924
+        },
+        "3": {
+          "n": 96,
+          "f1": 0.13565051800622316
+        },
+        "1": {
+          "n": 282,
+          "f1": 0.4607997979721198
+        },
+        "4": {
+          "n": 841,
+          "f1": 0.7008018946944459
+        }
+      },
+      "by_conversation": {
+        "conv-26": {
+          "n": 152,
+          "f1": 0.5041872506258916
+        },
+        "conv-30": {
+          "n": 81,
+          "f1": 0.516744466640021
+        },
+        "conv-41": {
+          "n": 152,
+          "f1": 0.604686341090427
+        },
+        "conv-42": {
+          "n": 199,
+          "f1": 0.5090623609117935
+        },
+        "conv-43": {
+          "n": 178,
+          "f1": 0.5738201040229141
+        },
+        "conv-44": {
+          "n": 123,
+          "f1": 0.6256560445951638
+        },
+        "conv-47": {
+          "n": 150,
+          "f1": 0.5771591922964472
+        },
+        "conv-48": {
+          "n": 191,
+          "f1": 0.5862996848033326
+        },
+        "conv-49": {
+          "n": 156,
+          "f1": 0.5358096933385031
+        },
+        "conv-50": {
+          "n": 158,
+          "f1": 0.5914701511905015
+        }
+      },
+      "empty_predictions": 0,
+      "finish_reasons": {
+        "stop": 1539,
+        "length": 1
+      }
+    },
+    "r40_fused_four_turn": {
+      "n": 1540,
+      "official_f1": 0.5552237081573067,
+      "by_category": {
+        "2": {
+          "n": 321,
+          "f1": 0.4970309717973269
+        },
+        "3": {
+          "n": 96,
+          "f1": 0.14091699345124306
+        },
+        "1": {
+          "n": 282,
+          "f1": 0.3968369655947082
+        },
+        "4": {
+          "n": 841,
+          "f1": 0.6778377086162702
+        }
+      },
+      "by_conversation": {
+        "conv-26": {
+          "n": 152,
+          "f1": 0.5332082556503875
+        },
+        "conv-30": {
+          "n": 81,
+          "f1": 0.5253698858418601
+        },
+        "conv-41": {
+          "n": 152,
+          "f1": 0.5835718222538618
+        },
+        "conv-42": {
+          "n": 199,
+          "f1": 0.506086263002099
+        },
+        "conv-43": {
+          "n": 178,
+          "f1": 0.5220002355596471
+        },
+        "conv-44": {
+          "n": 123,
+          "f1": 0.5730535716475458
+        },
+        "conv-47": {
+          "n": 150,
+          "f1": 0.6328767323128378
+        },
+        "conv-48": {
+          "n": 191,
+          "f1": 0.5986685411014945
+        },
+        "conv-49": {
+          "n": 156,
+          "f1": 0.5132667739756823
+        },
+        "conv-50": {
+          "n": 158,
+          "f1": 0.5650592560152853
+        }
+      },
+      "empty_predictions": 0,
+      "finish_reasons": {
+        "stop": 1540
+      }
+    },
+    "s_parent_single_2000": {
+      "n": 1540,
+      "official_f1": 0.5552781350227676,
+      "by_category": {
+        "2": {
+          "n": 321,
+          "f1": 0.50643686531537
+        },
+        "3": {
+          "n": 96,
+          "f1": 0.15576086436905764
+        },
+        "1": {
+          "n": 282,
+          "f1": 0.3812924297640506
+        },
+        "4": {
+          "n": 841,
+          "f1": 0.677865143871506
+        }
+      },
+      "by_conversation": {
+        "conv-26": {
+          "n": 152,
+          "f1": 0.5349582377936055
+        },
+        "conv-30": {
+          "n": 81,
+          "f1": 0.5229301445132298
+        },
+        "conv-41": {
+          "n": 152,
+          "f1": 0.5841996801335647
+        },
+        "conv-42": {
+          "n": 199,
+          "f1": 0.5078928347695998
+        },
+        "conv-43": {
+          "n": 178,
+          "f1": 0.5161804256420184
+        },
+        "conv-44": {
+          "n": 123,
+          "f1": 0.5730743091862174
+        },
+        "conv-47": {
+          "n": 150,
+          "f1": 0.6300090074451129
+        },
+        "conv-48": {
+          "n": 191,
+          "f1": 0.6116432494681031
+        },
+        "conv-49": {
+          "n": 156,
+          "f1": 0.5164888416036648
+        },
+        "conv-50": {
+          "n": 158,
+          "f1": 0.5526745679486068
+        }
+      },
+      "empty_predictions": 0,
+      "finish_reasons": {
+        "stop": 1540
+      }
+    }
+  },
+  "prediction_sha256": {
+    "seed": "bc632385a7932c10df67d7b6f704a648fa1b67ce85a5f147edcef64f4fdd35e0",
+    "r40_fused_four_turn": "57e68680ad15fdf6f34ab4aec925c1e46037d0f08923e5e1e6c4c42fd8939f49",
+    "s_parent_single_2000": "a957f3d6860568f6e20303905b41344ab3730757b18ec652b6b726933701258b"
+  },
+  "recursive_results_pending": true,
+  "external_best_completed_reference": {
+    "method": "e_mem",
+    "official_f1": 0.5695671313240028,
+    "n": 1540,
+    "predictions_complete": true,
+    "coverage_complete": true,
+    "model": "Qwen/Qwen3.5-9B",
+    "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "embedding_path": "/workspace/.hf_home/hub/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "reference_path": "D:\\MemoryData\\results\\locomo\\emem\\emem-final-report-50156979-r11.json",
+    "reference_sha256": "3e1c847471f7f477ecce028abe9d798768246633d5e44f701c042ca3e59aec7e",
+    "usage_complete": false,
+    "scope": "highest currently completed prediction baseline; A-MEM pending",
+    "caveat": "Native reader flows and implementation variants differ; token usage is not complete."
+  },
+  "refined_minus_emem_pp": -1.4288996301235257
+}

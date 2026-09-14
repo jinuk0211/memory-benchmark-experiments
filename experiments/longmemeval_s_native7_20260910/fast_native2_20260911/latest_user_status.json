@@ -1,0 +1,71 @@
+{
+  "observed_at": 1789105868.7243626,
+  "guide_sha256": "b7983a0d3e2157340ff8d1534b0b557352b0392ff40fc1976bdbca97b096579f",
+  "simplemem": {
+    "method": "simplemem",
+    "planned": 500,
+    "generated": 47,
+    "failed": 1,
+    "population": 500,
+    "officially_judged": 0,
+    "status": "running",
+    "active_question_id": "545bd2b5",
+    "updated_at": 1789105752.862953
+  },
+  "lightmem": {
+    "method": "lightmem",
+    "planned": 500,
+    "population": 500,
+    "generated": 42,
+    "failed": 0,
+    "failed_ids": [],
+    "inflight": [
+      "bc8a6e93"
+    ],
+    "pending": 457,
+    "status": "running",
+    "generation_complete": false,
+    "official_judge_pending": true,
+    "time": 1789105868.575207
+  },
+  "guard": {
+    "instance_id": "50468468",
+    "started_at": 1789088677.8821437,
+    "last_progress": 1789105823.2426586,
+    "put_attempts": 0,
+    "successes": 2239,
+    "journal_offset": 3410299,
+    "generated_total": 89,
+    "observation": {
+      "services": {
+        "native2-simplemem": "RUNNING",
+        "native2-lightmem": "RUNNING",
+        "native2-finish": "RUNNING",
+        "native7-qwen": "RUNNING",
+        "native7-minilm": "RUNNING"
+      },
+      "generated": {
+        "simplemem": 47,
+        "lightmem": 42
+      },
+      "all_terminal": false,
+      "finish": "waiting",
+      "free_bytes": 9152057344
+    },
+    "observed_at": 1789105823.2426586,
+    "status": "armed"
+  },
+  "finish": {
+    "status": "waiting",
+    "active_owned_pids": [
+      3078,
+      6012,
+      16418,
+      16542
+    ],
+    "at_unix": 1789105855.4424715
+  },
+  "services": "native2-simplemem                RUNNING   pid 6012, uptime 3:27:21\nnative2-lightmem                 RUNNING   pid 3078, uptime 4:39:09\nnative2-finish                   RUNNING   pid 5911, uptime 3:32:21\nnative2-cost-guard               RUNNING   pid 2829, uptime 4:46:31\n",
+  "gpu": "100",
+  "free_bytes": 9148338176
+}

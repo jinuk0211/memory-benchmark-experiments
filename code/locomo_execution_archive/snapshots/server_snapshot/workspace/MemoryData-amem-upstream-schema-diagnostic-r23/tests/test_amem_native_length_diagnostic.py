@@ -1,0 +1,453 @@
+"""Saved native length failure seeds correction without inventing model work."""
+import copy
+import hashlib
+import importlib
+import json
+import os
+from pathlib import Path
+
+import httpx
+import pytest
+
+
+UPSTREAM_REMOVED_LINES = (
+    '                                Include each distinct tag only once. Do not repeat tags or contexts.\n',
+    '                                Emit each action at most once and only reference input neighbor indices.\n',
+)
+
+
+@pytest.fixture
+def capture():
+    indices = [1, 0, 7, 46, 48]
+    string = {'type': 'string'}
+    properties = {
+        'should_evolve': {'type': 'boolean'},
+        'actions': {'type': 'array', 'maxItems': 2,
+                    'items': {'type': 'string', 'enum': ['strengthen', 'update_neighbor']}},
+        'suggested_connections': {'type': 'array', 'maxItems': 5,
+                                  'items': {'type': 'integer'}},
+        'new_context_neighborhood': {'type': 'array', 'minItems': 5, 'maxItems': 5,
+                                     'items': string},
+        'tags_to_update': {'type': 'array', 'items': string},
+        'new_tags_neighborhood': {'type': 'array', 'minItems': 5, 'maxItems': 5,
+                                  'items': {'type': 'array', 'items': string}},
+    }
+    required = ['should_evolve', 'actions', 'suggested_connections', 'tags_to_update',
+                'new_context_neighborhood', 'new_tags_neighborhood']
+    prompt = ('\n You are an AI memory evolution agent responsible for managing and evolving '
+              'a knowledge base. Original target and all repeated facts.\n' + ''.join(
+                  f' memory index:{i}\t memory content: original {i}, original {i}\n'
+                  for i in indices))
+    prompt += ''.join(UPSTREAM_REMOVED_LINES)
+    return {'request_id': 'saved-request', 'request': {
+        'model': 'Qwen/Qwen3.5-9B', 'temperature': 0, 'enable_thinking': False,
+        'chat_template_kwargs': {'enable_thinking': False},
+        'messages': [{'role': 'system', 'content': 'You must respond with a JSON object.'},
+                     {'role': 'user', 'content': prompt}],
+        'response_format': {'type': 'json_schema', 'json_schema': {
+            'name': 'response', 'strict': True, 'schema': {'type': 'object',
+            'properties': properties, 'required': required, 'additionalProperties': False}}},
+    }, 'response': {'id': 'saved-response', 'model': 'Qwen/Qwen3.5-9B', 'choices': [
+        {'finish_reason': 'length', 'message': {'role': 'assistant', 'content': '{"partial":'}}]}}
+
+
+def target():
+    return importlib.import_module('scripts.diagnose_amem_native_length_repair')
+
+
+def test_native_builder_changes_only_user_suffix_and_preserves_environment(capture):
+    before, environment = copy.deepcopy(capture), dict(os.environ)
+    result = target().build_correction(capture)
+    request, proof = result['request'], result['proof']
+    original_prompt = capture['request']['messages'][1]['content']
+    assert request['messages'][1]['content'].startswith(original_prompt + '\n\nCorrection required:')
+    assert 'global indices [1, 0, 7, 46, 48]' in request['messages'][1]['content']
+    assert proof['indices'] == [1, 0, 7, 46, 48]
+    assert proof['seeded_failure_reused'] is True and proof['seeded_failure_new_calls'] == 0
+    assert proof['original_user_prefix_preserved'] is True
+    native = Path(__file__).resolve().parents[1] / 'methods/a_mem/source/a_mem/evolution_repair.py'
+    assert proof['native_helper_sha256'] == hashlib.sha256(native.read_bytes()).hexdigest()
+    request['messages'][1]['content'] = original_prompt
+    assert request == capture['request'] and capture == before and dict(os.environ) == environment
+
+
+@pytest.mark.parametrize('profile', ['original', 'qwen35-instruct'])
+def test_sampling_profile_preserves_all_input_schema_and_records_changes(capture, profile):
+    module = target()
+    before = copy.deepcopy(capture)
+    native = module.build_correction(capture)
+    actual = module.build_diagnostic_request(capture, profile)
+    settings = ({'temperature': 0.7, 'top_p': 0.8, 'top_k': 20, 'min_p': 0.0,
+                 'presence_penalty': 1.5, 'repetition_penalty': 1.0, 'seed': 0}
+                if profile == 'qwen35-instruct' else {})
+    expected = copy.deepcopy(native['request'])
+    expected.update(settings)
+    assert actual['request'] == expected and capture == before
+    assert actual['proof']['sampling_profile'] == profile
+    assert actual['proof']['sampling_changes'] == {
+        key: {'previous_present': key in native['request'],
+              'previous': native['request'].get(key), 'effective': value}
+        for key, value in settings.items()}
+    assert actual['proof']['protocol_changed_from_original'] is bool(settings)
+    if settings:
+        assert 'c202236235762e1c871ad0ccb60c8ee5ba337b9a' in actual['proof']['sampling_source']
+    assert actual['proof']['original_user_prefix_preserved'] is True
+    assert actual['proof']['seeded_failure_new_calls'] == 0
+
+
+def test_unknown_sampling_profile_rejected_before_model_or_artifact(tmp_path, capture, monkeypatch):
+    module = target()
+    monkeypatch.setattr(module, 'MeteredProxy', lambda *_a, **_k: pytest.fail('No server'))
+    path, digest = payload_file(tmp_path, capture)
+    with pytest.raises(ValueError, match='sampling profile'):
+        module.run_diagnostic(path, tmp_path / 'out', digest, 'diag', sampling_profile='guess')
+    assert not (tmp_path / 'out').exists()
+
+
+def test_upstream_profile_removes_only_two_instructions_without_native_correction(capture):
+    capture['request'].update({'max_tokens': 1000, 'top_p': 0.8, 'seed': 17,
+                               'repetition_penalty': 1.1})
+    before = copy.deepcopy(capture)
+    actual = target().build_diagnostic_request(capture, prompt_profile='upstream')
+    expected = copy.deepcopy(capture['request'])
+    original_prompt = expected['messages'][1]['content']
+    for line in UPSTREAM_REMOVED_LINES:
+        expected['messages'][1]['content'] = expected['messages'][1]['content'].replace(line, '')
+    assert actual['request'] == expected and capture == before
+    proof = actual['proof']
+    assert proof['prompt_profile'] == 'upstream'
+    assert proof['original_user_prefix_preserved'] is False
+    assert proof['only_two_instruction_lines_removed'] is True
+    assert proof['removed_instruction_lines'] == list(UPSTREAM_REMOVED_LINES)
+    assert proof['original_user_prompt_sha256'] == hashlib.sha256(original_prompt.encode()).hexdigest()
+    assert proof['effective_user_prompt_sha256'] == hashlib.sha256(expected['messages'][1]['content'].encode()).hexdigest()
+    assert proof['upstream_revision'] == '0c8039f28fdcc08189a23c07a3437d9d2482f9c2'
+    assert proof['upstream_source'] == ('https://github.com/WujiangXu/A-mem/blob/'
+        '0c8039f28fdcc08189a23c07a3437d9d2482f9c2/memory_layer.py')
+    assert proof['protocol_changed_from_original'] is True
+    assert proof['sampling_profile'] == 'original' and proof['sampling_changes'] == {}
+    assert proof['seeded_failure_new_calls'] == 0
+
+
+@pytest.mark.parametrize('passed', [False, True])
+@pytest.mark.parametrize('schema_profile', ['current', 'upstream'])
+def test_cli_forwards_upstream_profile_without_running_model(monkeypatch, capsys, passed, schema_profile):
+    module = target()
+    calls = []
+
+    def run(*args):
+        calls.append(args)
+        return {'passed': passed}
+
+    monkeypatch.setattr(module, 'run_diagnostic', run)
+    argv = ['diagnostic', '--payload', 'saved.json',
+        '--output', 'new-output', '--expected-payload-sha256', 'a' * 64,
+        '--run-id', 'r22', '--prompt-profile', 'upstream']
+    if schema_profile == 'upstream':
+        argv.extend(['--schema-profile', schema_profile])
+    monkeypatch.setattr(module.sys, 'argv', argv)
+    assert module.main() == (0 if passed else 1)
+    assert calls == [(Path('saved.json'), Path('new-output'), 'a' * 64, 'r22', 'original', 'upstream', schema_profile)]
+    assert json.loads(capsys.readouterr().out) == {'passed': passed}
+
+
+def test_r22_service_is_fresh_inactive_and_prompt_only():
+    from configparser import ConfigParser
+    import shlex
+
+    path = Path(__file__).resolve().parents[1] / 'scripts/amem_upstream_prompt_diagnostic_r22.conf'
+    config = ConfigParser()
+    config.read(path)
+    section = config['program:locomo-amem-upstream-prompt-diagnostic-r22']
+    args = shlex.split(section['command'])
+    assert args[:3] == ['/venv/main/bin/python', '-u',
+        '/workspace/MemoryData-amem-upstream-prompt-diagnostic-r22/scripts/diagnose_amem_native_length_repair.py']
+    flags = dict(zip(args[3::2], args[4::2]))
+    assert flags == {
+        '--payload': '/workspace/locomo-amem-r15-payloads/88b8466f-1722-45cb-be03-cd00f33cab57.json',
+        '--expected-payload-sha256': 'a7856e1dd504ca4a85723319d90d24d4463005ae03e5f074e580c94bffb2e6bd',
+        '--output': '/workspace/locomo-amem-upstream-prompt-diagnostic-r22',
+        '--run-id': 'locomo-amem-upstream-prompt-diagnostic-20260908-r22',
+        '--sampling-profile': 'original', '--prompt-profile': 'upstream'}
+    assert section['directory'] == '/workspace/MemoryData-amem-upstream-prompt-diagnostic-r22'
+    assert section.getboolean('autostart') is False and section.getboolean('autorestart') is False
+
+
+def test_r23_service_is_fresh_inactive_and_original_sampling():
+    import shlex
+    from configparser import ConfigParser
+
+    path = Path(__file__).resolve().parents[1] / 'scripts/amem_upstream_schema_diagnostic_r23.conf'
+    config = ConfigParser()
+    config.read(path)
+    section = config['program:locomo-amem-upstream-schema-diagnostic-r23']
+    args = shlex.split(section['command'])
+    assert args[:3] == ['/venv/main/bin/python', '-u',
+        '/workspace/MemoryData-amem-upstream-schema-diagnostic-r23/scripts/diagnose_amem_native_length_repair.py']
+    flags = dict(zip(args[3::2], args[4::2]))
+    assert flags == {
+        '--payload': '/workspace/locomo-amem-r15-payloads/88b8466f-1722-45cb-be03-cd00f33cab57.json',
+        '--expected-payload-sha256': 'a7856e1dd504ca4a85723319d90d24d4463005ae03e5f074e580c94bffb2e6bd',
+        '--output': '/workspace/locomo-amem-upstream-schema-diagnostic-r23',
+        '--run-id': 'locomo-amem-upstream-schema-diagnostic-20260908-r23',
+        '--sampling-profile': 'original', '--prompt-profile': 'upstream', '--schema-profile': 'upstream'}
+    assert section['directory'] == '/workspace/MemoryData-amem-upstream-schema-diagnostic-r23'
+    assert section.getboolean('autostart') is False and section.getboolean('autorestart') is False
+
+
+@pytest.mark.parametrize('case', ['missing_first', 'missing_second', 'duplicate_first',
+                                 'duplicate_second', 'unknown', 'sampling', 'invalid_capture'])
+def test_upstream_profile_rejects_bad_input_before_server_or_artifact(tmp_path, capture, monkeypatch, case):
+    module = target()
+    monkeypatch.setattr(module, 'MeteredProxy', lambda *_a, **_k: pytest.fail('No server'))
+    index = 1 if case.endswith('second') else 0
+    if case.startswith('missing'):
+        capture['request']['messages'][1]['content'] = capture['request']['messages'][1]['content'].replace(
+            UPSTREAM_REMOVED_LINES[index], '')
+    elif case.startswith('duplicate'):
+        capture['request']['messages'][1]['content'] += UPSTREAM_REMOVED_LINES[index]
+    elif case == 'invalid_capture':
+        capture['request']['model'] = 'foreign'
+    path, digest = payload_file(tmp_path, capture)
+    with pytest.raises(ValueError):
+        module.run_diagnostic(path, tmp_path / 'out', digest, 'diag',
+                              sampling_profile='qwen35-instruct' if case == 'sampling' else 'original',
+                              prompt_profile='guess' if case == 'unknown' else 'upstream')
+    assert not (tmp_path / 'out').exists()
+
+
+def test_upstream_schema_restores_exact_official_format_only(capture):
+    before = copy.deepcopy(capture)
+    module = target()
+    preserved = module.build_diagnostic_request(capture, prompt_profile='upstream')
+    actual = module.build_diagnostic_request(capture, prompt_profile='upstream', schema_profile='upstream')
+    expected = copy.deepcopy(preserved['request'])
+    properties = expected['response_format']['json_schema']['schema']['properties']
+    for field in ('actions', 'suggested_connections'):
+        del properties[field]['maxItems']
+    del properties['actions']['items']['enum']
+    for field in ('new_context_neighborhood', 'new_tags_neighborhood'):
+        del properties[field]['minItems']
+        del properties[field]['maxItems']
+    assert actual['request'] == expected and capture == before
+    def canonical(value):
+        return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+
+    proof = actual['proof']
+    assert proof['schema_profile'] == 'upstream'
+    assert proof['original_schema_sha256'] == canonical(capture['request']['response_format'])
+    assert proof['effective_schema_sha256'] == canonical(expected['response_format'])
+    assert proof['effective_schema_sha256'] == '5223745074b0dab699e769148f74449565ecebf332167c905605b7bfda861520'
+    assert set(proof['removed_schema_constraints']) == {
+        'actions.maxItems', 'actions.items.enum', 'suggested_connections.maxItems',
+        'new_context_neighborhood.minItems', 'new_context_neighborhood.maxItems',
+        'new_tags_neighborhood.minItems', 'new_tags_neighborhood.maxItems'}
+    assert proof['sampling_changes'] == {} and proof['protocol_changed_from_original'] is True
+    assert 'schema, sampling and output caps retained' not in proof['prompt_note']
+    assert 'stricter current native helper' in proof['schema_note']
+    assert preserved['proof']['schema_profile'] == 'current'
+    assert preserved['request']['response_format'] == capture['request']['response_format']
+
+
+@pytest.mark.parametrize('case', ['unknown', 'native_prompt', 'sampling', 'schema_hash',
+    'actions.maxItems', 'actions.items.enum', 'suggested_connections.maxItems',
+    'new_context_neighborhood.minItems', 'new_context_neighborhood.maxItems',
+    'new_tags_neighborhood.minItems', 'new_tags_neighborhood.maxItems'])
+def test_upstream_schema_preflight_rejects_wrong_profile_or_shape(tmp_path, capture, monkeypatch, case):
+    module = target()
+    monkeypatch.setattr(module, 'MeteredProxy', lambda *_a, **_k: pytest.fail('No server'))
+    if case == 'schema_hash':
+        monkeypatch.setattr(module, 'UPSTREAM_SCHEMA_SHA256', '0' * 64)
+    elif '.' in case:
+        container = capture['request']['response_format']['json_schema']['schema']['properties']
+        parts = case.split('.')
+        for part in parts[:-1]:
+            container = container[part]
+        del container[parts[-1]]
+    path, digest = payload_file(tmp_path, capture)
+    with pytest.raises(ValueError):
+        module.run_diagnostic(path, tmp_path / 'out', digest, 'diag',
+            sampling_profile='qwen35-instruct' if case == 'sampling' else 'original',
+            prompt_profile='native-correction' if case == 'native_prompt' else 'upstream',
+            schema_profile='guess' if case == 'unknown' else 'upstream')
+    assert not (tmp_path / 'out').exists()
+
+
+@pytest.mark.parametrize('mode', [None, True, 'false'])
+def test_instruct_profile_rejects_missing_or_nonfalse_thinking_flag(capture, mode):
+    capture['request']['chat_template_kwargs'] = {} if mode is None else {'enable_thinking': mode}
+    with pytest.raises(ValueError, match='non-thinking'):
+        target().build_diagnostic_request(capture, 'qwen35-instruct')
+
+
+def test_instruct_profile_rejects_conflicting_thinking_flag(capture):
+    capture['request']['enable_thinking'] = True
+    with pytest.raises(ValueError, match='non-thinking'):
+        target().build_diagnostic_request(capture, 'qwen35-instruct')
+
+
+@pytest.mark.parametrize('case', ['model', 'stream', 'messages', 'roles', 'system', 'prompt',
+                                 'finish', 'choices', 'duplicate_indices', 'missing_indices',
+                                 'bounds', 'extra_field', 'field_type', 'required', 'strict',
+                                 'missing_request', 'not_object', 'missing_request_id',
+                                 'missing_response_id', 'response_model'])
+def test_invalid_capture_rejected_before_model_io(capture, monkeypatch, case):
+    module = target()
+    monkeypatch.setattr(module, 'MeteredProxy', lambda *_a, **_k: pytest.fail('No server'))
+    request = capture['request']
+    if case == 'model':
+        request['model'] = 'other-model'
+    elif case == 'stream':
+        request['stream'] = True
+    elif case == 'messages':
+        request['messages'].append(copy.deepcopy(request['messages'][1]))
+    elif case == 'roles':
+        request['messages'][1]['role'] = 'system'
+    elif case == 'system':
+        request['messages'][0]['content'] = 'Different system'
+    elif case == 'prompt':
+        request['messages'][1]['content'] = 'Unrelated task'
+    elif case == 'finish':
+        capture['response']['choices'][0]['finish_reason'] = 'stop'
+    elif case == 'choices':
+        capture['response']['choices'].append(copy.deepcopy(capture['response']['choices'][0]))
+    elif case == 'duplicate_indices':
+        request['messages'][1]['content'] += 'memory index:1\t duplicate\n'
+    elif case == 'missing_indices':
+        request['messages'][1]['content'] = request['messages'][1]['content'].replace('memory index:', 'index:')
+    elif case == 'bounds':
+        request['response_format']['json_schema']['schema']['properties']['new_tags_neighborhood']['minItems'] = 4
+    elif case == 'extra_field':
+        request['response_format']['json_schema']['schema']['properties']['invented'] = {'type': 'string'}
+    elif case == 'field_type':
+        request['response_format']['json_schema']['schema']['properties']['should_evolve']['type'] = 'string'
+    elif case == 'required':
+        request['response_format']['json_schema']['schema']['required'].pop()
+    elif case == 'strict':
+        request['response_format']['json_schema']['strict'] = False
+    elif case == 'missing_request':
+        capture.pop('request')
+    elif case == 'missing_request_id':
+        capture.pop('request_id')
+    elif case == 'missing_response_id':
+        capture['response'].pop('id')
+    elif case == 'response_model':
+        capture['response']['model'] = 'foreign'
+    else:
+        capture = []
+    with pytest.raises(ValueError):
+        module.build_correction(capture)
+
+
+def payload_file(tmp_path, capture):
+    path = tmp_path / 'saved.json'
+    raw = json.dumps(capture, ensure_ascii=False).encode()
+    path.write_bytes(raw)
+    return path, hashlib.sha256(raw).hexdigest()
+
+
+@pytest.mark.parametrize('case', ['hash', 'existing_output', 'run_id', 'bad_capture'])
+def test_runner_preflight_blocks_before_any_server_or_new_artifact(tmp_path, capture, monkeypatch, case):
+    module = target()
+    monkeypatch.setattr(module, 'MeteredProxy', lambda *_a, **_k: pytest.fail('No server'))
+    if case == 'bad_capture':
+        capture['request']['model'] = 'foreign'
+    path, digest = payload_file(tmp_path, capture)
+    output = tmp_path / 'diagnostic'
+    if case == 'existing_output':
+        output.mkdir()
+        (output / 'original.txt').write_text('preserve')
+    with pytest.raises((ValueError, FileExistsError)):
+        module.run_diagnostic(path, output, '0' * 64 if case == 'hash' else digest,
+                              '' if case == 'run_id' else 'diagnostic-run')
+    if case == 'existing_output':
+        assert (output / 'original.txt').read_text() == 'preserve'
+        assert len(list(output.iterdir())) == 1
+    else:
+        assert not output.exists()
+
+
+@pytest.mark.parametrize('profile,prompt_profile,schema_profile', [
+    ('original', 'native-correction', 'current'), ('qwen35-instruct', 'native-correction', 'current'),
+    ('original', 'upstream', 'current'), ('original', 'upstream', 'upstream')])
+@pytest.mark.parametrize('case', ['valid', 'length', 'invalid_native', 'http500', 'invalid_json',
+                                 'missing_usage', 'transport_timeout', 'journal_error', 'no_journal_rows'])
+def test_runner_exactly_one_metered_mocked_call_and_retains_failures(tmp_path, capture, monkeypatch, case, profile, prompt_profile, schema_profile):
+    module = target()
+    original_server = module.MeteredProxy
+    calls = []
+    native = {'should_evolve': True, 'actions': ['strengthen', 'update_neighbor'],
+              'suggested_connections': [1, 48], 'tags_to_update': ['same', 'same'],
+              'new_context_neighborhood': ['context'] * 5,
+              'new_tags_neighborhood': [['same', 'same'] for _ in range(5)]}
+    if case == 'invalid_native':
+        native['suggested_connections'] = [999]
+    response = {'id': 'new-response', 'model': 'Qwen/Qwen3.5-9B', 'choices': [
+        {'finish_reason': 'length' if case == 'length' else 'stop',
+         'message': {'content': json.dumps(native), 'role': 'assistant'}}],
+        'usage': None if case == 'missing_usage' else {
+            'prompt_tokens': 100, 'completion_tokens': 40, 'total_tokens': 140}}
+    raw = b'invalid upstream body' if case == 'invalid_json' else json.dumps(response).encode()
+
+    def upstream(request):
+        calls.append((str(request.url), json.loads(request.content)))
+        if case == 'transport_timeout':
+            raise httpx.ReadTimeout('Synthetic unknown-usage timeout', request=request)
+        return httpx.Response(500 if case == 'http500' else 200, content=raw,
+                              headers={'content-type': 'application/json'})
+
+    def metered(*args, **kwargs):
+        assert args[0] == ('127.0.0.1', 0) and args[1] == 'http://127.0.0.1:18080/v1'
+        assert kwargs['comparison_policy'] is False
+        server = original_server(*args, **kwargs)
+        server.client.close()
+        server.client = httpx.Client(transport=httpx.MockTransport(upstream))
+        if case == 'journal_error':
+            original_record = server.record
+
+            def record(row):
+                original_record(row)
+                server.journal.write('{"partial":')
+                server.journal.flush()
+
+            server.record = record
+        elif case == 'no_journal_rows':
+            server.record = lambda _row: None
+        return server
+
+    monkeypatch.setattr(module, 'MeteredProxy', metered)
+    path, digest = payload_file(tmp_path, capture)
+    output = tmp_path / 'diagnostic'
+    receipt = module.run_diagnostic(path, output, digest, 'diagnostic-run', sampling_profile=profile,
+                                    prompt_profile=prompt_profile, schema_profile=schema_profile)
+    assert len(calls) == 1 and calls[0][0] == 'http://127.0.0.1:18080/v1/chat/completions'
+    assert calls[0][1] == module.build_diagnostic_request(capture, profile, prompt_profile, schema_profile)['request']
+    assert receipt['sampling_profile'] == profile
+    assert receipt['prompt_profile'] == prompt_profile
+    assert receipt['schema_profile'] == schema_profile
+    assert receipt['performance_quality_verified'] is False
+    assert receipt['protocol_changed_from_original'] is (profile != 'original' or prompt_profile == 'upstream')
+    assert json.loads((output / 'correction_proof.json').read_text())['sampling_profile'] == profile
+    if case == 'transport_timeout':
+        assert json.loads((output / 'response.body').read_bytes())['error']['message'] == 'Upstream transport error'
+    else:
+        assert (output / 'response.body').read_bytes() == raw
+    assert json.loads((output / 'request.json').read_text()) == calls[0][1]
+    assert receipt == json.loads((output / 'receipt.json').read_text())
+    if case in ('journal_error', 'no_journal_rows'):
+        journal = (output / 'usage.jsonl').read_bytes()
+        assert journal.endswith(b'{"partial":') if case == 'journal_error' else journal == b''
+        assert receipt['passed'] is False and receipt['exact_total_tokens'] is None
+        assert receipt['usage_sha256'] == hashlib.sha256(journal).hexdigest()
+        return
+    rows = [json.loads(line) for line in (output / 'usage.jsonl').read_text().splitlines()]
+    assert len(rows) == 1 and rows[0]['run_id'] == 'diagnostic-run'
+    assert rows[0]['method'] == 'a_mem' and rows[0]['phase'] == 'memory_add'
+    assert rows[0]['sample_id'] == 'conv-26'
+    assert receipt['passed'] is (case == 'valid')
+    assert receipt['diagnostic_only'] is True and receipt['full_benchmark_complete'] is False
+    assert receipt['gpu_energy_wh'] is None
+    assert receipt['runtime_note'] == ('GPU energy/exclusive attribution not measured; '
+                                       'inspect observed overlapping services per run.')
+    assert receipt['seeded_failure_new_calls'] == 0
+    assert receipt['exact_total_tokens'] == (None if case in ('missing_usage', 'invalid_json', 'transport_timeout') else 140)

@@ -1,0 +1,38 @@
+{
+  "simplemem": {
+    "calls": 1607,
+    "failed_calls": 503,
+    "failure_classes": {
+      "ReadTimeout": 503
+    },
+    "phases": {
+      "memory_write": {
+        "calls": 1228,
+        "median_seconds": 600.3096977581736,
+        "completion_tokens_median": 5668,
+        "completion_tokens_max": 55942
+      },
+      "qa": {
+        "calls": 379,
+        "median_seconds": 5.027287473902106,
+        "completion_tokens_median": 126,
+        "completion_tokens_max": 294
+      }
+    }
+  },
+  "lightmem": {
+    "calls": 2789,
+    "failed_calls": 2,
+    "failure_classes": {
+      "ReadTimeout": 2
+    },
+    "phases": {
+      "native": {
+        "calls": 2789,
+        "median_seconds": 32.90643847733736,
+        "completion_tokens_median": 866,
+        "completion_tokens_max": 16000
+      }
+    }
+  }
+}

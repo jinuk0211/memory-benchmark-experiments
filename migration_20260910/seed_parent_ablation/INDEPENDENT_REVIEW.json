@@ -1,0 +1,59 @@
+{
+  "reviewer": "seed_parent_review",
+  "date": "2026-09-10",
+  "decision": "APPROVE",
+  "scope": "Seed-parent implementation and LoCoMo r2 CPU construction; no GPU execution or accuracy claim",
+  "critical_findings": [],
+  "high_findings": [],
+  "reviewed_files_sha256": {
+    "run_transfer.py": "7aa5d0efc5b1f8b56488915c6a233ceb158f062b745ba8619b9e10d91199bb43",
+    "import_source.py": "94495dfe299f2c1eb436dd05e265bced9add5191a7899f3a189418d3f6658d81",
+    "test_seed_parent.py": "1f65b1d8af7fb90e894711a5b77fd0ff3a5de771d01d74a2c0f6e4010b7bca6d",
+    "approved_run_transfer.py": "e4ae2f2ad23360d6a7c47528671c85aeeb235db920cba349d514e310d265f174",
+    "metrics/timed_evaluate.py": "77459aa6eb9b3ec81b678edddf79f679d694c09c8fa5bf1fa0fbcc7a4e6613c0",
+    "metrics/evaluation_timing.py": "637e9f705d7f046e4a8bf998135d54362057239ea79b42e54ed949191eb7b3e7"
+  },
+  "r2_artifacts_sha256": {
+    "protocol.json": "1ed26cb91a4db9fd46f039c4f8d3a834f352dc89d5ecad98c033b3291c3c47bb",
+    "import_lineage.json": "1d0b71d7b723b27a41f3b46c65154c291623906566221c2c8b2dd3960b6f1c6c",
+    "memory_lock.json": "448d9ab8c678c0d35788ce80cd502882843936ef2d4b0b0208fdeb26efea226b",
+    "expected_ids.json": "7a00dd9f1540e43ec3e74aa348d12127447d37eac5e7fee32990b8ff0b699c01",
+    "construction_receipt.json": "aebe97fefd10107b00363dddeb3b3efd8f8e17f8616b366ae59933be6f011b63"
+  },
+  "validation": {
+    "focused_tests_passed": 17,
+    "additional_mocked_boundary_tests_passed": 6,
+    "ruff": "Pass with E402 excluded for deliberate inherited source-path bootstrap; unfiltered run reported only E402.",
+    "git_diff": "Workspace is not a Git repository; direct byte comparisons used.",
+    "other_static_analyzers": "mypy, pylint and black unavailable; not installed.",
+    "unchanged_inherited_python_files": 18,
+    "evaluate_sample_exact_source_match": true,
+    "timing_helpers_match_previously_approved_copies": true,
+    "r1_to_r2_executable_ast_unchanged_after_annotation_and_docstring_removal": true,
+    "r2_full_source_lineage_and_memory_lock_verified": true,
+    "r2_reader_cache_runtime_items_and_timing_absent": true,
+    "source_files": 452,
+    "source_fit_probes": 416,
+    "histories": 10,
+    "unique_expected_question_ids": 1540,
+    "unchanged_seed_units": 8959,
+    "appended_units": 262,
+    "maximum_added_native_key_plus_payload_tokens": 1912,
+    "storage_validation": "Recounted with the six-file-pinned Qwen tokenizer on r1; every r2 memory file is byte-identical to its independently counted r1 file."
+  },
+  "extra_boundary_checks": [
+    "Plan rejects each pre-existing reader state directory before source import.",
+    "Canonical dataset hash mismatch fails before dataset loading.",
+    "Full-history verification rejects an extra conversation.",
+    "Wrong cross-machine output path fails before model initialization.",
+    "Memory lock mutation fails before model initialization.",
+    "Identical immutable artifacts resume without rewriting; changed values fail."
+  ],
+  "runtime_out": "/workspace/seed_parent_ablation_20260910/runs/seed_parent_locomo_qwen35_minilm_r2",
+  "limits": [
+    "No GPU, SSH, API calls or final holdout outcomes used in this review.",
+    "Only the memory parent changes from r40 to Seed; imported source-fit scores and parent_single augmentation remain fixed.",
+    "Imported construction and scoring are inherited costs, not zero-cost work; the incremental reporter has separate review ownership.",
+    "Prediction generation, official LongMemEval judging and empirical transfer remain separate experimental work."
+  ]
+}

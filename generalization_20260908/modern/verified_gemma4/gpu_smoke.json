@@ -1,0 +1,54 @@
+{
+  "status": "gpu_smoke_passed",
+  "purpose": "Compatibility only; no benchmark outcomes",
+  "model": "google/gemma-4-E4B-it",
+  "model_meta": {
+    "path": "/workspace/.hf_home/hub/models--google--gemma-4-E4B-it/snapshots/ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2"
+  },
+  "packages": {
+    "vllm": "0.19.1",
+    "torch": "2.10.0+cu129",
+    "transformers": "5.5.3",
+    "sentence-transformers": "5.2.0"
+  },
+  "language_model_only": true,
+  "enable_thinking": false,
+  "source_scorer_sha256": "534749083cd534deb00944d893ef9ed43fcb624a14fd5d9f560669d99ad03edd",
+  "prompt_serialization": {
+    "matched": true,
+    "prompt_tokens": 135,
+    "token_ids_sha256": "f454c6a8fd3df9ddac2d9ff917e411e103829f05f9749035d2808d17c43afb2a"
+  },
+  "likelihoods": [
+    {
+      "mean_logprob": -11.676973342895508,
+      "sum_logprob": -23.353946685791016,
+      "answer_tokens": 2,
+      "token_logprobs": [
+        -12.1274995803833,
+        -11.226447105407715
+      ]
+    },
+    {
+      "mean_logprob": -1.2218803021823987e-05,
+      "sum_logprob": -2.4437606043647975e-05,
+      "answer_tokens": 2,
+      "token_logprobs": [
+        -2.4437606043647975e-05,
+        0.0
+      ]
+    }
+  ],
+  "generation": {
+    "full": {
+      "text": "silver maple",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D1:1"
+      ],
+      "context_tokens": 30,
+      "source_answer_f1": 1.0
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "metric": "generalization_20260908.refine.generic_f1.v1",
+  "official_accuracy": null,
+  "extra_baseline_scores": [
+    {
+      "method": "simplemem",
+      "archive_path": "D:/MemoryData/backups/50577514/intermediate_20260912_1000/intermediate_20260912_1000.tgz",
+      "archive_sha256": "f51d4568975e02798b435531dcd5d2498975be436681d1e480d0958886727609",
+      "prediction_member": "./longmemeval_s_native7_20260910/runs/simplemem_native_dialogues_v4/histories/bd3a35a95b7443b8a8864815/attempt_0001/prediction.json",
+      "question_id": "118b2229",
+      "hypothesis": "45 minutes each way",
+      "gold": "45 minutes each way",
+      "diagnostic_token_f1": 1
+    },
+    {
+      "method": "lightmem",
+      "archive_path": "D:/MemoryData/backups/50577514/intermediate_20260912_1000/intermediate_20260912_1000.tgz",
+      "archive_sha256": "f51d4568975e02798b435531dcd5d2498975be436681d1e480d0958886727609",
+      "prediction_member": "./longmemeval_s_native7_20260910/fast_native2_20260911/lightmem_lanes/lane_1/118b2229/prediction.json",
+      "question_id": "118b2229",
+      "hypothesis": "Based on the memories provided, your daily commute to work takes **45 minutes each way**.\n\nThis is explicitly stated in the memory from May 22, 2023: \"User listens to audiobooks during their daily commute, which takes 45 minutes each way.\"",
+      "gold": "45 minutes each way",
+      "diagnostic_token_f1": 0.19047619047619047
+    }
+  ],
+  "matched_efficiency": [
+    {
+      "method": "full_context",
+      "n": 12,
+      "build_seconds": 0,
+      "query_seconds": 37.69622004032135,
+      "observed_llm_tokens": 1504181,
+      "mean_observed_llm_tokens": 125348.41666666667,
+      "missing_usage_calls": 0
+    },
+    {
+      "method": "langmem",
+      "n": 1,
+      "build_seconds": 196.82449822197668,
+      "query_seconds": 0.30645456491038203,
+      "observed_llm_tokens": 233872,
+      "mean_observed_llm_tokens": 233872,
+      "missing_usage_calls": 0
+    },
+    {
+      "method": "simplemem",
+      "n": 1,
+      "build_seconds": 3571.0403911820613,
+      "query_seconds": 44.59684931021184,
+      "observed_llm_tokens": 250789,
+      "mean_observed_llm_tokens": 250789,
+      "missing_usage_calls": 28
+    },
+    {
+      "method": "lightmem",
+      "n": 1,
+      "build_seconds": 715.7629997730255,
+      "query_seconds": 2.450000047683716,
+      "observed_llm_tokens": 50756,
+      "mean_observed_llm_tokens": 50756,
+      "missing_usage_calls": 0
+    }
+  ],
+  "baseline_efficiency_source": "D:/MemoryData/backups/50577514/metrics_partial_20260912_1445/efficiency_per_sample.csv",
+  "own_sources": [
+    {
+      "method": "qwen_embedding_seed",
+      "path": "D:/MemoryData/generalization_20260908/modern/verified_qwen35_lme12_results/seed.jsonl",
+      "sha256": "3E8FDEEFBE074F4E290CA22C418DF72486C9268B5C79A652B63682BF049C03D8"
+    },
+    {
+      "method": "qwen_embedding_r40",
+      "path": "D:/MemoryData/generalization_20260908/modern/verified_qwen35_lme12_results/r40_fused_four_turn.jsonl",
+      "sha256": "D2AE5E2525EC1114FB65A7E39CEB48923EFDABE0673B8D686598FC5DBE086A75"
+    },
+    {
+      "method": "qwen_embedding_refined",
+      "path": "D:/MemoryData/generalization_20260908/modern/verified_qwen35_lme12_results/s_parent_single_2000.jsonl",
+      "sha256": "42800F44714E11D3C7C18427367988BA51CFB8576253CE6C798AF68A4C28073F"
+    },
+    {
+      "method": "gemma_embedding_seed",
+      "path": "D:/MemoryData/generalization_20260908/modern/verified_gemma4_lme12_scorer512_results/seed.jsonl",
+      "sha256": "940A54BB8A73A759F65A5D22FB23BF5973F4803FB272BFB3491EE7DB0E61E653"
+    },
+    {
+      "method": "gemma_embedding_r40",
+      "path": "D:/MemoryData/generalization_20260908/modern/verified_gemma4_lme12_scorer512_results/r40_fused_four_turn.jsonl",
+      "sha256": "0392C661694E8EA428E4FE6839366F747E611038260ED8DB3340ABBAF647C6EF"
+    },
+    {
+      "method": "gemma_embedding_refined",
+      "path": "D:/MemoryData/generalization_20260908/modern/verified_gemma4_lme12_scorer512_results/s_parent_single_2000.jsonl",
+      "sha256": "842A58DCB53F5A1B3763D8E865C68C052BB26E50D1BB6C5BE1B6F60E961D5FA9"
+    },
+    {
+      "method": "minilm_seed",
+      "path": "D:/MemoryData/migration_20260910/pilot_runs/paper_frozen_lme12_qwen35_minilm_date_v2_r1/collected/seed.jsonl",
+      "sha256": "1EAEE1C42B12B6E85763EDF857A33D722DC35187EC50E3E06D8E5454526F89AB"
+    },
+    {
+      "method": "minilm_r40",
+      "path": "D:/MemoryData/migration_20260910/pilot_runs/paper_frozen_lme12_qwen35_minilm_date_v2_r1/collected/r40_fused_four_turn.jsonl",
+      "sha256": "4EE77207CAD3335EFD266F7D61C133B4D19CE2381885C520F576D2DA828DB7E0"
+    },
+    {
+      "method": "minilm_refined",
+      "path": "D:/MemoryData/migration_20260910/pilot_runs/paper_frozen_lme12_qwen35_minilm_date_v2_r1/collected/s_parent_single_2000.jsonl",
+      "sha256": "C9C9127F9D05573DBFD3394AFE34DB7D5A875C1A7C8000AF0869A710E2D4471B"
+    },
+    {
+      "method": "minilm_seed_parent",
+      "path": "D:/MemoryData/migration_20260910/pilot_runs/seed_parent_lme12_qwen35_minilm_r1/collected/seed_parent_single_2000.jsonl",
+      "sha256": "8D3F7EAEF7D4325B12A2EAAABB5F16F6D8EB3A90E76DB37B8431E5747EDF746E"
+    }
+  ],
+  "notes": [
+    "LangMem score from112checkpoint; timing/token table uses104-complete snapshot",
+    "Fullcontext12 final total1,388,837; observed with attempts1,504,181",
+    "Scores diagnostic only, all12 historically exposed",
+    "Common construction costs attributed, not independent cold reruns"
+  ]
+}

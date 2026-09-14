@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "test_exit_code": 0,
+  "author_tests": 10,
+  "cpu_plan_exit_code": 0,
+  "plan_protocol_sha256": "74131e130735b78d88dccbd59441774f4e5e885776b87d4d32627f9189468316",
+  "plan_lock_sha256": "4483b24802297a0f136e7c91a9ea65e9b9b91632d4a64ef773f4c57c874432be",
+  "histories": {
+    "locomo": {
+      "history_id": "conv-49",
+      "counts": {
+        "fit": 16,
+        "audit": 4,
+        "qb_preselected": 4,
+        "mapped_options": 33
+      },
+      "fit_ids": [
+        "conv-49:source_probe:42",
+        "conv-49:source_probe:9",
+        "conv-49:source_probe:1",
+        "conv-49:source_probe:11",
+        "conv-49:source_probe:45",
+        "conv-49:source_probe:32",
+        "conv-49:source_probe:17",
+        "conv-49:source_probe:8",
+        "conv-49:source_probe:4",
+        "conv-49:source_probe:5",
+        "conv-49:source_probe:41",
+        "conv-49:source_probe:2",
+        "conv-49:source_probe:40",
+        "conv-49:source_probe:3",
+        "conv-49:source_probe:26",
+        "conv-49:source_probe:48"
+      ],
+      "audit_ids": [
+        "conv-49:source_probe:34",
+        "conv-49:source_probe:23",
+        "conv-49:source_probe:46",
+        "conv-49:source_probe:24"
+      ],
+      "qb_preselected_ids": [
+        "conv-49:source_probe:2",
+        "conv-49:source_probe:1",
+        "conv-49:source_probe:4",
+        "conv-49:source_probe:45"
+      ],
+      "seed_digest": "04e62180ed20f37596ea1d21f5256e3465d6a4ec2f9c609ddcf8ef651ac8b43c",
+      "groups_digest": "a7340c3dd3730ab60327af73adb1e0d1664088e2abe948a722efc8425a2f4ef8",
+      "source_history_digest": "9c99df0c44aa8df0e4bb166208965835a709897edfd9ed9e6fafac5b91162ab5",
+      "source_closure_files": 452,
+      "source_closure_bytes": 27692621,
+      "original_protocol_sha256": "50d32eb67ea295ea4d3c125cf301cfa0cbc98f877d946f0667929782a48c98b5",
+      "original_memory_lock_sha256": "0c69c8cdc6e1314423309218f9684cc6e89b555c8e0b135fa650015aacd26ec5"
+    },
+    "longmemeval": {
+      "history_id": "d6062bb9",
+      "counts": {
+        "fit": 16,
+        "audit": 4,
+        "qb_preselected": 4,
+        "mapped_options": 36
+      },
+      "fit_ids": [
+        "d6062bb9:source_probe:36",
+        "d6062bb9:source_probe:27",
+        "d6062bb9:source_probe:98",
+        "d6062bb9:source_probe:86",
+        "d6062bb9:source_probe:73",
+        "d6062bb9:source_probe:79",
+        "d6062bb9:source_probe:81",
+        "d6062bb9:source_probe:94",
+        "d6062bb9:source_probe:64",
+        "d6062bb9:source_probe:53",
+        "d6062bb9:source_probe:85",
+        "d6062bb9:source_probe:52",
+        "d6062bb9:source_probe:30",
+        "d6062bb9:source_probe:95",
+        "d6062bb9:source_probe:68",
+        "d6062bb9:source_probe:25"
+      ],
+      "audit_ids": [
+        "d6062bb9:source_probe:83",
+        "d6062bb9:source_probe:6",
+        "d6062bb9:source_probe:88",
+        "d6062bb9:source_probe:46"
+      ],
+      "qb_preselected_ids": [
+        "d6062bb9:source_probe:68",
+        "d6062bb9:source_probe:95",
+        "d6062bb9:source_probe:52",
+        "d6062bb9:source_probe:94"
+      ],
+      "seed_digest": "a1df3e69062dc42a9f0390bc7d759274ebfe97a6ccec68b977d1aedb64e880db",
+      "groups_digest": "827b5efe46dba072174ccf7c7b55ee08b80edcdd83dcdc793089c9655bc5a483",
+      "source_history_digest": "830c01b0b52ebe98b8d3f74066340cac0bc52dd81f4b904da35ffa93602998db",
+      "source_closure_files": 894,
+      "source_closure_bytes": 69680768,
+      "original_protocol_sha256": "e95bda1e33a0241fb53f7ca8c1fefeb5661e3f2c13a17990a05aa2894454aac0",
+      "original_memory_lock_sha256": "d4ea3b007aa770c4cd98d19cafec152065bf1970fe9bd28f292e914d34078d56"
+    }
+  },
+  "code_sha256": {
+    "pilot.py": "4cf28ebceb55038885d3332f53b0244369d5f1e5fe905d20fcfbd82cd7b2062a",
+    "import_source.py": "94495dfe299f2c1eb436dd05e265bced9add5191a7899f3a189418d3f6658d81",
+    "source_views_v2_pilot.py": "3484a3555a0d636a7c7009293c0a906b5b8d6c5a56a0fbcee33ac5f7ad55246e",
+    "test_pilot.py": "e220bd60d155b5e84df12357f89d67ae5281d320e083b2f5aa580f28e7a20d29",
+    "README.md": "02aa2c050152a48b0ced8d515b1002f7aa933280032d581138a722df331ee5fd"
+  },
+  "no_gpu_or_api_invocation": true,
+  "benchmark_qa_loaded": false,
+  "cpu_plan_only_not_gpu_launch_protocol": true,
+  "stdout_sha256": "0ce305248a21bca7de0c563b33d037606841ce8092892ab2e3077716e2fb10e2",
+  "stderr_sha256": "db9993f76926427a937aa23b82c11089ea1ab22d4df9e846a644929a22f05999"
+}

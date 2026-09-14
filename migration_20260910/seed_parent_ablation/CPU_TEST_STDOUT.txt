@@ -1,0 +1,28 @@
+test_construct_cli_rejects_target_dataset (test_seed_parent.ImportFixture.test_construct_cli_rejects_target_dataset) ... usage: run_transfer.py [-h] --out OUT [--dataset {locomo,longmemeval}]
+                       [--import-run IMPORT_RUN] [--data DATA]
+                       [--runtime-out RUNTIME_OUT] [--tokenizer TOKENIZER]
+                       [--environment ENVIRONMENT]
+                       {plan,construct,evaluate}
+run_transfer.py: error: Construction accepts no target dataset; use the sealed imported sources
+ok
+test_construct_does_not_read_target_samples (test_seed_parent.ImportFixture.test_construct_does_not_read_target_samples) ... ok
+test_frozen_reader_source_and_timing_sources_identical (test_seed_parent.ImportFixture.test_frozen_reader_source_and_timing_sources_identical) ... ok
+test_full_source_history_check_rejects_omission (test_seed_parent.ImportFixture.test_full_source_history_check_rejects_omission) ... ok
+test_import_keeps_source_only_and_rechecks_origin_memory_lock (test_seed_parent.ImportFixture.test_import_keeps_source_only_and_rechecks_origin_memory_lock) ... ok
+test_import_rejects_audit_instead_of_fit (test_seed_parent.ImportFixture.test_import_rejects_audit_instead_of_fit) ... ok
+test_import_rejects_changed_seed_under_original_lock (test_seed_parent.ImportFixture.test_import_rejects_changed_seed_under_original_lock) ... ok
+test_import_rejects_foreign_probe_utility (test_seed_parent.ImportFixture.test_import_rejects_foreign_probe_utility) ... ok
+test_import_rejects_incomplete_utility (test_seed_parent.ImportFixture.test_import_rejects_incomplete_utility) ... ok
+test_import_rejects_missing_or_extra_selected_ids (test_seed_parent.ImportFixture.test_import_rejects_missing_or_extra_selected_ids) ... ok
+test_import_rejects_unreproducible_source_pool (test_seed_parent.ImportFixture.test_import_rejects_unreproducible_source_pool) ... ok
+test_import_rejects_wrong_original_protocol (test_seed_parent.ImportFixture.test_import_rejects_wrong_original_protocol) ... ok
+test_parent_augmentation_respects_key_plus_payload_budget (test_seed_parent.ImportFixture.test_parent_augmentation_respects_key_plus_payload_budget) ... ok
+test_path_escape_and_noncanonical_names_rejected (test_seed_parent.ImportFixture.test_path_escape_and_noncanonical_names_rejected) ... ok
+test_seed_parent_unchanged_with_no_admissible_options (test_seed_parent.ImportFixture.test_seed_parent_unchanged_with_no_admissible_options) ... ok
+test_snapshot_rejects_changed_bytes_and_extra_files (test_seed_parent.ImportFixture.test_snapshot_rejects_changed_bytes_and_extra_files) ... ok
+test_tokenizer_pin_rejects_changed_file (test_seed_parent.ImportFixture.test_tokenizer_pin_rejects_changed_file) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.749s
+
+OK

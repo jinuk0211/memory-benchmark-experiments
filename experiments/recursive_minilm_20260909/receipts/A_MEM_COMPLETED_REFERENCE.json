@@ -1,0 +1,47 @@
+{
+  "method": "a_mem",
+  "official_f1": 0.3684590035229701,
+  "by_category": {
+    "1": {
+      "count": 282,
+      "expected": 282,
+      "f1": 0.28984580786996167
+    },
+    "2": {
+      "count": 321,
+      "expected": 321,
+      "f1": 0.2908795833702878
+    },
+    "3": {
+      "count": 96,
+      "expected": 96,
+      "f1": 0.17427261836717525
+    },
+    "4": {
+      "count": 841,
+      "expected": 841,
+      "f1": 0.4465967062793503
+    }
+  },
+  "questions": 1540,
+  "benchmark_complete": true,
+  "predictions_complete": true,
+  "usage_complete": true,
+  "pc_backup_complete": true,
+  "source_hashes": {
+    "dataset": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+    "official_scorer": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd"
+  },
+  "policy": "amem_original_failure_v1",
+  "native_outcomes": {
+    "metadata_accepted": 5882,
+    "evolution_noop": 14,
+    "evolution_applied": 2299,
+    "evolution_json_skip": 3569
+  },
+  "native_length_responses": 3575,
+  "report": "D:\\MemoryData\\amem_final_results_r26\\original_policy_report.json",
+  "report_sha256": "3d5ef8df0f026e19e509a6dd7a4679391900d1a62b11402987dd598154a5ba86",
+  "verified_local_at_utc": "2026-09-08T22:59:22.891514+00:00",
+  "caveat": "Original memory JSON fallback/skip policy; not all evolution calls succeeded. Existing completed-results table is updated; historical frozen gate files are unchanged."
+}

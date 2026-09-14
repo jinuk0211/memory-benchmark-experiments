@@ -1,0 +1,14 @@
+{
+  "status": "APPROVE_TEST_ONLY_ADDENDUM",
+  "reviewed_at_utc": "2026-09-10T08:57:55.268707+00:00",
+  "original_review_sha256": "271a732c33732d907a58b9ba2199c1fd562ebc6a08fc99b81477516b313fbd37",
+  "pilot_py_unchanged_sha256": "4cf28ebceb55038885d3332f53b0244369d5f1e5fe905d20fcfbd82cd7b2062a",
+  "test_pilot_sha256": "48cd130f489cb127b115c85932465bb16ac93b84ff68a3123f9549e356aec194",
+  "change": "Only test fixture reference paths can be overridden by PACKED_PILOT_IMPORT_SOURCE and PACKED_PILOT_V2_ROOT; defaults preserve previous local paths.",
+  "verification": {
+    "independent_rerun_author_tests_passed": 10,
+    "ruff": "pass",
+    "new_gpu_api_or_model_calls": false
+  },
+  "effect": "No production pilot, protocol, scientific policy or existing review file was changed."
+}

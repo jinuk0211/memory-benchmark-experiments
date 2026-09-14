@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "variant": "a_mem_batch4_v1",
+  "display_name": "A-Mem-batch4",
+  "baseline_runner_sha256": "1c49096eee2a0ed9b487e15c41cf6fe6496a1858b49b1da5720c06e50c2e559e",
+  "local_tests_passed": 13,
+  "local_tests_seconds": 15.862,
+  "ruff": "passed",
+  "reviewer": "/root/peer_review",
+  "review_status": "approved",
+  "remote_actions_performed": false,
+  "real_model_calls_performed": false,
+  "upstream_modified": false,
+  "cpu_embedding_unchanged": true,
+  "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "canonical_counts": {
+    "questions": 500,
+    "partial_batches": 8386,
+    "turns": 246750,
+    "batch4_notes": 65885,
+    "sessions": 23867
+  },
+  "files_sha256": {
+    "runner.py": "79c07defbc57bbb47be9ff7523c6415cd2bb74c7ee935b666dcb8399d41a62af",
+    "test_runner.py": "1235d261be4caceb5026186f0d99d964c1423663d23b68e4324455bdc81d2c14",
+    "source_manifest.json": "f8081e94cc7c6c96b33e58b858cfaf34ffc151275a1e25db84c063379ace2577",
+    "README.md": "a289e284642bab51c2de216f71dbeb2e691db0890128d2d8ea0b2c9cc67296b1"
+  },
+  "reviewer_independent_tests_passed": 13,
+  "reviewer_independent_tests_seconds": 13.635
+}

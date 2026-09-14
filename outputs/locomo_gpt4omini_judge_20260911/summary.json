@@ -1,0 +1,357 @@
+{
+  "status": "complete",
+  "stop_reason": "all_requested_payloads_processed",
+  "logical_rows": 13860,
+  "scored_rows": 13860,
+  "unique_payloads": 10624,
+  "cached_unique_payloads": 10624,
+  "billed_responses": 10624,
+  "error_events": 0,
+  "cost_usd": 0.6841381500000004,
+  "unknown_cost_upper_bound_usd": 0.0,
+  "budget_committed_usd": 0.6841381500000004,
+  "token_usage": {
+    "prompt_tokens": 4305869,
+    "completion_tokens": 63763,
+    "total_tokens": 4369632,
+    "cached_prompt_tokens": 0
+  },
+  "returned_models": {
+    "gpt-4o-mini-2024-07-18": 10624
+  },
+  "methods": {
+    "Naive": {
+      "expected": 1540,
+      "scored": 1540,
+      "correct": 1099,
+      "complete": true,
+      "accuracy_pct": 71.36363636363636,
+      "categories": {
+        "1": {
+          "name": "Multi-hop",
+          "expected": 282,
+          "scored": 282,
+          "correct": 201,
+          "accuracy_pct": 71.27659574468085
+        },
+        "2": {
+          "name": "Temporal",
+          "expected": 321,
+          "scored": 321,
+          "correct": 141,
+          "accuracy_pct": 43.925233644859816
+        },
+        "3": {
+          "name": "Open-domain",
+          "expected": 96,
+          "scored": 96,
+          "correct": 24,
+          "accuracy_pct": 25.0
+        },
+        "4": {
+          "name": "Single-hop",
+          "expected": 841,
+          "scored": 841,
+          "correct": 733,
+          "accuracy_pct": 87.15814506539833
+        }
+      }
+    },
+    "Mem0": {
+      "expected": 1540,
+      "scored": 1540,
+      "correct": 839,
+      "complete": true,
+      "accuracy_pct": 54.48051948051948,
+      "categories": {
+        "1": {
+          "name": "Multi-hop",
+          "expected": 282,
+          "scored": 282,
+          "correct": 173,
+          "accuracy_pct": 61.347517730496456
+        },
+        "2": {
+          "name": "Temporal",
+          "expected": 321,
+          "scored": 321,
+          "correct": 89,
+          "accuracy_pct": 27.725856697819314
+        },
+        "3": {
+          "name": "Open-domain",
+          "expected": 96,
+          "scored": 96,
+          "correct": 39,
+          "accuracy_pct": 40.625
+        },
+        "4": {
+          "name": "Single-hop",
+          "expected": 841,
+          "scored": 841,
+          "correct": 538,
+          "accuracy_pct": 63.97146254458978
+        }
+      }
+    },
+    "A-MEM": {
+      "expected": 1540,
+      "scored": 1540,
+      "correct": 799,
+      "complete": true,
+      "accuracy_pct": 51.883116883116884,
+      "categories": {
+        "1": {
+          "name": "Multi-hop",
+          "expected": 282,
+          "scored": 282,
+          "correct": 136,
+          "accuracy_pct": 48.226950354609926
+        },
+        "2": {
+          "name": "Temporal",
+          "expected": 321,
+          "scored": 321,
+          "correct": 125,
+          "accuracy_pct": 38.940809968847354
+        },
+        "3": {
+          "name": "Open-domain",
+          "expected": 96,
+          "scored": 96,
+          "correct": 33,
+          "accuracy_pct": 34.375
+        },
+        "4": {
+          "name": "Single-hop",
+          "expected": 841,
+          "scored": 841,
+          "correct": 505,
+          "accuracy_pct": 60.04756242568371
+        }
+      }
+    },
+    "LangMem": {
+      "expected": 1540,
+      "scored": 1540,
+      "correct": 644,
+      "complete": true,
+      "accuracy_pct": 41.81818181818182,
+      "categories": {
+        "1": {
+          "name": "Multi-hop",
+          "expected": 282,
+          "scored": 282,
+          "correct": 134,
+          "accuracy_pct": 47.5177304964539
+        },
+        "2": {
+          "name": "Temporal",
+          "expected": 321,
+          "scored": 321,
+          "correct": 86,
+          "accuracy_pct": 26.79127725856698
+        },
+        "3": {
+          "name": "Open-domain",
+          "expected": 96,
+          "scored": 96,
+          "correct": 38,
+          "accuracy_pct": 39.583333333333336
+        },
+        "4": {
+          "name": "Single-hop",
+          "expected": 841,
+          "scored": 841,
+          "correct": 386,
+          "accuracy_pct": 45.89774078478003
+        }
+      }
+    },
+    "SimpleMem": {
+      "expected": 1540,
+      "scored": 1540,
+      "correct": 842,
+      "complete": true,
+      "accuracy_pct": 54.675324675324674,
+      "categories": {
+        "1": {
+          "name": "Multi-hop",
+          "expected": 282,
+          "scored": 282,
+          "correct": 138,
+          "accuracy_pct": 48.93617021276596
+        },
+        "2": {
+          "name": "Temporal",
+          "expected": 321,
+          "scored": 321,
+          "correct": 139,
+          "accuracy_pct": 43.30218068535826
+        },
+        "3": {
+          "name": "Open-domain",
+          "expected": 96,
+          "scored": 96,
+          "correct": 38,
+          "accuracy_pct": 39.583333333333336
+        },
+        "4": {
+          "name": "Single-hop",
+          "expected": 841,
+          "scored": 841,
+          "correct": 527,
+          "accuracy_pct": 62.66349583828775
+        }
+      }
+    },
+    "LightMem_official": {
+      "expected": 1540,
+      "scored": 1540,
+      "correct": 1008,
+      "complete": true,
+      "accuracy_pct": 65.45454545454545,
+      "categories": {
+        "1": {
+          "name": "Multi-hop",
+          "expected": 282,
+          "scored": 282,
+          "correct": 178,
+          "accuracy_pct": 63.12056737588652
+        },
+        "2": {
+          "name": "Temporal",
+          "expected": 321,
+          "scored": 321,
+          "correct": 194,
+          "accuracy_pct": 60.43613707165109
+        },
+        "3": {
+          "name": "Open-domain",
+          "expected": 96,
+          "scored": 96,
+          "correct": 37,
+          "accuracy_pct": 38.541666666666664
+        },
+        "4": {
+          "name": "Single-hop",
+          "expected": 841,
+          "scored": 841,
+          "correct": 599,
+          "accuracy_pct": 71.22473246135553
+        }
+      }
+    },
+    "HiGMem": {
+      "expected": 1540,
+      "scored": 1540,
+      "correct": 860,
+      "complete": true,
+      "accuracy_pct": 55.84415584415584,
+      "categories": {
+        "1": {
+          "name": "Multi-hop",
+          "expected": 282,
+          "scored": 282,
+          "correct": 134,
+          "accuracy_pct": 47.5177304964539
+        },
+        "2": {
+          "name": "Temporal",
+          "expected": 321,
+          "scored": 321,
+          "correct": 122,
+          "accuracy_pct": 38.006230529595015
+        },
+        "3": {
+          "name": "Open-domain",
+          "expected": 96,
+          "scored": 96,
+          "correct": 30,
+          "accuracy_pct": 31.25
+        },
+        "4": {
+          "name": "Single-hop",
+          "expected": 841,
+          "scored": 841,
+          "correct": 574,
+          "accuracy_pct": 68.25208085612367
+        }
+      }
+    },
+    "E-Mem": {
+      "expected": 1540,
+      "scored": 1540,
+      "correct": 1188,
+      "complete": true,
+      "accuracy_pct": 77.14285714285714,
+      "categories": {
+        "1": {
+          "name": "Multi-hop",
+          "expected": 282,
+          "scored": 282,
+          "correct": 204,
+          "accuracy_pct": 72.34042553191489
+        },
+        "2": {
+          "name": "Temporal",
+          "expected": 321,
+          "scored": 321,
+          "correct": 218,
+          "accuracy_pct": 67.91277258566979
+        },
+        "3": {
+          "name": "Open-domain",
+          "expected": 96,
+          "scored": 96,
+          "correct": 48,
+          "accuracy_pct": 50.0
+        },
+        "4": {
+          "name": "Single-hop",
+          "expected": 841,
+          "scored": 841,
+          "correct": 718,
+          "accuracy_pct": 85.37455410225921
+        }
+      }
+    },
+    "s_parent_single_2000": {
+      "expected": 1540,
+      "scored": 1540,
+      "correct": 1120,
+      "complete": true,
+      "accuracy_pct": 72.72727272727273,
+      "categories": {
+        "1": {
+          "name": "Multi-hop",
+          "expected": 282,
+          "scored": 282,
+          "correct": 170,
+          "accuracy_pct": 60.283687943262414
+        },
+        "2": {
+          "name": "Temporal",
+          "expected": 321,
+          "scored": 321,
+          "correct": 211,
+          "accuracy_pct": 65.73208722741433
+        },
+        "3": {
+          "name": "Open-domain",
+          "expected": 96,
+          "scored": 96,
+          "correct": 26,
+          "accuracy_pct": 27.083333333333332
+        },
+        "4": {
+          "name": "Single-hop",
+          "expected": 841,
+          "scored": 841,
+          "correct": 713,
+          "accuracy_pct": 84.78002378121285
+        }
+      }
+    }
+  }
+}

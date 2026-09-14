@@ -1,0 +1,141 @@
+{
+  "schema": "longmemeval-semantic-dev12-v1",
+  "judge_model": "gpt-4o-2024-08-06",
+  "endpoint": "https://api.openai.com/v1",
+  "upstream_commit": "9e0b455f4ef0e2ab8f2e582289761153549043fc",
+  "upstream_source": "D:\\MemoryData\\migration_20260910\\official_longmemeval\\src\\evaluation\\evaluate_qa.py",
+  "upstream_sha256": "ecce9c4c79dc89d99534ac17b383a5cbb5b9f0c69ee98adaf0684742e3d95251",
+  "reference": "D:\\MemoryData\\MemoryData\\datasets\\LongMemEval\\longmemeval_s_cleaned.json",
+  "reference_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "expected_question_ids": [
+    "cc6d1ec1",
+    "157a136e",
+    "e4e14d04",
+    "e6041065",
+    "d6062bb9",
+    "gpt4_b5700ca9",
+    "118b2229",
+    "27016adc",
+    "8cf51dda",
+    "41275add",
+    "4baee567",
+    "gpt4_7de946e7"
+  ],
+  "rows": 135,
+  "unique_requests": 54,
+  "coverage": {
+    "full_context": 12,
+    "gemma_embedding_r40": 12,
+    "gemma_embedding_refined": 12,
+    "gemma_embedding_seed": 12,
+    "langmem": 1,
+    "lightmem": 1,
+    "minilm_r40": 12,
+    "minilm_refined": 12,
+    "minilm_seed": 12,
+    "minilm_seed_parent": 12,
+    "qwen_embedding_r40": 12,
+    "qwen_embedding_refined": 12,
+    "qwen_embedding_seed": 12,
+    "simplemem": 1
+  },
+  "source_bindings": [
+    {
+      "path": "D:\\MemoryData\\generalization_20260908\\modern\\verified_qwen35_lme12_results\\seed.jsonl",
+      "sha256": "3e8fdeefbe074f4e290ca22c418df72486c9268b5c79a652b63682bf049c03d8"
+    },
+    {
+      "path": "D:\\MemoryData\\generalization_20260908\\modern\\verified_qwen35_lme12_results\\r40_fused_four_turn.jsonl",
+      "sha256": "d2ae5e2525ec1114fb65a7e39ceb48923efdabe0673b8d686598fc5dbe086a75"
+    },
+    {
+      "path": "D:\\MemoryData\\generalization_20260908\\modern\\verified_qwen35_lme12_results\\s_parent_single_2000.jsonl",
+      "sha256": "42800f44714e11d3c7c18427367988ba51cfb8576253ce6c798af68a4c28073f"
+    },
+    {
+      "path": "D:\\MemoryData\\generalization_20260908\\modern\\verified_gemma4_lme12_scorer512_results\\seed.jsonl",
+      "sha256": "940a54bb8a73a759f65a5d22fb23bf5973f4803fb272bfb3491ee7db0e61e653"
+    },
+    {
+      "path": "D:\\MemoryData\\generalization_20260908\\modern\\verified_gemma4_lme12_scorer512_results\\r40_fused_four_turn.jsonl",
+      "sha256": "0392c661694e8ea428e4fe6839366f747e611038260ed8db3340abbaf647c6ef"
+    },
+    {
+      "path": "D:\\MemoryData\\generalization_20260908\\modern\\verified_gemma4_lme12_scorer512_results\\s_parent_single_2000.jsonl",
+      "sha256": "842a58dcb53f5a1b3763d8e865c68c052bb26e50d1bb6c5be1b6f60e961d5fa9"
+    },
+    {
+      "path": "D:\\MemoryData\\migration_20260910\\pilot_runs\\paper_frozen_lme12_qwen35_minilm_date_v2_r1\\collected\\seed.jsonl",
+      "sha256": "1eaee1c42b12b6e85763edf857a33d722dc35187ec50e3e06d8e5454526f89ab"
+    },
+    {
+      "path": "D:\\MemoryData\\migration_20260910\\pilot_runs\\paper_frozen_lme12_qwen35_minilm_date_v2_r1\\collected\\r40_fused_four_turn.jsonl",
+      "sha256": "4ee77207cad3335efd266f7d61c133b4d19ce2381885c520f576d2da828db7e0"
+    },
+    {
+      "path": "D:\\MemoryData\\migration_20260910\\pilot_runs\\paper_frozen_lme12_qwen35_minilm_date_v2_r1\\collected\\s_parent_single_2000.jsonl",
+      "sha256": "c9c9127f9d05573dbfd3394afe34db7d5a875c1a7c8000af0869a710e2d4471b"
+    },
+    {
+      "path": "D:\\MemoryData\\migration_20260910\\pilot_runs\\seed_parent_lme12_qwen35_minilm_r1\\collected\\seed_parent_single_2000.jsonl",
+      "sha256": "8d3f7eaef7d4325b12a2eaaabb5f16f6d8eb3a90e76db37b8431e5747edf746e"
+    },
+    {
+      "path": "D:\\MemoryData\\outputs\\longmemeval_pilot_baseline_comparison_20260912\\baseline_matched_scores.json",
+      "sha256": "81aca1dd7f29f5a42f5bb15d4e66fdfbd0f89c2ad301eadd89f889d2b2fb8b6f"
+    },
+    {
+      "path": "D:\\MemoryData\\outputs\\longmemeval_pilot_baseline_comparison_20260912\\comparison_sources.json",
+      "sha256": "6b48a4e9c7a2334e2bef4ae95b0f1ce97d85dce8f8fac6a0bccc2ae766807492"
+    }
+  ],
+  "generation_rerun": false,
+  "answer_postprocessing": "none",
+  "prompt_extraction": "unchanged official function compiled from pinned AST",
+  "deduplication": "identical complete API payload, including gold and hypothesis",
+  "parser": "strict yes/no; invalid responses pending, never scored as no",
+  "official_implementation": "same prompt/model/parameters; custom resumable transport",
+  "requests_sha256": "2b4171434072406b0bf13e14c6dbd5b216c751d4237f5170bae087a514496ea1",
+  "inputs_sha256": "215d3ddd8eeb54efd72bb615147d18507991d962a24a8fcc4d0565eeaae5ff85",
+  "baseline_missing_predictions": {
+    "langmem": [
+      "cc6d1ec1",
+      "157a136e",
+      "e4e14d04",
+      "e6041065",
+      "d6062bb9",
+      "gpt4_b5700ca9",
+      "27016adc",
+      "8cf51dda",
+      "41275add",
+      "4baee567",
+      "gpt4_7de946e7"
+    ],
+    "simplemem": [
+      "cc6d1ec1",
+      "157a136e",
+      "e4e14d04",
+      "e6041065",
+      "d6062bb9",
+      "gpt4_b5700ca9",
+      "27016adc",
+      "8cf51dda",
+      "41275add",
+      "4baee567",
+      "gpt4_7de946e7"
+    ],
+    "lightmem": [
+      "cc6d1ec1",
+      "157a136e",
+      "e4e14d04",
+      "e6041065",
+      "d6062bb9",
+      "gpt4_b5700ca9",
+      "27016adc",
+      "8cf51dda",
+      "41275add",
+      "4baee567",
+      "gpt4_7de946e7"
+    ]
+  }
+}

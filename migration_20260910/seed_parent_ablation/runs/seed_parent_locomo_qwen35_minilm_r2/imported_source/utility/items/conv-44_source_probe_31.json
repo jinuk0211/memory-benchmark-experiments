@@ -1,0 +1,320 @@
+{
+  "question": "What is Audrey's instruction to Andrew?",
+  "answer": "Take care and have fun",
+  "source_ids": [
+    "D16:18"
+  ],
+  "candidate_context_ids": [
+    "D16:17",
+    "D16:18",
+    "D16:19"
+  ],
+  "answer_spans": [
+    {
+      "source_id": "D16:18",
+      "start": 42,
+      "end": 64,
+      "verbatim": "Take care and have fun"
+    }
+  ],
+  "session": 16,
+  "recorded_date": "9:19 pm on 19 August, 2023",
+  "conv_id": "conv-44",
+  "split": "probe_fit",
+  "id": "conv-44:source_probe:31",
+  "analysis": {
+    "full_advantage": 4.313473952539425,
+    "source_dependent": true,
+    "best_single_sources": [
+      "D16:18"
+    ],
+    "best_pair_sources": [
+      "D16:17",
+      "D16:18"
+    ],
+    "minimum_sources": [
+      "D16:18"
+    ],
+    "minimum_tokens": 75,
+    "single_policy_sources": [
+      "D16:18"
+    ],
+    "single_policy_tokens": 75,
+    "full_tokens": 124,
+    "best_pair_lift_over_best_single": 0.009577155304577901,
+    "pair_interactions": [
+      {
+        "source_ids": [
+          "D16:17",
+          "D16:18"
+        ],
+        "joint_lift": 0.009577155304577901,
+        "interaction": 1.2845886113173037,
+        "advantage": 4.321475239318534
+      },
+      {
+        "source_ids": [
+          "D16:17",
+          "D16:19"
+        ],
+        "joint_lift": -0.2646310746669762,
+        "interaction": 1.0103803813457493,
+        "advantage": -0.2904703140258782
+      },
+      {
+        "source_ids": [
+          "D16:18",
+          "D16:19"
+        ],
+        "joint_lift": -0.012733355561067583,
+        "interaction": 0.013105883797834394,
+        "advantage": 4.299164728452888
+      }
+    ],
+    "has_preserving_pair_without_preserving_single": false
+  },
+  "generations": {
+    "empty": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [],
+      "context_tokens": 0,
+      "source_answer_f1": 0.0
+    },
+    "full": {
+      "text": "Take care and have fun",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D16:17",
+        "D16:18",
+        "D16:19"
+      ],
+      "context_tokens": 124,
+      "source_answer_f1": 1.0
+    },
+    "answer_removed": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D16:17",
+        "D16:19"
+      ],
+      "context_tokens": 70,
+      "source_answer_f1": 0.0
+    },
+    "best_single": {
+      "text": "Take care and have fun",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D16:18"
+      ],
+      "context_tokens": 75,
+      "source_answer_f1": 1.0
+    },
+    "best_pair": {
+      "text": "Take care and have fun",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D16:17",
+        "D16:18"
+      ],
+      "context_tokens": 97,
+      "source_answer_f1": 1.0
+    },
+    "minimum_bundle": {
+      "text": "Take care and have fun",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D16:18"
+      ],
+      "context_tokens": 75,
+      "source_answer_f1": 1.0
+    },
+    "single_policy": {
+      "text": "Take care and have fun",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D16:18"
+      ],
+      "context_tokens": 75,
+      "source_answer_f1": 1.0
+    }
+  },
+  "subsets": [
+    {
+      "kind": "empty",
+      "source_ids": [],
+      "context_tokens": 0,
+      "score": {
+        "mean_logprob": -4.337664270401001,
+        "sum_logprob": -21.688321352005005,
+        "answer_tokens": 5,
+        "token_logprobs": [
+          -8.327176094055176,
+          -2.8691461086273193,
+          -5.993902683258057,
+          -3.4674172401428223,
+          -1.0306792259216309
+        ]
+      }
+    },
+    {
+      "kind": "full",
+      "source_ids": [
+        "D16:17",
+        "D16:18",
+        "D16:19"
+      ],
+      "context_tokens": 124,
+      "score": {
+        "mean_logprob": -0.02419031786157575,
+        "sum_logprob": -0.12095158930787875,
+        "answer_tokens": 5,
+        "token_logprobs": [
+          -0.11372625827789307,
+          -7.056941103655845e-05,
+          -0.006990144029259682,
+          -2.1815061700181104e-05,
+          -0.00014280252798926085
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D16:17"
+      ],
+      "context_tokens": 43,
+      "score": {
+        "mean_logprob": -5.612675726413727,
+        "sum_logprob": -28.063378632068634,
+        "answer_tokens": 5,
+        "token_logprobs": [
+          -14.136055946350098,
+          -4.8034138679504395,
+          -5.732093334197998,
+          -2.5836143493652344,
+          -0.8082011342048645
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D16:18"
+      ],
+      "context_tokens": 75,
+      "score": {
+        "mean_logprob": -0.02576618638704531,
+        "sum_logprob": -0.12883093193522654,
+        "answer_tokens": 5,
+        "token_logprobs": [
+          -0.1199527233839035,
+          -0.00011121608258690685,
+          -0.008485689759254456,
+          -3.373566141817719e-05,
+          -0.0002475670480635017
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D16:19"
+      ],
+      "context_tokens": 48,
+      "score": {
+        "mean_logprob": -4.363503509759903,
+        "sum_logprob": -21.817517548799515,
+        "answer_tokens": 5,
+        "token_logprobs": [
+          -12.605541229248047,
+          -0.44531992077827454,
+          -4.273375034332275,
+          -2.45180344581604,
+          -2.041477918624878
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D16:17",
+        "D16:18"
+      ],
+      "context_tokens": 97,
+      "score": {
+        "mean_logprob": -0.016189031082467407,
+        "sum_logprob": -0.08094515541233704,
+        "answer_tokens": 5,
+        "token_logprobs": [
+          -0.07459163665771484,
+          -5.6622808187967166e-05,
+          -0.006024534814059734,
+          -1.9788545614574105e-05,
+          -0.0002525725867599249
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D16:17",
+        "D16:19"
+      ],
+      "context_tokens": 70,
+      "score": {
+        "mean_logprob": -4.6281345844268795,
+        "sum_logprob": -23.1406729221344,
+        "answer_tokens": 5,
+        "token_logprobs": [
+          -14.069279670715332,
+          -1.074430227279663,
+          -4.050167083740234,
+          -2.3442907333374023,
+          -1.6025052070617676
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D16:18",
+        "D16:19"
+      ],
+      "context_tokens": 102,
+      "score": {
+        "mean_logprob": -0.03849954194811289,
+        "sum_logprob": -0.19249770974056446,
+        "answer_tokens": 5,
+        "token_logprobs": [
+          -0.17027807235717773,
+          -0.00010585224663373083,
+          -0.02176121436059475,
+          -3.766942609217949e-05,
+          -0.0003149013500660658
+        ]
+      }
+    },
+    {
+      "kind": "answer_removed",
+      "source_ids": [
+        "D16:17",
+        "D16:19"
+      ],
+      "context_tokens": 70,
+      "score": {
+        "mean_logprob": -4.633149719238281,
+        "sum_logprob": -23.165748596191406,
+        "answer_tokens": 5,
+        "token_logprobs": [
+          -14.079671859741211,
+          -1.073941707611084,
+          -4.047603130340576,
+          -2.3495378494262695,
+          -1.6149940490722656
+        ]
+      }
+    }
+  ]
+}

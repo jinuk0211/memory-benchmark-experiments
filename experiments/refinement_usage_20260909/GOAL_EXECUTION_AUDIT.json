@@ -1,0 +1,100 @@
+{
+  "objective_achieved": false,
+  "requirements": [
+    {
+      "requirement": "Use Qwen3.5-9B as the original-model validation, distinguish accidental historical Qwen3-8B work",
+      "status": "verified_for_completed_v1_and_baselines",
+      "evidence": [
+        "FINAL_PROVENANCE_CHECK.json",
+        "CURRENT_METHODS.csv",
+        "HISTORICAL_ATTEMPTS.csv"
+      ]
+    },
+    {
+      "requirement": "Prefer source-grounded methodological refinement over target-specific rules",
+      "status": "v1_measured_v2_prepared_but_unexecuted",
+      "evidence": [
+        "../recursive_minilm_20260909/STATUS.md",
+        "../recursive_minilm_20260909/receipts/V1_SOURCE_ROUND_AUDIT.json"
+      ],
+      "limitation": "V1 query rewrite choices were ineffective; prepared v2 has no measured outcome."
+    },
+    {
+      "requirement": "Demonstrate survival of gains with frozen method on Gemma and LongMemEval",
+      "status": "not_established",
+      "evidence": [
+        "../recursive_minilm_20260909/STATUS.md"
+      ],
+      "limitation": "V1 failed its fixed predecessor gate; new Gemma18 did not run. Earlier12-question diagnostics are not proof of the new candidate."
+    },
+    {
+      "requirement": "Report per-refinement F1 and exact answers",
+      "status": "verified_completed_current4_methods_and_historical126_F1",
+      "evidence": [
+        "CURRENT_METHODS.csv",
+        "HISTORICAL_ATTEMPTS.csv"
+      ],
+      "limitation": "No v2 final answers or F1 exist; source inner-round fitness is not benchmark F1."
+    },
+    {
+      "requirement": "Report native LLM and embedding tokens in millions",
+      "status": "verified_for_completed_current4_methods_and_shared_or_incremental_construction",
+      "evidence": [
+        "reports/current_verified/USAGE_REPORT.json",
+        "INDEPENDENT_NATIVE_CROSSCHECK.json"
+      ],
+      "limitation": "Historical unrecorded usage remains unknown. Future v2 usage requires its actual collected native receipts."
+    },
+    {
+      "requirement": "Report mean seconds per question with explicit scope",
+      "status": "native_inference_measured_evaluation_function_hook_and_reporter_complete_locally_no_new_measurements",
+      "evidence": [
+        "MEASUREMENT_CONTRACT.md",
+        "TIMING_LAUNCH_REVIEW.md"
+      ],
+      "limitation": "No real evaluation-function timing exists; local CPU verification is not an experimental measurement."
+    }
+  ],
+  "execution_blocker": {
+    "condition": "Explicit consent for the previously rejected external transfer remains absent.",
+    "original_rejected_scope": "8 v2 code/config files,50160bytes",
+    "current_reviewable_proposal": "V2_TIMED_TRANSFER_CONTENTS.json:13 files,79212bytes,including timing addon",
+    "automatic_continuation_is_consent": false,
+    "same_condition_in_successive_goal_work": [
+      "completed native accounting",
+      "completed local timing hook and queue preview",
+      "current local timing-report integration"
+    ],
+    "previous_count_answer_classification": "status_only_no_new_experiment",
+    "current_classification": "progress_completed_then_blocked_at_impasse_after_same_condition_across_at_least3_goal_turns",
+    "goal_tool_status_change": "blocked_confirmed_at_unix1788919984"
+  },
+  "remote_state_evidence": {
+    "utc": "2026-09-09T01:58:37Z",
+    "old_full500": "STOPPED",
+    "v1": "EXITED",
+    "gemma18": "EXITED",
+    "v2": "no_such_process",
+    "v2_runner_and_timing_launcher": "absent"
+  },
+  "immutable_boundaries": [
+    "Original eight owner files preserved",
+    "Existing completed native reports preserved",
+    "No external upload or remote process mutation",
+    "Old full500 remains intentionally stopped"
+  ],
+  "remaining_actions": [
+    "Obtain explicit transfer consent for concrete proposal",
+    "Owner deploys/verifies frozen source and runs v2",
+    "Measure v2 and if its fixed gate passes, run frozen Gemma18 transfer",
+    "Evaluate actual generalization and combine F1,answers,native token usage and scoped time evidence"
+  ],
+  "local_completion_evidence": {
+    "timer_launcher_tests": 19,
+    "reporter_tests": 19,
+    "independent_review": "approved",
+    "actual_v1_1540_missing_timing": "mean_null_verified",
+    "manifest_original8_native_report": "unchanged_verified",
+    "final_reporter_label_delta": "only_label_change_verified_byte_exact_against_reviewed_source"
+  }
+}

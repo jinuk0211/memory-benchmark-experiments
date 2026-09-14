@@ -1,0 +1,98 @@
+{
+  "status": "verified_prior_capacity_evidence_applies_to_frozen_source_requests",
+  "generation_performed_now": false,
+  "target_answers_inspected": false,
+  "current_adapter_gpu_test_pending": true,
+  "prior_receipt_path": "D:\\MemoryData\\generalization_20260908\\full_transfer\\target_capacity500_qwen35_gemma4.json",
+  "prior_receipt_sha256": "e6aee51d9ac80566c57b433238ecce21c1aa6572c36ae87a9da70c46de688010",
+  "dataset": {
+    "path": "D:\\MemoryData\\MemoryData\\datasets\\LongMemEval\\longmemeval_s_cleaned.json",
+    "bytes": 277383467,
+    "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "matches_prior_audit": true
+  },
+  "source_checks": {
+    "source/refine.py": {
+      "sha256": "71384cac6aaa260d6df4f24f605797a8a886cd51514a83c9c1d041eff99f14fa",
+      "matches_prior_audit": true
+    },
+    "source/portable_parent.py": {
+      "sha256": "2274f14817a133cef8ce724f459f16809cc7b0718c4105601b3e117240f253a5",
+      "matches_prior_audit": true
+    },
+    "transfer_data.py": {
+      "sha256": "f4089630c57a27c739bdaf52cdb3c491fb763dad7f875eba2eaa474109582648",
+      "matches_prior_audit": true
+    },
+    "chat_tokenizer_compat.py": {
+      "sha256": "b50ed0f335ca2cd7a14957968d5d279fae8556da69a03c9b18f8f83db0108f4c",
+      "matches_prior_audit": true
+    },
+    "source_qa_plan": {
+      "sha256": "85f9bb09761235c78dfdacfd39d4f351f2487c1212ab19081daff059ab3d6e12",
+      "matches_prior_audit": true
+    }
+  },
+  "current_adapter_sha256": "c3ce1cc184c6a002b94490595b913989e6620fde07d046318cd831004e4c3f22",
+  "current_model": "Qwen/Qwen3.5-9B",
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "local_tokenizer_path": "D:\\MemoryData\\generalization_20260908\\modern\\tokenizer_cpu_cache\\hf\\hub\\models--Qwen--Qwen3.5-9B\\snapshots\\c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "local_tokenizer_checks": {
+    "chat_template.jinja": {
+      "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "matches_prior_audit": true,
+      "prior_report_coverage": "included"
+    },
+    "config.json": {
+      "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+      "matches_prior_audit": true,
+      "prior_report_coverage": "included"
+    },
+    "merges.txt": {
+      "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+      "matches_prior_audit": null,
+      "prior_report_coverage": "not_in_prior_report_suffix_selection"
+    },
+    "tokenizer.json": {
+      "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "matches_prior_audit": true,
+      "prior_report_coverage": "included"
+    },
+    "tokenizer_config.json": {
+      "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+      "matches_prior_audit": true,
+      "prior_report_coverage": "included"
+    },
+    "vocab.json": {
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+      "matches_prior_audit": true,
+      "prior_report_coverage": "included"
+    }
+  },
+  "prior_question_count": 500,
+  "prior_base_cluster_count": 471,
+  "question_ids_sha256": "05153101995004e86f115faeccbd4c7fc2f8b42433ed9b112c11fb05a2af25e3",
+  "stages": {
+    "session10": {
+      "calls": 23867,
+      "maximum_prompt_plus_reserved_output": 19737,
+      "overflow_calls_at_writer_65536": 0
+    },
+    "source_qa": {
+      "calls": 39673,
+      "maximum_prompt_plus_reserved_output": 20752,
+      "overflow_calls_at_writer_65536": 0
+    },
+    "audit_raw_fallback": {
+      "calls": 24227,
+      "maximum_prompt_plus_reserved_output": 39120,
+      "overflow_calls_at_writer_65536": 0
+    }
+  },
+  "interpretation": "Exact frozen session10 and source-QA requests; audit_raw_fallback uses core.raw_units(history) as parent. This is a concrete fallback scenario, not a universal bound on every possible generated parent.",
+  "limitations": [
+    "This validates an existing complete source-request CPU audit; no new capacity measurement or GPU fit claim.",
+    "The old audit CLI imports old two-model context_policy and checks an old virtualenv receipt; do not point it at this clone without adapting the driver.",
+    "The actual writer retains its 65536 preflight guard and never silently truncates; generated audit parents can differ from the audited raw-fallback scenario."
+  ]
+}

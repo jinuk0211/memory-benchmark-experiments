@@ -1,0 +1,200 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-09-14T03:54:37.542Z",
+  "network_calls": 0,
+  "scope": "Recount preserved verdicts and stored per-question F1; no new model calls or F1 rescoring.",
+  "checks": {
+    "longmemeval_common50_gpt4o": {
+      "status": "PASS",
+      "rows": 200,
+      "unique_receipts": 182,
+      "methods": {
+        "full_context": {
+          "n": 50,
+          "correct": 46
+        },
+        "langmem": {
+          "n": 50,
+          "correct": 37
+        },
+        "simplemem": {
+          "n": 50,
+          "correct": 38
+        },
+        "lightmem": {
+          "n": 50,
+          "correct": 45
+        }
+      }
+    },
+    "longmemeval_minilm_dev12_gpt4o": {
+      "status": "PASS",
+      "rows": 135,
+      "unique_receipts": 54,
+      "methods": {
+        "minilm_seed": {
+          "n": 12,
+          "correct": 11
+        },
+        "minilm_r40": {
+          "n": 12,
+          "correct": 7
+        },
+        "minilm_refined": {
+          "n": 12,
+          "correct": 6
+        },
+        "minilm_seed_parent": {
+          "n": 12,
+          "correct": 11
+        }
+      }
+    },
+    "locomo_gpt4omini": {
+      "status": "PASS",
+      "rows": 13860,
+      "unique_payloads": 10624,
+      "methods": {
+        "Naive": {
+          "n": 1540,
+          "correct": 1099
+        },
+        "Mem0": {
+          "n": 1540,
+          "correct": 839
+        },
+        "A-MEM": {
+          "n": 1540,
+          "correct": 799
+        },
+        "LangMem": {
+          "n": 1540,
+          "correct": 644
+        },
+        "SimpleMem": {
+          "n": 1540,
+          "correct": 842
+        },
+        "LightMem_official": {
+          "n": 1540,
+          "correct": 1008
+        },
+        "HiGMem": {
+          "n": 1540,
+          "correct": 860
+        },
+        "E-Mem": {
+          "n": 1540,
+          "correct": 1188
+        },
+        "s_parent_single_2000": {
+          "n": 1540,
+          "correct": 1120
+        }
+      }
+    },
+    "locomo_ablation300": {
+      "status": "PASS",
+      "rows": 2100,
+      "arms": {
+        "ours": {
+          "n": 300,
+          "f1_percent": 55.797513603812135
+        },
+        "no_cues": {
+          "n": 300,
+          "f1_percent": 55.42631266535526
+        },
+        "no_audit": {
+          "n": 300,
+          "f1_percent": 54.78885102211013
+        },
+        "no_temporal": {
+          "n": 300,
+          "f1_percent": 52.200959879374494
+        },
+        "no_binding": {
+          "n": 300,
+          "f1_percent": 58.042440379993984
+        },
+        "random_cues": {
+          "n": 300,
+          "f1_percent": 55.16465154961552
+        },
+        "payload_keys": {
+          "n": 300,
+          "f1_percent": 55.636285698460874
+        }
+      }
+    },
+    "locomo_binding1540": {
+      "status": "PASS",
+      "rows": 3080,
+      "arms": {
+        "ours": {
+          "n": 1540,
+          "f1_percent": 55.37328293266579
+        },
+        "no_binding": {
+          "n": 1540,
+          "f1_percent": 58.714302335566856
+        }
+      }
+    },
+    "locomo_consolidated_csv": {
+      "status": "PASS",
+      "history_configurations": 129,
+      "full1540_configurations": 16
+    }
+  },
+  "files": {
+    "outputs/longmemeval_common50_gpt4o_20260912/results.json": {
+      "bytes": 73465,
+      "sha256": "1f6e22bfd4b3a231a684261e95bb347b023a48b9c03036b4a80ef4cfeda534b6"
+    },
+    "outputs/longmemeval_common50_gpt4o_20260912/judge_responses.jsonl": {
+      "bytes": 99281,
+      "sha256": "92608568ab531ab3a83ccdb0828cdc646eb901569752c65b12ead1c5cfcaba88"
+    },
+    "outputs/longmemeval_semantic_dev12_20260912/official_results.json": {
+      "bytes": 61509,
+      "sha256": "5849688e2b393f4b41cfbf89fba5c367ef4f8b43e67549d0faea3e65d74c6248"
+    },
+    "outputs/longmemeval_semantic_dev12_20260912/judge_responses.jsonl": {
+      "bytes": 30202,
+      "sha256": "f9953174e8dc3653349aa1333191e10ee2622c1e7cf72b70aa7e9d39568f3b00"
+    },
+    "outputs/locomo_gpt4omini_judge_20260911/scores.jsonl": {
+      "bytes": 5795057,
+      "sha256": "6487d360af0c88acdee442146d8571ab3bdfcdb0f99df56d97a8150c4712bf62"
+    },
+    "outputs/locomo_gpt4omini_judge_20260911/summary.json": {
+      "bytes": 9023,
+      "sha256": "6e818ddab2993a8208f78c837ea40c57f73ce50f28595a53e28ed0949b1700f1"
+    },
+    "experiments/locomo_ablation300_20260913/results/scored_predictions.json": {
+      "bytes": 16948638,
+      "sha256": "01c1fa19a5ccc3681344f339ea06b1d7cdd77bb2d458f088d8ea2fd479c67479"
+    },
+    "experiments/locomo_ablation300_20260913/results/RESULTS.json": {
+      "bytes": 43407,
+      "sha256": "baa0063200edc386a54d2d87f8f4289d3f1ad9698c1d3d963ebf3233bca37ae4"
+    },
+    "experiments/locomo_binding1540_20260913/results/scored_predictions.json": {
+      "bytes": 25303268,
+      "sha256": "5966813a6f7fde20d97f6666fec7ab575df274134aadb0665e89e6f991ac7f16"
+    },
+    "experiments/locomo_binding1540_20260913/results/RESULTS.json": {
+      "bytes": 198526,
+      "sha256": "c8529ad247fef586db4314a83ffb1de7753d7588a1ccc2f25f1ddb77402bb49a"
+    },
+    "outputs/locomo_all_results_20260913/HISTORY_129.csv": {
+      "bytes": 48573,
+      "sha256": "b6c41a8babc33f4f9871b2399a25fa8f798fefd4ad5affbe6eac3f236acbf1f3"
+    },
+    "outputs/locomo_all_results_20260913/FULL1540.csv": {
+      "bytes": 6382,
+      "sha256": "ded7686e8b65bcdcecc6b2b6c73fb6019472e7303dcb82dcbdffda6566d01bc6"
+    }
+  }
+}

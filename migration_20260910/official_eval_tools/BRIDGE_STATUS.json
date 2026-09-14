@@ -1,0 +1,40 @@
+{
+  "status": "READY_REVIEWED_NO_REAL_JUDGMENTS",
+  "ownership": "Only migration_20260910/official_eval_tools; unchanged upstream and methods retained",
+  "files_sha256": {
+    "official_eval_bridge.py": "9659834d6cb7a51ac26171f79b434c6cb028592a1a0efb03c15c0bb67b2c5e6e",
+    "test_official_eval_bridge.py": "591d87d59b8ece43c78ec3aea1571e76ac8c3eb65487f0a650038a77b1a18348",
+    "README.md": "aea95a4180674a13a6c6cbc816a58322d5a3c3e560ca30d7b12f2c1e95dc5c03"
+  },
+  "reviewer": "/root/hold_review",
+  "review_result": "APPROVED; canonical-reference race fixed and regression covered",
+  "tests": {
+    "synthetic_cases": 21,
+    "passed": 21,
+    "independently_repeated_by_reviewer": true,
+    "ruff": "PASS",
+    "unchanged_official_metric_script_parity": "PASS on synthetic references and labels"
+  },
+  "real_metadata_only_preflight": {
+    "canonical_cleaned_s_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "canonical_ids": 500,
+    "split_partition_counts": {
+      "dev": 107,
+      "validation": 105,
+      "final_test": 288
+    },
+    "both_official_script_hashes": "PASS"
+  },
+  "judge_api_calls": 0,
+  "authentication_read": false,
+  "ssh_or_gpu_work": false,
+  "real_target_question_answer_text_inspected": false,
+  "execution_requirement": "Run unchanged evaluate_qa.py gpt-4o HYP canonicalS and unchanged print_qa_metrics.py RESULT canonicalS; save commands and stdout separately. The bridge does not execute either judge/API call.",
+  "windows_runtime": "Use python -X utf8 for unchanged upstream scripts to preserve Unicode file decoding.",
+  "limitations": [
+    "Validated labels do not alone prove official script execution.",
+    "No upstream raw judge text, returned model identity, or API token usage is retained.",
+    "Proper subsets remain diagnostic_subset; no full-score inference from available predictions.",
+    "Paired bootstrap is outside this bridge."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "executed": false,
+  "official_judge_calls": 0,
+  "executable": "D:\\MemoryData\\migration_20260910\\official_eval_env\\Scripts\\python.exe",
+  "evaluator_argv": [
+    "-X",
+    "utf8",
+    "D:\\MemoryData\\migration_20260910\\official_longmemeval\\src\\evaluation\\evaluate_qa.py",
+    "gpt-4o",
+    "D:\\MemoryData\\migration_20260910\\official_seed_parent_lme12_r1\\seed_parent_single_2000.hypotheses.jsonl",
+    "D:\\MemoryData\\MemoryData\\datasets\\LongMemEval\\longmemeval_s_cleaned.json"
+  ],
+  "metric_argv": [
+    "-X",
+    "utf8",
+    "D:\\MemoryData\\migration_20260910\\official_longmemeval\\src\\evaluation\\print_qa_metrics.py",
+    "D:\\MemoryData\\migration_20260910\\official_seed_parent_lme12_r1\\seed_parent_single_2000.hypotheses.jsonl.eval-results-gpt-4o",
+    "D:\\MemoryData\\MemoryData\\datasets\\LongMemEval\\longmemeval_s_cleaned.json"
+  ],
+  "note": "After actual upstream judge execution, also run the unchanged official bridge verify command with this same frozen source population; these plans are not evidence of judge execution."
+}

@@ -1,0 +1,96 @@
+{
+  "canonical_population": 500,
+  "environment_proof": {
+    ".venv-inference": {
+      "freeze_sha256": "17a9b7b6d55306a5ded3921e1eb02f60ad41cfc2c60f696b68379db1569df2b7",
+      "package_count": 190,
+      "pip_check_returncode": 0,
+      "python": "3.12.14",
+      "requirements_sha256": "17a9b7b6d55306a5ded3921e1eb02f60ad41cfc2c60f696b68379db1569df2b7",
+      "verified_at": 1789123539.7953148
+    },
+    ".venv-lightmem": {
+      "freeze_sha256": "07a382574228c76b901a3574c252b8646b49ac6e7387acce1909e31176e4fbf8",
+      "package_count": 73,
+      "pip_check_returncode": 0,
+      "python": "3.11.16",
+      "requirements_sha256": "07a382574228c76b901a3574c252b8646b49ac6e7387acce1909e31176e4fbf8",
+      "verified_at": 1789123540.1172855
+    },
+    ".venv-simplemem-native0253": {
+      "freeze_sha256": "bdd7de567bcb2c418465e09400b3ceb5dfe4c2e7feee64ae30c10373352114a3",
+      "package_count": 57,
+      "pip_check_returncode": 0,
+      "python": "3.11.16",
+      "requirements_sha256": "4b9d7900e6e158e98f3b31e919692d765cedcecc549020ffc54fabc96f0def50",
+      "verified_at": 1789123540.428669
+    }
+  },
+  "fresh_initialized_sha256": "ec857df4a9701c3cdad6cacd5bf4c1f57edc6b57775a88c40270b32441e84e04",
+  "fresh_run_sha256": "825afd41103ccc0614f76ae342de7380a82c055822d12a1604a4d7facb58fbbd",
+  "instance_id": "50577514",
+  "methods": {
+    "lightmem": 500,
+    "simplemem": 500
+  },
+  "model_proof": {
+    "compressor": {
+      "files": {
+        "config.json": "e6c33ec2f099e659e125efaa8b7bb07a6e65b7d9fc36211c6fa3206e1c399085",
+        "model.safetensors": "22b9ecde52fec5c97e8c54a293be768727df95a81c6c8dccb03f262a50c58324",
+        "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+        "tokenizer.json": "bf1b59b7b11c95f194f51708d918eea378e09d05f84c0e1656dc5180e8117088",
+        "tokenizer_config.json": "214f78f6c5d034a8b405632d301ee3710eb6f075b3f5faf8241a273a13908746",
+        "vocab.txt": "fe0fda7c425b48c516fc8f160d594c8022a0808447475c1a7c6d6479763f310c"
+      },
+      "path": "/workspace/.hf_home/hub/models--microsoft--llmlingua-2-bert-base-multilingual-cased-meetingbank/snapshots/5f0c82792b7ea14c6484e015b6a072009496b7f2"
+    },
+    "minilm": {
+      "files": {
+        "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+        "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+        "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+        "data_config.json": "32edcb108fc2516b920734a862ae0692bcae1c5d45d5f8d972cb0d53434a4c54",
+        "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+        "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+        "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+        "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      },
+      "path": "/workspace/.hf_home/hub/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+    },
+    "qwen": {
+      "files": {
+        "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+        "config.json": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+        "merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+        "model.safetensors-00001-of-00004.safetensors": "db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e",
+        "model.safetensors-00002-of-00004.safetensors": "31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330",
+        "model.safetensors-00003-of-00004.safetensors": "7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec",
+        "model.safetensors-00004-of-00004.safetensors": "b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6",
+        "model.safetensors.index.json": "26d3539b516be613f39563617cb9d33b3f83d401298125be392c80cefb8f7fe5",
+        "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+        "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+        "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+        "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+        "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+      },
+      "path": "/workspace/.hf_home/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+    }
+  },
+  "past_results_reused": false,
+  "protocol_proof": {
+    "lightmem": "0ce3945e48896edd5b7cf8d5f0c09e79c0047951a0208472e50740e2d1f3b326",
+    "simplemem": "099254c45e1077d44c851907f5f37bd1e0a36e7127e9eef87e406181d479977b"
+  },
+  "run_id": "quad_3090_50577514_fresh_20260911",
+  "runtime_inference_verified": false,
+  "source_proof": {
+    "archive_sha256": "a03f4b8d8c3b510712c3e7568fe5d016fc16e87ed208a94eed2644adecf02b11",
+    "verified_files": 558
+  },
+  "status": "fresh_artifacts_verified",
+  "verified_at": 1789123540.429131
+}

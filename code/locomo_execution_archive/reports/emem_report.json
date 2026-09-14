@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "method": "e_mem",
+  "complete": false,
+  "predictions_complete": true,
+  "coverage_complete": true,
+  "usage_complete": false,
+  "evaluated": 1540,
+  "expected": 1540,
+  "empty_predictions": 0,
+  "missing": [],
+  "prediction_issues": [],
+  "official_f1": 0.5695671313240028,
+  "score_scope": "all_expected_questions",
+  "preserved_questions": 1538,
+  "recovered_questions": [
+    "conv-26_qa74",
+    "conv-49_qa38"
+  ],
+  "by_category": {
+    "1": {
+      "count": 282,
+      "f1": 0.4487178715697641
+    },
+    "2": {
+      "count": 321,
+      "f1": 0.5466652704695586
+    },
+    "3": {
+      "count": 96,
+      "f1": 0.3063743366378583
+    },
+    "4": {
+      "count": 841,
+      "f1": 0.6488744997839813
+    }
+  },
+  "by_sample": {
+    "conv-26": 152,
+    "conv-30": 81,
+    "conv-41": 152,
+    "conv-42": 199,
+    "conv-43": 178,
+    "conv-44": 123,
+    "conv-47": 150,
+    "conv-48": 191,
+    "conv-49": 156,
+    "conv-50": 158
+  },
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "dtype": "float16",
+  "embedding_path": "/workspace/.hf_home/hub/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "usage": {
+    "complete": false,
+    "supplied": true,
+    "requests": 15543,
+    "metered_requests": 15542,
+    "unmetered_requests": 1,
+    "invalid_usage_requests": 0,
+    "failed_requests": 16,
+    "truncated_requests": 15,
+    "incomplete_streams": 0,
+    "unknown_phase_requests": 0,
+    "missing_id_requests": 0,
+    "duplicate_request_ids": 0,
+    "duplicate_response_ids": 0,
+    "reported_tokens": {
+      "prompt_tokens": 57620237,
+      "completion_tokens": 3665734,
+      "total_tokens": 61285971
+    },
+    "by_phase": {
+      "memory_add": {
+        "calls": 84,
+        "prompt_tokens": 509565,
+        "completion_tokens": 12077,
+        "total_tokens": 521642
+      },
+      "qa": {
+        "calls": 15458,
+        "prompt_tokens": 57110672,
+        "completion_tokens": 3653657,
+        "total_tokens": 60764329
+      }
+    },
+    "by_request_kind": {
+      "chat_completion": {
+        "calls": 12419,
+        "prompt_tokens": 57137040,
+        "completion_tokens": 3665734,
+        "total_tokens": 60802774
+      },
+      "embedding": {
+        "calls": 3123,
+        "prompt_tokens": 483197,
+        "completion_tokens": 0,
+        "total_tokens": 483197
+      }
+    },
+    "note": "Reported tokens include metered failed attempts. Missing or invalid usage is unknown, not zero. Completeness covers the supplied journal; every model call must be routed through the meter. Embedding tokens are separate from generation by_request_kind."
+  },
+  "response_delivery": {
+    "complete": false,
+    "logical_requests": 12405,
+    "repaired_requests": 15,
+    "discarded_attempt_total_tokens": 491520,
+    "issues": [
+      {
+        "group": "225f8ff5-7ad4-4924-a510-19ddd0f42d68",
+        "error": "no_complete_terminal_response"
+      }
+    ],
+    "note": "All attempts remain in usage totals. Only complete terminal responses may reach a memory implementation."
+  },
+  "non_chat_failed_requests": 0,
+  "all_attempt_usage": {
+    "complete": false,
+    "supplied": true,
+    "requests": 15564,
+    "metered_requests": 15563,
+    "unmetered_requests": 1,
+    "invalid_usage_requests": 0,
+    "failed_requests": 22,
+    "truncated_requests": 21,
+    "incomplete_streams": 0,
+    "unknown_phase_requests": 0,
+    "missing_id_requests": 0,
+    "duplicate_request_ids": 0,
+    "duplicate_response_ids": 0,
+    "reported_tokens": {
+      "prompt_tokens": 57722244,
+      "completion_tokens": 3830216,
+      "total_tokens": 61552460
+    },
+    "by_phase": {
+      "memory_add": {
+        "calls": 84,
+        "prompt_tokens": 509565,
+        "completion_tokens": 12077,
+        "total_tokens": 521642
+      },
+      "qa": {
+        "calls": 15479,
+        "prompt_tokens": 57212679,
+        "completion_tokens": 3818139,
+        "total_tokens": 61030818
+      }
+    },
+    "by_request_kind": {
+      "chat_completion": {
+        "calls": 12436,
+        "prompt_tokens": 57238881,
+        "completion_tokens": 3830216,
+        "total_tokens": 61069097
+      },
+      "embedding": {
+        "calls": 3127,
+        "prompt_tokens": 483363,
+        "completion_tokens": 0,
+        "total_tokens": 483363
+      }
+    },
+    "note": "Reported tokens include metered failed attempts. Missing or invalid usage is unknown, not zero. Completeness covers the supplied journal; every model call must be routed through the meter. Embedding tokens are separate from generation by_request_kind."
+  },
+  "attempt_runtime": [
+    {
+      "run_id": "locomo-full-emem-amem-20260908-r4",
+      "context_workers": 10,
+      "wall_seconds": 9356.051942096004,
+      "construction_seconds": 591.3006490840344,
+      "qa_seconds": 55395.799484474264,
+      "peak_vram_mib": 30440,
+      "gpu_energy_wh": 1225.750602006726,
+      "mean_gpu_utilization_percent": 98.39923747276688,
+      "storage_bytes": 57625815,
+      "question_latency_seconds": {
+        "count": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "p95_method": "nearest_rank",
+        "missing_or_invalid": 0
+      },
+      "hourly_rate_usd": 0.4068518518518518,
+      "estimated_rental_cost_usd": 1.0573686274066316
+    },
+    {
+      "run_id": "locomo-emem-saved-recovery-20260908-r11",
+      "context_workers": 1,
+      "wall_seconds": 672.3141176679928,
+      "construction_seconds": 6.198167505004676,
+      "qa_seconds": 659.983293502999,
+      "peak_vram_mib": 30440,
+      "gpu_energy_wh": 88.5059137759674,
+      "mean_gpu_utilization_percent": 94.6015037593985,
+      "storage_bytes": 4657673,
+      "question_latency_seconds": {
+        "count": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "p95_method": "nearest_rank",
+        "missing_or_invalid": 0
+      },
+      "hourly_rate_usd": 0.4068518518518518,
+      "estimated_rental_cost_usd": 0.0759811788331574
+    }
+  ],
+  "selected_question_latency": {
+    "count": 1540,
+    "mean": 36.39571874373919,
+    "p50": 19.512710571289062,
+    "p95": 131.79112315177917,
+    "p95_method": "nearest_rank",
+    "missing_or_invalid": 0
+  },
+  "gross_attempt_runtime": {
+    "wall_seconds": 10028.366059763997,
+    "gpu_energy_wh": 1314.2565157826934,
+    "estimated_rental_cost_usd": 1.133349806239789
+  },
+  "raw_sources_sha256": {
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "bf531a8a729bec55dfd6c451d0ec1d89886f0d1de279002cdf20c0f5cef61542",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_0/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_0/e_mem_text/text_block_26e444ff-b57c-45b0-8df1-bd5566c75443_20260908_010815.json": "d2d93f2317ae93450090b6e0750aceac651ca9fddf8146202e3566ac5f90c27a",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_0/e_mem_text/agents_metadata.json": "8c83f962fe892f992ecf16db960d7cca982ae1c3c49dbe1ed61f7812442259cc",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_0/e_mem_text/text_block_3164b969-3a22-467a-9d0d-37dcf0a36d88_20260908_010829.json": "6626507f9742a8dd87cbc3ddf50cbfa7213cdc51836a0e4cbca10470c182e8d5",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_0/e_mem_text/text_block_8bbdb96b-7edf-4a96-9a05-b5b82b5d54ab_20260908_010838.json": "ffb99c511817ad5b5e3632e6b74fa060aeac8e6c672188788b66550a4d7464a3",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_0/e_mem_text/text_block_e05bb8bc-52dc-4ece-b7de-7a9557caac9f_20260908_010846.json": "e7463e88a578e3c850b998430682339d3eb8320069d4a455bc8217da7d8c3614",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_0/e_mem_text/text_block_cc08f697-bc8d-4f5a-ba92-3d708e43ea45_20260908_010854.json": "e24166b36d22062545b18d10a8df779460a7500e0ee8a72d9d79f0ebeb0f14e5",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_0/e_mem_text/text_block_d71b4873-6758-4d1e-8fb3-6293249692b2_20260908_010903.json": "4498b0d6c9a0ccaab224f19c20b92b3619fbacddf1c4b546508ce247164c99c2",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_00/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_0/e_mem_text/text_block_12455da4-d1ef-4510-81cf-1de924eb0fc2_20260908_010906.json": "6a6aebebf00702108daebd1e7325db7bb9aaae0d1fa2bbe9803b70fed32eacd6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_01/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "41ccb6a1eb9411eb2970eee5ebb96593f7068b00065ba026364ba5fbdb105846",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_01/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_1/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_01/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_1/e_mem_text/text_block_077eb586-66e9-4757-a444-636d478b4829_20260908_010815.json": "8f080ef622773ea2356f3b4d356f6b555d6ad288d36778ae61a19fd511d8f0c9",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_01/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_1/e_mem_text/agents_metadata.json": "302307fb16b0c6c9956f05f9cdc1be3ccb69e9308035cf59c2cb1e5dbae9ff4d",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_01/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_1/e_mem_text/text_block_51151d89-a80a-410e-b3de-ecb515d1d419_20260908_010825.json": "17a8a280d2e9613776699b7eca11197eba9e6dbab3abf1dc42e962dd32a613c1",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_01/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_1/e_mem_text/text_block_ce9ce0a7-492b-4d98-9837-b98f282a51d1_20260908_010830.json": "434a81830d30c3b418818c32e58c23cd8168f0da8606e2aab858c562690baf63",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_01/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_1/e_mem_text/text_block_cf5af46b-f556-429c-b88a-948c97bcc408_20260908_010834.json": "7e731b320b50f62307c68d3a82c05c411c90239f0f2c249f4c14b293dd859776",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_01/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_1/e_mem_text/text_block_79a0e6cf-5580-4833-a67b-f69e0e2d9176_20260908_010839.json": "c059690c71f6d651baf70b9f8dbce1509bee34377cf9fc4bfcc18b6e27e66c0c",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_01/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_1/e_mem_text/text_block_d19fac65-fbbf-4edd-87ee-47cf7612a6f5_20260908_010843.json": "f500155b9325ca97978be4b401c12e6ee3d690847c7d9465a5ae89eb9c99fbbd",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "ae9b268a066b2696415103873536a07bed9de3ca9b991334b5421598e7169a67",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_9c817627-9ce6-4cb0-b8be-cad93c5e4e01_20260908_010815.json": "f9668b6214281266977bbd06ec9345e657bd750fddd4311929e1bf491703a7ce",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/agents_metadata.json": "73e7688343f1de4c36c874770694576c605f7820609c669cc07d5619662b5c84",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_a60c06e8-a4e0-45c9-a3f2-a5fe68e97fcd_20260908_010824.json": "d49f5b45c41234e70fe78c0b557af0e8412eea2712c4500fd9071bb378832bc5",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_64da6a3e-1bd2-46c7-98d3-809d72633c18_20260908_010831.json": "de866d4b45065a3b4a25f4eece7921bd2b7d57747f0d4fb5b5827a5ea2b0202b",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_05524381-efec-4c48-992e-03003239082e_20260908_010840.json": "8a7f0a40f2db8f79c9d5bb94645c9165dda08090c69d5125738d03f17bd3ef60",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_c7b00c35-4445-4fea-b7ec-73fe2df52c89_20260908_010842.json": "9a9c250e946a6ed822f81d84be9a900f8deb9315678a4e982d3caa5279953467",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_445e4e9d-e689-4bc5-a0f2-d9cf19ec2d99_20260908_010853.json": "f39c54bd23afaaf96c05672126433ec0b06b35962ff40dbb0b09860fbe03cc04",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_6e2b636c-d5c4-4913-8e03-80161a25cc2e_20260908_010858.json": "5e87a9fa5bac9a44abd07eddf39713f754bae6250680c3e7075e42b5bddda9aa",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_3dd116f6-c295-4d92-ba16-dd53833072c1_20260908_010901.json": "0b034990474f67e4080db13c68ed608d29ce39bca647e52d49c792207baa895f",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_21758785-ebec-42f9-aea5-644d763010e0_20260908_010907.json": "6e58df8144fb11554598556def82872f1f97be8e588c7c3218c7cb5491df20b9",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_1e36bb46-19a8-4ef4-85ac-6bef161ac24d_20260908_010910.json": "112e97c65f199914a960fc24ddba756b9723c77fb5a76831372905cf007a6453",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_02/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_2/e_mem_text/text_block_f0eaa6f9-578c-4196-8347-4cd51eed1387_20260908_010916.json": "88563da79af088b6c11b7d5d68291f681e2699b194a77f35124d72739f3ce903",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "0f7d9196efc497165be9b969b5b61837a7d51df2a98ae0a470876e6e48bd5f9e",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_32621567-e5d9-40a0-a257-089be04289ab_20260908_010815.json": "be615aac80aef0bc4e5d6cb898c7860d6232908002341f4c9dc0ba969f8f2f21",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/agents_metadata.json": "15dbeccdaac57c3a84b96f4e54a4e9289af42cdf627cb946584757a91ce13b00",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_5aadabdf-417c-45dd-9443-f648622b14b3_20260908_010827.json": "4485c0f677a5818a7f2fdb9665d765f7bae37bc2ecbc64019fb7f061846911f0",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_c5ca704d-7aa0-4a2a-8044-11aaeee71449_20260908_010834.json": "1b06c305fda72d700a3b4c0a17fd8be4dd6e9487d9db2dee4558e7cdbae7819f",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_7ebff8d6-ce8e-4746-ae8a-2a43a85687e7_20260908_010838.json": "2d458e05ba3056d851aa969561b7d0b04e5b4cb4dac6b62bf4f4c71c0a668c37",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_1469df80-3588-455a-acb1-88a9698ad07e_20260908_010844.json": "5e4fee67324e1500784123531c414e2fa03276ce8a01d065b5d767c61b49c0d8",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_828a8167-8ff9-4dbb-96ab-ac436730d55c_20260908_010849.json": "e8aec05110525e811fa2b04444a3dad9a672efce3d27c2c61f75c991af679a8f",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_efbbc37d-16c6-4ee2-a1c3-d8f3629472de_20260908_010857.json": "c3301305a3707ae69a26bbd92a39075e2cd8bf01e17f0e5f51b8a4391b47334a",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_7ea20391-85e4-4ac7-a184-f404ce09fc5d_20260908_010900.json": "fac2b7cb08ba98535780bcbd8a48aeeaa5a397d6bc8df24c65b71a1ebacb376e",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_6b02c3f8-5ff9-408b-a236-4beadc5342e1_20260908_010907.json": "525286ec440043998e96a8a47bd57e52efd63d2631f0a042dcb31521b25d7855",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_03/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_3/e_mem_text/text_block_1a20067c-2ffc-4ccf-bc2c-a05c5f9e552b_20260908_010911.json": "079760ac9d6a1c2ee9d1118f3d2bc78d86ff48ae3c7c61b131ce62dfcf76d3ac",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "84b7b077945238d8b3c8b9c1f4c41d6991b9f22e7473ae4ed317fc841e5f5b1d",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_16248337-fa67-4f65-847a-c733995cd815_20260908_010815.json": "15185cb8eb531e485b6e9ada194798538ae30fa989bde824cde73bc2444f9579",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/agents_metadata.json": "2b4446a8edae3171f089814f1b8aa1d70d801885b185eb45ff9552aaa1486338",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_f412bd5e-8e57-4e12-a138-eb595ebedae3_20260908_010824.json": "72c0c7d0ee3fd6e35ee261004b4afa9d52ae9d7a8b9ef04b1b07bb84b36dea12",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_a76ce2fd-7d58-4b7d-8a29-0baefc896c62_20260908_010827.json": "46e4879e3a326cffd08a80ab3c13fe30bcaa054a22931b7a48c7e3505db25b44",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_c290ce41-e17b-4d2d-ad0d-e56c39b3fcbf_20260908_010833.json": "93630424fbabb4eddd9041b1da81ccd91b54bd70b0bdc98246bc08e748844939",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_9647b76c-270e-4cba-b6aa-501b590ebc5b_20260908_010839.json": "1b7d1638a230690413ae03cdb0fd546bf95e2ccd8e956c9dd980cc5e1603eed8",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_d308cd09-4a3a-4e9c-b32f-fa38c0e5a41e_20260908_010846.json": "5b9e60ab7c7b7faf794fe34cff8df84722d9d96380c79fdcc03bac12be1b1f48",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_54a49057-2764-4f2d-8c47-ca86dbe2a8bc_20260908_010854.json": "47545ea71c4a72b01f89451b5bdb3ee8495cefbb0028bcbdcbfe7298ad775388",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_1b5bad15-98c7-42f4-ad39-48545920832d_20260908_010859.json": "261ae05745945e5223cf3aa229fc8587cae70e3aceeefdb97f9226e5ad51bf3f",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_895afba5-987f-402a-a2e8-bdac83f81d92_20260908_010904.json": "5fd499d5c091123204d8db05fb30ec8888c6443772aead2eed8853d3de145256",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_56d8e29d-51b9-42a7-922f-9a5b5bf53346_20260908_010910.json": "0cc8ae7aa79ab4252ce044d3c9cb565dff4dde29cab110dfda7f30f583f0ec6a",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_04/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_4/e_mem_text/text_block_42229796-abb9-4136-a0cc-f155deb6f56c_20260908_010916.json": "9cb33ce6870cdff3e9210983ad18810fe6994b070acd7a950646a2b68c4a267d",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "f84214c22130698600c8e578a0ffaf935a5e9539c824c0ab7e68e991d68d80d7",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_0e80e937-6ee2-4cf2-87e1-a6e8bbda13e7_20260908_010815.json": "4c04bad60e91e89351184af34be87ecd24745a53f26331ceb0043b1092e94ea8",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/agents_metadata.json": "ebc35dbd95d19ada4574735a011ccbb55ddc00e4405ae5eebe78cde5697f9be1",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_ebe3a8ec-ccb5-4b2a-a01c-9e47a9f7803a_20260908_010827.json": "032df4151fe238b0f3d57882b19e5f7ada8404a371d87f54403bf84ac95626fb",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_dbc8200e-6e30-4faa-8f36-226396843060_20260908_010836.json": "082d1234c6dfb9cc32554dff50bcda0bef0f3e4b13a55f52eff3e1c129a495bb",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_b0008830-3613-4f2b-983f-ca59db55704f_20260908_010843.json": "f70b46dcf7da22b243bcb67e3d92f722afae757e3efe95f65815af084a58adca",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_3ebef032-281a-478d-a4c6-1fa7e58dbf8b_20260908_010846.json": "d84655eaed09032e24990396886da5c40cb844f36c34bb1c084075fe009e71e5",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_053402d6-a83c-4e23-9d36-9b5859f74850_20260908_010848.json": "2499b2774ff5964409c753c9677c47deac7d05f5aa5d233106ea53dbad4e60cf",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_66f22c5e-6f14-437a-8a80-ba0628d473c3_20260908_010854.json": "60eef433e5b1b49a24d826777e0a4a81151133b3dda5548e6d8128e9cd1d8c59",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_9ade630a-8458-46c7-8f8a-1abf2fd20a2c_20260908_010902.json": "12701507895450f488f9641f4f35a2b9596e1d74aa3ae533360d79182b333e8b",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_52ec1ce4-afd8-4e75-8f57-19cda2b2b87b_20260908_010905.json": "713f6c0baad2c98240f0b0038f8471516fd523ab40f2bcfa98b1dfee323ee28f",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_4ed4bc47-c023-47a7-963c-bd497ef87fb8_20260908_010909.json": "a26e31e5c3db9671c9d47611c839d03855a1ad06dd2fd6059eed8d8bbdb29b88",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_05/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_5/e_mem_text/text_block_7144888a-715c-45d6-a850-fe68f625433d_20260908_010915.json": "b0587a8c405fff192754393f80c2686968e578ba7faa709930096fa2c801511f",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "f7b335c7d8d6a49af7cb4e0ae1c203d868c6cd94fc087a9d38ce41db0961b51e",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_7a33a5db-8697-400d-918e-b37d2a80bad5_20260908_010815.json": "6dd866b4e33c7adc059043fbb452e59268d53e4339fe9931273c4c0dbf1430ba",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/agents_metadata.json": "42904ad14577d21c22f175e948ee2df597bde2716492b8ab2f6cb6c1a1c4bf64",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_f680309e-86a8-4ea4-b4c4-bc963e7bd4b6_20260908_010828.json": "5049d6429b15ababea7f178d698787118c85a57ae4bec62cd9bcd9687faef67e",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_c87c6f2d-62f6-453b-9318-48a0784fa17f_20260908_010831.json": "04e96c8c1fdc5b27dbb9eda4f36bfb817cc400cf214b3cf90c84eab9480e3c60",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_a0ccf476-db91-48e6-be57-3050531ff98f_20260908_010835.json": "7c0f7a97f4acdff735b754d8ab857fcd1f5b22ef3666c9a2faf26ad3b274b6ac",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_701f0b24-6601-4b54-821b-80f42f514ebc_20260908_010843.json": "6d9e998a20f331223b28fd42334204d69b8823930bb667f17ea635499169bf9a",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_8a5ccbd5-bf59-4112-b5a1-b93b0f260337_20260908_010852.json": "cb75c73544d58b182d3d745f64bc3e2a91e89efd60901eaf6bcd40b348e98603",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_54c96ade-6d5e-44b1-9e9b-3dc8507e1b70_20260908_010856.json": "07a02a8465ea92d501de60588b49fd84585eb9be9d0ebe91f0d4586b5365b6a7",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_03895307-9203-42d7-95b9-1e1b5add0341_20260908_010859.json": "579bad76dd2c80ff34ec8f0cfe280d7b773f0a9c724705e3c461e25eaf4c5588",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_c6b82ce0-180d-412c-b6f0-24e2a24f9026_20260908_010904.json": "f006aa6f9a2c66735e79bc547c789b565ba181bf8a2c568dda7f33908cda2068",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_06/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_6/e_mem_text/text_block_57bcb52e-1cf1-4b0b-bd60-b7a63d1f5bda_20260908_010907.json": "93c626bc34f7eeaae9474cb7f1ad265d6652fd4c642b7d4568d8bdee56e579b5",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "fa8753879853d62d7a58407defe6a4e929ac09efad4f2dbd8f19689fcc2b9c44",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_181afc9f-f59d-4055-a07a-e3a2a1cc807a_20260908_010815.json": "6c73725234034365264952db453a2eaa6b7146c40caa094b0caa81aa4d79310b",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/agents_metadata.json": "11e789731a441ceb7753627b84f58feeb60e99353063368a304d7efd2c4896d1",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_cfddf1d3-ab8c-4d0e-a104-2a198c324e4d_20260908_010826.json": "81f6cb98d428ac66b42daab73f28af7abb858a89757d08ca432780f5285c6898",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_953f7559-c6f9-44f1-973d-a1d559ca7b50_20260908_010834.json": "fa4cb545b9bb7fe032ab35e452abfc615746c067bd1965e80aaceeadd8ebd7ba",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_9f225ee6-daf2-4cd3-abd8-67900d60c4f1_20260908_010838.json": "d5e3b36f19793d260879bf42589ee75f99ac817e127b6c9cc0a45a6a79566149",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_148cc8d0-a264-4de8-b66c-82c1ac3e0f65_20260908_010843.json": "8a60f03c1cc6fadc12d74f36b5b2fb789b893760f171697830bf1cac2df6055b",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_d14a2a6f-f177-4b94-aeea-a3a6b0bf1cd7_20260908_010848.json": "a4a21bf2d8314db08fee6393990ce9a5e9c064031072e2c49a434c7f515ea378",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_c2847a71-ca0c-495a-9e03-90b9542176f5_20260908_010853.json": "5b56e6995a78ad6f4dc13f33b5cc0e49b61a585f1ce915a385193448edbc7a7e",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_f6f96b57-417a-4195-929d-af36e203a1a1_20260908_010856.json": "e5c2f63aa7bedcd25c9cf2021cca8404a5d0d677a908a38c324e646777387145",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_2d681438-b971-491a-8489-2122afbd89fc_20260908_010859.json": "c49f22a372f9204e44d2a0276b8d064ba1ccee2a619573609bc18c7046a0ab37",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_07/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_7/e_mem_text/text_block_4c94e7c7-b3d4-49e7-b51f-7b5ab2675d0e_20260908_010906.json": "48f76db349965fd32e0f9a93cf0208296381df909a15b23569c83c7fbbc7563c",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "922c0347131fe0af8ab543d4ee8cf38da376a0b9598b648507cf7ec354ab8cc8",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_text/text_block_31f75bf1-3774-4974-b684-2430684cf053_20260908_010815.json": "cbceed6857df670eb6091d392b147ad43453aadff920472580b80653b740cc09",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_text/agents_metadata.json": "c9a7c6f33c7843599232bc4cd1d0f296daf14f7094ee5a77dcfa62cc95b106b7",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_text/text_block_7c4fd0e2-c967-4d79-b2da-65c3f9038a44_20260908_010823.json": "c2ba0067225098b6dc2f8440542e7391727b789e12e8b059dcb9c74a76bb67dd",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_text/text_block_20c21fcd-4634-48fd-9976-bc4818ecb646_20260908_010829.json": "a7c47984e9dc869a43ee58dde2c5feb1ca4f684c1c58bf275204c81f3ab48587",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_text/text_block_4911b2df-279b-497f-938c-510115c33252_20260908_010833.json": "a51dd681aaffeb4d02ac66ddc199c6dd26878d5913699b5ea812eff4fbb74d51",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_text/text_block_1c45979f-e426-4fe4-8fe0-c97471b0a3e6_20260908_010836.json": "bb2ea5324a4096dca436b9d4c4322f9b10027e5f601802e3215fbee516b3a816",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_text/text_block_4f4b988f-c42d-42e8-a7d2-328288acb46c_20260908_010841.json": "a8df149db204c42a5aae5925042c096652c3fceed06bb7d0c45f2abae10e5994",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_text/text_block_5830dd51-2b72-45d8-8a75-f49ae2ac7237_20260908_010851.json": "8bf6de282faefef71c028c2d0db0a3d16e64cca9e7e986d86813fae282bd7cac",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_08/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_8/e_mem_text/text_block_7436d941-f0ec-42a3-aec5-f4db3e6769ce_20260908_010858.json": "335a78f05a4e6aae189baab1cf3fb09900a873d5bcf907b92e49753ad06f1b52",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "9701a4c5a3b0bacf86f53253d7877683689a3ce965c96adb5cf7da7628b3e312",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_ready.txt": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_cc46873a-70a8-4492-805a-5606ab126e13_20260908_010815.json": "3825ac7be27be908f679d6fa6dff6d5a5bf3634bebe3d643d605e88cc52ab9b0",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/agents_metadata.json": "8ee618ad474559416424bdda450a847b342d024801b2bcb231a53b3debc95273",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_5ab12b8d-49b2-403e-8b3d-55a549f6a5d4_20260908_010828.json": "d62940db0ad430fe0a7c60084e5efaffd72065ebd72ca83e815839e4ef445d84",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_d366fde7-1588-48f9-9daa-e15dcfe6c454_20260908_010832.json": "d38ec66040c7a9ff8f22695ec2fee9c0b22ae8cd409b73ab126261b69fe0c50a",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_ec452a97-c194-4ac4-939a-6effa7956130_20260908_010838.json": "8711a2fe06bda7442284c8ed9431f04b06f79b62624265d25ccbeab981dd9aa1",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_87659d0b-706c-45a7-bfac-3949085ab4c1_20260908_010842.json": "9be4be08f44a6c1c7790424046a064683178c2ea8a12a901767b6e00704b3e24",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_598eecc6-71ad-429d-9f2c-b74252cb2bc9_20260908_010845.json": "c52c7c145efc5e863f246dd0c3adadf22ce392313d353b7263dd22079160be8d",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_f2e6d5dc-1702-4a0e-b5f8-f9e7962799bf_20260908_010852.json": "13a222f2479f74eaaf6415b96d65582fc842c2b57470148e5eb404914532fb00",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_9981e3c1-93a5-4c3f-b9f5-ef7d86e03137_20260908_010854.json": "7089e8fe7fe17df1793102e92ba4dd1662b15f1358bfe4b87ffbc48664ae8018",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_a9fd165f-756a-4d4f-a916-2163efe643b4_20260908_010901.json": "6d35ac348d22f534e2a8d273193cc6101519700514c2deaa21e7be0f61f088cc",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/context_09/artifacts/agents/Agentic_memory_e_mem_locomo_qa_categories_multi_hop-open_domain-single_hop-temporal_chunk1_modelQwen/Qwen3.5-9B/exp_9/e_mem_text/text_block_340616e4-3812-4a67-a6f0-1dee5209e462_20260908_010904.json": "17a5898e382ddc1fd6960cc498158d35505dc6f2c892b92c991d1dfc37504a8d",
+    "/workspace/finish-emem-amem-plan-r4.json": "92c6fca3c248a776f1411c4e43f389d82a26ce8338081f813c676bbecb381aea",
+    "/workspace/finish-emem-saved-plan-r11.json": "da6d842dad4b48d4593c96b16722b7a017a127b308ff138abe7617eae239aeaf",
+    "/workspace/locomo-emem-saved-recovery-r11/artifacts/outputs/e_mem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json": "6e266a9378ac97c75c6b851f26d0ae048818fa924c18faf27c3df2bbe349f367",
+    "/workspace/locomo-emem-saved-recovery-r11/preparation.json": "a34cd9bcafc94f51adf7c2b72533c109c65403d603abc469fbf30366c48a6d53",
+    "/workspace/locomo-emem-saved-recovery-r11/recovery_status.json": "61eddbc13a495f64cb90a03d80cab37823f957d77f535722f41e4d8bca4a8762",
+    "/workspace/locomo-emem-saved-recovery-r11/benchmark.log": "52718012c53d45b6a4c8657ca7fb920446b1192ec11906010a3f32f216e7ecc3",
+    "/workspace/locomo-emem-saved-recovery-r11/llm_usage.jsonl": "c1db32d92857b68ad29a7971d84d27b43b4ed53d3261cca77aa63e1362771e66",
+    "/workspace/locomo-emem-saved-recovery-r11/embedding_usage.jsonl": "2c334ec264dfcfcc8131d497697b0718efc90806befa3f8e79fea6556849d46a",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/usage.jsonl": "a7ba641ccc9db647346316671dfcbe7dc7d44d348b2efdd86280f326fcc43c7b",
+    "/workspace/locomo-finish-emem-amem-r4/e_mem/telemetry.json": "615e5bd9791bdc7b353ce4e830e53314ca5b788bd3e24b13a17777882c4170ce",
+    "/workspace/locomo-emem-saved-recovery-r11/telemetry.json": "0e602be127583873de23223c178c3895f9cc86c95a71745a534c813080a4f058"
+  },
+  "sources_sha256": {
+    "dataset": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+    "scorer": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd"
+  },
+  "recovery_variant": "Reuse all closed r4 memories; native retry_failed_queries only for conv-26_qa74 and conv-49_qa38. First request unchanged; incomplete native XML aggregator retries prepend XML guidance and add repetition_penalty1.1 only when no value was supplied. All retries metered. Prior attempt costs preserved separately.",
+  "postprocessing_failure": "Both recovered answers were saved; process later exited 1 importing the unrelated evaluation.longmemeval supplementary report. No inference rerun or raw edits were performed by this audit.",
+  "accounting_limitations": [
+    "One original conv-44_qa78 RemoteProtocolError has missing usage and no complete terminal response in its repair group. Its token count is unknown, not zero; exact total and full response-delivery audit remain unproven.",
+    "Selected usage retains all retries for the selected original questions. All-attempt usage also includes superseded failed QA; overlapping totals must not be added together.",
+    "Earlier diagnostics and pre-r4 attempts are not included. Diagnostic r6-b made one request without persisting usage; its cost is unknown.",
+    "GPU energy is whole-device sampled energy; original r4 overlapped the separate best-v1 job, so it is not exclusively attributable to E-Mem. Rental estimates exclude setup, idle and provider storage/bandwidth charges."
+  ],
+  "verified_at_utc": "2026-09-08 05:03:01 UTC"
+}

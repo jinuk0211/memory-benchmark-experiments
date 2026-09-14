@@ -1,0 +1,35 @@
+{
+  "recorded_utc": "2026-09-10T05:19:15.260040+00:00",
+  "scope": "Common strict metadata date parsing for two unchanged frozen calendar normalizers",
+  "command": "C:\\Python314\\python.exe -m pytest -q",
+  "cwd": "D:\\MemoryData\\migration_20260910\\paper_lme_date_adapter",
+  "implementation_subtask_run": {
+    "passed": 78,
+    "failed": 0,
+    "duration_seconds": 10.22
+  },
+  "independent_review": {
+    "agent": "/root/hold_review",
+    "role": "python-reviewer",
+    "status": "approved",
+    "tests_passed": 78,
+    "tests_failed": 0,
+    "duration_seconds": 4.42,
+    "ruff": "Clean with inherited runner E402 excluded",
+    "all_copied_source_and_clone_hashes_match": true,
+    "canonical_LME_and_LoCoMo_metadata_coverage_independently_recomputed": true
+  },
+  "approved_source_hashes": {
+    "date_metadata_adapter.py": "c1af383f5ce4911aad63be1a7a688e379b0d70fc229a29c7f6de68b4741ebf2f",
+    "test_date_metadata_adapter.py": "ab7dbb78131f5d8d5fc6baed36d0551014e267c19f74f885dd23aed33f251e06",
+    "run_transfer.py": "568bfc9432638442299d16fec9fc4216df0f45eb2604b6432f8ef8b389bcff60",
+    "COPIED_SOURCE_PROVENANCE.json": "53160164dff332bdd785e1fe6f46c67b3451a5ebedec07059410da1112824923",
+    "DATE_METADATA_COVERAGE.json": "71b4d11950171ea8c3dfba33ee34fdb7a4489dfde59dcf0bbadacead20b53dbe"
+  },
+  "copied_files": 24,
+  "modified_original_files": [],
+  "gpu_or_real_model_inference_performed_by_subtask": false,
+  "remote_deployed_by_subtask": false,
+  "runtime_capacity_generator_and_meter_changed_from_v1": false,
+  "evaluation_function_body_changed_from_v1": false
+}

@@ -1,0 +1,53 @@
+{
+  "observed_at": 1789103290.8044486,
+  "question_id": "25e5aa4f",
+  "method": "simplemem_v4",
+  "failed_stage": "qa_keyword_search",
+  "error_category": "Tantivy_Syntax_Error",
+  "native_errors": [
+    "vector_store.py:111:keyword_search",
+    "vector_store.py:112:keyword_search"
+  ],
+  "attempt_seconds": 206.24475131899817,
+  "attempt_count": 1,
+  "max_attempts": 2,
+  "retry_policy": "Existing unchanged queue retries failed histories after completing the first pass over all 500 histories",
+  "build_complete_metadata": {
+    "dialogues": 506,
+    "processed_count": 532,
+    "count_scope": "Native window count includes overlap; source coverage is dialogues.json",
+    "fts_initialized": true,
+    "seconds": 199.41274018600234
+  },
+  "completion_seal_present": false,
+  "runner_sha256": "733fb9a3f9ae33d0c62ca0099ee2e4e7f1630e6906bd216018040ab654eff582",
+  "action": "Diagnosed and retained first failed attempt for existing bounded retry; no source changes, relabeling, restart, or concurrent retry",
+  "simplemem": {
+    "method": "simplemem",
+    "planned": 500,
+    "generated": 38,
+    "failed": 1,
+    "population": 500,
+    "officially_judged": 0,
+    "status": "running",
+    "active_question_id": "ec81a493",
+    "updated_at": 1789103131.3375974
+  },
+  "lightmem": {
+    "method": "lightmem",
+    "planned": 500,
+    "population": 500,
+    "generated": 36,
+    "failed": 0,
+    "failed_ids": [],
+    "inflight": [
+      "3f1e9474"
+    ],
+    "pending": 463,
+    "status": "running",
+    "generation_complete": false,
+    "official_judge_pending": true,
+    "time": 1789103289.4714425
+  },
+  "services": "native2-simplemem                RUNNING   pid 6012, uptime 2:44:23\nnative2-lightmem                 RUNNING   pid 3078, uptime 3:56:11\nnative2-finish                   RUNNING   pid 5911, uptime 2:49:23\nnative2-cost-guard               RUNNING   pid 2829, uptime 4:03:33\n"
+}

@@ -1,0 +1,19 @@
+[
+  "/workspace/generalization_20260908/modern/.venv/bin/python",
+  "/workspace/incremental_native_usage_report_20260910/report_usage.py",
+  "--incremental-source-import",
+  "--run",
+  "/workspace/seed_parent_ablation_20260910/runs/seed_parent_locomo_qwen35_minilm_r2",
+  "--manifest",
+  "/workspace/native_usage_reports/seed_parent_locomo_incremental_r2/FROZEN_MANIFEST.json",
+  "--source-root",
+  "/workspace/seed_parent_ablation_20260910",
+  "--protocol-sha256",
+  "1ed26cb91a4db9fd46f039c4f8d3a834f352dc89d5ecad98c033b3291c3c47bb",
+  "--expected-ids",
+  "/workspace/seed_parent_ablation_20260910/runs/seed_parent_locomo_qwen35_minilm_r2/expected_ids.json",
+  "--final",
+  "seed_parent_single_2000=seed_parent_single_2000.jsonl",
+  "--out",
+  "/workspace/native_usage_reports/seed_parent_locomo_incremental_r2"
+]

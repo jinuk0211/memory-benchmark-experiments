@@ -1,0 +1,55 @@
+% Requires booktabs and graphicx.
+% Measured values are taken from the frozen RESULTS.json files.
+\begin{table}[t]
+\centering\small
+\caption{Evidence-binding comparison on all 1,540 LoCoMo questions with
+Qwen3.5-9B. Ours stores dialogue blocks and extracted facts separately.
+Differences are relative to Ours. Stored tokens are averaged over ten
+histories and read tokens over 1,540 questions. Both variants use a
+2,048-token evidence budget and memories from the same construction.}
+\label{tab:exp-ablation-final}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Variant} & \textbf{F1 (\%)} & $\boldsymbol{\Delta}$\textbf{ (pp)} & \textbf{Stored tokens} & \textbf{Read tokens} \\
+\midrule
+\textbf{Ours} & 58.7143 & +0.0000 & 60,116.4 & 2039.1 \\
++ evidence binding & 55.3733 & -3.3410 & 61,911.5 & 2011.5 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+% Historical development ablations: a different reference and population.
+\begin{table}[t]
+\centering\small
+\caption{Development component comparisons on a fixed 300-question LoCoMo
+subset with Qwen3.5-9B. All modifications are applied to the reference
+configuration with evidence binding; differences are relative to that
+reference. These are not single-component removals from the final Ours
+configuration without binding. Stored tokens are averaged over ten histories
+and read tokens over 300 questions. The evidence budget is 2,048 tokens;
+random cues use one fixed draw per history under the same additional
+2,000-token storage budget.}
+\label{tab:exp-ablation-development300}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Variant} & \textbf{F1 (\%)} & $\boldsymbol{\Delta}$\textbf{ (pp)} & \textbf{Stored tokens} & \textbf{Read tokens} \\
+\midrule
+\textbf{Reference (with evidence binding)} & 55.7975 & +0.0000 & 61,911.5 & 2013.8 \\
+w/o cues (base memory) & 55.4263 & -0.3712 & 59,960.6 & 2013.9 \\
+\midrule
+w/o omission audit & 54.7889 & -1.0087 & 60,369.8 & 2015.4 \\
+w/o temporal normalization & 52.2010 & -3.5966 & 64,294.5 & 2010.4 \\
+w/o evidence binding & 58.0424 & +2.2449 & 60,116.4 & 2038.8 \\
+Random cue selection & 55.1647 & -0.6329 & 61,880.2 & 2014.2 \\
+Payload retrieval keys & 55.6363 & -0.1612 & 61,798.0 & 2014.0 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

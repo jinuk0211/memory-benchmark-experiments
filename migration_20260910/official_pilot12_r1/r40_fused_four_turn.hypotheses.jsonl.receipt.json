@@ -1,0 +1,50 @@
+{
+  "schema": "longmemeval-official-bridge-v1",
+  "scope": "diagnostic_subset",
+  "partition": null,
+  "expected_question_ids": [
+    "118b2229",
+    "e6041065",
+    "27016adc",
+    "d6062bb9",
+    "157a136e",
+    "gpt4_b5700ca9",
+    "e4e14d04",
+    "cc6d1ec1",
+    "gpt4_7de946e7",
+    "8cf51dda",
+    "41275add",
+    "4baee567"
+  ],
+  "expected_count": 12,
+  "canonical_population_count": 500,
+  "method": "r40_fused_four_turn",
+  "model_name": "Qwen/Qwen3.5-9B",
+  "embedding_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "model": {
+    "path": "/workspace/.hf_home/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  },
+  "embedding": {
+    "path": "/workspace/.hf_home/hub/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "read_budget": 2048,
+  "extra_storage_budget": 2000,
+  "max_answer_tokens": 96,
+  "generation_data_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "canonical_parent_sha256": null,
+  "reference_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "predictions_sha256": "4ee77207cad3335efd266f7d61c133b4d19ce2381885c520f576d2da828db7e0",
+  "protocol_sha256": "e95bda1e33a0241fb53f7ca8c1fefeb5661e3f2c13a17990a05aa2894454aac0",
+  "expected_ids_manifest_sha256": "c0706e8fe2dd89f58d330840e9d3243b92df6cd4fce44410a4aaea1c630067d2",
+  "upstream_commit": "9e0b455f4ef0e2ab8f2e582289761153549043fc",
+  "upstream_sha256": {
+    "src/evaluation/evaluate_qa.py": "ecce9c4c79dc89d99534ac17b383a5cbb5b9f0c69ee98adaf0684742e3d95251",
+    "src/evaluation/print_qa_metrics.py": "e9283933a0cefb7a0ded7365e436ae3d1be5aac41853325e6155d83bf07607f0"
+  },
+  "bridge_sha256": "9659834d6cb7a51ac26171f79b434c6cb028592a1a0efb03c15c0bb67b2c5e6e",
+  "completed_empty_question_ids": [],
+  "answer_postprocessing": "none",
+  "hypotheses_sha256": "80caab782e0d672193bfb8c469bd352b998f382d119b9e764713991d33fa9848"
+}

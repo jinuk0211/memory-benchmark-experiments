@@ -1,0 +1,95 @@
+{
+  "instance_id": 50468468,
+  "captured_at": 1789089288.4220283,
+  "supervisor": "native2-simplemem                RUNNING   pid 2831, uptime 0:10:11\nnative2-lightmem                 RUNNING   pid 3078, uptime 0:02:49\nnative2-finish                   RUNNING   pid 2998, uptime 0:07:27\nnative2-cost-guard               RUNNING   pid 2829, uptime 0:10:11\n",
+  "files_sha256": {
+    "simplemem_queue.py": "8a0d961368e8e084bad0606557ba4340907a557feb4a75e0716dd40b03f52cff",
+    "lightmem_queue.py": "b8c488bd7774158e20787a1c9a3ba083aaff4dfa47f7b084f94c4103bddf0004",
+    "finish_and_stop.py": "5ac6f2a8c7053b5e92d42a109418a3af08ef9355c50b7428df3bc5dc986a086a",
+    "cost_guard.py": "c822c52db3920547d3e9c55f958c5b1ee698232e0d99fd2bf9a4d36537c4591c",
+    "run_simplemem_v3.sh": "fb7f7563124a22704bf1b43b874b9b5d4669a2cdb42bc2c74c33a66c0c692406"
+  },
+  "states": {
+    "fast_native2_20260911/simplemem_v3_runtime.json": {
+      "status": "runtime_verified",
+      "candidate": "/workspace/longmemeval_s_native7_20260910/official_recovery/simplemem_native_dialogues_v3",
+      "verified_at": 1789089252.752179,
+      "probe_question_id": "118b2229",
+      "protocol_sha256": "878196641a893c582edeccd01fe65084aa253973d73158d024fcc86aaf4124a1",
+      "integrity": {
+        "runtime_files": {
+          "official_recovery/simplemem_native_dialogues_v3/runner.py": "a0ea36852659ee86e37b7fb2779c81da9bba0a6aef9717f62b4e2e5e936d8a98"
+        }
+      }
+    },
+    "fast_native2_20260911/simplemem_status.json": {
+      "method": "simplemem",
+      "planned": 500,
+      "generated": 1,
+      "failed": 0,
+      "population": 500,
+      "officially_judged": 0,
+      "status": "running",
+      "active_question_id": "e47becba",
+      "updated_at": 1789089257.4189425
+    },
+    "fast_native2_20260911/lightmem_status.json": {
+      "method": "lightmem",
+      "planned": 500,
+      "population": 500,
+      "generated": 5,
+      "failed": 0,
+      "failed_ids": [],
+      "inflight": [
+        "c5e8278d"
+      ],
+      "pending": 494,
+      "status": "running",
+      "generation_complete": false,
+      "official_judge_pending": true,
+      "time": 1789089288.23241
+    },
+    "queue/native2_cost_guard/state.json": {
+      "instance_id": "50468468",
+      "started_at": 1789088677.8821437,
+      "last_progress": 1789089279.1864803,
+      "put_attempts": 0,
+      "successes": 67,
+      "journal_offset": 1660214,
+      "generated_total": 6,
+      "observation": {
+        "services": {
+          "native2-simplemem": "RUNNING",
+          "native2-lightmem": "RUNNING",
+          "native2-finish": "RUNNING",
+          "native7-qwen": "RUNNING",
+          "native7-minilm": "RUNNING"
+        },
+        "generated": {
+          "simplemem": 1,
+          "lightmem": 5
+        },
+        "all_terminal": false,
+        "finish": "waiting",
+        "free_bytes": 9545035776
+      },
+      "observed_at": 1789089279.1864803,
+      "status": "armed"
+    },
+    "queue/fast_native2_finish/status.json": {
+      "status": "waiting",
+      "active_owned_pids": [
+        2831,
+        3078,
+        3079,
+        3266
+      ],
+      "at_unix": 1789089262.078521
+    },
+    "queue/lightmem_bounded_reload.json": {
+      "status": "reloaded_with_current_question_preserved",
+      "finished_at": 1789089122.605978,
+      "previous_pid": 2632
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "status": "PREPARED_NOT_INSTALLED_NATIVE_PREFLIGHT_PENDING",
+  "upstream": {
+    "repository": "https://github.com/aiming-lab/SimpleMem",
+    "commit": "db80b6a7c591e0ea730a058e9f5fc4eb06572299",
+    "requirements_url": "https://raw.githubusercontent.com/aiming-lab/SimpleMem/db80b6a7c591e0ea730a058e9f5fc4eb06572299/requirements.txt",
+    "requirements_sha256": "cc62dbb8cf954b1c58928723153136af3e0759df77746de09fc2c2bb58fb9783",
+    "candidate_source_manifest_sha256": "7b8baeeffe8208e22ad7ebbccf42ce8ca77781dc296607dd7227418e2a18c795",
+    "candidate_runner_sha256": "fa8ec69b0b91a1a03544104b4ac01db4a6cf8f781f0cc61ffa86756e614b1feb"
+  },
+  "target": {
+    "python": "CPython 3.11.16",
+    "platform": "Linux x86_64 glibc >=2.28",
+    "create_with": "/workspace/longmemeval_s_native7_20260910/.venv-lightmem/bin/python",
+    "new_venv": "/workspace/longmemeval_s_native7_20260910/.venv-simplemem-native0253",
+    "existing_client_python": "3.12.14; not used to create this environment"
+  },
+  "core_import_closure": [
+    {
+      "file": "upstream/simplemem/core/models/memory_entry.py",
+      "sha256": "487209f5d6981a12568ec3f6f4597d2bd1437a82a0ef9af85c5dc755bc2947c8",
+      "third_party_imports": [
+        "pydantic"
+      ]
+    },
+    {
+      "file": "upstream/simplemem/core/utils/llm_client.py",
+      "sha256": "19533ebf5b3a12096c70ae35df54305d8b307b22240377ce1977e2aaff527bd8",
+      "third_party_imports": [
+        "openai"
+      ]
+    },
+    {
+      "file": "upstream/simplemem/core/utils/embedding.py",
+      "sha256": "da72ef639c5c0f6a6d9a0ecd5f4f45f65019da52e32191571ac718ff0b7c6d68",
+      "third_party_imports": [
+        "numpy",
+        "sentence_transformers"
+      ]
+    },
+    {
+      "file": "upstream/simplemem/core/database/vector_store_backend.py",
+      "sha256": "2406f5c267f9013af0dc34c8668def8b20b3e66326827c57d975f6129f502c26",
+      "third_party_imports": [
+        "lancedb",
+        "pyarrow",
+        "tantivy (dynamic LanceDB FTS)",
+        "lance / pylance (dynamic LanceDB FTS table.to_lance)"
+      ]
+    },
+    {
+      "file": "upstream/simplemem/core/hybrid_retriever.py",
+      "sha256": "63d6a3522e8a4c5d3a073b5dbf8ac003844c37993bf16033bb5c9a3807db5381",
+      "third_party_imports": [
+        "dateparser"
+      ]
+    }
+  ],
+  "reused_helpers": [
+    {
+      "file": "native_five.py",
+      "sha256": "c6f5ce8910ee2ee44961897e961c05f3c3dcbabd42fc43f0375c5aa459b51089",
+      "imports": "Top-level and imported digest/next_attempt/read_json/save_json/source_only/write_once/DATA_SHA256 use standard library; adapter imports are inside functions not called by this runner."
+    },
+    {
+      "file": "source/MemoryData/utils/request_metering.py",
+      "sha256": "7f5fbd4d25e36095eff4332e45b8c30393e80c37e4b93f657774ae27ae61f495",
+      "imports": "httpx plus standard library; local endpoint header/metering patch"
+    }
+  ],
+  "lancedb_fts_evidence": {
+    "official_commit": "4f7b24d1a983d72ab8e6ae162c54e96a320357aa",
+    "tag": "python-v0.25.3",
+    "source_url": "https://github.com/lancedb/lancedb/blob/4f7b24d1a983d72ab8e6ae162c54e96a320357aa/python/python/lancedb/fts.py#L109",
+    "reason_pylance_is_required": "populate_index calls table.to_lance(); LanceTable.to_lance imports lance and fails without pylance. General lancedb metadata treats pylance as optional, but this native Tantivy path requires it.",
+    "native_options": {
+      "field": "lossless_restatement",
+      "use_tantivy": true,
+      "tokenizer_name": "en_stem",
+      "replace": true
+    }
+  },
+  "original_version_exceptions": {
+    "torch": "No upstream torch pin. Select official 2.8.0+cpu CPython 3.11 wheel; matches 2025 dependency generation and >=2.2 Torch interface. It is a documented environment choice, not an authenticated original torch version.",
+    "tantivy": "Upstream has bare tantivy. Select 0.25.0, public release 2025-09-09 from the same dependency generation. Its actual LanceDB FTS contract must pass scratch preflight; not claimed to be an authenticated original version."
+  },
+  "transformers_yanked": {
+    "version": "4.57.0",
+    "reason": "Error in the setup causing installation issues",
+    "pypi_url": "https://pypi.org/project/transformers/4.57.0/",
+    "official_fix_url": "https://github.com/huggingface/transformers/releases/tag/v4.57.1",
+    "fix_commit": "0645c9ec3188e000aecf5060e2cdabcc156bb794",
+    "finding": "Official patch notes identify optional optax requirement >=0.08 causing Poetry parsing errors; corrected to >=0.0.8. This lock excludes Flax/optax extras and uv resolves the exact 4.57.0 wheel, with warning retained. This is dependency-resolution evidence only; actual SentenceTransformer import and pinned MiniLM encode remain deployment gates. No arbitrary patch upgrade is applied."
+  },
+  "excluded_unneeded": [
+    "CUDA/nvidia wheels",
+    "triton",
+    "vllm",
+    "accelerate",
+    "llmlingua",
+    "anthropic",
+    "boto3/botocore",
+    "LanceDB cloud embedding extras",
+    "langchain/langgraph/langmem",
+    "datasets",
+    "nltk",
+    "bert-score",
+    "rouge-score",
+    "torchvision/torchaudio",
+    "FastAPI/uvicorn",
+    "SimpleMem router/server extras"
+  ],
+  "exclusion_reason": "Runner creates a package namespace and imports native core only; it extracts just LoCoMoTester.convert_to_dialogues using AST, without importing test_locomo10.py or evaluation metrics. Standard MiniLM CPU path does not use Qwen3 embedding/flash attention. lance-namespace and its urllib3 client remain mandatory metadata dependencies, not selected cloud extras.",
+  "resolver": {
+    "version": "uv 0.11.13 (4512a3931 2026-05-10 x86_64-pc-windows-msvc)",
+    "command": "uv pip compile --no-cache --no-build --no-python-downloads --python-platform x86_64-unknown-linux-gnu --python-version 3.11 --generate-hashes --default-index https://pypi.org/simple --constraint upstream_constraints.txt requirements.in --output-file requirements-linux-py311.lock",
+    "exit_code": 0,
+    "package_count": 55,
+    "lock_sha256": "e4a343a9524e560ea20f41a0453ea17ec9f489b2e598152a7aa10e32f366e330",
+    "installation_performed": false,
+    "note": "Resolver downloaded the 175.5 MiB CPU torch wheel to a temporary no-cache workspace for hash/metadata resolution. It did not install any runtime or download model weights.",
+    "autogenerated_lock_header_command": "uv pip compile --no-cache --no-build --no-python-downloads --python-platform x86_64-unknown-linux-gnu --python-version 3.11 --generate-hashes --constraint upstream_constraints.txt requirements.in --output-file requirements-linux-py311.lock",
+    "command_provenance": "The actual exec_command invocation explicitly passed --default-index https://pypi.org/simple. No index environment-variable override was used. The autogenerated uv header omits this CLI option; its exact text is recorded separately rather than treated as the invocation receipt."
+  }
+}

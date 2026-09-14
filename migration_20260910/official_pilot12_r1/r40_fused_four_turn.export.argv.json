@@ -1,0 +1,21 @@
+[
+  "D:\\MemoryData\\migration_20260910\\official_eval_env\\Scripts\\python.exe",
+  "-X",
+  "utf8",
+  "D:\\MemoryData\\migration_20260910\\official_eval_tools\\official_eval_bridge.py",
+  "export",
+  "--predictions",
+  "D:\\MemoryData\\migration_20260910\\pilot_runs\\paper_frozen_lme12_qwen35_minilm_date_v2_r1\\collected\\r40_fused_four_turn.jsonl",
+  "--protocol",
+  "D:\\MemoryData\\migration_20260910\\pilot_runs\\paper_frozen_lme12_qwen35_minilm_date_v2_r1\\collected\\protocol.json",
+  "--reference",
+  "D:\\MemoryData\\MemoryData\\datasets\\LongMemEval\\longmemeval_s_cleaned.json",
+  "--expected-ids",
+  "D:\\MemoryData\\migration_20260910\\PILOT_EXPECTED_IDS.json",
+  "--vendor",
+  "D:\\MemoryData\\migration_20260910\\official_longmemeval",
+  "--method",
+  "r40_fused_four_turn",
+  "--hypotheses",
+  "D:\\MemoryData\\migration_20260910\\official_pilot12_r1\\r40_fused_four_turn.hypotheses.jsonl"
+]

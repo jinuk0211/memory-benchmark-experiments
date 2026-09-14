@@ -1,0 +1,85 @@
+% Generated from token_points.csv; coordinates retain unrounded F1.
+% All drawing is native PGFPlots/TikZ; no image or runtime CSV dependency.
+\begin{tikzpicture}
+\begin{axis}[locomo axis,
+  width=\linewidth, height=9.3cm,
+  xmode=log, log basis x=10, x dir=reverse,
+  xmin=3.1, xmax=90, ymin=26, ymax=62,
+  xtick={5,10,20,40,80}, xticklabels={5,10,20,40,80},
+  ytick={30,35,40,45,50,55,60},
+  xlabel={Selected build + QA LLM tokens (millions; fewer $\rightarrow$)},
+  ylabel={LoCoMo F1 (\%)},
+  title={All 15 verified configurations},
+]
+% Pareto frontier: r40_fused_four_turn -> seed -> E-Mem
+\addplot[locomoFront,line width=0.9pt,mark=none] coordinates {(4.112703,55.522370815731) (4.153930,56.259732743653)};
+\addplot[locomoFront,line width=0.9pt,mark=none,dashed] coordinates {(4.153930,56.259732743653) (60.802774,56.956713132400)};
+% point: Naive
+\addplot[only marks,mark=square*,mark size=1.9pt,color=locomoRef,mark options={solid,fill=locomoRef}] coordinates {(54.106911,55.168899662722)};
+\node[locomo label,anchor=north] (lp0) at ([xshift=0pt,yshift=-18pt]axis cs:54.106911,55.168899662722) {Full-context reference\\55.17\,\textperiodcentered\,54.11\,M};
+\draw[locomo leader] (axis cs:54.106911,55.168899662722) -- (lp0);
+% point: Mem0
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoBase,mark options={solid,fill=locomoBase}] coordinates {(27.370629,36.498358527181)};
+\node[locomo label,anchor=north east] (lp1) at ([xshift=-13pt,yshift=-19pt]axis cs:27.370629,36.498358527181) {Mem0\\36.50\,\textperiodcentered\,27.37\,M};
+\draw[locomo leader] (axis cs:27.370629,36.498358527181) -- (lp1);
+% point: A-MEM
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoBase,mark options={solid,fill=locomoBase}] coordinates {(27.285662,36.845900352297)};
+\node[locomo label,anchor=east] (lp2) at ([xshift=-26pt,yshift=9pt]axis cs:27.285662,36.845900352297) {A-MEM\\36.85\,\textperiodcentered\,27.29\,M};
+\draw[locomo leader] (axis cs:27.285662,36.845900352297) -- (lp2);
+% point: LangMem
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoBase,mark options={solid,fill=locomoBase}] coordinates {(25.942379,29.932364233427)};
+\node[locomo label,anchor=west] (lp3) at ([xshift=14pt,yshift=-7pt]axis cs:25.942379,29.932364233427) {LangMem\\29.93\,\textperiodcentered\,25.94\,M};
+\draw[locomo leader] (axis cs:25.942379,29.932364233427) -- (lp3);
+% point: SimpleMem
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoBase,mark options={solid,fill=locomoBase}] coordinates {(19.777906,38.189101665135)};
+\node[locomo label,anchor=north west] (lp4) at ([xshift=12pt,yshift=-20pt]axis cs:19.777906,38.189101665135) {SimpleMem\\38.19\,\textperiodcentered\,19.78\,M};
+\draw[locomo leader] (axis cs:19.777906,38.189101665135) -- (lp4);
+% point: LightMem_official
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoBase,mark options={solid,fill=locomoBase}] coordinates {(5.300706,40.326188136839)};
+\node[locomo label,anchor=north west] (lp5) at ([xshift=7pt,yshift=-15pt]axis cs:5.300706,40.326188136839) {LightMem (official)\\40.33\,\textperiodcentered\,5.30\,M};
+\draw[locomo leader] (axis cs:5.300706,40.326188136839) -- (lp5);
+% point: HiGMem
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoBase,mark options={solid,fill=locomoBase}] coordinates {(38.514830,40.333102462136)};
+\draw[-{Stealth[length=3pt]},locomoBase,thin] (axis cs:39.477701,40.333102462136) -- (axis cs:46.217796,40.333102462136);
+\node[locomo label,anchor=east] (lp6) at ([xshift=-9pt,yshift=12pt]axis cs:38.514830,40.333102462136) {HiGMem\\40.33\,\textperiodcentered\,$\geq$38.51\,M};
+\draw[locomo leader] (axis cs:38.514830,40.333102462136) -- (lp6);
+% point: E-Mem
+\addplot[only marks,mark=o,mark size=3.8pt,locomoFront,thin] coordinates {(60.802774,56.956713132400)};
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoBase,mark options={solid,fill=locomoBase}] coordinates {(60.802774,56.956713132400)};
+\draw[-{Stealth[length=3pt]},locomoBase,thin] (axis cs:62.322843,56.956713132400) -- (axis cs:72.963329,56.956713132400);
+\node[locomo label,anchor=south west] (lp7) at ([xshift=6pt,yshift=16pt]axis cs:60.802774,56.956713132400) {\textbf{E-Mem}\\56.96\,\textperiodcentered\,$\geq$60.80\,M};
+\draw[locomo leader] (axis cs:60.802774,56.956713132400) -- (lp7);
+% point: s_parent_single_2000
+\addplot[only marks,mark=star,mark size=3.2pt,color=locomoOur,mark options={solid,fill=locomoOur}] coordinates {(10.356854,55.527813502277)};
+\node[locomo label,anchor=north west,draw=locomoOur,rounded corners=2pt,fill=white,inner sep=3pt,text=locomoOur] (lp8) at ([xshift=10pt,yshift=-18pt]axis cs:10.356854,55.527813502277) {\textbf{Our method$^{\dagger}$}\\55.53\,\textperiodcentered\,10.36\,M};
+\draw[locomo leader] (axis cs:10.356854,55.527813502277) -- (lp8);
+% point: LightMem_pipeline
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoVariant,mark options={solid,fill=locomoVariant}] coordinates {(5.582404,46.595381360542)};
+\node[locomo label,anchor=south east] (lp9) at ([xshift=-9pt,yshift=12pt]axis cs:5.582404,46.595381360542) {LightMem (pipeline)\\46.60\,\textperiodcentered\,5.58\,M};
+\draw[locomo leader] (axis cs:5.582404,46.595381360542) -- (lp9);
+% point: LightMem_direct
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoVariant,mark options={solid,fill=locomoVariant}] coordinates {(15.267609,38.200584947273)};
+\node[locomo label,anchor=south west] (lp10) at ([xshift=12pt,yshift=13pt]axis cs:15.267609,38.200584947273) {LightMem (direct)\\38.20\,\textperiodcentered\,15.27\,M};
+\draw[locomo leader] (axis cs:15.267609,38.200584947273) -- (lp10);
+% point: CertMem_v15
+\addplot[only marks,mark=*,mark size=1.9pt,color=locomoVariant,mark options={solid,fill=locomoVariant}] coordinates {(27.163164,42.226144039353)};
+\node[locomo label,anchor=south] (lp11) at ([xshift=0pt,yshift=20pt]axis cs:27.163164,42.226144039353) {CertMem v15\\42.23\,\textperiodcentered\,27.16\,M};
+\draw[locomo leader] (axis cs:27.163164,42.226144039353) -- (lp11);
+% point: recursive_source_rehearsal_v1
+\addplot[only marks,mark=diamond*,mark size=1.9pt,color=locomoInternal,mark options={solid,fill=locomoInternal}] coordinates {(13.149892,55.856015436896)};
+\node[locomo label,anchor=south east] (lp12) at ([xshift=-18pt,yshift=24pt]axis cs:13.149892,55.856015436896) {Recursive v1$^{\dagger}$\\55.86\,\textperiodcentered\,13.15\,M};
+\draw[locomo leader] (axis cs:13.149892,55.856015436896) -- (lp12);
+% point: seed
+\addplot[only marks,mark=o,mark size=3.8pt,locomoFront,thin] coordinates {(4.153930,56.259732743653)};
+\addplot[only marks,mark=diamond*,mark size=1.9pt,color=locomoInternal,mark options={solid,fill=locomoInternal}] coordinates {(4.153930,56.259732743653)};
+\node[locomo label,anchor=south] (lp13) at ([xshift=-3pt,yshift=18pt]axis cs:4.153930,56.259732743653) {\textbf{Seed$^{\dagger}$}\\56.26\,\textperiodcentered\,4.15\,M};
+\draw[locomo leader] (axis cs:4.153930,56.259732743653) -- (lp13);
+% point: r40_fused_four_turn
+\addplot[only marks,mark=o,mark size=3.8pt,locomoFront,thin] coordinates {(4.112703,55.522370815731)};
+\addplot[only marks,mark=diamond*,mark size=1.9pt,color=locomoInternal,mark options={solid,fill=locomoInternal}] coordinates {(4.112703,55.522370815731)};
+\node[locomo label,anchor=north east] (lp14) at ([xshift=-10pt,yshift=-14pt]axis cs:4.112703,55.522370815731) {\textbf{R40$^{\dagger}$}\\55.52\,\textperiodcentered\,4.11\,M};
+\draw[locomo leader] (axis cs:4.112703,55.522370815731) -- (lp14);
+\draw[locomoFront,line width=0.9pt] (axis description cs:0.025,0.07) -- (axis description cs:0.080,0.07);
+\node[locomo label,text=locomoMuted,anchor=west] at (axis description cs:0.092,0.07) {Pareto frontier at accounted token totals};
+\end{axis}
+\end{tikzpicture}

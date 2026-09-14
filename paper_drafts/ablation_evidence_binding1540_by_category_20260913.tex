@@ -1,0 +1,26 @@
+% Requires booktabs, multirow, and graphicx.
+% F1 values generated from locomo_binding1540_20260913/results/RESULTS.json.
+\begin{table*}[t]
+\centering\small
+\caption{Evidence-binding ablation on all 1,540 LoCoMo questions with Qwen3.5-9B.
+Overall F1 is the question-weighted mean. Both rows use the frozen memories
+from the same construction. GPT-4o accuracy is evaluated for the binding-removed row on all 1,540 questions; the complete-method row has not been judged and is shown as \textemdash.}
+\label{tab:exp-binding1540-category}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+\multirow{2}{*}{\textbf{Model}} & \multirow{2}{*}{\textbf{Method}}
+& \multicolumn{5}{c}{\textbf{F1 (\%)}}
+& \multirow{2}{*}{\shortstack{\textbf{GPT-4o}\\\textbf{Accuracy (\%)}}} \\
+\cmidrule(lr){3-7}
+& & \textbf{Multi-hop} & \textbf{Temporal}
+& \textbf{Open-domain} & \textbf{Single-hop} & \textbf{Overall} & \\
+\midrule
+\multirow{2}{*}{\textbf{Qwen3.5-9B}} & \textbf{Our method} & 38.97 & 50.64 & 15.29 & 67.26 & 55.37 & \textemdash \\
+ & w/o evidence binding & 43.74 & 53.28 & 16.79 & 70.60 & 58.71 & 75.13 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

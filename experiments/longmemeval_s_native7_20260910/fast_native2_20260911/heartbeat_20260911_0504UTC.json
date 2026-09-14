@@ -1,0 +1,73 @@
+
+{
+  "observed_at": 1789103055.145709,
+  "guide_sha256": "b7983a0d3e2157340ff8d1534b0b557352b0392ff40fc1976bdbca97b096579f",
+  "simplemem": {
+    "method": "simplemem",
+    "planned": 500,
+    "generated": 37,
+    "failed": 1,
+    "population": 500,
+    "officially_judged": 0,
+    "status": "running",
+    "active_question_id": "577d4d32",
+    "updated_at": 1789102853.1307735
+  },
+  "lightmem": {
+    "method": "lightmem",
+    "planned": 500,
+    "population": 500,
+    "generated": 35,
+    "failed": 0,
+    "failed_ids": [],
+    "inflight": [
+      "60d45044"
+    ],
+    "pending": 464,
+    "status": "running",
+    "generation_complete": false,
+    "official_judge_pending": true,
+    "time": 1789103053.3858953
+  },
+  "guard": {
+    "instance_id": "50468468",
+    "started_at": 1789088677.8821437,
+    "last_progress": 1789102995.884333,
+    "put_attempts": 0,
+    "successes": 1865,
+    "journal_offset": 3109464,
+    "generated_total": 72,
+    "observation": {
+      "services": {
+        "native2-simplemem": "RUNNING",
+        "native2-lightmem": "RUNNING",
+        "native2-finish": "RUNNING",
+        "native7-qwen": "RUNNING",
+        "native7-minilm": "RUNNING"
+      },
+      "generated": {
+        "simplemem": 37,
+        "lightmem": 35
+      },
+      "all_terminal": false,
+      "finish": "waiting",
+      "free_bytes": 9217531904
+    },
+    "observed_at": 1789102995.884333,
+    "status": "armed"
+  },
+  "finish": {
+    "status": "waiting",
+    "active_owned_pids": [
+      3078,
+      6012,
+      14129,
+      14242
+    ],
+    "at_unix": 1789103034.8465736
+  },
+  "supervisor": "native2-simplemem                RUNNING   pid 6012, uptime 2:40:28\nnative2-lightmem                 RUNNING   pid 3078, uptime 3:52:16\nnative2-finish                   RUNNING   pid 5911, uptime 2:45:28\nnative2-cost-guard               RUNNING   pid 2829, uptime 3:59:38\n",
+  "gpu": "99, 30715, 32607",
+  "free_bytes": 9216503808,
+  "v4_runtime_receipt_exists": true
+}

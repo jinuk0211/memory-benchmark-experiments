@@ -1,0 +1,34 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "dataset_sha256": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+  "thinking": false,
+  "max_tokens": null,
+  "temperature": 0,
+  "k_event": 10,
+  "k_turn": 10,
+  "profiles": false,
+  "links": false,
+  "event_mode": "metadata",
+  "categories": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "evaluator_sha256": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+  "code_hashes": {
+    "run_vast.py": "8f49a395552c13a44f5b2b1a5276414eb35a8ca8fc60dc33bcf337dba36a4cf0",
+    "fphm_core.py": "27482d2f43d5ae4ab2570c397cfd5e884e457e1240f3ef76f198ec5bcc7a87bb",
+    "prompts.py": "161d2223545620bd1c2f23fe69f6f916ed23cf08a22e2d85e9be8d2c59c07aff",
+    "memory_layer.py": "0485bd7da21d800e875222662381448a1b92fca4642be004795a24987e7e7c1b"
+  },
+  "serving_config": "[program:higmem-vllm]\ncommand=/venv/main/bin/vllm serve Qwen/Qwen3.5-9B --host 127.0.0.1 --port 18080 --language-model-only --dtype float16 --max-model-len 32768 --max-num-seqs 48 --max-num-batched-tokens 8192 --gpu-memory-utilization 0.92 --enable-prefix-caching --reasoning-parser qwen3\ndirectory=/workspace/HiGMem\nenvironment=HF_HOME=\"/workspace/.hf_home\",OMP_NUM_THREADS=\"4\"\nautostart=false\nautorestart=false\nredirect_stderr=true\nstdout_logfile=/workspace/HiGMem/vllm.log\nstdout_logfile_maxbytes=50000000\nstdout_logfile_backups=1\nstopasgroup=true\nkillasgroup=true\n",
+  "versions": {
+    "vllm": "0.28.0",
+    "torch": "2.13.0",
+    "transformers": "5.16.1",
+    "sentence-transformers": "6.0.1",
+    "openai": "2.54.0"
+  },
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+}

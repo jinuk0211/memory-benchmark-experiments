@@ -1,0 +1,30 @@
+{
+  "source_file_count": 13256,
+  "unique_source_contents": 862,
+  "source_bytes": 122957440,
+  "file_hash_mismatches": [],
+  "minilm_launch_pins_matched": 124,
+  "minilm_launch_omitted_files": [
+    "data/locomo10.json"
+  ],
+  "minilm_launch_hash_mismatches": [],
+  "credential_pattern_hits": [],
+  "readme_broken_links": [],
+  "historical_precopy_pins_not_found": [
+    {
+      "source": "snapshots/recursive_minilm/COPIED_SOURCE.json",
+      "file": "runtime_meter.py",
+      "sha256": "5f84c2b88c251d2cfaeba4666c3728f998ac01197cfe515b279d20a6ef4a36c8"
+    },
+    {
+      "source": "snapshots/recursive_minilm/COPIED_SOURCE.json",
+      "file": "test_refined_runtime.py",
+      "sha256": "a3c3382b74cc76233d8678f29df4a599aea6a0ac82e93e09f64cabab3421b63f"
+    }
+  ],
+  "notes": [
+    "Historical COPIED_SOURCE.json records pre-adaptation versions. Latest launch pins are checked separately.",
+    "Generic credential candidates were upstream PostHog public project keys and fixed local inference placeholders, not personal access keys.",
+    "No model inference or reproduction tests were executed; copied source bytes were checked."
+  ]
+}

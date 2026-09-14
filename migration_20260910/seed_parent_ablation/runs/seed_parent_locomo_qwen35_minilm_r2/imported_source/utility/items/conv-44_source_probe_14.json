@@ -1,0 +1,496 @@
+{
+  "question": "What does Audrey say about the way nature affects thinking?",
+  "answer": "It's incredible how nature can make us think differently",
+  "source_ids": [
+    "D8:26"
+  ],
+  "candidate_context_ids": [
+    "D8:25",
+    "D8:26",
+    "D8:27",
+    "D8:28"
+  ],
+  "answer_spans": [
+    {
+      "source_id": "D8:26",
+      "start": 6,
+      "end": 62,
+      "verbatim": "It's incredible how nature can make us think differently"
+    }
+  ],
+  "session": 8,
+  "recorded_date": "5:23 pm on 13 June, 2023",
+  "conv_id": "conv-44",
+  "split": "probe_fit",
+  "id": "conv-44:source_probe:14",
+  "analysis": {
+    "full_advantage": 1.9613069227504185,
+    "source_dependent": true,
+    "best_single_sources": [
+      "D8:26"
+    ],
+    "best_pair_sources": [
+      "D8:25",
+      "D8:26"
+    ],
+    "minimum_sources": [
+      "D8:26"
+    ],
+    "minimum_tokens": 43,
+    "single_policy_sources": [
+      "D8:26"
+    ],
+    "single_policy_tokens": 43,
+    "full_tokens": 147,
+    "best_pair_lift_over_best_single": -0.05379460185238258,
+    "pair_interactions": [
+      {
+        "source_ids": [
+          "D8:25",
+          "D8:26"
+        ],
+        "joint_lift": -0.05379460185238258,
+        "interaction": 0.7880508941464761,
+        "advantage": 2.0124951452148707
+      },
+      {
+        "source_ids": [
+          "D8:25",
+          "D8:27"
+        ],
+        "joint_lift": -0.2630067616701126,
+        "interaction": 1.1738814398646351,
+        "advantage": -1.1048522576689717
+      },
+      {
+        "source_ids": [
+          "D8:25",
+          "D8:28"
+        ],
+        "joint_lift": 0.17754181027412397,
+        "interaction": 1.019387306272983,
+        "advantage": -0.6040085807442663
+      },
+      {
+        "source_ids": [
+          "D8:26",
+          "D8:27"
+        ],
+        "joint_lift": -0.08527388164015974,
+        "interaction": 1.3516143198945878,
+        "advantage": 1.9810158654270937
+      },
+      {
+        "source_ids": [
+          "D8:26",
+          "D8:28"
+        ],
+        "joint_lift": -0.08685293430046385,
+        "interaction": 0.6946974567179263,
+        "advantage": 1.9794368127667896
+      },
+      {
+        "source_ids": [
+          "D8:27",
+          "D8:28"
+        ],
+        "joint_lift": -0.2040683627128601,
+        "interaction": 1.2328198388218876,
+        "advantage": -0.9856187537312504
+      }
+    ],
+    "has_preserving_pair_without_preserving_single": false
+  },
+  "generations": {
+    "empty": {
+      "text": "unknown",
+      "finish_reason": "stop",
+      "source_ids": [],
+      "context_tokens": 0,
+      "source_answer_f1": 0.0
+    },
+    "full": {
+      "text": "It's incredible how nature can make us think differently.",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D8:25",
+        "D8:26",
+        "D8:27",
+        "D8:28"
+      ],
+      "context_tokens": 147,
+      "source_answer_f1": 1.0
+    },
+    "answer_removed": {
+      "text": "making us feel alive and centered",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D8:25",
+        "D8:27",
+        "D8:28"
+      ],
+      "context_tokens": 125,
+      "source_answer_f1": 0.125
+    },
+    "best_single": {
+      "text": "It's incredible how nature can make us think differently.",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D8:26"
+      ],
+      "context_tokens": 43,
+      "source_answer_f1": 1.0
+    },
+    "best_pair": {
+      "text": "It's incredible how nature can make us think differently.",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D8:25",
+        "D8:26"
+      ],
+      "context_tokens": 79,
+      "source_answer_f1": 1.0
+    },
+    "minimum_bundle": {
+      "text": "It's incredible how nature can make us think differently.",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D8:26"
+      ],
+      "context_tokens": 43,
+      "source_answer_f1": 1.0
+    },
+    "single_policy": {
+      "text": "It's incredible how nature can make us think differently.",
+      "finish_reason": "stop",
+      "source_ids": [
+        "D8:26"
+      ],
+      "context_tokens": 43,
+      "source_answer_f1": 1.0
+    }
+  },
+  "subsets": [
+    {
+      "kind": "empty",
+      "source_ids": [],
+      "context_tokens": 0,
+      "score": {
+        "mean_logprob": -2.109056715667248,
+        "sum_logprob": -21.090567156672478,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -4.674070835113525,
+          -1.7377355098724365,
+          -6.201902866363525,
+          -0.7275664210319519,
+          -0.38961148262023926,
+          -0.7681971192359924,
+          -1.9441673755645752,
+          -3.2554049491882324,
+          -0.14155332744121552,
+          -1.2503572702407837
+        ]
+      }
+    },
+    {
+      "kind": "full",
+      "source_ids": [
+        "D8:25",
+        "D8:26",
+        "D8:27",
+        "D8:28"
+      ],
+      "context_tokens": 147,
+      "score": {
+        "mean_logprob": -0.14774979291682938,
+        "sum_logprob": -1.477497929168294,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -0.4694889783859253,
+          -1.0040419101715088,
+          -0.0007419217727147043,
+          -0.001057423185557127,
+          -0.0004922132357023656,
+          -3.075552376685664e-05,
+          -4.291525328881107e-06,
+          -0.0015432840446010232,
+          -5.125986263010418e-06,
+          -9.202533692587167e-05
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D8:25"
+      ],
+      "context_tokens": 57,
+      "score": {
+        "mean_logprob": -2.950902211666107,
+        "sum_logprob": -29.509022116661072,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -7.256465435028076,
+          -0.3689466118812561,
+          -13.6160888671875,
+          -0.5857152938842773,
+          -0.9921069145202637,
+          -0.4983749985694885,
+          -2.5391268730163574,
+          -1.7411704063415527,
+          -0.4287528991699219,
+          -1.482273817062378
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D8:26"
+      ],
+      "context_tokens": 43,
+      "score": {
+        "mean_logprob": -0.04276696859999447,
+        "sum_logprob": -0.4276696859999447,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -0.2685878872871399,
+          -0.1381448656320572,
+          -0.002629753202199936,
+          -0.01749418117105961,
+          -0.00045753977610729635,
+          -0.00014327930693980306,
+          -5.960446742392378e-06,
+          -0.00015209948469419032,
+          -2.7418097943154862e-06,
+          -5.1377883210079744e-05
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D8:27"
+      ],
+      "context_tokens": 60,
+      "score": {
+        "mean_logprob": -3.5459449172019957,
+        "sum_logprob": -35.45944917201996,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -5.59052848815918,
+          -0.30530738830566406,
+          -15.736126899719238,
+          -5.014313697814941,
+          -0.5301578044891357,
+          -0.6335909366607666,
+          -3.4802470207214355,
+          -2.162653923034668,
+          -1.2479290962219238,
+          -0.7585939168930054
+        ]
+      }
+    },
+    {
+      "kind": "single",
+      "source_ids": [
+        "D8:28"
+      ],
+      "context_tokens": 50,
+      "score": {
+        "mean_logprob": -2.8906071066856383,
+        "sum_logprob": -28.906071066856384,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -1.772841215133667,
+          -7.927230358123779,
+          -9.367073059082031,
+          -1.8563141822814941,
+          -0.5705304145812988,
+          -0.5787608623504639,
+          -1.387091040611267,
+          -0.7505285739898682,
+          -3.1493799686431885,
+          -1.5463213920593262
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D8:25",
+        "D8:26"
+      ],
+      "context_tokens": 79,
+      "score": {
+        "mean_logprob": -0.09656157045237705,
+        "sum_logprob": -0.9656157045237705,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -0.4134233891963959,
+          -0.5484207272529602,
+          -0.001158043509349227,
+          -0.0012386515736579895,
+          -0.00013433984713628888,
+          -2.90866428258596e-05,
+          -3.933898824470816e-06,
+          -0.001141373417340219,
+          -3.4570634852570947e-06,
+          -6.270212179515511e-05
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D8:25",
+        "D8:27"
+      ],
+      "context_tokens": 96,
+      "score": {
+        "mean_logprob": -3.2139089733362196,
+        "sum_logprob": -32.1390897333622,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -8.192851066589355,
+          -0.3320535123348236,
+          -11.869742393493652,
+          -3.957345962524414,
+          -0.79227215051651,
+          -0.5335124731063843,
+          -3.0083038806915283,
+          -1.6768171787261963,
+          -0.8590775728225708,
+          -0.9171135425567627
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D8:25",
+        "D8:28"
+      ],
+      "context_tokens": 86,
+      "score": {
+        "mean_logprob": -2.7130652964115143,
+        "sum_logprob": -27.130652964115143,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -2.5152974128723145,
+          -4.455751895904541,
+          -10.989494323730469,
+          -1.6595404148101807,
+          -0.8681754469871521,
+          -0.5043606758117676,
+          -1.8600598573684692,
+          -0.7287333011627197,
+          -2.0023772716522217,
+          -1.5468623638153076
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D8:26",
+        "D8:27"
+      ],
+      "context_tokens": 82,
+      "score": {
+        "mean_logprob": -0.1280408502401542,
+        "sum_logprob": -1.2804085024015421,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -0.3873370289802551,
+          -0.8873184323310852,
+          -0.0016456407029181719,
+          -0.0015470929211005569,
+          -0.0023148665204644203,
+          -0.0001212284987559542,
+          -3.6954811548639555e-06,
+          -7.045020902296528e-05,
+          -2.264974000354414e-06,
+          -4.7801782784517854e-05
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D8:26",
+        "D8:28"
+      ],
+      "context_tokens": 72,
+      "score": {
+        "mean_logprob": -0.12961990290045833,
+        "sum_logprob": -1.2961990290045833,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -0.45126059651374817,
+          -0.8329477906227112,
+          -0.0022182876709848642,
+          -0.006383978761732578,
+          -0.0030915583483874798,
+          -9.583967766957358e-05,
+          -4.887569048150908e-06,
+          -7.497983460780233e-05,
+          -6.079655122448457e-06,
+          -0.00011503035057103261
+        ]
+      }
+    },
+    {
+      "kind": "pair",
+      "source_ids": [
+        "D8:27",
+        "D8:28"
+      ],
+      "context_tokens": 89,
+      "score": {
+        "mean_logprob": -3.0946754693984984,
+        "sum_logprob": -30.946754693984985,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -2.1197454929351807,
+          -3.4172604084014893,
+          -13.188124656677246,
+          -4.185032367706299,
+          -0.6170814037322998,
+          -0.6748118996620178,
+          -2.027599573135376,
+          -0.5243077278137207,
+          -3.2685635089874268,
+          -0.9242276549339294
+        ]
+      }
+    },
+    {
+      "kind": "answer_removed",
+      "source_ids": [
+        "D8:25",
+        "D8:27",
+        "D8:28"
+      ],
+      "context_tokens": 125,
+      "score": {
+        "mean_logprob": -2.9709584772586823,
+        "sum_logprob": -29.709584772586823,
+        "answer_tokens": 10,
+        "token_logprobs": [
+          -2.405364513397217,
+          -1.481122374534607,
+          -13.717680931091309,
+          -4.101529121398926,
+          -0.6593032479286194,
+          -0.6352722644805908,
+          -1.8600969314575195,
+          -0.5765997171401978,
+          -3.276334285736084,
+          -0.9962813854217529
+        ]
+      }
+    }
+  ]
+}

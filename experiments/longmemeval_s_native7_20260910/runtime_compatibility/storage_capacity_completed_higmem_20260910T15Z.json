@@ -1,0 +1,32 @@
+{
+  "recorded_at_utc": "2026-09-10T15:09:43.0412047Z",
+  "observation_file": "remote_verification/three_method_scope_inventory_20260910T15Z.json",
+  "remote_free_bytes": 9779990528,
+  "local_backup_free_bytes": 392302088192,
+  "current_task_methods": [
+    "higmem",
+    "lightmem",
+    "simplemem"
+  ],
+  "smoke": {
+    "higmem_native_log_bytes": 23187643,
+    "qid": "e47becba",
+    "turns": 550,
+    "higmem_physical_journal_bytes": 1362410,
+    "higmem_whole_backup_bytes": 3658418,
+    "lightmem_whole_backup_bytes": 1317620
+  },
+  "canonical_turns": 246750,
+  "linear_higmem_native_bytes": 10402819837.0,
+  "linear_higmem_native_plus_physical_bytes": 11014046505.0,
+  "estimate_limit": "Single completed smoke extrapolation, not a capacity bound; excludes source/DB/timing files, other methods and failed attempts; compressed archive ratio is not guaranteed",
+  "conclusion": "Current free disk is less than the extrapolated HiGMem native+physical logs alone. Full500 needs bounded batches with verified completed-artifact backup/offload and free-space checks. No files removed or capacity changed.",
+  "preservation_rules": [
+    "Keep all running attempt files and logs intact",
+    "Back up completed attempts plus predictions/protocol/source/runtime proofs to local disk and verify archive/member hashes before offload",
+    "HiGMem completed native logs may be offloaded only after confirming original cache validation does not require them; retain exact local raw-file backup and remote archive pointer/hash outside native attempt",
+    "SimpleMem sealed attempt files stay byte-identical at original paths; no compressed replacement inside attempts",
+    "Do not delete shared physical usage journal while services hold it open; copy closed bounded records or rotate only with controlled service-safe handling",
+    "No fixed full500 storage guarantee until actual SimpleMem smoke artifact size is measured"
+  ]
+}

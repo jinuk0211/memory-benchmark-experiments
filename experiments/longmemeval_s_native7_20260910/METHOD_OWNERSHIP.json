@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-09-10T15:06:57.5331770Z",
+  "user_instruction": "걍 너는 higmem, lightmem, simplemem 하셈",
+  "scope": "Whole-method ownership; each owned method uses all 500 canonical question IDs",
+  "current_task": {
+    "gpu_uuid": "GPU-2e24d314-badb-334a-729b-d219b2b7d0ea",
+    "questions_per_method": 500,
+    "server": "root@ssh1.vast.ai:28469",
+    "remote_root": "/workspace/longmemeval_s_native7_20260910",
+    "target_answers": 1500,
+    "methods": [
+      "higmem",
+      "lightmem",
+      "simplemem"
+    ]
+  },
+  "other_gpu_work": {
+    "execution_status": "Not observed",
+    "methods": [
+      "e_mem",
+      "a_mem",
+      "mem0",
+      "langmem"
+    ],
+    "server": "Not specified; no launch or mutation by this task"
+  },
+  "rules": [
+    "Do not launch e_mem/a_mem/mem0/langmem on this task GPU",
+    "Do not restart the old seven-only native7-launcher/native7-resume/run_all queue",
+    "No 250/250 question split; all 500 IDs belong to each method owner",
+    "Reuse prior successful smoke only with matching input/source/model/protocol",
+    "Keep original methods, pinned local Qwen/MiniLM and native method settings; no paid APIs",
+    "Require the current three methods to pass the shared full-history smoke gate before full500",
+    "Preserve other-method artifacts; they do not authorize more execution here"
+  ],
+  "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442"
+}

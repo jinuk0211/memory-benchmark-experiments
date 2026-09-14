@@ -1,0 +1,808 @@
+{
+  "schema_version": 1,
+  "metric": "Official LoCoMo F1 percent",
+  "category_labels": {
+    "1": "Multi-hop",
+    "2": "Temporal",
+    "3": "Open-domain",
+    "4": "Single-hop"
+  },
+  "validation": {
+    "all_category_counts_match_population": true,
+    "weighted_category_means_match_overall": true,
+    "max_tolerance": 1e-8
+  },
+  "rows": [
+    {
+      "method": "E-Mem",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 56.95671313240028,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 44.87178715697641
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 54.66652704695585
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 30.637433663785835
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 64.88744997839812
+        }
+      ]
+    },
+    {
+      "method": "LightMem_pipeline",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 46.59538136054212,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 42.00997162268821
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 34.35600432475523
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 24.31321627816917
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 55.348072707117865
+        }
+      ]
+    },
+    {
+      "method": "HiGMem",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 40.33310246213628,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 27.948019220342868
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 26.397238967332427
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 12.702605034458388
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 52.95918261561412
+        }
+      ]
+    },
+    {
+      "method": "LightMem_direct",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 38.20058494727273,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 36.48820155123694
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 22.70954364440332
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 24.668670751260034
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 46.23219034408652
+        }
+      ]
+    },
+    {
+      "method": "SimpleMem",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 38.189101665135425,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 29.572075481751504
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 24.86572080923373
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 23.328642017926125
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 47.86022029128383
+        }
+      ]
+    },
+    {
+      "method": "Mem0",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 36.49835852718084,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 37.582997073597305
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 13.290807496414974
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 24.53262586241279
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 46.358603647994315
+        }
+      ]
+    },
+    {
+      "method": "LangMem",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 29.932364233426622,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 28.373147268778983
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 27.27176568612841
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 21.654576012888086
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 32.41562105493085
+        }
+      ]
+    },
+    {
+      "method": "seed",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 56.25973274365339,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 46.079979797211976
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 41.76246045404924
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 13.565051800622316
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 70.08018946944459
+        }
+      ]
+    },
+    {
+      "method": "r40_fused_four_turn",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 55.52237081573067,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 39.683696559470825
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 49.703097179732694
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 14.091699345124306
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 67.78377086162702
+        }
+      ]
+    },
+    {
+      "method": "s_parent_single_2000",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 55.52781350227676,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 38.12924297640506
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 50.643686531537
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 15.576086436905765
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 67.7865143871506
+        }
+      ]
+    },
+    {
+      "method": "recursive_source_rehearsal_v1",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 55.85601543689559,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 38.757939746819154
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 50.483275810378615
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 16.0137463299228
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 68.18795907421175
+        }
+      ]
+    },
+    {
+      "method": "A-MEM",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 36.845900352297015,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 28.984580786996165
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 29.08795833702878
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 17.427261836717527
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 44.65967062793503
+        }
+      ]
+    },
+    {
+      "method": "LightMem_official",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 40.3261881368388,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 31.973250525456876
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 44.848735549670124
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 16.740822313371584
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 44.09311537339492
+        }
+      ]
+    },
+    {
+      "method": "CertMem_Seed",
+      "embedding": "Qwen3-Embedding-0.6B",
+      "population": "generated507",
+      "n": 507,
+      "f1_percent": 54.834016051117615,
+      "categories": [
+        {
+          "category": 1,
+          "n": 89,
+          "f1_percent": 40.80128678432347
+        },
+        {
+          "category": 2,
+          "n": 106,
+          "f1_percent": 39.4058771417262
+        },
+        {
+          "category": 3,
+          "n": 31,
+          "f1_percent": 15.703524811684206
+        },
+        {
+          "category": 4,
+          "n": 281,
+          "f1_percent": 69.41530024173186
+        }
+      ]
+    },
+    {
+      "method": "CertMem_Seed",
+      "embedding": "Qwen3-Embedding-0.6B",
+      "population": "primary377",
+      "n": 377,
+      "f1_percent": 54.0946545980792,
+      "categories": [
+        {
+          "category": 1,
+          "n": 67,
+          "f1_percent": 37.82998660179038
+        },
+        {
+          "category": 2,
+          "n": 78,
+          "f1_percent": 39.20545978238286
+        },
+        {
+          "category": 3,
+          "n": 24,
+          "f1_percent": 18.894830659536545
+        },
+        {
+          "category": 4,
+          "n": 208,
+          "f1_percent": 68.97872058798639
+        }
+      ]
+    },
+    {
+      "method": "CertMem_r40",
+      "embedding": "Qwen3-Embedding-0.6B",
+      "population": "generated507",
+      "n": 507,
+      "f1_percent": 56.07044034068417,
+      "categories": [
+        {
+          "category": 1,
+          "n": 89,
+          "f1_percent": 33.24309967039643
+        },
+        {
+          "category": 2,
+          "n": 106,
+          "f1_percent": 50.521590568760374
+        },
+        {
+          "category": 3,
+          "n": 31,
+          "f1_percent": 15.703524811684206
+        },
+        {
+          "category": 4,
+          "n": 281,
+          "f1_percent": 69.84690218010954
+        }
+      ]
+    },
+    {
+      "method": "CertMem_r40",
+      "embedding": "Qwen3-Embedding-0.6B",
+      "population": "primary377",
+      "n": 377,
+      "f1_percent": 55.68706329706609,
+      "categories": [
+        {
+          "category": 1,
+          "n": 67,
+          "f1_percent": 32.250051634379986
+        },
+        {
+          "category": 2,
+          "n": 78,
+          "f1_percent": 53.18931068931069
+        },
+        {
+          "category": 3,
+          "n": 24,
+          "f1_percent": 18.894830659536545
+        },
+        {
+          "category": 4,
+          "n": 208,
+          "f1_percent": 68.41840016295838
+        }
+      ]
+    },
+    {
+      "method": "CertMem_Refined",
+      "embedding": "Qwen3-Embedding-0.6B",
+      "population": "generated507",
+      "n": 507,
+      "f1_percent": 56.578668693562385,
+      "categories": [
+        {
+          "category": 1,
+          "n": 89,
+          "f1_percent": 34.430231826629715
+        },
+        {
+          "category": 2,
+          "n": 106,
+          "f1_percent": 50.02811130169621
+        },
+        {
+          "category": 3,
+          "n": 31,
+          "f1_percent": 15.703524811684206
+        },
+        {
+          "category": 4,
+          "n": 281,
+          "f1_percent": 70.57404031289707
+        }
+      ]
+    },
+    {
+      "method": "CertMem_Refined",
+      "embedding": "Qwen3-Embedding-0.6B",
+      "population": "primary377",
+      "n": 377,
+      "f1_percent": 56.305168401247165,
+      "categories": [
+        {
+          "category": 1,
+          "n": 67,
+          "f1_percent": 33.33391801675384
+        },
+        {
+          "category": 2,
+          "n": 78,
+          "f1_percent": 52.51868501868502
+        },
+        {
+          "category": 3,
+          "n": 24,
+          "f1_percent": 18.894830659536545
+        },
+        {
+          "category": 4,
+          "n": 208,
+          "f1_percent": 69.44107025414117
+        }
+      ]
+    },
+    {
+      "method": "seed",
+      "embedding": "MiniLM",
+      "population": "generated507",
+      "n": 507,
+      "f1_percent": 55.48906756489416,
+      "categories": [
+        {
+          "category": 1,
+          "n": 89,
+          "f1_percent": 39.16694260795385
+        },
+        {
+          "category": 2,
+          "n": 106,
+          "f1_percent": 40.063395723773056
+        },
+        {
+          "category": 3,
+          "n": 31,
+          "f1_percent": 12.477718360071302
+        },
+        {
+          "category": 4,
+          "n": 281,
+          "f1_percent": 71.22266956374123
+        }
+      ]
+    },
+    {
+      "method": "seed",
+      "embedding": "MiniLM",
+      "population": "primary377",
+      "n": 377,
+      "f1_percent": 55.38549273614013,
+      "categories": [
+        {
+          "category": 1,
+          "n": 67,
+          "f1_percent": 37.5685618969201
+        },
+        {
+          "category": 2,
+          "n": 78,
+          "f1_percent": 41.07886415578723
+        },
+        {
+          "category": 3,
+          "n": 24,
+          "f1_percent": 14.728163992869876
+        },
+        {
+          "category": 4,
+          "n": 208,
+          "f1_percent": 71.18081622332164
+        }
+      ]
+    },
+    {
+      "method": "r40_fused_four_turn",
+      "embedding": "MiniLM",
+      "population": "generated507",
+      "n": 507,
+      "f1_percent": 56.19764075636263,
+      "categories": [
+        {
+          "category": 1,
+          "n": 89,
+          "f1_percent": 38.09148735666534
+        },
+        {
+          "category": 2,
+          "n": 106,
+          "f1_percent": 49.28605461624328
+        },
+        {
+          "category": 3,
+          "n": 31,
+          "f1_percent": 12.477718360071302
+        },
+        {
+          "category": 4,
+          "n": 281,
+          "f1_percent": 69.36274174465707
+        }
+      ]
+    },
+    {
+      "method": "r40_fused_four_turn",
+      "embedding": "MiniLM",
+      "population": "primary377",
+      "n": 377,
+      "f1_percent": 55.46334058334742,
+      "categories": [
+        {
+          "category": 1,
+          "n": 67,
+          "f1_percent": 38.07589551726013
+        },
+        {
+          "category": 2,
+          "n": 78,
+          "f1_percent": 50.7971657971658
+        },
+        {
+          "category": 3,
+          "n": 24,
+          "f1_percent": 14.728163992869876
+        },
+        {
+          "category": 4,
+          "n": 208,
+          "f1_percent": 67.51413236662371
+        }
+      ]
+    },
+    {
+      "method": "s_parent_single_2000",
+      "embedding": "MiniLM",
+      "population": "generated507",
+      "n": 507,
+      "f1_percent": 55.79775285439792,
+      "categories": [
+        {
+          "category": 1,
+          "n": 89,
+          "f1_percent": 36.88182952070358
+        },
+        {
+          "category": 2,
+          "n": 106,
+          "f1_percent": 49.88803125595575
+        },
+        {
+          "category": 3,
+          "n": 31,
+          "f1_percent": 15.703524811684202
+        },
+        {
+          "category": 4,
+          "n": 281,
+          "f1_percent": 68.44141383467466
+        }
+      ]
+    },
+    {
+      "method": "s_parent_single_2000",
+      "embedding": "MiniLM",
+      "population": "primary377",
+      "n": 377,
+      "f1_percent": 55.581800612807555,
+      "categories": [
+        {
+          "category": 1,
+          "n": 67,
+          "f1_percent": 36.68225621703801
+        },
+        {
+          "category": 2,
+          "n": 78,
+          "f1_percent": 52.018167018167006
+        },
+        {
+          "category": 3,
+          "n": 24,
+          "f1_percent": 18.89483065953654
+        },
+        {
+          "category": 4,
+          "n": 208,
+          "f1_percent": 67.23910914058169
+        }
+      ]
+    },
+    {
+      "method": "CertMem_v15",
+      "embedding": "MiniLM",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 42.22614403935333,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 26.932271104256923
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 34.969117071920806
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 9.92205893521683
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 53.81183963298012
+        }
+      ]
+    },
+    {
+      "method": "Naive",
+      "embedding": "none",
+      "population": "full1540",
+      "n": 1540,
+      "f1_percent": 55.16889966272199,
+      "categories": [
+        {
+          "category": 1,
+          "n": 282,
+          "f1_percent": 41.76923255814074
+        },
+        {
+          "category": 2,
+          "n": 321,
+          "f1_percent": 36.24295918688442
+        },
+        {
+          "category": 3,
+          "n": 96,
+          "f1_percent": 15.658525159567793
+        },
+        {
+          "category": 4,
+          "n": 841,
+          "f1_percent": 71.39592578464658
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "D:/MemoryData/results/comparisons/qwen35_recursive_20260908/all_methods_category_scores.json",
+    "D:/MemoryData/experiments/recursive_minilm_20260909/receipts/recursive_v1/OFFICIAL_COMPARISON.json",
+    "D:/MemoryData/amem_final_results_r26/original_policy_report.json",
+    "D:/MemoryData/results/comparisons/all_methods_20260909/lightmem_official/official_f1.json",
+    "D:/MemoryData/results/comparisons/all_methods_20260909/certmem_naive_categories.json",
+    "D:/MemoryData/generalization_20260908/locomo_transfer/evaluation_populations.json"
+  ]
+}

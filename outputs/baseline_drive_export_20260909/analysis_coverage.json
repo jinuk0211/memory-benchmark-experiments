@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "latest_comparison": "results/comparisons/all_methods_20260909/ALL_RESULTS.md",
+  "all_15_methods_have_1540_unique_questions": true,
+  "methods": [
+    {
+      "method": "Mem0",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/Mem0/predictions.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "LangMem",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/LangMem/predictions.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "LightMem_pipeline",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/LightMem_pipeline/predictions.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "HiGMem",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/HiGMem/scored_predictions.json"
+      ],
+      "note": ""
+    },
+    {
+      "method": "A-MEM",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/A-MEM/predictions.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "SimpleMem",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/SimpleMem/predictions.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "E-Mem",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/E-Mem/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k5_chunk1_results.json"
+      ],
+      "note": ""
+    },
+    {
+      "method": "LightMem_official",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-26.json",
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-30.json",
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-41.json",
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-42.json",
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-43.json",
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-44.json",
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-47.json",
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-48.json",
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-49.json",
+        "raw_predictions/LightMem_official/run_r06_th768_final/sample_conv-50.json"
+      ],
+      "note": "최종 1540 = 보존 1388 + conv-26 신규 152. canonical category1-4 질문/유형 순서 대조 통과. 동일 질문 문장이 존재하므로 canonical 원본 QA index를 ID로 사용."
+    },
+    {
+      "method": "LightMem_direct",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "results/locomo/lightmem_direct/predictions.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "seed",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "experiments/refinement_usage_20260909/evidence/runs/qwen35_baseline/seed.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "r40_fused_four_turn",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "experiments/refinement_usage_20260909/evidence/runs/qwen35_baseline/r40_fused_four_turn.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "s_parent_single_2000",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "experiments/refinement_usage_20260909/evidence/runs/qwen35_baseline/s_parent_single_2000.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "recursive_source_rehearsal_v1",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "experiments/refinement_usage_20260909/evidence/runs/recursive_v1/recursive_source_rehearsal_v1.jsonl"
+      ],
+      "note": ""
+    },
+    {
+      "method": "CertMem_v15",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/CertMem_v15/full1540.csv"
+      ],
+      "note": "기존 885문항과 primary continuation 655문항의 해당 정책 행을 무변경 연결함."
+    },
+    {
+      "method": "Naive",
+      "population": "full1540",
+      "rows": 1540,
+      "unique_question_ids": 1540,
+      "paths": [
+        "raw_predictions/Naive/full1540.csv"
+      ],
+      "note": "기존 885문항과 primary continuation 655문항의 해당 정책 행을 무변경 연결함."
+    }
+  ]
+}

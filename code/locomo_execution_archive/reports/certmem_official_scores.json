@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "predictions_complete": true,
+  "qa_per_policy": 1540,
+  "reader_outputs": 3080,
+  "empty_predictions": 0,
+  "by_policy": [
+    {
+      "config": "full",
+      "policy": "certified",
+      "qa_count": 1540,
+      "official_f1": 0.4222614403935333,
+      "native_normalized_f1": 0.42165645706771204,
+      "native_lenient": 0.4967532467532468,
+      "empty_predictions": 0
+    },
+    {
+      "config": "full",
+      "policy": "full_raw",
+      "qa_count": 1540,
+      "official_f1": 0.5516889966272199,
+      "native_normalized_f1": 0.5518569405084828,
+      "native_lenient": 0.6272727272727273,
+      "empty_predictions": 0
+    }
+  ],
+  "note": "Official F1 uses the unchanged original QA metadata. Native normalized F1 is a different metric. This report validates prediction coverage only; token/runtime completeness is audited separately. Native empty or output-capped answers remain in the denominator.",
+  "selection": {
+    "rule": "First six conversations from unchanged r1; remaining four from r2.",
+    "previous_qa_per_policy": 885,
+    "new_qa_per_policy": 655,
+    "previous_reader_outputs": 32745,
+    "new_reader_outputs": 1310,
+    "excluded_previous_reader_outputs": 30975,
+    "selection_by_score": false
+  },
+  "sources_sha256": {
+    "dataset": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+    "previous_items": "4bd01e08b31324ef6916bc450436cba032f2267727a063d8339bb906b6c7bfac",
+    "items": "caf97c44e1c571934b5de08302ca4510b8f7c206dd047a61dccbd5f74c32b345",
+    "scorer": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+    "composite_scorer": "299035b884f01b33ad686c1b978396ce98548db2f86e00020e3e5c0dcd401752",
+    "base_scorer": "3e35733b38ed2d628b3b8957ca1ed14589478c64ad93ebb75e63088a7c60776c"
+  },
+  "source_paths": {
+    "dataset": "D:\\MemoryData\\certmem_primary_results_r1\\canonical-locomo10.json",
+    "previous_items": "D:\\MemoryData\\certmem_primary_results_r1\\locomo-certmem-v15-20260908-r1\\items.csv",
+    "items": "D:\\MemoryData\\certmem_primary_results_r1\\locomo-certmem-primary-r2\\items.csv",
+    "scorer": "D:\\MemoryData\\HiGMem\\official_locomo_evaluation.py",
+    "composite_scorer": "D:\\MemoryData\\certmem_primary_r2\\scripts\\score_primary_composite.py",
+    "base_scorer": "D:\\MemoryData\\certmem_primary_r2\\scripts\\score_certmem_full.py"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "answers": 200,
+  "unique_api_responses": 182,
+  "returned_model": "gpt-4o-2024-08-06",
+  "same50_as_mini": true,
+  "official_label_expression_matches": true,
+  "reported_usage": {
+    "prompt_tokens": 28450,
+    "completion_tokens": 273,
+    "total_tokens": 28723
+  },
+  "changed_method_question_pairs": 6,
+  "changes": [
+    {
+      "method": "full_context",
+      "question_id": "75499fd8",
+      "mini_correct": false,
+      "gpt4o_correct": true
+    },
+    {
+      "method": "langmem",
+      "question_id": "8a137a7f",
+      "mini_correct": false,
+      "gpt4o_correct": true
+    },
+    {
+      "method": "simplemem",
+      "question_id": "f8c5f88b",
+      "mini_correct": false,
+      "gpt4o_correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "3b6f954b",
+      "mini_correct": false,
+      "gpt4o_correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "853b0a1d",
+      "mini_correct": false,
+      "gpt4o_correct": true
+    },
+    {
+      "method": "lightmem",
+      "question_id": "ec81a493",
+      "mini_correct": true,
+      "gpt4o_correct": false
+    }
+  ],
+  "source_hashes": {
+    "protocol.json": "6a815fdec1dc732726f20eb1734f29dec34d9a6b8c459e0f77ad2db0adcdae4a",
+    "inputs.json": "cbf8c4363c7d96c665d102264a4e6493eee7f6802e8fd7c0c32c36f1876946b3",
+    "requests.json": "7dbc064c3f9901251ff3f412c77e05a5720769d55e8e1f12de40b4a116fb4969",
+    "judge_responses.jsonl": "92608568ab531ab3a83ccdb0828cdc646eb901569752c65b12ead1c5cfcaba88",
+    "results.json": "1f6e22bfd4b3a231a684261e95bb347b023a48b9c03036b4a80ef4cfeda534b6"
+  }
+}

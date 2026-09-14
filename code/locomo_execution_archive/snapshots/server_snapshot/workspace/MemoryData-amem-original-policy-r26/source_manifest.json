@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "run_id": "locomo-amem-original-policy-20260908-r26",
+  "target_source_root": "/workspace/MemoryData-amem-original-policy-r26",
+  "source_local_root": "D:/MemoryData/recovery_r6_candidate",
+  "packaging_only": true,
+  "source_file_count": 47,
+  "manifest_self_pin": "The standalone plan pins this manifest; this manifest lists only the 47 copied source files to avoid a self-hash cycle.",
+  "files": {
+    "main.py": {
+      "sha256": "191ba49c97224342ff2aec627b1c38e4a3841b2684c1d227cfa1a5708b748ed7",
+      "bytes": 38147
+    },
+    "scripts/amem_original_policy_recovery_r26.py": {
+      "sha256": "d91fdb4bc6cc223308f7d99db7dd0f8cacc94bf2af271af4acc598f7e6310c91",
+      "bytes": 16137
+    },
+    "scripts/amem_original_policy.py": {
+      "sha256": "ace152027e1c88cc520e1f89d1204d6df667614444acf29fb3545ee34e80c22a",
+      "bytes": 7656
+    },
+    "scripts/audit_amem_original_policy.py": {
+      "sha256": "ef26684ef0a7931ddf81e1bbdc27b076da5e7d9b6dec7d70216bbfd8db72bd95",
+      "bytes": 7565
+    },
+    "scripts/amem_failed_context_recovery_r15.py": {
+      "sha256": "2bd24dd7faa16ecefc7a2eb91893adce3d2a54f15bdf652f9a1c460aab13cb05",
+      "bytes": 5869
+    },
+    "scripts/retry_simplemem_after_queue.py": {
+      "sha256": "2298816dff2767af5d363df7036158f8618aaff019fbf8436b695c3a01be591a",
+      "bytes": 5127
+    },
+    "scripts/finalize_locomo_comparison.py": {
+      "sha256": "0fbe9d099f8512324c8830694b89dcaaf9b8e08a13db9ddb60843ee9518d7362",
+      "bytes": 9908
+    },
+    "scripts/run_locomo_live_probes.py": {
+      "sha256": "26a52f559f5d782e57f591fbf742b52c73e5ff4bc855ca752fcb4bfdf340abf9",
+      "bytes": 9326
+    },
+    "scripts/run_locomo_parallel.py": {
+      "sha256": "a5d133f4dcc45672fcf798c1827063d091b3cae6c5be26d58f8761e5fa6aa7c2",
+      "bytes": 9005
+    },
+    "scripts/locomo_server_queue.py": {
+      "sha256": "153ab1fe686c2ca7202e8bd4ea922f24ce897bbcca8526d59818c45aa99c0f06",
+      "bytes": 32587
+    },
+    "scripts/metered_openai_proxy.py": {
+      "sha256": "232626f401b5fe993bc1e1365c2ed138d30ecd752c176b3fcc07e488091d99f1",
+      "bytes": 24155
+    },
+    "scripts/repairing_openai_proxy.py": {
+      "sha256": "ea803d8885eff979c04cd55f5731a179c33d399b0b5bd12093eeae2820d5db90",
+      "bytes": 18941
+    },
+    "scripts/response_delivery_audit.py": {
+      "sha256": "bd4c27273111b211e22d7d735376be313408a9a8b00d96002dc6258af20d3e97",
+      "bytes": 2228
+    },
+    "scripts/score_locomo_comparison.py": {
+      "sha256": "6e4d2cd35c70a5d652b45e0d469836316e7927558bb98691766077a77a26b3b1",
+      "bytes": 13538
+    },
+    "scripts/serve_minilm_embeddings.py": {
+      "sha256": "3de478accd8d83ff4ce29b90aa8d2a6543365d48f40af08a58e80b4bf8b9cd80",
+      "bytes": 4464
+    },
+    "utils/agent.py": {
+      "sha256": "9719bcaf0a710fbc83afa4d794b057fbc394e86abb8cad7eab9888054ba084cc",
+      "bytes": 226304
+    },
+    "utils/artifact_paths.py": {
+      "sha256": "008615c91fb33f50010e500492e764ff03c39f54b8c2432d0ed1a86d7d3a9dfa",
+      "bytes": 8161
+    },
+    "utils/conversation_creator.py": {
+      "sha256": "33b66e3c61ed5a5e1f2a51fe4c371ef617592f170b2e7d809c8db450c7b1ef79",
+      "bytes": 14509
+    },
+    "utils/eval_other_utils.py": {
+      "sha256": "7ea93c5c6e4ce416cdbd79608e4cd44b1999d3591e46333f424cbc4ceff0a832",
+      "bytes": 47209
+    },
+    "utils/initialization.py": {
+      "sha256": "3db3328aa31f68b27ebcae49f4fe6051fcfbf72f0b2e864d5f33da28874b784d",
+      "bytes": 37676
+    },
+    "utils/locomo_utils.py": {
+      "sha256": "982fca26452e9c15c9ccb0001c471312496960027202c2c50176a436cba071ea",
+      "bytes": 2867
+    },
+    "utils/provider_utils.py": {
+      "sha256": "ecb2b51c9561cf9e66ad898316d4e38e97fe656aac791d6fa27b580ca18ba09a",
+      "bytes": 8512
+    },
+    "utils/request_metering.py": {
+      "sha256": "d2a5d580d2f3564909147d8e0514ce90fc3b1633e79b1997b55ce22dba359729",
+      "bytes": 11918
+    },
+    "benchmark/locomo/loader.py": {
+      "sha256": "b1957fa2c8501036322c77a3e06a552c360c7b737854cdd02d816f5c4bcca088",
+      "bytes": 8434
+    },
+    "benchmark/longbench/loader.py": {
+      "sha256": "0e1f4570fdf58a851f80b099d983206cbe887b21fbdd1115c7fbb459c760273b",
+      "bytes": 5343
+    },
+    "benchmark/membench/loader.py": {
+      "sha256": "ce8e7300f5c99e93351b59a7b5b4e66843179a3ee131ffeed48bda7f8739874d",
+      "bytes": 14751
+    },
+    "benchmark/memoryagentbench/__init__.py": {
+      "sha256": "db9fa74972bf5989f79b993e51041093fe0a6b030686b93a11d688b6c23674f6",
+      "bytes": 45
+    },
+    "benchmark/memoryagentbench/loader.py": {
+      "sha256": "2dc2c3e5e338689ac9dda87122b3a8b6d70679e19f7d43ef51774b26d8c85082",
+      "bytes": 11995
+    },
+    "benchmark/memoryagentbench/hf_datasets.py": {
+      "sha256": "8e358f7aa32b9e8a3c9087cb023ac1460df231b4cda383a00a46c06887c832ce",
+      "bytes": 1313
+    },
+    "benchmark/memoryagentbench/prompts/benchmark_templates.py": {
+      "sha256": "8616f946e907c6983f009a00a0fa61b09545c109f0a3512db3d5e8e9a72e32bf",
+      "bytes": 30222
+    },
+    "methods/a_mem/a_mem_adapter.py": {
+      "sha256": "7d10dc24937d135bf4d42738edbbb01cf0e4f99d8ac55853bd96c8856465a7ab",
+      "bytes": 16112
+    },
+    "methods/a_mem/source/a_mem/memory_layer.py": {
+      "sha256": "e407cb9224a1ce3b3c81b3dcaa561d5f1bea9058bc0e2eaa10017c604bc1fb79",
+      "bytes": 51433
+    },
+    "methods/a_mem/source/a_mem/evolution_repair.py": {
+      "sha256": "982db4bd145402e58b74cb9b828d2f9a321462647601441a9c2afd77825b8171",
+      "bytes": 4964
+    },
+    "methods/a_mem/source/a_mem/__init__.py": {
+      "sha256": "01ce8341f4dbad04246e610f7a7be5e5bc1d0c88b25a1836df823a3f47e6d1f8",
+      "bytes": 65
+    },
+    "scripts/diagnose_amem_native_length_repair.py": {
+      "sha256": "3c6ed96fd15c01d8b7babe34b6d82629a6d1d4226d11709a70cab4ad0d241f5f",
+      "bytes": 17785
+    },
+    "tests/test_amem_original_failure_policy.py": {
+      "sha256": "021f8fc8d6ff9e04517031a9f09ee70ce58653f62935fe7831b47af43c4a773a",
+      "bytes": 21422
+    },
+    "tests/test_amem_original_policy_audit.py": {
+      "sha256": "7ae85ea231c6d29001c6162588532b6bab6a0e222e898155838e797f278c40a4",
+      "bytes": 8207
+    },
+    "tests/test_amem_original_policy_recovery.py": {
+      "sha256": "ca3afb089b639a56dbf07339c9df732eb17dbf338d7a8e8d2e6d946f735022ec",
+      "bytes": 13666
+    },
+    "tests/test_locomo_live_probes.py": {
+      "sha256": "d1d21e1d2b2234dee9e35e658fb38c3de76781eea1fac23bcfe05460aea09920",
+      "bytes": 10374
+    },
+    "comparison_config/a_mem.yaml": {
+      "sha256": "0c7a2624bdaeeee509e61c4b607b86dea2060475bb8e1e69e3c3eb8e8f1db147",
+      "bytes": 1443
+    },
+    "comparison_config/mem0.yaml": {
+      "sha256": "81ae931876445a14f7ae90944fc09645a8b8ea32ae53aadc6784b8edc771a842",
+      "bytes": 1425
+    },
+    "comparison_config/langmem.yaml": {
+      "sha256": "b890458ea5b3485075599e0cac65ac789589dace7667bc59371cdf68faeb7779",
+      "bytes": 1343
+    },
+    "comparison_config/simplemem.yaml": {
+      "sha256": "8d4ac23e363bb7b863889fd61004449c60dd80974804d532919b2de95988d51e",
+      "bytes": 1764
+    },
+    "comparison_config/lightmem.yaml": {
+      "sha256": "72d71f5746c698c40cc64b962e32a70bb3eb7d1557248680f0a98c0bb40a68e4",
+      "bytes": 1698
+    },
+    "comparison_config/e_mem.yaml": {
+      "sha256": "4c5c9ad952746a54c8bfa12effd48a09690425fa3433b456bf4d10f4f905af84",
+      "bytes": 1521
+    },
+    "comparison_config/locomo.yaml": {
+      "sha256": "ce50939602b3b3339728025e70d89e84947eb1d2ad0fefc3f2eff28c6579d0eb",
+      "bytes": 339
+    },
+    "scripts/amem_original_policy_recovery_r26.conf": {
+      "sha256": "18d2f691a5f98ef71121e0273ddf00a8b846c8b833144790021a12194676c1e6",
+      "bytes": 666
+    }
+  },
+  "base_plan_provenance": {
+    "local_path": "D:/MemoryData/finish-amem-failed-contexts-plan-r15.json",
+    "historical_server_path": "/workspace/finish-amem-failed-contexts-plan-r15.json",
+    "sha256": "c89cbc16cc92a57695f00dcb36c66e846cfc3fdffd275a7d7e4930797e81ce78",
+    "scope": "Only the explicitly listed common model/runtime/dataset/scorer fields and unchanged comparison YAML bytes are reused. Earlier algorithm variants, diagnostics, reused-baseline claims and instance identities are not current r26 claims.",
+    "copied_common_fields": [
+      "client_python",
+      "context_workers",
+      "dataset",
+      "dtype",
+      "embedding_path",
+      "hf_home",
+      "hourly_rate_usd",
+      "model",
+      "model_revision",
+      "schema_version",
+      "scorer",
+      "server_python"
+    ]
+  },
+  "external_start_gate": {
+    "required": true,
+    "verified": false,
+    "enforced_by_r26_driver": false,
+    "authorization_scope": "LOCAL_PACKAGING_ONLY_NO_DEPLOY_OR_START",
+    "certmem_service": "locomo-certmem-v15-r1",
+    "certmem_source": "/workspace/CertMem-v15-r1",
+    "certmem_output": "/workspace/locomo-certmem-v15-20260908-r1",
+    "required_certmem_supervisor_state": "EXITED",
+    "required_gpu_writer_state": "No active GPU inference writer, including CertMem or its child processes, before A-MEM smoke/full launch.",
+    "required_backup_state": "Verify immutable closed CertMem outputs and original A-MEM r12/r15/r18/r20/r22/r23 artifacts, inventories and recoverable backups before future start.",
+    "required_runtime_checks": "Recheck pinned FP16/nonquantized Qwen model/revision, MiniLM snapshot, required ports and all source/config/data hashes on the server before future start.",
+    "warning": "This is a mandatory external operational gate, not a gate enforced by the unchanged r26 driver. autostart=false and autorestart=false must remain in the Supervisor configuration."
+  }
+}

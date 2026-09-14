@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "predictions_complete": true,
+  "usage_complete": true,
+  "expected": 1540,
+  "evaluated": 1540,
+  "prediction_rows": 1540,
+  "missing": [],
+  "prediction_issues": [],
+  "empty_predictions": 0,
+  "official_f1": 0.2993236423342662,
+  "score_scope": "all_expected_questions",
+  "by_category": {
+    "1": {
+      "count": 282,
+      "expected": 282,
+      "f1": 0.28373147268778975
+    },
+    "2": {
+      "count": 321,
+      "expected": 321,
+      "f1": 0.2727176568612842
+    },
+    "3": {
+      "count": 96,
+      "expected": 96,
+      "f1": 0.21654576012888085
+    },
+    "4": {
+      "count": 841,
+      "expected": 841,
+      "f1": 0.32415621054930854
+    }
+  },
+  "by_sample": {
+    "conv-26": 152,
+    "conv-30": 81,
+    "conv-41": 152,
+    "conv-42": 199,
+    "conv-43": 178,
+    "conv-44": 123,
+    "conv-47": 150,
+    "conv-48": 191,
+    "conv-49": 156,
+    "conv-50": 158
+  },
+  "usage": {
+    "complete": true,
+    "supplied": true,
+    "requests": 24570,
+    "metered_requests": 24570,
+    "unmetered_requests": 0,
+    "invalid_usage_requests": 0,
+    "failed_requests": 0,
+    "truncated_requests": 0,
+    "incomplete_streams": 0,
+    "unknown_phase_requests": 0,
+    "missing_id_requests": 0,
+    "duplicate_request_ids": 0,
+    "duplicate_response_ids": 0,
+    "reported_tokens": {
+      "prompt_tokens": 25859307,
+      "completion_tokens": 2309853,
+      "total_tokens": 28169160
+    },
+    "by_phase": {
+      "memory_add": {
+        "calls": 21490,
+        "prompt_tokens": 22311736,
+        "completion_tokens": 2295847,
+        "total_tokens": 24607583
+      },
+      "qa": {
+        "calls": 3080,
+        "prompt_tokens": 3547571,
+        "completion_tokens": 14006,
+        "total_tokens": 3561577
+      }
+    },
+    "by_request_kind": {
+      "chat_completion": {
+        "calls": 7428,
+        "prompt_tokens": 23632526,
+        "completion_tokens": 2309853,
+        "total_tokens": 25942379
+      },
+      "embedding": {
+        "calls": 17142,
+        "prompt_tokens": 2226781,
+        "completion_tokens": 0,
+        "total_tokens": 2226781
+      }
+    },
+    "note": "Reported tokens include metered failed attempts. Missing or invalid usage is unknown, not zero. Completeness covers the supplied journal; every model call must be routed through the meter. Embedding tokens are separate from generation by_request_kind."
+  },
+  "runtime": {
+    "wall_seconds": null,
+    "construction_seconds": null,
+    "qa_seconds": null,
+    "peak_vram_mib": null,
+    "gpu_energy_wh": null,
+    "mean_gpu_utilization_percent": null,
+    "storage_bytes": null,
+    "question_latency_seconds": {
+      "count": 1540,
+      "mean": 0.4096584146673029,
+      "p50": 0.37633776664733887,
+      "p95": 0.6291537284851074,
+      "p95_method": "nearest_rank",
+      "missing_or_invalid": 0
+    },
+    "hourly_rate_usd": null,
+    "estimated_rental_cost_usd": null
+  },
+  "sources_sha256": {
+    "dataset": "cf50e013bb20551cba62f27a93f8310e70422ed31fff6010871031ac9e875993",
+    "official_scorer": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd"
+  },
+  "method": "langmem",
+  "composite": true,
+  "run_ids": [
+    "locomo-qwen35-fp16-20260907-parallel4-fullfacts",
+    "locomo-qwen35-fp16-20260907-50156979-recovery-r1"
+  ],
+  "quality_complete": true,
+  "coverage_complete": true,
+  "partitions": [
+    {
+      "run_id": "locomo-qwen35-fp16-20260907-parallel4-fullfacts",
+      "questions": 584,
+      "reused": true
+    },
+    {
+      "run_id": "locomo-qwen35-fp16-20260907-50156979-recovery-r1",
+      "questions": 956,
+      "reused": false
+    }
+  ],
+  "gross_attempt_usage": {
+    "complete": true,
+    "supplied": true,
+    "requests": 30389,
+    "metered_requests": 30389,
+    "unmetered_requests": 0,
+    "invalid_usage_requests": 0,
+    "failed_requests": 2,
+    "truncated_requests": 2,
+    "incomplete_streams": 0,
+    "unknown_phase_requests": 0,
+    "missing_id_requests": 0,
+    "duplicate_request_ids": 0,
+    "duplicate_response_ids": 0,
+    "reported_tokens": {
+      "prompt_tokens": 31619441,
+      "completion_tokens": 2962509,
+      "total_tokens": 34581950
+    },
+    "by_phase": {
+      "memory_add": {
+        "calls": 27309,
+        "prompt_tokens": 28071870,
+        "completion_tokens": 2948503,
+        "total_tokens": 31020373
+      },
+      "qa": {
+        "calls": 3080,
+        "prompt_tokens": 3547571,
+        "completion_tokens": 14006,
+        "total_tokens": 3561577
+      }
+    },
+    "by_request_kind": {
+      "chat_completion": {
+        "calls": 9008,
+        "prompt_tokens": 28818012,
+        "completion_tokens": 2962509,
+        "total_tokens": 31780521
+      },
+      "embedding": {
+        "calls": 21381,
+        "prompt_tokens": 2801429,
+        "completion_tokens": 0,
+        "total_tokens": 2801429
+      }
+    },
+    "note": "Reported tokens include metered failed attempts. Missing or invalid usage is unknown, not zero. Completeness covers the supplied journal; every model call must be routed through the meter. Embedding tokens are separate from generation by_request_kind."
+  },
+  "attempt_runtime": [
+    {
+      "run_id": "locomo-qwen35-fp16-20260907-parallel4-fullfacts",
+      "includes_old_unfinished_work": true,
+      "wall_seconds": 5491.154650688171,
+      "construction_seconds": 11096.50253951922,
+      "qa_seconds": 258.14392061624676,
+      "peak_vram_mib": 28482.0,
+      "gpu_energy_wh": 712.1471738272471,
+      "mean_gpu_utilization_percent": 96.7553488372093,
+      "storage_bytes": 44765944,
+      "question_latency_seconds": {
+        "count": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "p95_method": "nearest_rank",
+        "missing_or_invalid": 0
+      },
+      "hourly_rate_usd": 0.3959259259259259,
+      "estimated_rental_cost_usd": 0.6039140248544912
+    },
+    {
+      "run_id": "locomo-qwen35-fp16-20260907-50156979-recovery-r1",
+      "includes_old_unfinished_work": false,
+      "wall_seconds": 7286.809138290002,
+      "construction_seconds": 21948.616523670993,
+      "qa_seconds": 394.0002219043381,
+      "peak_vram_mib": 28518.0,
+      "gpu_energy_wh": 878.0362207599953,
+      "mean_gpu_utilization_percent": 97.42278127183788,
+      "storage_bytes": 56318360,
+      "question_latency_seconds": {
+        "count": 0,
+        "mean": null,
+        "p50": null,
+        "p95": null,
+        "p95_method": "nearest_rank",
+        "missing_or_invalid": 0
+      },
+      "hourly_rate_usd": 0.4068518518518518,
+      "estimated_rental_cost_usd": 0.8235143866678566
+    }
+  ],
+  "gross_attempt_cost": {
+    "estimated_rental_cost_usd": 1.4274284115223477,
+    "gpu_energy_wh": 1590.1833945872424
+  },
+  "accounting_note": "Composite usage covers reused QA plus new generation. Gross attempt usage/cost also includes old unfinished work; do not add these overlapping totals together. GPU time/energy and rental estimates are not allocated proportionally to QA. Setup, idle time and provider bandwidth/storage charges are not a complete invoice. Original run IDs and raw artifacts remain unchanged.",
+  "raw_sources_sha256": {
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/context_00/completion.json": "2540a1899e43de2b5a20c24681d528dfd5101b80d1b12858e4f0c90c2fd91ec3",
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/context_00/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "be9edf27aad4ce911456448f8990a1e82402f9d7d739f1db8ab0b425e50e0565",
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/context_01/completion.json": "f7bbb9360e0c2af3b657734184dea378821344eab5d9aa9abb661370ec3969be",
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/context_01/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "fd193c3ad9abb271a266e4598717d4367c37a7603f7ab62a8aa70e73395ae72c",
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/context_02/completion.json": "95b1d3a4cd9b45e69c22bea5cfeb79fecf1f9bbb935ce96462434cddbd31ff15",
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/context_02/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "64a414c665fc00a7118f2525009deea5dfe139776331aa966fa352ad7c77acca",
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/context_03/completion.json": "a9ba617979bce9ae90af76c49b2f4be76fe14f4f27f47c2207593a00b563f90b",
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/context_03/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "4e217cd812b999d524b8012565f452a036f2eb903801f8b07ac3baf9348900db",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_04/completion.json": "078c423485317d1ee2285ff4c96265698b5f286830d63a6ac13e37a637a1b721",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_04/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "8a1dad799d7338ff1acee58a89e557996647dc8b8094eb058d6503742b36a70a",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_05/completion.json": "10bb1174e8ad834e1449183b64659852eff4ca5c3e4875c7cc18e196cc51bda9",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_05/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "2557cf959021fee696a9d0c88387ff44788b5f0f8ee05c8e80bd6356459d87f6",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_06/completion.json": "598adf90dff0287b34f761592befe5b76632e78aaca51dd9cc94787464c9f5e8",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_06/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "10a3c4448061f3fafce8a3515122ecd4d5ee899f1c9e1349de280d40f6372e77",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_07/completion.json": "c97e34894885f9c1861896113153132c71f6f2a4d945b6d17017c9986b979b6f",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_07/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "a414d166ebeecbe411648e055d19a9d7305aec246202a0039f8e34e9c482cf99",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_08/completion.json": "b3189ac07004e6051a640a6e50af8f03a16590616758c17c0dad1126fae19d16",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_08/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "3f3a7f308641a2286f888743321d64514be50c92f77910e5d0637c3696ff2c35",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_09/completion.json": "ef5e68da36214ae4fe65ec737cc227e1c808199d5aa1b1f9b9413d049362c1ae",
+    "/workspace/locomo-recovery-50156979-r1/langmem/context_09/artifacts/outputs/langmem/LoCoMo/locomo_qa_official_4cat_in10000000_size1024_shots0_max_samples10_categories_multi_hop-open_domain-single_hop-temporal_k10_chunk1_results.json": "3832889a61d596d8ffda76a207678f73aecea47391aa9a77c944665bffc32254",
+    "/workspace/plan-parallel4-fullfacts.json": "8e4274832016fa973fa35afe062c794fbeb41316d8f1490a521a559084b0d424",
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/usage.jsonl": "02d27e51b90677b57253597b23582b6c471b03358feb40bbf69c8e349873c31d",
+    "/workspace/locomo-comparison-qwen35-fp16-parallel4-fullfacts/langmem/telemetry.json": "d4551b8ac9725e4b03b6d79db99948a14667366081c0c330ca9f28c737eb5b01",
+    "/workspace/locomo-recovery-50156979-r1/langmem/usage.jsonl": "1326e775f03b12bcb699dfe4d6b93349606015bec841c121e5332b435958fba5",
+    "/workspace/locomo-recovery-50156979-r1/langmem/telemetry.json": "702b8be3eec7ac41315e52893e1f1d5d146470568af5258f5b0102719015a4e0",
+    "/workspace/locomo-recovery-50156979-r1/langmem/selected_results.json": "1829ad1c00289d24396bbf762c1110bf1fc2607848908325b3f7aa96db8ff6da",
+    "/workspace/locomo-recovery-50156979-r1/langmem/parallel_status.json": "b6973b600bd7dc780b9f35d89e145375a3bd575f35264ae9c1b59459379c37b7",
+    "/workspace/locomo-recovery-50156979-r1/langmem/selected_attempt.json": "688ed136d756d705c3d691c34618fb649cd853795387ff7d2c9d8baa16e422d4",
+    "/workspace/MemoryData/scripts/finalize_langmem_recovery.py": "48b7be62671e9d44798c29ee3eb2f70697a6d434ebfe22eb30fe0e7d74433158"
+  },
+  "native_behavior": {
+    "trustcall_patch_error_log_events": 1705,
+    "note": "Native Trustcall patch-error log events, not a count of uniquely lost facts."
+  }
+}

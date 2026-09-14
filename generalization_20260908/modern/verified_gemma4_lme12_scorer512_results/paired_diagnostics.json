@@ -1,0 +1,138 @@
+{
+  "metric": "diagnostic_token_f1",
+  "comparisons": {
+    "seed": {
+      "n": 12,
+      "baseline": 0.420305845915602,
+      "refined": 0.43059023744999353,
+      "effect_pp": 1.0284391534391535,
+      "dataset": "longmemeval",
+      "cluster_count": 12,
+      "ci95_pp": [
+        -5.3802910052910065,
+        9.232804232804233
+      ],
+      "ci_method": "paired-cluster-percentile-bootstrap",
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260908,
+      "wins": 2,
+      "losses": 2,
+      "ties": 8,
+      "generation_failures_counted_zero": {
+        "baseline": 0,
+        "refined": 0
+      },
+      "by_question_type": {
+        "multi-session": {
+          "n": 4,
+          "baseline": 0.1,
+          "refined": 0.07142857142857142,
+          "effect_pp": -2.857142857142858
+        },
+        "single-session-assistant": {
+          "n": 3,
+          "baseline": 0.5478900503290748,
+          "refined": 0.49378952122854564,
+          "effect_pp": -5.410052910052915
+        },
+        "single-session-user": {
+          "n": 1,
+          "baseline": 1.0,
+          "refined": 1.0,
+          "effect_pp": 0.0
+        },
+        "temporal-reasoning": {
+          "n": 4,
+          "baseline": 0.5,
+          "refined": 0.6,
+          "effect_pp": 9.999999999999998
+        }
+      },
+      "abstention": {
+        "n": 0,
+        "baseline": null,
+        "refined": null,
+        "effect_pp": null
+      },
+      "answerable": {
+        "n": 12,
+        "baseline": 0.420305845915602,
+        "refined": 0.43059023744999353,
+        "effect_pp": 1.0284391534391535
+      },
+      "manifest_ids_sha256": "02de4ed681748d899e48766462695f407cf19f49e60c96f889a9c718816a591e",
+      "macro_by_question_type": {
+        "baseline": 0.5369725125822687,
+        "refined": 0.5413045231642792,
+        "effect_pp": 0.43320105820105625
+      }
+    },
+    "r40_fused_four_turn": {
+      "n": 12,
+      "baseline": 0.37503468189443795,
+      "refined": 0.43059023744999353,
+      "effect_pp": 5.555555555555558,
+      "dataset": "longmemeval",
+      "cluster_count": 12,
+      "ci95_pp": [
+        0.0,
+        16.666666666666668
+      ],
+      "ci_method": "paired-cluster-percentile-bootstrap",
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260908,
+      "wins": 1,
+      "losses": 0,
+      "ties": 11,
+      "generation_failures_counted_zero": {
+        "baseline": 0,
+        "refined": 0
+      },
+      "by_question_type": {
+        "multi-session": {
+          "n": 4,
+          "baseline": 0.07142857142857142,
+          "refined": 0.07142857142857142,
+          "effect_pp": 0.0
+        },
+        "single-session-assistant": {
+          "n": 3,
+          "baseline": 0.49378952122854564,
+          "refined": 0.49378952122854564,
+          "effect_pp": 0.0
+        },
+        "single-session-user": {
+          "n": 1,
+          "baseline": 1.0,
+          "refined": 1.0,
+          "effect_pp": 0.0
+        },
+        "temporal-reasoning": {
+          "n": 4,
+          "baseline": 0.43333333333333335,
+          "refined": 0.6,
+          "effect_pp": 16.666666666666664
+        }
+      },
+      "abstention": {
+        "n": 0,
+        "baseline": null,
+        "refined": null,
+        "effect_pp": null
+      },
+      "answerable": {
+        "n": 12,
+        "baseline": 0.37503468189443795,
+        "refined": 0.43059023744999353,
+        "effect_pp": 5.555555555555558
+      },
+      "manifest_ids_sha256": "02de4ed681748d899e48766462695f407cf19f49e60c96f889a9c718816a591e",
+      "macro_by_question_type": {
+        "baseline": 0.4996378564976126,
+        "refined": 0.5413045231642792,
+        "effect_pp": 4.166666666666666
+      }
+    }
+  },
+  "official_longmemeval_accuracy_pending": true
+}

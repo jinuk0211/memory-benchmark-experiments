@@ -1,0 +1,34 @@
+{
+  "status": "deployed_waiting_for_existing_auto_resume",
+  "instance_id": "50577514",
+  "remote_host": "175.155.64.186",
+  "remote_ssh_port": 19942,
+  "remote_root": "/workspace/quad_3090_20260911",
+  "files": {
+    "quad_scheduler.py": {
+      "expected_remote_before_sha256": "4ae5f45e15d2fb241a3207c213f7955178fe31b70b31dcff725ca01e0bb79949",
+      "candidate_sha256": "ba0b984929c4c83959fd03d4a03fade69e06652b1c4fc2ce81c8ec52b7a0b506"
+    },
+    "quad_admission.py": {
+      "expected_remote_before_sha256": "1a785ac42c264b75acdf6b8c996b5e6df4c45e7710fd3ad28d7e12437a723423",
+      "candidate_sha256": "faea2f8aa00476eeac9d50f6cc198c29d96acd7117b37f006893cd05eee71e15"
+    },
+    "quad_metered_proxy.py": {
+      "expected_remote_before_sha256": "4012c2676c0e97b1d9758b7d738ecd064ba50d8b0406e740c265106bbb09b8bd",
+      "candidate_sha256": "700b043d38268e64a9114c3d6bf1e7b82d88b5510ad24a1b5e4cf1eaa8b0ac90"
+    }
+  },
+  "tests": {
+    "passed": 47,
+    "subtests_passed": 19,
+    "ruff": "passed",
+    "python_review": "approved"
+  },
+  "gpu_throughput_measured_after_change": false,
+  "remote_upload": "applied_after_explicit_user_approval",
+  "protocol_model_prompts_sampling_unchanged": true,
+  "deployed_at": 1789205415.7642252,
+  "remote_tests_passed": 47,
+  "remote_receipt": "performance_20260912\\deployment_receipt.json",
+  "runtime_syntax_checks": "passed_in_simplemem_and_lightmem_python"
+}

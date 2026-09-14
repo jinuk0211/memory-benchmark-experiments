@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-11T12:25:46.617295+00:00",
+  "implementation": "mem0_batch8_v1",
+  "runner_sha256": "58a642906c5d80e7956f957ab0f78eba70f9f23c3f74d04d6af3c3663665202c",
+  "baseline_runner_sha256": "a47c0f059654f02a00a5f8b9ae60c508aeac79a4bb56aba19e0095f4b2b95d48",
+  "source_manifest_sha256": "343b0ef929aaaf3c0b3a790df6c60d98dcc7ec4e1189fb6d18a4d8b5c941f1a8",
+  "tests": {
+    "command": "C:/Python314/python.exe -B -m unittest discover -s experiments/longmemeval_s_native3_5090_20260910/official_recovery/mem0_batch8_v1 -p test_*.py -v",
+    "exit_code": 0,
+    "count": 45,
+    "seconds": 23.833,
+    "status": "OK",
+    "log_sha256": "f82c36b96629e11e633a5b0c12efa50fea11ef922e04a05432c2102dc9e2a9d8"
+  },
+  "lint": {
+    "command": "ruff check runner.py test_*.py",
+    "status": "All checks passed"
+  },
+  "official_copy_parity": {
+    "vendor_files_equal": 97,
+    "requirements_equal": true,
+    "source_manifest_equal": true,
+    "wheel_equal": true
+  },
+  "canonical_source": {
+    "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "questions": 500,
+    "sessions": 23867,
+    "turns": 246750,
+    "session_local_pairs": 124345,
+    "batch8_adds": 24365,
+    "empty_string_turns_preserved": 12
+  },
+  "execution_scope": "Local CPU verification only; no remote deployment, model generation, or process signals"
+}

@@ -1,0 +1,103 @@
+{
+  "status": "LOCAL_PREVIEW_NOT_APPROVED_NOT_DEPLOYED",
+  "destination": "root@ssh2.vast.ai:23065 /workspace/recursive_minilm_20260909/",
+  "file_count": 13,
+  "total_bytes": 79212,
+  "files": [
+    {
+      "local_path": "D:\\MemoryData\\experiments\\recursive_minilm_20260909\\source_views_v2.py",
+      "remote_relative_path": "source_views_v2.py",
+      "bytes": 6634,
+      "sha256": "514085a3f1274c15fec856c8514e2f5489373ac1c394c815aa5736795c30bf64",
+      "change": "unchanged prepared v2 file"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\recursive_minilm_20260909\\recursive_memory_v2.py",
+      "remote_relative_path": "recursive_memory_v2.py",
+      "bytes": 7404,
+      "sha256": "82b1bb458aec68600610fba0294db692f2a33a41043ab831c8d9388f4212ac9e",
+      "change": "unchanged prepared v2 file"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\recursive_minilm_20260909\\run_recursive_v2.py",
+      "remote_relative_path": "run_recursive_v2.py",
+      "bytes": 11531,
+      "sha256": "f85a2c370f5e8804c3c3da18cefbe6a8cfa0d7f861fff5ab9031e0dab9e2e960",
+      "change": "unchanged prepared v2 file"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\recursive_minilm_20260909\\test_recursive_v2.py",
+      "remote_relative_path": "test_recursive_v2.py",
+      "bytes": 13781,
+      "sha256": "813682aa0848a710eb0a39237f19803f987ba8569355dc64966ff7430c49ed3a",
+      "change": "unchanged prepared v2 file"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\recursive_minilm_20260909\\summarize_recursive_v2.py",
+      "remote_relative_path": "summarize_recursive_v2.py",
+      "bytes": 6691,
+      "sha256": "bd3d865a0a6e853f3e3851f41f93c58b4df07501e16445b864ed8609886221bf",
+      "change": "unchanged prepared v2 file"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\recursive_minilm_20260909\\queue_entry_v2.py",
+      "remote_relative_path": "queue_entry_v2.py",
+      "bytes": 2090,
+      "sha256": "6663b96cc74fc564baeeec7dc11f1bd832290ae080c40381bafb9d0071bf7a9d",
+      "change": "unchanged prepared v2 file"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\refinement_usage_20260909\\timed_launch_preview\\run_recursive_v2_queue.sh",
+      "remote_relative_path": "run_recursive_v2_queue.sh",
+      "bytes": 1826,
+      "sha256": "8f8a3f071b1092eccdde8b17c7499f846f46d859e6c22d1a0fcde182045c9f6c",
+      "change": "timed evaluation branch only"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\recursive_minilm_20260909\\recursive-v2-supervisor.conf",
+      "remote_relative_path": "recursive-v2-supervisor.conf",
+      "bytes": 423,
+      "sha256": "cd5f72def6eeae40d49f78db476d2b6355adf6e062fefcc967af597f382affea",
+      "change": "unchanged prepared v2 file"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\refinement_usage_20260909\\evaluation_timing.py",
+      "remote_relative_path": "metrics/evaluation_timing.py",
+      "bytes": 4771,
+      "sha256": "637e9f705d7f046e4a8bf998135d54362057239ea79b42e54ed949191eb7b3e7",
+      "change": "new timing addon or its checksum"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\refinement_usage_20260909\\test_evaluation_timing.py",
+      "remote_relative_path": "metrics/test_evaluation_timing.py",
+      "bytes": 12061,
+      "sha256": "851d467f916facaf01f54079e6249a545160b895a364a361478482aecfbcb468",
+      "change": "new timing addon or its checksum"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\refinement_usage_20260909\\timed_evaluate.py",
+      "remote_relative_path": "metrics/timed_evaluate.py",
+      "bytes": 5117,
+      "sha256": "77459aa6eb9b3ec81b678edddf79f679d694c09c8fa5bf1fa0fbcc7a4e6613c0",
+      "change": "new timing addon or its checksum"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\refinement_usage_20260909\\test_timed_evaluate.py",
+      "remote_relative_path": "metrics/test_timed_evaluate.py",
+      "bytes": 6499,
+      "sha256": "13d2c703bc5c55c017809001c97a0a980cb525d0d9ffd7df30fade8ae8592a6f",
+      "change": "new timing addon or its checksum"
+    },
+    {
+      "local_path": "D:\\MemoryData\\experiments\\refinement_usage_20260909\\timed_launch_preview\\timing_source.sha256",
+      "remote_relative_path": "metrics/timing_source.sha256",
+      "bytes": 384,
+      "sha256": "8d7ce979ec2379e13d6e4da4e15da510ca0e5570ebe6fa4060f2df8ff3496325",
+      "change": "new timing addon or its checksum"
+    }
+  ],
+  "original8files_preserved": true,
+  "queue_change": "Only evaluate branch calls explicit timing launcher; construct and all existing gates/checks unchanged. Adds timing source checksum check before evaluation.",
+  "authorization": "Prior8-file transfer was rejected pending explicit user consent. This13-file timed proposal expands that pending scope; do not treat consent to original8 as consent to new files.",
+  "owner": "Task01a080b3-dfac-7b41-bffe-5836b1c205fb owns final launch/deployment; no remote change was made by metrics task."
+}

@@ -1,0 +1,317 @@
+{
+  "ours": {
+    "family": "parent_single",
+    "parent_tokens": 44089,
+    "extra_budget": 2000,
+    "storage_tokens": 46030,
+    "storage_cap": 46089,
+    "selected_options": [
+      "conv-26:source_probe:1:2",
+      "conv-26:source_probe:10:6",
+      "conv-26:source_probe:12:1",
+      "conv-26:source_probe:13:2",
+      "conv-26:source_probe:14:5",
+      "conv-26:source_probe:2:6",
+      "conv-26:source_probe:21:11",
+      "conv-26:source_probe:22:6",
+      "conv-26:source_probe:24:2",
+      "conv-26:source_probe:25:8",
+      "conv-26:source_probe:36:2",
+      "conv-26:source_probe:37:6",
+      "conv-26:source_probe:4:3",
+      "conv-26:source_probe:5:9",
+      "conv-26:source_probe:6:11",
+      "conv-26:source_probe:7:9",
+      "conv-26:source_probe:8:3",
+      "conv-26:source_probe:9:5"
+    ],
+    "optimizer": {
+      "gain": 17.634806177569004,
+      "actual_tokens": 1941,
+      "rounded_tokens": 1992,
+      "budget": 2000,
+      "quantum": 8,
+      "unused_tokens": 59
+    }
+  },
+  "payload_keys": {
+    "selected_options": [
+      "conv-26:source_probe:1:2",
+      "conv-26:source_probe:10:6",
+      "conv-26:source_probe:12:1",
+      "conv-26:source_probe:13:2",
+      "conv-26:source_probe:14:5",
+      "conv-26:source_probe:2:6",
+      "conv-26:source_probe:21:11",
+      "conv-26:source_probe:22:6",
+      "conv-26:source_probe:24:2",
+      "conv-26:source_probe:25:8",
+      "conv-26:source_probe:36:2",
+      "conv-26:source_probe:37:6",
+      "conv-26:source_probe:4:3",
+      "conv-26:source_probe:5:9",
+      "conv-26:source_probe:6:11",
+      "conv-26:source_probe:7:9",
+      "conv-26:source_probe:8:3",
+      "conv-26:source_probe:9:5"
+    ],
+    "policy": "same units and payloads; keys set to payload"
+  },
+  "random_00": {
+    "selected_options": [
+      "conv-26:source_probe:9:1",
+      "conv-26:source_probe:13:1",
+      "conv-26:source_probe:8:3",
+      "conv-26:source_probe:14:1"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 1984,
+    "actual_tokens": 1967,
+    "seed": 2026091400,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "random_01": {
+    "selected_options": [
+      "conv-26:source_probe:25:1",
+      "conv-26:source_probe:4:1",
+      "conv-26:source_probe:24:1",
+      "conv-26:source_probe:7:9",
+      "conv-26:source_probe:13:2",
+      "conv-26:source_probe:22:6"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 2000,
+    "actual_tokens": 1983,
+    "seed": 2026091401,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "random_02": {
+    "selected_options": [
+      "conv-26:source_probe:5:1",
+      "conv-26:source_probe:9:5",
+      "conv-26:source_probe:4:3",
+      "conv-26:source_probe:36:1",
+      "conv-26:source_probe:7:9",
+      "conv-26:source_probe:2:6"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 1984,
+    "actual_tokens": 1962,
+    "seed": 2026091402,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "random_03": {
+    "selected_options": [
+      "conv-26:source_probe:14:1",
+      "conv-26:source_probe:10:1",
+      "conv-26:source_probe:5:1",
+      "conv-26:source_probe:13:2",
+      "conv-26:source_probe:25:8",
+      "conv-26:source_probe:7:9"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 1992,
+    "actual_tokens": 1977,
+    "seed": 2026091403,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "random_04": {
+    "selected_options": [
+      "conv-26:source_probe:24:1",
+      "conv-26:source_probe:2:6",
+      "conv-26:source_probe:25:8",
+      "conv-26:source_probe:21:11",
+      "conv-26:source_probe:14:5",
+      "conv-26:source_probe:9:1",
+      "conv-26:source_probe:4:1"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 1984,
+    "actual_tokens": 1959,
+    "seed": 2026091404,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "random_05": {
+    "selected_options": [
+      "conv-26:source_probe:5:1",
+      "conv-26:source_probe:7:1",
+      "conv-26:source_probe:25:1",
+      "conv-26:source_probe:36:2"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 2000,
+    "actual_tokens": 1987,
+    "seed": 2026091405,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "random_06": {
+    "selected_options": [
+      "conv-26:source_probe:1:1",
+      "conv-26:source_probe:13:1",
+      "conv-26:source_probe:4:1",
+      "conv-26:source_probe:6:11",
+      "conv-26:source_probe:8:3",
+      "conv-26:source_probe:7:9",
+      "conv-26:source_probe:2:6",
+      "conv-26:source_probe:36:2"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 2000,
+    "actual_tokens": 1966,
+    "seed": 2026091406,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "random_07": {
+    "selected_options": [
+      "conv-26:source_probe:24:2",
+      "conv-26:source_probe:8:3",
+      "conv-26:source_probe:14:1",
+      "conv-26:source_probe:36:2",
+      "conv-26:source_probe:5:9",
+      "conv-26:source_probe:2:6",
+      "conv-26:source_probe:10:6",
+      "conv-26:source_probe:26:1",
+      "conv-26:source_probe:25:8",
+      "conv-26:source_probe:22:6",
+      "conv-26:source_probe:37:6"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 1992,
+    "actual_tokens": 1967,
+    "seed": 2026091407,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "random_08": {
+    "selected_options": [
+      "conv-26:source_probe:14:1",
+      "conv-26:source_probe:22:1",
+      "conv-26:source_probe:36:1",
+      "conv-26:source_probe:25:8",
+      "conv-26:source_probe:6:11",
+      "conv-26:source_probe:8:3"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 1976,
+    "actual_tokens": 1955,
+    "seed": 2026091408,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "random_09": {
+    "selected_options": [
+      "conv-26:source_probe:1:1",
+      "conv-26:source_probe:5:9",
+      "conv-26:source_probe:14:1",
+      "conv-26:source_probe:22:6",
+      "conv-26:source_probe:8:3",
+      "conv-26:source_probe:6:11",
+      "conv-26:source_probe:12:3",
+      "conv-26:source_probe:7:9",
+      "conv-26:source_probe:36:2",
+      "conv-26:source_probe:24:2",
+      "conv-26:source_probe:9:5"
+    ],
+    "eligible_options": 38,
+    "rounded_tokens": 2000,
+    "actual_tokens": 1964,
+    "seed": 2026091409,
+    "policy": "seeded random option-order greedy; one per probe"
+  },
+  "no_audit": {
+    "family": "parent_single",
+    "parent_tokens": 43758,
+    "extra_budget": 2000,
+    "storage_tokens": 45699,
+    "storage_cap": 45758,
+    "selected_options": [
+      "conv-26:source_probe:1:2",
+      "conv-26:source_probe:10:6",
+      "conv-26:source_probe:12:1",
+      "conv-26:source_probe:13:2",
+      "conv-26:source_probe:14:5",
+      "conv-26:source_probe:2:6",
+      "conv-26:source_probe:21:11",
+      "conv-26:source_probe:22:6",
+      "conv-26:source_probe:24:2",
+      "conv-26:source_probe:25:8",
+      "conv-26:source_probe:36:2",
+      "conv-26:source_probe:37:6",
+      "conv-26:source_probe:4:3",
+      "conv-26:source_probe:5:9",
+      "conv-26:source_probe:6:11",
+      "conv-26:source_probe:7:9",
+      "conv-26:source_probe:8:3",
+      "conv-26:source_probe:9:5"
+    ],
+    "optimizer": {
+      "gain": 17.634806177569004,
+      "actual_tokens": 1941,
+      "rounded_tokens": 1992,
+      "budget": 2000,
+      "quantum": 8,
+      "unused_tokens": 59
+    }
+  },
+  "no_temporal": {
+    "family": "parent_single",
+    "parent_tokens": 42861,
+    "extra_budget": 2000,
+    "storage_tokens": 44755,
+    "storage_cap": 44861,
+    "selected_options": [
+      "conv-26:source_probe:1:2",
+      "conv-26:source_probe:10:6",
+      "conv-26:source_probe:12:3",
+      "conv-26:source_probe:13:2",
+      "conv-26:source_probe:14:5",
+      "conv-26:source_probe:2:6",
+      "conv-26:source_probe:21:11",
+      "conv-26:source_probe:22:6",
+      "conv-26:source_probe:24:2",
+      "conv-26:source_probe:25:8",
+      "conv-26:source_probe:26:8",
+      "conv-26:source_probe:36:2",
+      "conv-26:source_probe:37:6",
+      "conv-26:source_probe:4:3",
+      "conv-26:source_probe:5:9",
+      "conv-26:source_probe:6:11",
+      "conv-26:source_probe:7:9",
+      "conv-26:source_probe:8:3",
+      "conv-26:source_probe:9:5"
+    ],
+    "optimizer": {
+      "gain": 18.220403893687035,
+      "actual_tokens": 1894,
+      "rounded_tokens": 1944,
+      "budget": 2000,
+      "quantum": 8,
+      "unused_tokens": 106
+    }
+  },
+  "with_binding": {
+    "family": "parent_single",
+    "parent_tokens": 45329,
+    "extra_budget": 2000,
+    "storage_tokens": 47283,
+    "storage_cap": 47329,
+    "selected_options": [
+      "conv-26:source_probe:1:2",
+      "conv-26:source_probe:10:6",
+      "conv-26:source_probe:12:3",
+      "conv-26:source_probe:14:5",
+      "conv-26:source_probe:22:6",
+      "conv-26:source_probe:25:8",
+      "conv-26:source_probe:37:6",
+      "conv-26:source_probe:5:9",
+      "conv-26:source_probe:7:9",
+      "conv-26:source_probe:8:3"
+    ],
+    "optimizer": {
+      "gain": 9.761843671822529,
+      "actual_tokens": 1954,
+      "rounded_tokens": 1992,
+      "budget": 2000,
+      "quantum": 8,
+      "unused_tokens": 46
+    }
+  }
+}

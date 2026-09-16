@@ -1,0 +1,41 @@
+{
+  "population": "previously_exposed_dev300",
+  "context_sha256": "70ba3eff4c041d8a1b735b4e90339df9fc1603f23ae06b90c86d3a61bd037be1",
+  "prompts": {
+    "legacy": "Answer the question using only the provided conversation memory. Give a concise exact answer: a name, date, number, or short phrase. For a list question include every supported item, separated by commas. Use the session dates to interpret relative times, but distinguish the event date from the date someone talked about it. If unsupported, answer unknown. No explanation or introductory text.",
+    "grounded": "Answer the question using the provided conversation memory as evidence. You may combine supported facts with relevant common or world knowledge to draw reasonable inferences. Do not invent personal events, identities, or details absent from the evidence. Give a concise exact answer at the level requested by the question, such as a name, date, country, state, number, or named concept. For a list question include every supported item, separated by commas. Use session dates to interpret relative times, but distinguish the event date from the date someone talked about it. If the answer cannot reasonably be inferred, answer unknown. No explanation or introductory text."
+  },
+  "seed": 20260907,
+  "output_cap": 96,
+  "script_sha256": "bd4916f43dd2ca090ed0bd2350f58149ba7f5b1153f99ceba86ebbcaaa0e1839",
+  "runtime_hashes": {
+    "vendor/chat_tokenizer_compat.py": "b50ed0f335ca2cd7a14957968d5d279fae8556da69a03c9b18f8f83db0108f4c",
+    "vendor/runtime_meter.py": "6bd2765f368007a6d881726a8f9b79382fcfc5d29523142d5035d88024fc4aba",
+    "vendor/source/budgeted_evidence.py": "d1e5f99306a7654124b16cf9c3ecb14e98118892dc0ed24b92470386049fddb3",
+    "vendor/source/compile_research_data.py": "721f5c5c3fa970a35f06db28bdd4820e119cd9936ae22f307a3436c748e6aaca",
+    "vendor/source/continuous.py": "810bd92b0980b6f0f8327e82eac041b7521d18e790af044d913c44d6127003e5",
+    "vendor/source/continuous_v2.py": "1f5e77bc5d72d59cd0de040b5eb020e07318075db35e45053b0143be1934ce32",
+    "vendor/source/evidence_fidelity.py": "ba55f8508cc16b1cea420f80198a9c6c7d3359235645886d9180c1bf0838c735",
+    "vendor/source/evidence_utility.py": "b6a18927a332ff96a997b24a8d36a0ff29757baeb36b8d1efe9c5aab51c9f310",
+    "vendor/source/frozen_partition.py": "f40a191e06dda70c53c029c2d9891e7669200d008c65ff0f13f46e64e76d6994",
+    "vendor/source/memory_ops.py": "02504b2976393c9f9743a051b6347adbeea8af36ba572da579edb5ab6bfe8b00",
+    "vendor/source/parent_evidence.py": "3fb9fb6d55f1ef8501aa6040d28211b552674016baaf949825d7abb396be27a7",
+    "vendor/source/portable_parent.py": "2274f14817a133cef8ce724f459f16809cc7b0718c4105601b3e117240f253a5",
+    "vendor/source/refine.py": "71384cac6aaa260d6df4f24f605797a8a886cd51514a83c9c1d041eff99f14fa",
+    "vendor/source/run_evidence_utility.py": "534749083cd534deb00944d893ef9ed43fcb624a14fd5d9f560669d99ad03edd",
+    "vendor/transfer_runtime.py": "eb63761a9b62385414e66f949b214aeb43fbb84ce849abe34ccd67819e78cf83"
+  },
+  "environment": {
+    "models": {
+      "Qwen/Qwen3.5-9B": {
+        "path": "/workspace/.hf_home/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+      },
+      "sentence-transformers/all-MiniLM-L6-v2": {
+        "path": "/workspace/.hf_home/hub/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+      }
+    }
+  },
+  "selection_rule": "Highest dev300 Ours overall official F1; ties prefer legacy"
+}

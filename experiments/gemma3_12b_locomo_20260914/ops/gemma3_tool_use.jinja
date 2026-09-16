@@ -1,0 +1,55 @@
+{{- bos_token }}
+{%- if messages and messages[0]['role'] == 'system' %}
+  {%- set system_message = messages[0]['content'] %}
+  {%- set loop_messages = messages[1:] %}
+{%- else %}
+  {%- set system_message = '' %}
+  {%- set loop_messages = messages %}
+{%- endif %}
+{%- set ns = namespace(first_user=true) %}
+{%- for message in loop_messages %}
+  {%- if message['role'] == 'user' %}
+    {{- '<start_of_turn>user\n' }}
+    {%- if ns.first_user and system_message %}
+      {{- system_message | trim + '\n\n' }}
+    {%- endif %}
+    {%- if ns.first_user and tools is defined and tools | length > 0 %}
+      {{- 'You are a function-calling AI. The available tools are listed as JSON between <tools> tags.\n<tools>\n' }}
+      {%- for tool in tools %}
+        {{- tool | tojson }}
+        {%- if not loop.last %}{{- '\n' }}{%- endif %}
+      {%- endfor %}
+      {{- '\n</tools>\nWhen a tool is requested, respond only with one or more calls in this exact form:\n<tool_call>{"name":"function_name","arguments":{"argument":"value"}}</tool_call>\n\n' }}
+    {%- endif %}
+    {%- set ns.first_user = false %}
+    {%- if message['content'] is string %}
+      {{- message['content'] | trim }}
+    {%- else %}
+      {%- for item in message['content'] %}
+        {%- if item['type'] == 'text' %}{{- item['text'] | trim }}{%- endif %}
+      {%- endfor %}
+    {%- endif %}
+    {{- '<end_of_turn>\n' }}
+  {%- elif message['role'] == 'assistant' and message.tool_calls is defined and message.tool_calls %}
+    {{- '<start_of_turn>model\n' }}
+    {%- if message.content is defined and message.content %}{{- message.content | trim }}{%- endif %}
+    {%- for tool_call in message.tool_calls %}
+      {%- if tool_call.function is defined %}{%- set call = tool_call.function %}{%- else %}{%- set call = tool_call %}{%- endif %}
+      {{- '<tool_call>{"name":"' + call.name + '","arguments":' }}
+      {%- if call.arguments is string %}{{- call.arguments }}{%- else %}{{- call.arguments | tojson }}{%- endif %}
+      {{- '}</tool_call>' }}
+    {%- endfor %}
+    {{- '<end_of_turn>\n' }}
+  {%- elif message['role'] == 'assistant' %}
+    {{- '<start_of_turn>model\n' }}
+    {%- if message['content'] is string %}{{- message['content'] | trim }}{%- endif %}
+    {{- '<end_of_turn>\n' }}
+  {%- elif message['role'] == 'tool' %}
+    {{- '<start_of_turn>user\n<tool_response>' }}
+    {{- message['content'] | trim }}
+    {{- '</tool_response><end_of_turn>\n' }}
+  {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+  {{- '<start_of_turn>model\n' }}
+{%- endif %}

@@ -1,0 +1,73 @@
+{
+  "candidate_configurations": [
+    "legacy",
+    "grounded"
+  ],
+  "population": "dev300",
+  "arms": [
+    "ours"
+  ],
+  "criterion": "highest_overall_f1_tie_legacy",
+  "results": {
+    "legacy": {
+      "n": 300,
+      "f1": 58.03501726228456,
+      "category_f1": {
+        "1": 40.877130460843105,
+        "2": 50.72499185402412,
+        "3": 22.02438126700001,
+        "4": 70.7246967336372
+      },
+      "category_counts": {
+        "2": 62,
+        "1": 55,
+        "3": 19,
+        "4": 164
+      },
+      "finish_reasons": {
+        "stop": 300
+      },
+      "empty_answers": 0,
+      "unknown_answers": 31,
+      "read_tokens": 2038.85
+    },
+    "grounded": {
+      "n": 300,
+      "f1": 59.02554320947178,
+      "category_f1": {
+        "1": 43.3812379169522,
+        "2": 52.47698538021118,
+        "3": 20.334928229665074,
+        "4": 71.23023260653922
+      },
+      "category_counts": {
+        "2": 62,
+        "1": 55,
+        "3": 19,
+        "4": 164
+      },
+      "finish_reasons": {
+        "stop": 300
+      },
+      "empty_answers": 0,
+      "unknown_answers": 24,
+      "read_tokens": 2038.85
+    }
+  },
+  "chosen_reader": "grounded",
+  "frozen_before_full1540": true,
+  "dev_protocol_sha256": {
+    "legacy": "3486792412b25524a99dd86617f77fb4e6e44d95057a36befe3ad7bf7a8d3f4d",
+    "grounded": "3486792412b25524a99dd86617f77fb4e6e44d95057a36befe3ad7bf7a8d3f4d"
+  },
+  "dev_prediction_sha256": {
+    "legacy": "e46d922ee883c16ea973ef0cbc1cb5ce8d87b1259f0bb116d5be1c1b391db2de",
+    "grounded": "8638f044d6526c5fc199bb3e0594cd7bebd2f60bc4eec52e41646912bc2b7b22"
+  },
+  "interpretation": "Finite predeclared reader selection on the previously exposed 300-question subset; all 300 remain in the 1,540-question exploratory evaluation.",
+  "diagnostic_policy": "Category scores, empty/length responses and exact unknown-answer counts do not affect selection.",
+  "scorer_sha256": "71384cac6aaa260d6df4f24f605797a8a886cd51514a83c9c1d041eff99f14fa",
+  "nltk_version": "3.9.1",
+  "porter_sha256": "5f5290c956aee9a52330ea2535a68317b25b20612920c2bbb9bb42a62ff7fe77",
+  "created_at_utc": "2026-09-14T07:58:42.819322+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "instance_id": 50986606,
+  "gpu_count": 2,
+  "cuda_tensor_test": "pass",
+  "minilm_shape": [
+    1,
+    384
+  ],
+  "minilm_max_sequence": 256,
+  "tokenizer_class": "TokenizersBackend",
+  "weight_files": [
+    "model.safetensors-00001-of-00004.safetensors",
+    "model.safetensors-00002-of-00004.safetensors",
+    "model.safetensors-00003-of-00004.safetensors",
+    "model.safetensors-00004-of-00004.safetensors"
+  ],
+  "versions": {
+    "vllm": "0.19.1",
+    "torch": "2.10.0+cu129",
+    "transformers": "5.5.3",
+    "tokenizers": "0.22.2",
+    "sentence-transformers": "5.2.0",
+    "numpy": "2.2.6"
+  }
+}

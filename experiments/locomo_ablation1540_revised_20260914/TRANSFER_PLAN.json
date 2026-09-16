@@ -1,0 +1,39 @@
+{
+  "status": "READY_AWAITING_RESEARCH_DATA_TRANSFER_APPROVAL",
+  "destination": {
+    "instance_id": 50986606,
+    "ssh_host": "57.132.208.22",
+    "ssh_port": 24433,
+    "directory": "/workspace/locomo_ablation1540_revised_20260914"
+  },
+  "archive": "deployment_ready.tar.gz",
+  "archive_bytes": 12540457,
+  "archive_sha256": "74c0c610cfeaabf3adea934dbf231617c71be8d74c189cc6a7c5907f894ebcfa",
+  "includes": [
+    "Frozen experimental code and configuration",
+    "10 LoCoMo conversation histories and cached initial/audited source memories",
+    "1540 reader questions without gold answers",
+    "Source-only utility records and 160 prepared ablation memories",
+    "300 frozen retrieved contexts and two reader prompts"
+  ],
+  "excludes": [
+    "Benchmark gold answers",
+    "OpenAI API key",
+    "Hugging Face token",
+    "SSH private key"
+  ],
+  "execution": [
+    "Compare legacy vs grounded reader on fixed previously exposed300 contexts",
+    "Freeze winner by overall F1 with legacy tie-break",
+    "Evaluate all16 predeclared arms on1540 questions",
+    "Collect all outcomes for local official scoring, cluster CI, exact sign-flip and10seed aggregation"
+  ],
+  "validation": {
+    "tests_passed": 15,
+    "memory_files": 160,
+    "history_locks": 10,
+    "all_ours_byte_identical_to_archived_no_binding": true,
+    "manifest_sha256": "1b3a1357e4a893eeb2fad407fbc41ec34a56a6bd174001cedcf22ab69148bfb0"
+  },
+  "blocked_reason": "Automatic approval review rejected SCP because explicit permission for research-data transfer to this destination was not recognized."
+}
